@@ -1,0 +1,6 @@
+HISTORY.md
+Manifest.txt
+README.md
+Rakefile
+lib/gitta.rb
+lib/gitta/version.rb
