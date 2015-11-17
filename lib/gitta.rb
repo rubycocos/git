@@ -14,6 +14,7 @@ require 'logutils'
 
 # our own code
 require 'gitta/version'   # note: let version always go first
+require 'gitta/lib'
 
 
 # say hello
