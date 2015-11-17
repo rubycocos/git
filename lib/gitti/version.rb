@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Gitta
+module Gitti
   MAJOR = 0    ## todo: namespace inside version or something - why? why not??
   MINOR = 1
   PATCH = 0
@@ -11,11 +11,11 @@ module Gitta
   end
 
   def self.banner
-    "gitta/#{VERSION} on Ruby #{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) [#{RUBY_PLATFORM}]"
+    "gitti/#{VERSION} on Ruby #{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) [#{RUBY_PLATFORM}]"
   end
 
   def self.root
     "#{File.expand_path( File.dirname(File.dirname(File.dirname(__FILE__))) )}"
   end
-end # module Gitta
+end # module Gitti
 

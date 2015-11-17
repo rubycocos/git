@@ -2,6 +2,6 @@ HISTORY.md
 Manifest.txt
 README.md
 Rakefile
-lib/gitta.rb
-lib/gitta/lib.rb
-lib/gitta/version.rb
+lib/gitti.rb
+lib/gitti/lib.rb
+lib/gitti/version.rb

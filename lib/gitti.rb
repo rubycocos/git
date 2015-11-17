@@ -13,9 +13,9 @@ require 'yaml'
 require 'logutils'
 
 # our own code
-require 'gitta/version'   # note: let version always go first
-require 'gitta/lib'
+require 'gitti/version'   # note: let version always go first
+require 'gitti/lib'
 
 
 # say hello
-puts Gitta.banner    if defined?($RUBYLIBS_DEBUG)
+puts Gitti.banner    if defined?($RUBYLIBS_DEBUG)

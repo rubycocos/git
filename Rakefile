@@ -1,14 +1,14 @@
 require 'hoe'
-require './lib/gitta/version.rb'
+require './lib/gitti/version.rb'
 
-Hoe.spec 'gitta' do
+Hoe.spec 'gitti' do
 
-  self.version = Gitta::VERSION
+  self.version = Gitti::VERSION
 
-  self.summary = 'gitta - (yet) another (lite) git command line wrapper / library'
+  self.summary = 'gitti - (yet) another (lite) git command line wrapper / library'
   self.description = summary
 
-  self.urls    = ['https://github.com/rubylibs/gitta']
+  self.urls    = ['https://github.com/rubylibs/gitti']
 
   self.author  = 'Gerald Bauer'
   self.email   = 'ruby-talk@ruby-lang.org'

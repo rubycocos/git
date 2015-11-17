@@ -1,11 +1,11 @@
-# gitta
+# gitti
 
-gitta gem - (yet) another (lite) git command line wrapper / library
+gitti gem - (yet) another (lite) git command line wrapper / library
 
-* home  :: [github.com/rubylibs/gitta](https://github.com/rubylibs/gitta)
-* bugs  :: [github.com/rubylibs/gitta/issues](https://github.com/rubylibs/gitta/issues)
-* gem   :: [rubygems.org/gems/gitta](https://rubygems.org/gems/gitta)
-* rdoc  :: [rubydoc.info/gems/gitta](http://rubydoc.info/gems/gitta)
+* home  :: [github.com/rubylibs/gitti](https://github.com/rubylibs/gitti)
+* bugs  :: [github.com/rubylibs/gitti/issues](https://github.com/rubylibs/gitti/issues)
+* gem   :: [rubygems.org/gems/gitti](https://rubygems.org/gems/gitti)
+* rdoc  :: [rubydoc.info/gems/gitti](http://rubydoc.info/gems/gitti)
 
 
 ## Usage
@@ -15,6 +15,6 @@ TBD
 
 ## License
 
-The `gitta` scripts are dedicated to the public domain.
+The `gitti` scripts are dedicated to the public domain.
 Use it as you please with no restrictions whatsoever.
 

@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 
-module Gitta
+module Gitti
 
 class GitError < StandardError 
 end
@@ -74,10 +74,10 @@ module Git
   def self.remote_update( opts={} )  GitLib.new.remote_update( opts );  end
 end  # module Git
 
-end # module Gitta
+end # module Gitti
 
 
 ### convenience top level Git module - check if defined? make optional? why? why not??
-## Git = Gitta::Git
+## Git = Gitti::Git
 
-#  for now use include Gitta - why? why not??
+#  for now use include Gitti - why? why not??
