@@ -3,7 +3,7 @@ require './lib/gitti/backup/version.rb'
 
 Hoe.spec 'gitti-backup' do
 
-  self.version = Gitti::GitBackup::VERSION
+  self.version = GittiBackup::VERSION
 
   self.summary = 'gitti-backup - (yet) another (lite) git backup command line script'
   self.description = summary

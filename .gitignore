@@ -33,3 +33,10 @@ build/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+###  add multi-gems
+/pkg/
+/gitti/pkg/
+/gitti-backup/pkg/
+
+
