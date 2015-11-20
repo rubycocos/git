@@ -1,0 +1,30 @@
+require 'hoe'
+require './lib/gitti/backup/version.rb'
+
+Hoe.spec 'gitti-backup' do
+
+  self.version = Gitti::GitBackup::VERSION
+
+  self.summary = 'gitti-backup - (yet) another (lite) git backup command line script'
+  self.description = summary
+
+  self.urls    = ['https://github.com/rubylibs/gitti']
+
+  self.author  = 'Gerald Bauer'
+  self.email   = 'ruby-talk@ruby-lang.org'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'HISTORY.md'
+
+  self.extra_deps = [
+    ['gitti' ],
+  ]
+
+  self.licenses = ['Public Domain']
+
+  self.spec_extras = {
+   required_ruby_version: '>= 1.9.2'
+  }
+
+end
