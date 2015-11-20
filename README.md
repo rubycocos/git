@@ -1,16 +1,9 @@
-# gitti
+# gitti - git command line tools & scripts
 
-gitti gem - (yet) another (lite) git command line wrapper / library
+Gem Family:
 
-* home  :: [github.com/rubylibs/gitti](https://github.com/rubylibs/gitti)
-* bugs  :: [github.com/rubylibs/gitti/issues](https://github.com/rubylibs/gitti/issues)
-* gem   :: [rubygems.org/gems/gitti](https://rubygems.org/gems/gitti)
-* rdoc  :: [rubydoc.info/gems/gitti](http://rubydoc.info/gems/gitti)
+- [**gitti gem**](gitti)  - (yet) another (lite) git command line wrapper / library
 
-
-## Usage
-
-TBD
 
 
 ## License
