@@ -38,5 +38,5 @@ build/
 /pkg/
 /gitti/pkg/
 /gitti-backup/pkg/
-
+/gitti-sync/pkg/
 

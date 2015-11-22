@@ -1,0 +1,6 @@
+HISTORY.md
+Manifest.txt
+README.md
+Rakefile
+lib/gitti/sync.rb
+lib/gitti/sync/version.rb
