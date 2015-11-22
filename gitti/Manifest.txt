@@ -4,4 +4,5 @@ README.md
 Rakefile
 lib/gitti.rb
 lib/gitti/lib.rb
+lib/gitti/support/reposet.rb
 lib/gitti/version.rb

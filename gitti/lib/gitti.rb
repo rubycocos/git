@@ -16,6 +16,9 @@ require 'logutils'
 require 'gitti/version'   # note: let version always go first
 require 'gitti/lib'
 
+## todo/check: move to its own gem e.g. gitti-support later - why? why not??
+require 'gitti/support/reposet'
+
 
 # say hello
 puts Gitti.banner    if defined?($RUBYLIBS_DEBUG)
