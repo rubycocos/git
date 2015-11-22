@@ -50,3 +50,4 @@ class GitBackup
 
 end  ## GitBackup
 
+end ## module Gitti
