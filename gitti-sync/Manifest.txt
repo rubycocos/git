@@ -3,4 +3,9 @@ Manifest.txt
 README.md
 Rakefile
 lib/gitti/sync.rb
+lib/gitti/sync/repo.rb
+lib/gitti/sync/sync.rb
 lib/gitti/sync/version.rb
+test/data/repos.yml
+test/helper.rb
+test/test_sync.rb
