@@ -1,6 +1,5 @@
 # encoding: utf-8
 
-
 module Gitti
 
 class GitError < StandardError 
@@ -8,21 +7,50 @@ end
 
 class GitLib
 
+#######################
+## "open" commands
+
    def clone( repo, opts={} )
-     command( "clone #{repo}" )
+     command "clone #{repo}"
    end
 
    def mirror( repo, opts={} )
-     command( "clone --mirror #{repo}" )
+     command "clone --mirror #{repo}"
    end
 
-   def pull( opts={} )
-     command( "pull" )
+#########################
+##  more commands
+
+   def status( opts={} )  ## e.g. git status
+     command "status"
    end
 
-   def remote_update( opts={} )
-     command( "remote update" )
+   def pull( opts={} )  ## e.g. git pull
+     command "pull"
    end
+
+   def remote_update( opts={} )   ## e.g. git remote update
+     command "remote update"
+   end
+   
+   ##  todo/check: rename remote to shorthand/shortcut or something or to branch - why, why not??
+   def remote_show( name='origin', opts={})  ## e.g. git remote show origin
+     command "remote show #{name}"
+   end
+
+
+   def add( pathspec='.', opts={} )  ## e.g. git add .
+     command "add #{pathspec}"
+   end
+
+   def commit( message, opts={} )  ## e.g. git commit -m "up standings"
+     command "commit -m \"#{message}\""
+   end
+
+   def push( opts={} )   ## e.g. git push
+     command "push"
+   end
+
 
 
    ## todo/fix:
@@ -72,6 +100,13 @@ module Git
   
   def self.pull( opts={} )           GitLib.new.pull( opts );  end
   def self.remote_update( opts={} )  GitLib.new.remote_update( opts );  end
+  def self.remote_show( name='origin', opts={})  GitLib.new.remote_show( name, opts );  end
+
+  def self.status( opts={} )         GitLib.new.status( opts );  end
+  def self.pull( opts={} )           GitLib.new.pull( opts );  end
+  def self.add( pathspec='.', opts={} )  GitLib.new.add( pathspec, opts );  end
+  def self.commit( message, opts={} )    GitLib.new.commit( message, opts );  end
+  def self.push( opts={} )               GitLib.new.push( opts );  end
 end  # module Git
 
 end # module Gitti
