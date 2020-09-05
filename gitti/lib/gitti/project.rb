@@ -33,16 +33,18 @@ class GitProject
   def fast_forward()            Git.fast_forward; end
   alias_method :ff, :fast_forward
 
+  def remote_update()           Git.remote_update; end
+  def remote( name='origin' )   Git.remote( name ); end
+
   def push()                    Git.push; end
 
-  def add( pathspec )           Git.add( pathspec ); end
+  def add( pathspec='.' )       Git.add( pathspec ); end
   def add_all()                 Git.add_all; end
   def commit( message )         Git.commit( message ); end
 
   def files()                   Git.files; end
 
   def run( cmd )                Git::Shell.run( cmd ); end
-
 end # class GitProject
 end # module Gitti
 

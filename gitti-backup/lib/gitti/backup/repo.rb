@@ -8,10 +8,6 @@ class GitHubBareRepo    ## use/rename to GitHubServerRepo - why? why not?
     @name  = name     #  e.g. "rubylibs/webservice"
   end
 
-  def http_clone_url   ## use clone_url( http: true )  -- why? why not?
-     ##  check: use https: as default? for github - http:// still supported? or redirected?
-    "http://github.com/#{@owner}/#{@name}"
-  end
 
   def git_dir
      ## todo: rename to use bare_git_dir or mirror_dir  or something ??
@@ -33,6 +29,12 @@ class GitHubBareRepo    ## use/rename to GitHubServerRepo - why? why not?
     ###
     ##  use --mirror
     ##  use -n  (--no-checkout)   -- needed - why? why not?
+
+    ###
+    ### todo/fix:  use/add a new GitMirror.open( ) |mirror|
+    ####                           mirror.update
+    ###  GitMirror.update( path )
+    ###
 
     Dir.chdir( dest_dir ) do
       if Dir.exist?( git_dir )

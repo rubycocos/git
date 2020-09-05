@@ -30,15 +30,27 @@ class GitHubRepo
     @name  = name     #  e.g. "rubylibs/webservice"
   end
 
+
   def ssh_clone_url
      ##  check: use https: as default? for github - http:// still supported? or redirected?
      ## "http://github.com/#{@owner}/#{@name}"
      "git@github.com:#{@owner}/#{@name}.git"
   end
+
+  def http_clone_url   ## use clone_url( http: true )  -- why? why not?
+     ##  check:  is https: default? for github - http:// still supported? or redirected?
+     "http://github.com/#{@owner}/#{@name}"
+  end
+
+  def https_clone_url
+    "https://github.com/#{@owner}/#{@name}"
+  end
+
+
 end   ## class GitHubRepo
 end   ## module Gitti
 
 
 
 # say hello
-puts Gitti.banner      ## if defined?( $RUBYCOCO_DEBUG )
+puts GittiCore.banner      ## if defined?( $RUBYCOCO_DEBUG )

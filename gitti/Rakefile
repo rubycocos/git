@@ -3,7 +3,7 @@ require './lib/gitti/version.rb'
 
 Hoe.spec 'gitti' do
 
-  self.version = Gitti::VERSION
+  self.version = GittiCore::VERSION
 
   self.summary = 'gitti - (yet) another (lite) git command line helper / wrapper'
   self.description = summary

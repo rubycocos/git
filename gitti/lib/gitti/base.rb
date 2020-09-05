@@ -22,6 +22,36 @@ class Git   ## make Git a module - why? why not?
     Shell.run( cmd )
   end
 
+  ###
+  ## What's the difference between git clone --mirror and git clone --bare
+  ##   see https://stackoverflow.com/questions/3959924/whats-the-difference-between-git-clone-mirror-and-git-clone-bare
+  ##
+  ##  The git clone help page has this to say about --mirror:
+  ##   > Set up a mirror of the remote repository. This implies --bare
+  ##
+  ##  The difference is that when using --mirror, all refs are copied as-is.
+  ##  This means everything: remote-tracking branches, notes, refs/originals/*
+  ## (backups from filter-branch). The cloned repo has it all.
+  ## It's also set up so that a remote update will re-fetch everything from the origin
+  ## (overwriting the copied refs). The idea is really to mirror the repository,
+  ## to have a total copy, so that you could for example host your central repo
+  ## in multiple places, or back it up. Think of just straight-up copying the repo,
+  ## except in a much more elegant git way.
+  ##
+  ## The new documentation pretty much says all this:
+  ##  see https://git-scm.com/docs/git-clone
+  ##
+  ##  --mirror
+  ## Set up a mirror of the source repository. This implies --bare.
+  ##  Compared to --bare, --mirror not only maps local branches of the source
+  ## to local branches of the target, it maps all refs
+  ## (including remote-tracking branches, notes etc.) and sets up a refspec configuration
+  ##  such that all these refs are overwritten by a git remote update
+  ## in the target repository.
+  ##
+  ## More Articles / Resources:
+  ##  https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository
+
   def self.mirror( repo )
     cmd = "git clone --mirror #{repo}"
     Shell.run( cmd )
@@ -87,7 +117,7 @@ class Git   ## make Git a module - why? why not?
     Shell.run( cmd )
   end
 
-  def self.add( pathspec=nil )  ## e.g. git add .  or git add *.rb or such
+  def self.add( pathspec='.' )  ## e.g. git add .  or git add *.rb or such
     cmd = 'git add'
     cmd << " #{pathspec}"   unless pathspec.nil? || pathspec.empty?
     Shell.run( cmd )
@@ -159,19 +189,31 @@ class Git   ## make Git a module - why? why not?
   end
 
 
-### add more - why? why not?
+## git remote update will update all of your branches
+##   set to track remote ones, but not merge any changes in.
 ##
-## def remote_update( opts={} )   ## e.g. git remote update
-## command "remote update"
-## end
+## git fetch --all didn't exist at one time, so git remote update what more useful.
+##  Now that --all has been added to git fetch, git remote update is not really necessary.
+##
+## Differences between git remote update and fetch?
+##  Is git remote update the equivalent of git fetch?
+##   see https://stackoverflow.com/questions/1856499/differences-between-git-remote-update-and-fetch/17512004#17512004
+##
+##  git fetch learned --all and --multiple options,
+##   to run fetch from many repositories,
+##   and --prune option to remove remote tracking branches that went stale.
+##   These make git remote update and git remote prune less necessary
+##    (there is no plan to remove remote update nor remote prune, though).
+  def self.remote_update
+    cmd = 'git remote update'
+    Shell.run( cmd )
+  end
 
-##  todo/check: rename remote to shorthand/shortcut or something or to branch - why, why not??
-## def remote_show( name='origin', opts={})  ## e.g. git remote show origin
-## command "remote show #{name}"
-## end
-
-
-
+  ##  todo/check: rename to remote_show  - why, why not??
+  def self.remote( name='origin' )  ## e.g. git remote show origin
+    cmd = "git remote show #{name}"
+    Shell.run( cmd )
+  end
 
 
 ###

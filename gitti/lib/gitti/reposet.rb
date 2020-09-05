@@ -4,8 +4,9 @@ module Gitti
 
 class GitRepoSet  ## todo: rename to Hash/Dict/List/Map  or use GitHubRepoSet ??
 
-def self.from_file( path )   ## todo/fix: change to self.read - why? why not?
-  hash = YAML.load_file( path )
+def self.read( path )
+  txt  = File.open( path, 'r:utf-8') { |f| f.read }
+  hash = YAML.load( txt )
   new( hash )
 end
 
@@ -14,19 +15,24 @@ def initialize( hash )
   @hash = hash
 end
 
+def size
+  ## sum up total number of repos
+  @size ||=  @hash.reduce(0) {|sum,(_,names)| sum+= names.size; sum }
+end
+
 def each
-  @hash.each do |key_with_counter,values|
+  @hash.each do |org_with_counter,names|
 
     ## remove optional number from key e.g.
     ##   mrhydescripts (3)    =>  mrhydescripts
     ##   footballjs (4)       =>  footballjs
     ##   etc.
 
-    key = key_with_counter.sub( /\s+\([0-9]+\)/, '' )
+    org = org_with_counter.sub( /\([0-9]+\)/, '' ).strip
 
-    puts "  -- #{key_with_counter} [#{key}] --"
+    ## puts "  -- #{key_with_counter} [#{key}] --"
 
-    yield( key, values )
+    yield( org, names )
   end
 end
 
