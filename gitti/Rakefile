@@ -5,7 +5,7 @@ Hoe.spec 'gitti' do
 
   self.version = Gitti::VERSION
 
-  self.summary = 'gitti - (yet) another (lite) git command line wrapper / library'
+  self.summary = 'gitti - (yet) another (lite) git command line helper / wrapper'
   self.description = summary
 
   self.urls    = { home: 'https://github.com/rubycoco/gitti' }

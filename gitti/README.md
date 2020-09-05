@@ -1,6 +1,6 @@
 # gitti
 
-gitti gem - (yet) another (lite) git command line wrapper / library
+gitti gem - (yet) another (lite) git command line helper / wrapper
 
 * home  :: [github.com/rubycoco/gitti](https://github.com/rubycoco/gitti)
 * bugs  :: [github.com/rubycoco/gitti/issues](https://github.com/rubycoco/gitti/issues)

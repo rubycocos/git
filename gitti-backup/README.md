@@ -2,8 +2,8 @@
 
 gitti-backup gem - (yet) another (lite) git backup command line script
 
-* home  :: [github.com/rubylibs/gitti](https://github.com/rubylibs/gitti)
-* bugs  :: [github.com/rubylibs/gitti/issues](https://github.com/rubylibs/gitti/issues)
+* home  :: [github.com/rubycoco/gitti](https://github.com/rubycoco/gitti)
+* bugs  :: [github.com/rubycoco/gitti/issues](https://github.com/rubycoco/gitti/issues)
 * gem   :: [rubygems.org/gems/gitti-backup](https://rubygems.org/gems/gitti-backup)
 * rdoc  :: [rubydoc.info/gems/gitti-backup](http://rubydoc.info/gems/gitti-backup)
 

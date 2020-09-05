@@ -1,4 +1,3 @@
-# encoding: utf-8
 
 module Gitti
 
@@ -47,7 +46,7 @@ class GitHubBareRepo    ## use/rename to GitHubServerRepo - why? why not?
     true  ## return true  ## success/ok
   rescue GitError => ex
     puts "*** error: #{ex.message}"
-    
+
     File.open( './errors.log', 'a' ) do |f|
       f.write "#{Time.now} -- repo #{@owner}/#{@name} - #{ex.message}\n"
     end

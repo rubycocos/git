@@ -8,23 +8,23 @@ Hoe.spec 'gitti-backup' do
   self.summary = 'gitti-backup - (yet) another (lite) git backup command line script'
   self.description = summary
 
-  self.urls    = ['https://github.com/rubylibs/gitti']
+  self.urls    = { home: 'https://github.com/rubycoco/gitti' }
 
   self.author  = 'Gerald Bauer'
   self.email   = 'ruby-talk@ruby-lang.org'
 
   # switch extension to .markdown for gihub formatting
   self.readme_file  = 'README.md'
-  self.history_file = 'HISTORY.md'
+  self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['gitti' ],
+    ['gitti', '>= 0.3.0' ],
   ]
 
   self.licenses = ['Public Domain']
 
   self.spec_extras = {
-   required_ruby_version: '>= 1.9.2'
+   required_ruby_version: '>= 2.2.2'
   }
 
 end

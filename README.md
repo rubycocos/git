@@ -2,7 +2,7 @@
 
 Gem Family:
 
-- [**gitti**](gitti)  - (lite) git command line wrapper / library
+- [**gitti**](gitti)  - (lite) git command line helper / wrapper
 - [gitti-backup](gitti-backup) - (lite) multi repo git backup command line script
 
 

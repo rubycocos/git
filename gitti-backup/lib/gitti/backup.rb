@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'gitti'
 
 # our own code
@@ -9,5 +7,5 @@ require 'gitti/backup/backup'
 
 
 # say hello
-puts GittiBackup.banner    if defined?($RUBYLIBS_DEBUG)
+puts GittiBackup.banner       ##  if defined?($RUBYCOCO_DEBUG)
 
