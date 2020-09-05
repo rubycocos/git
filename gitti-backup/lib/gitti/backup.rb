@@ -1,11 +1,7 @@
-require 'gitti'
-
-# our own code
-require 'gitti/backup/version'   # note: let version always go first
-require 'gitti/backup/repo'
-require 'gitti/backup/backup'
+require_relative 'backup/base'
 
 
-# say hello
-puts GittiBackup.banner       ##  if defined?($RUBYCOCO_DEBUG)
+## note: auto include Gitti; for "modular" version use ("Sinatra-style")
+##         require "gitti/backup/base"
 
+include Gitti

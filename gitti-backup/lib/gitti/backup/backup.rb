@@ -4,48 +4,87 @@ module Gitti
 
 class GitBackup
 
-  def initialize( backup_dir = '~/backup' )
-    @backup_dir = File.expand_path( backup_dir )
-    pp @backup_dir
-    ##  use/rename to backup_root - why? why not??
+  def initialize( root= '~/backup' )
+    @root = File.expand_path( root )
+    pp @root
+
+    ## use current working dir for the log path; see do_with_log helper for use
+    @log_path = File.expand_path( '.' )
+    pp @log_path
   end
 
+
   def backup( repos )
+    count_orgs  = 0
+    count_repos = 0
+
+    total_repos  = repos.size
+
     ##  default to adding folder per day ## e.g. 2015-11-20
-    backup_dir = "#{@backup_dir}/#{Date.today.strftime('%Y-%m-%d')}"
-    pp backup_dir
+    backup_path = "#{@root}/#{Date.today.strftime('%Y-%m-%d')}"
+    pp backup_path
 
-    FileUtils.mkdir_p( backup_dir )   ## make sure path exists
+    FileUtils.mkdir_p( backup_path )   ## make sure path exists
 
-    org_count   = 0
-    repo_count  = 0
+    repos.each do |org, names|
+      org_path = "#{backup_path}/#{org}"
+      FileUtils.mkdir_p( org_path )   ## make sure path exists
 
-    repos.each do |key,values|
-      dest_dir = "#{backup_dir}/#{key}"
-      FileUtils.mkdir_p( dest_dir )   ## make sure path exists
+      names.each do |name|
+        puts "[#{count_repos+1}/#{total_repos}] #{org}@#{name}..."
 
-      values.each_with_index do |value,i|
-        puts " \##{repo_count+1} [#{i+1}/#{values.size}] #{value}"
+        repo = GitHubRepo.new( org, name )  ## owner, name e.g. rubylibs/webservice
 
-        puts "     #{key}/#{value}"
+        success = Dir.chdir( org_path ) do
+                    if Dir.exist?( "#{repo.name}.git" )
+                      GitMirror.open( "#{repo.name}.git" ) do |mirror|
+                        do_with_retries { mirror.update }   ## note: defaults to two tries
+                      end
+                    else
+                      do_with_retries { Git.mirror( repo.https_clone_url ) }
+                    end
+                  end
 
-        repo    = GitHubBareRepo.new( key, value )  ## owner, name e.g. rubylibs/webservice
-        success = repo.backup_with_retries( dest_dir )   ## note: defaults to two tries
         ## todo/check:  fail if success still false after x retries? -- why? why not?
 
-        repo_count += 1
-
-        ###  exit if repo_count > 2
+        count_repos += 1
       end
-
-      org_count += 1
+      count_orgs += 1
     end
 
     ## print stats
-
-    puts "  #{org_count} orgs, #{repo_count} repos"
+    puts "  #{count_repos} repo(s) @ #{count_orgs} org(s)"
   end  ## backup
 
-end  ## GitBackup
 
+  ######
+  # private helpers
+
+  def do_with_log( &blk )
+    blk.call
+    true  ## return true  ## success/ok
+  rescue GitError => ex
+    puts "!! ERROR: #{ex.message}"
+
+    File.open( "#{@log_path}/errors.log", 'a' ) do |f|
+      f.write "#{Time.now} -- #{ex.message}\n"
+    end
+    false ## return false  ## error/nok
+  end
+
+
+  def do_with_retries( retries: 2, sleep: 5, &blk )
+    retries_count = 0
+    success = false
+    loop do
+      success = do_with_log( &blk )
+      retries_count += 1
+      break if success || retries_count >= retries
+      puts "retrying in #{sleep}secs... sleeping..."
+      sleep( sleep )  ## sleep 5secs or such
+    end
+    success   ## return if success or not  (true/false)
+  end
+
+end ## class GitBackup
 end ## module Gitti

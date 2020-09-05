@@ -8,18 +8,22 @@ require 'helper'
 
 class TestBackup < MiniTest::Test
 
-  include Gitti
+  def test_backup_i
+    repos = GitRepoSet.read( "#{GittiBackup.root}/test/data/repos.yml" )
+    pp repos
 
-  def test_backup
+    backup = GitBackup.new
+    assert true    ## assume everything ok if get here
+  end
 
-    repos = GitRepoSet.from_file( "#{GittiBackup.root}/test/data/repos.yml" )
+  def test_backup_ii
+    repos = GitRepoSet.read( "#{GittiBackup.root}/test/data/repos.yml" )
     pp repos
 
     backup = GitBackup.new
     backup.backup( repos )
 
-    assert true
-    ## assume everything ok if get here
+    assert true    ## assume everything ok if get here
   end
 
 end # class TestBackup

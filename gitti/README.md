@@ -11,7 +11,7 @@ gitti gem - (yet) another (lite) git command line helper / wrapper
 
 ## Usage
 
-`Git` • `GitProject`
+`Git` • `GitProject` • `GitMirror`
 
 
 ### `Git` Class
@@ -58,6 +58,17 @@ Git.add_all           ## same as  git --all
 Git.commit( "message" )
 
 Git.files                       ## same as  git ls-tree --full-tree --name-only -r HEAD
+
+Git.check                       ## same as  git fsck
+Git.fsck                        ## alias for check
+Git.checksum                    ## another alias for check
+
+Git.origin           ## same as   git remote show origin
+Git.upstream         ## same as   git remote show upstream
+Git.origin?
+Git.upstream?
+
+
 Git.config( "user.name" )                    ## use --get option
 Git.config( "user.name", show_origin: true ) ## add --show-origin flag
 Git.config( "user.name", show_scope: true )  ## add --show-scope flag
@@ -95,8 +106,27 @@ GitProject.open( "rubycoco/gitti" ) do |proj|
   proj.commit( "message" )
 
   proj.files
+
+  proj.origin
+  proj.upstream
+  proj.origin?
+  proj.upstream?
 end
 ```
+
+
+### `GitMirror` Class
+
+Use the `GitMirror` class for existing mirrored (bare) git repo(sitories)
+without workspace. Example:
+
+``` ruby
+GitMirror.open( "rubycoco/gitti.git" ) do |mirror|
+  mirror.update     # sames as  git remote update
+end
+```
+
+
 
 That's it for now.
 

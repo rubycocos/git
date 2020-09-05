@@ -24,9 +24,3 @@ module GittiCore    ## todo/check: rename GittiBase or GittiMeta or such - why? 
   end
 end # module GittiCore
 
-
-
-###   only include VERSION in Gitti for now - why? why not?
-module Gitti
-  VERSION = GittiCore::VERSION
-end

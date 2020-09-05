@@ -6,7 +6,6 @@ require 'helper'
 
 class TestBase < MiniTest::Test
 
-  Git = Gitti::Git   ## add shortcut reference
 
   def test_git_config
     puts "---"
