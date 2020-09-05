@@ -1,8 +1,11 @@
-HISTORY.md
+CHANGELOG.md
 Manifest.txt
 README.md
 Rakefile
 lib/gitti.rb
-lib/gitti/lib.rb
-lib/gitti/support/reposet.rb
+lib/gitti/base.rb
+lib/gitti/project.rb
+lib/gitti/reposet.rb
 lib/gitti/version.rb
+test/helper.rb
+test/test_base.rb
