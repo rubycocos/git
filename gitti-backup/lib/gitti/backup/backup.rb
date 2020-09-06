@@ -4,14 +4,33 @@ module Gitti
 
 class GitBackup
 
-  def initialize( root= '~/backup' )
+  class Tool   ## nested class
+    def self.main( args=ARGV )
+      backup = GitBackup.new
+      args.each do |arg|
+        backup.backup( GitRepoSet.read( arg ))
+      end
+    end
+  end ## nested class Tool
+
+
+
+  def initialize( root= '~/backup', daily: false )
     @root = File.expand_path( root )
     pp @root
 
     ## use current working dir for the log path; see do_with_log helper for use
     @log_path = File.expand_path( '.' )
     pp @log_path
+
+    @daily = daily
   end
+
+
+  ##  auto-add "daily" date folder / dir
+  ##    e.g. 2015-11-20 using Date.today.strftime('%Y-%m-%d')
+  def daily=(value) @daily=value; end
+
 
 
   def backup( repos )
@@ -21,7 +40,8 @@ class GitBackup
     total_repos  = repos.size
 
     ##  default to adding folder per day ## e.g. 2015-11-20
-    backup_path = "#{@root}/#{Date.today.strftime('%Y-%m-%d')}"
+    backup_path = "#{@root}"
+    backup_path <<  "/#{Date.today.strftime('%Y-%m-%d')}"  if @daily
     pp backup_path
 
     FileUtils.mkdir_p( backup_path )   ## make sure path exists

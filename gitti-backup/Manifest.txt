@@ -2,6 +2,7 @@ CHANGELOG.md
 Manifest.txt
 README.md
 Rakefile
+bin/backup
 lib/gitti/backup.rb
 lib/gitti/backup/backup.rb
 lib/gitti/backup/base.rb
