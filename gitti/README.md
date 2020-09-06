@@ -25,10 +25,13 @@ Example:
 ###############
 ## "setup" starter git commands
 
+Git.clone( "https://github.com/rubycoco/gitti.git" )
+Git.clone( "https://github.com/rubycoco/gitti.git", "gitti-clone" )
+# -or-    -- if you have write / commit access use ssh
 Git.clone( "git@github.com:rubycoco/gitti.git" )
 Git.clone( "git@github.com:rubycoco/gitti.git", "gitti-clone" )
 
-Git.mirror( "git@github.com:rubycoco/gitti.git" )  ## same as  git clone --mirror
+Git.mirror( "https://github.com/rubycoco/gitti.git" )  ## same as  git clone --mirror
 
 #################
 ## standard git commands
