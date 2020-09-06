@@ -4,6 +4,8 @@ README.md
 Rakefile
 lib/gitti.rb
 lib/gitti/base.rb
+lib/gitti/git.rb
+lib/gitti/mirror.rb
 lib/gitti/project.rb
 lib/gitti/reposet.rb
 lib/gitti/version.rb

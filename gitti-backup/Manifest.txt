@@ -4,6 +4,7 @@ README.md
 Rakefile
 lib/gitti/backup.rb
 lib/gitti/backup/backup.rb
+lib/gitti/backup/base.rb
 lib/gitti/backup/version.rb
 test/data/repos.yml
 test/helper.rb
