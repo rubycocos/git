@@ -134,6 +134,14 @@ end
 That's it for now.
 
 
+
+## Real World Usage
+
+The [`monos`](https://github.com/rubycoco/monos) gem incl. some monorepo / mono source tree tools and (startup) scripts
+that let you run git commands on multiple repos.
+
+
+
 ## Installation
 
 Use
