@@ -194,6 +194,21 @@ class Git   ## make Git a module - why? why not?
   end
 
 
+  def self.branch
+    cmd = 'git branch'
+    Shell.run( cmd )
+  end
+
+  def self.master?
+    output = branch     ## check for '* master'
+    output.split( /\r?\n/ ).include?( '* master' )
+  end
+
+  def self.main?
+    output = branch     ## check for '* main'
+    output.split( /\r?\n/ ).include?('* main')
+  end
+
 ## git remote update will update all of your branches
 ##   set to track remote ones, but not merge any changes in.
 ##
@@ -214,6 +229,7 @@ class Git   ## make Git a module - why? why not?
     Shell.run( cmd )
   end
 
+
   def self.origin  ## e.g. git remote show origin
     cmd = "git remote show origin"
     Shell.run( cmd )
@@ -224,13 +240,21 @@ class Git   ## make Git a module - why? why not?
     Shell.run( cmd )
   end
 
+  def self.remote
+    cmd = "git remote"
+    Shell.run( cmd )
+  end
+
   def self.origin?
-    puts "todo/fix: check if remote origin is available/exists - how?"
+    output = remote     ## check for 'origin'
+    output.split( /\r?\n/ ).include?( 'origin' )
   end
 
   def self.upstream?
-    puts "todo/fix: check if remote upstream is available/exists - how?"
+    output = remote     ## check for 'upstream'
+    output.split( /\r?\n/ ).include?( 'upstream' )
   end
+
 
 
   def self.check  ## e.g. git fsck  - check/validate hash of objects

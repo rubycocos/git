@@ -43,10 +43,16 @@ class GitProject
 
 
   ### remote show origin|upstream|etc.
+  def remote()                  Git.remote; end
   def origin()                  Git.origin; end
   def upstream()                Git.upstream; end
   def origin?()                 Git.origin?; end
   def upstream?()               Git.upstream?; end
+
+  ### branch management
+  def branch()                  Git.branch; end
+  def master?()                 Git.master?; end
+  def main?()                   Git.main?; end
 
 
   def run( cmd )                Git::Shell.run( cmd ); end

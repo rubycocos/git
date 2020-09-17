@@ -66,11 +66,13 @@ Git.check                       ## same as  git fsck
 Git.fsck                        ## alias for check
 Git.checksum                    ## another alias for check
 
+Git.master?          ## on master branch
+Git.main?            ## on main branch
+
 Git.origin           ## same as   git remote show origin
 Git.upstream         ## same as   git remote show upstream
 Git.origin?
 Git.upstream?
-
 
 Git.config( "user.name" )                    ## use --get option
 Git.config( "user.name", show_origin: true ) ## add --show-origin flag
@@ -109,6 +111,9 @@ GitProject.open( "rubycoco/gitti" ) do |proj|
   proj.commit( "message" )
 
   proj.files
+
+  proj.master?
+  proj.main?
 
   proj.origin
   proj.upstream

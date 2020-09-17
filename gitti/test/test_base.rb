@@ -6,6 +6,16 @@ require 'helper'
 
 class TestBase < MiniTest::Test
 
+  def test_branch
+    Git.branch
+    assert_equal true,  Git.master?
+    assert_equal false, Git.main?
+
+    Git.remote
+    assert_equal true,  Git.origin?
+    assert_equal false, Git.upstream?
+  end
+
 
   def test_git_config
     puts "---"
