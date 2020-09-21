@@ -16,9 +16,11 @@ class Git   ## make Git a module - why? why not?
   ###############
   ## "setup" starter git commands
 
-  def self.clone( repo, name=nil )
-    cmd = "git clone #{repo}"
-    cmd << " #{name}"   unless name.nil? || name.empty?
+  def self.clone( repo, name=nil, depth: nil )
+    cmd = "git clone"
+    cmd << " --depth #{depth}"   unless depth.nil?
+    cmd << " #{repo}"
+    cmd << " #{name}"            unless name.nil? || name.empty?
     Shell.run( cmd )
   end
 
@@ -290,7 +292,7 @@ def self.run( cmd )
   unless stderr.empty?
     ## todo/check: or use >2: or &2: or such
     ##  stderr output not always an error (that is, exit status might be 0)
-    puts "STDERR:"
+    puts "2>"
     puts stderr
   end
 

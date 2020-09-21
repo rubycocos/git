@@ -8,7 +8,7 @@
 module GittiCore    ## todo/check: rename GittiBase or GittiMeta or such - why? why not?
   MAJOR = 0    ## todo: namespace inside version or something - why? why not??
   MINOR = 4
-  PATCH = 0
+  PATCH = 2
   VERSION = [MAJOR,MINOR,PATCH].join('.')
 
   def self.version
