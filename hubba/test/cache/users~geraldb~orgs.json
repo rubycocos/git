@@ -1,0 +1,46 @@
+[
+  {
+    "login": "vienna-rb",
+    "id": 3541331,
+    "url": "https://api.github.com/orgs/vienna-rb",
+    "repos_url": "https://api.github.com/orgs/vienna-rb/repos",
+    "events_url": "https://api.github.com/orgs/vienna-rb/events",
+    "members_url": "https://api.github.com/orgs/vienna-rb/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/vienna-rb/public_members{/member}",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3541331?v=3",
+    "description": null
+  },
+  {
+    "login": "openbeer",
+    "id": 4464191,
+    "url": "https://api.github.com/orgs/openbeer",
+    "repos_url": "https://api.github.com/orgs/openbeer/repos",
+    "events_url": "https://api.github.com/orgs/openbeer/events",
+    "members_url": "https://api.github.com/orgs/openbeer/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/openbeer/public_members{/member}",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4464191?v=3",
+    "description": "Open Public Domain Beer, Brewery n Brewpub Data - Incl. The Free World Beer Book"
+  },
+  {
+    "login": "slideshow-s9",
+    "id": 4464373,
+    "url": "https://api.github.com/orgs/slideshow-s9",
+    "repos_url": "https://api.github.com/orgs/slideshow-s9/repos",
+    "events_url": "https://api.github.com/orgs/slideshow-s9/events",
+    "members_url": "https://api.github.com/orgs/slideshow-s9/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/slideshow-s9/public_members{/member}",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4464373?v=3",
+    "description": "Free Web Alternative to PowerPoint and Keynote Using Easy-to-Write and Easy-to-Read Plain Text Wiki-Style Markup"
+  },
+  {
+    "login": "openfootball",
+    "id": 4477026,
+    "url": "https://api.github.com/orgs/openfootball",
+    "repos_url": "https://api.github.com/orgs/openfootball/repos",
+    "events_url": "https://api.github.com/orgs/openfootball/events",
+    "members_url": "https://api.github.com/orgs/openfootball/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/openfootball/public_members{/member}",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4477026?v=3",
+    "description": "Open Public Domain Football Data - Incl. The Free World Football Almanac"
+  }
+]

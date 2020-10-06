@@ -1,0 +1,21 @@
+{
+  "full_name": "poole/hyde",
+  "created_at": "2013-02-07T07:01:38Z",
+  "updated_at": "2018-02-12T05:44:07Z",
+  "pushed_at": "2018-01-14T02:41:16Z",
+  "size": 28428,
+  "history": {
+    "2018-02-12": {
+      "stargazers_count": 2125
+    }
+  },
+  "commits": [
+    {
+      "committer": {
+        "date": "2015-05-11T20:21:43Z",
+        "name": "Mark Otto"
+      },
+      "message": "Merge pull request #91 from pborreli/patch-1\n\nFixed typo"
+    }
+  ]
+}

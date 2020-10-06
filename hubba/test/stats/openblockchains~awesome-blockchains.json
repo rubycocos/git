@@ -1,0 +1,27 @@
+{
+  "full_name": "openblockchains/awesome-blockchains",
+  "created_at": "2017-09-13T22:33:56Z",
+  "size": 1620,
+  "history": {
+    "2017-12-10": {
+      "stargazers_count": 1084
+    },
+    "2018-01-28": {
+      "stargazers_count": 1411
+    },
+    "2018-02-08": {
+      "stargazers_count": 1526
+    }
+  },
+  "commits": [
+    {
+      "committer": {
+        "date": "2018-02-08T09:33:28Z",
+        "name": "Gerald Bauer"
+      },
+      "message": "Update README.md\n\nJust a little typo cryto -> crypto."
+    }
+  ],
+  "updated_at": "2018-02-08T19:26:35Z",
+  "pushed_at": "2018-02-08T09:33:29Z"
+}
