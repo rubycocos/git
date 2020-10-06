@@ -1,6 +1,6 @@
-# gitti - git command line tools & scripts
+# git command line tools & scripts
 
-Gem Family:
+Gems:
 
 - [**gitti**](gitti)  - (lite) git command line helper / wrapper
 - [gitti-backup](gitti-backup) - (lite) multi repo git backup command line script
