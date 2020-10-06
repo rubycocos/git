@@ -1,4 +1,4 @@
-# git command line tools & scripts
+# git command line tools, libraries & scripts
 
 Gems:
 
