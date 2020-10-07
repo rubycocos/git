@@ -20,12 +20,12 @@ end # method initialize
 
 
 def get( request_uri )
-  ###
-  # e.g. /users/geraldb
-  #      /users/geraldb/repos
-
   puts "GET #{request_uri}"
-  url = "#{BASE_URL}/#{request_uri}"
+
+  ## note: request_uri ALWAYS starts with leading /, thus use + for now!!!
+  #          e.g. /users/geraldb
+  #               /users/geraldb/repos
+  url = BASE_URL + request_uri
 
   headers = {}
   headers['User-Agent'] = 'ruby/hubba'                      ## required by GitHub API
@@ -57,9 +57,12 @@ def get( request_uri )
   # => "text/html; charset=UTF-8"
 
   # Iterate all response headers.
+  puts "HTTP HEADERS:"
   res.headers.each do |key, value|
-    puts "#{key} => #{value}"
+    puts "  #{key}: >#{value}<"
   end
+  puts
+
   # => "location => http://www.google.com/"
   # => "content-type => text/html; charset=UTF-8"
   # ...

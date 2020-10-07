@@ -57,6 +57,7 @@ class Orgs < Resource
     ## sort by name
     data.map { |item| item['login'] }.sort
   end
+  alias_method :names, :logins   ## add name alias - why? why not?
 end
 
 
@@ -136,5 +137,10 @@ def get( request_uri )
 end
 
 end  # class Github
+
+############
+# add convenience alias for alternate spelling - why? why not?
+GitHub = Github
+
 
 end # module Hubba
