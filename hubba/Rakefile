@@ -8,7 +8,7 @@ Hoe.spec 'hubba' do
   self.summary = 'hubba - (yet) another (lite) GitHub HTTP API client / library'
   self.description = summary
 
-  self.urls    = { home: 'https://github.com/rubycoco/hubba' }
+  self.urls    = { home: 'https://github.com/rubycoco/git' }
 
   self.author  = 'Gerald Bauer'
   self.email   = 'ruby-talk@ruby-lang.org'
@@ -17,12 +17,14 @@ Hoe.spec 'hubba' do
   self.readme_file  = 'README.md'
   self.history_file = 'CHANGELOG.md'
 
-  self.extra_deps = []
+  self.extra_deps = [
+    ['webclient', '>= 0.1.1']
+  ]
 
   self.licenses = ['Public Domain']
 
   self.spec_extras = {
-   required_ruby_version: '>= 2.3'
+   required_ruby_version: '>= 2.2.2'
   }
 
 end

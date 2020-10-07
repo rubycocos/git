@@ -1,15 +1,5 @@
-# encoding: utf-8
-
-require 'net/http'
-require "net/https"
-require 'uri'
-
-require 'pp'
-require 'json'
-require 'yaml'
-require 'time'
-require 'date'
-
+# 3rd party (our own)
+require 'webclient'
 
 # our own code
 require 'hubba/version'   # note: let version always go first

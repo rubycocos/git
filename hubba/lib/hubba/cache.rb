@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module Hubba
 
 class Cache    ## lets you work with  GitHub api "offline" using just a local cache of stored json
@@ -14,7 +12,7 @@ class Cache    ## lets you work with  GitHub api "offline" using just a local ca
     basename = request_uri_to_basename( request_uri )
     path = "#{@dir}/#{basename}.json"
     if File.exist?( path )
-      text = File.read( path )   ## todo/fix:  use File.read_utf8
+      text = File.open( path, 'r:utf-8') { |f| f.read }
       json = JSON.parse( text )
       json
     else
@@ -32,8 +30,8 @@ class Cache    ## lets you work with  GitHub api "offline" using just a local ca
       data = obj   # assume Hash or Array -- todo: add support for String - why? why not??
     end
 
-    File.open( path, 'w' ) do |f|
-      f.write JSON.pretty_generate( data )
+    File.open( path, 'w:utf-8' ) do |f|
+      f.write( JSON.pretty_generate( data ))
     end
   end
 
@@ -42,6 +40,7 @@ class Cache    ## lets you work with  GitHub api "offline" using just a local ca
     ## 1) cut off leading /
     ## 2) convert / to ~
     ## 3) remove (optional) query string (for now) - why? why not?
+    ##      e.g.  /users/#{name}/orgs?per_page=100  or such
     ##
     ## e.g.
     ##  '/users/geraldb'           => 'users~geraldb',

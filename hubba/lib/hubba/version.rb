@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module Hubba
   MAJOR = 0    ## todo: namespace inside version or something - why? why not??
   MINOR = 5
