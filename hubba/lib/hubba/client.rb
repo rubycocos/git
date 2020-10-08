@@ -57,11 +57,11 @@ def get( request_uri )
   # => "text/html; charset=UTF-8"
 
   # Iterate all response headers.
-  puts "HTTP HEADERS:"
-  res.headers.each do |key, value|
-    puts "  #{key}: >#{value}<"
-  end
-  puts
+  # puts "HTTP HEADERS:"
+  # res.headers.each do |key, value|
+  #  puts "  #{key}: >#{value}<"
+  # end
+  # puts
 
   # => "location => http://www.google.com/"
   # => "content-type => text/html; charset=UTF-8"
