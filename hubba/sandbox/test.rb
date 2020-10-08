@@ -8,13 +8,20 @@ require 'hubba'
 
 gh = Hubba::Github.new
 
-## pp gh.user( 'geraldb')
+pp gh.user( 'geraldb')
 
 repos = gh.user_repos( 'geraldb' )
-## pp repos
+pp repos
 puts
 puts "#{repos.names.size} repo(s) - geraldb:"
 puts repos.names
+
+
+orgs = gh.user_orgs( 'geraldb' )
+pp orgs
+puts
+puts "#{orgs.logins.size} org(s) -geraldb:"
+puts orgs.logins
 
 
 repos = gh.user_repos( 'yorobot' )
@@ -22,13 +29,6 @@ repos = gh.user_repos( 'yorobot' )
 puts
 puts "#{repos.names.size} repo(s) - yorobot:"
 puts repos.names
-
-
-orgs = gh.user_orgs( 'geraldb' )
-## pp orgs
-puts
-puts "#{orgs.logins.size} org(s) -geraldb:"
-puts orgs.logins
 
 
 repos = gh.org_repos( 'rubycoco' )

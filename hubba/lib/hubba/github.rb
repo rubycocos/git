@@ -1,42 +1,5 @@
 module Hubba
 
-class Configuration
-   attr_accessor :token
-
-   attr_accessor :user
-   attr_accessor :password
-
-   def initialize
-     # try default setup via ENV variables
-     @token    = ENV[ 'HUBBA_TOKEN' ]
-
-     @user     = ENV[ 'HUBBA_USER' ]    ## use HUBBA_LOGIN - why? why not?
-     @password = ENV[ 'HUBBA_PASSWORD' ]
-   end
-end
-
-## lets you use
-##   Hubba.configure do |config|
-##      config.token    = 'secret'
-##      #-or-
-##      config.user     = 'testdada'
-##      config.password = 'secret'
-##   end
-##
-##   move configure block to GitHub class - why? why not?
-##   e.g. GitHub.configure do |config|
-##          ...
-##        end
-
-
-def self.configuration
-  @configuration ||= Configuration.new
-end
-
-def self.configure
-  yield( configuration )
-end
-
 
 class Resource
   attr_reader :data
@@ -64,9 +27,7 @@ end
 
 class Github
 
-def initialize( cache_dir: './cache' )
-   @cache  = Cache.new( cache_dir )
-
+def initialize
    @client = if Hubba.configuration.token
                Client.new( token: Hubba.configuration.token )
              elsif Hubba.configuration.user &&
@@ -76,14 +37,7 @@ def initialize( cache_dir: './cache' )
              else
                Client.new
              end
-
-   @offline = false
 end
-
-def offline!()  @offline = true; end   ## switch to offline  - todo: find a "better" way - why? why not?
-def online!()   @offline = false; end
-def offline?()  @offline == true; end
-def online?()   @offline == false; end
 
 
 def user( name )
@@ -129,18 +83,8 @@ end
 
 private
 def get( request_uri )
-  if offline?
-    @cache.get( request_uri )
-  else
-    @client.get( request_uri )
-  end
+  @client.get( request_uri )
 end
 
 end  # class Github
-
-############
-# add convenience alias for alternate spelling - why? why not?
-GitHub = Github
-
-
-end # module Hubba
+end  # module Hubba

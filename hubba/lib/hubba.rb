@@ -3,10 +3,17 @@ require 'webclient'
 
 # our own code
 require 'hubba/version'   # note: let version always go first
-require 'hubba/cache'
+require 'hubba/config'
 require 'hubba/client'
 require 'hubba/github'
 require 'hubba/stats'
+
+
+############
+# add convenience alias for alternate spelling - why? why not?
+module Hubba
+  GitHub = Github
+end
 
 
 # say hello

@@ -10,56 +10,73 @@ module Hubba
     def initialize( full_name )
       @data = {}
       @data['full_name'] = full_name  # e.g. poole/hyde etc.
+
+      @cache = {}
     end
 
 
-    def full_name() @full_name ||= @data['full_name']; end
+    def full_name() @data['full_name']; end
+
 
     ## note: return datetime objects (NOT strings); if not present/available return nil/null
-    def created_at() @created_at ||= @data['created_at'] ? DateTime.strptime( @data['created_at'], '%Y-%m-%dT%H:%M:%S') : nil; end
-    def updated_at() @updated_at ||= @data['updated_at'] ? DateTime.strptime( @data['updated_at'], '%Y-%m-%dT%H:%M:%S') : nil; end
-    def pushed_at()  @pushed_at  ||= @data['pushed_at']  ? DateTime.strptime( @data['pushed_at'],  '%Y-%m-%dT%H:%M:%S') : nil; end
+    def created_at() @cache['created_at'] ||= parse_datetime( @data['created_at'] ); end
+    def updated_at() @cache['updated_at'] ||= parse_datetime( @data['updated_at'] ); end
+    def pushed_at()  @cache['pushed_at']  ||= parse_datetime( @data['pushed_at'] );  end
 
     ## date (only) versions
-    def created() @created ||= @data['created_at'] ? Date.strptime( @data['created_at'], '%Y-%m-%d') : nil; end
-    def updated() @updated ||= @data['updated_at'] ? Date.strptime( @data['updated_at'], '%Y-%m-%d') : nil; end
-    def pushed()  @pushed  ||= @data['pushed_at']  ? Date.strptime( @data['pushed_at'],  '%Y-%m-%d') : nil; end
-
-
-
-    def history()    @history ||= @data['history'] ? build_history( @data['history'] ) : nil; end
+    def created() @cache['created'] ||= parse_date( @data['created_at'] ); end
+    def updated() @cache['updated'] ||= parse_date( @data['updated_at'] ); end
+    def pushed()  @cache['pushed']  ||= parse_date( @data['pushed_at'] ); end
 
     def size
       # size of repo in kb (as reported by github api)
-      @size ||= @data['size'] || 0   ## return 0 if not found - why? why not? (return nil - why? why not??)
+      @data['size'] || 0   ## return 0 if not found - why? why not? (return nil - why? why not??)
     end
+
+
+    def history
+      @cache['history'] ||= begin
+                              if @data['history']
+                                build_history( @data['history'] )
+                              else
+                                nil
+                              end
+                            end
+    end
+
 
     def stars
       ## return last stargazers_count entry (as number; 0 if not found)
-      @stars ||= history ? history[0].stars : 0
+      @cache['stars'] ||= history ? history[0].stars : 0
     end
 
 
     def commits() @data['commits']; end
 
-    def last_commit()   ## convenience shortcut; get first/last commit (use [0]) or nil
+    def last_commit   ## convenience shortcut; get first/last commit (use [0]) or nil
       if @data['commits'] && @data['commits'][0]
          @data['commits'][0]
       else
-        nil
+         nil
       end
     end
 
-    def committed()   ## last commit date (from author NOT committer)
-      @committed ||= last_commit ? Date.strptime( last_commit['author']['date'], '%Y-%m-%d') : nil
+
+    def committed   ## last commit date (from author NOT committer)
+      @cache['committed'] ||= parse_date( last_commit_author_date )
     end
 
     def committed_at()   ## last commit date (from author NOT committer)
-      @committed_at ||= last_commit ? DateTime.strptime( last_commit['author']['date'], '%Y-%m-%dT%H:%M:%S') : nil
+      @cache['committed_at'] ||= parse_datetime( last_commit_author_date )
+    end
+
+    def last_commit_author_date
+      h = last_commit
+      h ? h['author']['date'] : nil
     end
 
 
-    def last_commit_message() ## convenience shortcut; last commit message
+    def last_commit_message    ## convenience shortcut; last commit message
       h = last_commit
 
       committer_name = h['committer']['name']
@@ -77,20 +94,10 @@ module Hubba
 
 
 
-    def reset_cache
-      ## reset (invalidate) cached values from data hash
-      ##   use after reading or fetching
-      @full_name    = nil
-      @created_at   = @updated_at = @pushed_at = nil
-      @created      = @updated    = @pused     = nil
-      @history      = nil
-      @size         = nil
-      @stars        = nil
-
-      @committed_at = nil
-      @committed    = nil
-    end
-
+    ###
+    # helpers
+    def parse_datetime( str ) str ? DateTime.strptime( str, '%Y-%m-%dT%H:%M:%S') : nil; end
+    def parse_date( str )     str ? Date.strptime( str, '%Y-%m-%d') : nil; end
 
 ########
 ## build history items (structs)
@@ -187,7 +194,8 @@ module Hubba
     end
   end
 
-  def history_str
+
+  def history_str  ## todo/check: rename/change to format_history or fmt_history - why? why not?
     ## returns "pretty printed" history as string buffer
     buf = ''
     buf << "[#{history.size}]: "
@@ -264,7 +272,10 @@ module Hubba
 
       pp @data
 
-      reset_cache
+      ## reset (invalidate) cached values from data hash
+      ##   use after reading or fetching
+      @cache = {}
+
       self   ## return self for (easy chaining)
     end
 
@@ -272,7 +283,9 @@ module Hubba
 
     def write( data_dir: './data' )
       basename = full_name.gsub( '/', '~' )   ## e.g. poole/hyde become poole~hyde
-      puts "writing stats to #{basename}..."
+      puts "writing stats to #{basename} (#{data_dir})..."
+
+      ## todo/fix: add FileUtils.makepath_r or such!!!
       File.open( "#{data_dir}/#{basename}.json", 'w:utf-8' ) do |f|
           f.write JSON.pretty_generate( data )
       end
@@ -285,10 +298,13 @@ module Hubba
       basename = full_name.gsub( '/', '~' )   ## e.g. poole/hyde become poole~hyde
       filename = "#{data_dir}/#{basename}.json"
       if File.exist?( filename )
-        puts "reading stats from #{basename}..."
+        puts "reading stats from #{basename} (#{data_dir})..."
         json = File.open( filename, 'r:utf-8' ) { |file| file.read }   ## todo/fix: use read_utf8
         @data = JSON.parse( json )
-        reset_cache
+
+        ## reset (invalidate) cached values from data hash
+        ##   use after reading or fetching
+        @cache = {}
       else
         puts "skipping reading stats from #{basename} -- file not found"
       end

@@ -9,7 +9,7 @@ require 'helper'
 class TestStatsTmp < MiniTest::Test
 
   def setup
-    @gh = Hubba::Github.new( cache_dir: "#{Hubba.root}/test/cache" )
+    @gh = Hubba::Github.new
   end
 
   def test_stats
