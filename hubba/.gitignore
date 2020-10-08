@@ -36,6 +36,9 @@ build/
 
 ### redirected output for testing / debugging
 test.txt
+orgs.txt
+stats.txt
+
 out.txt
 output.txt
 

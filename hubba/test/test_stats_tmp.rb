@@ -18,21 +18,24 @@ class TestStatsTmp < MiniTest::Test
       'jekyll/minima'
     ]
 
+
     repos.each do |repo|
       stats = Hubba::Stats.new( repo )
-      # stats.read( data_dir: './tmp' )
-      stats.read( data_dir: "#{Hubba.root}/test/stats" )
+
+      Hubba.config.data_dir = "#{Hubba.root}/test/stats"
+      stats.read()
 
       puts "stars before fetch: #{stats.stars}"
       puts "size  before fetch: #{stats.size} kb"
 
       ## note/todo: enable for "live" online testing
-      ## stats.fetch( @gh )
+      ## @gh.update( stats )
 
       puts "stars after fetch: #{stats.stars}"
       puts "size  after fetch: #{stats.size} kb"
 
-      stats.write( data_dir: './tmp' )
+      Hubba.config.data_dir = './tmp'
+      stats.write()
     end
 
     assert true    # for now everything ok if we get here

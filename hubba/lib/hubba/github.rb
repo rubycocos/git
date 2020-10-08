@@ -62,6 +62,7 @@ def user_orgs( name )
 end
 
 
+
 def org( name )
   Resource.new( get "/orgs/#{name}" )
 end
@@ -78,6 +79,24 @@ end
 
 def repo_commits( full_name )
   Resource.new( get "/repos/#{full_name}/commits" )
+end
+
+
+
+####
+# more
+def update( obj )
+  if obj.is_a?( Stats )
+    full_name = obj.full_name
+    puts "[update 1/2] fetching repo >#{full_name}<..."
+    repo    = repo( full_name )
+    puts "[update 2/2] fetching repo >#{full_name}< commits ..."
+    commits = repo_commits( full_name )
+
+    obj.update( repo, commits )
+  else
+    raise ArgumentError, "unknown source object passed in - expected Hubba::Stats; got #{obj.class.name}"
+  end
 end
 
 

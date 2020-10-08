@@ -222,12 +222,13 @@ module Hubba
   end # method history_str
 
 
+
 ###############################
 ## fetch / read / write methods
 
-    def fetch( gh )   ## update stats / fetch data from github via api
-      puts "fetching #{full_name}..."
-      repo = gh.repo( full_name )
+    def update( repo, commits )   ## update stats / fetch data from github via api
+      raise ArgumentError, "Hubba::Resource expected; got #{repo.class.name}"      unless repo.is_a?( Resource )
+      raise ArgumentError, "Hubba::Resource expected; got #{commits.class.name}"   unless commits.is_a?( Resource )
 
       ## e.g. 2015-05-11T20:21:43Z
       ## puts Time.iso8601( repo.data['created_at'] )
@@ -252,7 +253,6 @@ module Hubba
 
       ##########################
       ## also check / keep track of (latest) commit
-      commits = gh.repo_commits( full_name )
       puts "last commit/update:"
       ## pp commits
       commit = {
@@ -281,8 +281,9 @@ module Hubba
 
 
 
-    def write( data_dir: './data' )
+    def write
       basename = full_name.gsub( '/', '~' )   ## e.g. poole/hyde become poole~hyde
+      data_dir = Hubba.config.data_dir
       puts "writing stats to #{basename} (#{data_dir})..."
 
       ## todo/fix: add FileUtils.makepath_r or such!!!
@@ -293,20 +294,22 @@ module Hubba
     end
 
 
-    def read( data_dir: './data' )
+    def read
       ## note: skip reading if file not present
       basename = full_name.gsub( '/', '~' )   ## e.g. poole/hyde become poole~hyde
-      filename = "#{data_dir}/#{basename}.json"
-      if File.exist?( filename )
+      data_dir = Hubba.config.data_dir
+      path = "#{data_dir}/#{basename}.json"
+
+      if File.exist?( path )
         puts "reading stats from #{basename} (#{data_dir})..."
-        json = File.open( filename, 'r:utf-8' ) { |file| file.read }   ## todo/fix: use read_utf8
+        json = File.open( path, 'r:utf-8' ) { |f| f.read }
         @data = JSON.parse( json )
 
         ## reset (invalidate) cached values from data hash
         ##   use after reading or fetching
         @cache = {}
       else
-        puts "skipping reading stats from #{basename} -- file not found"
+        puts "!! WARN: - skipping reading stats from #{basename} -- file not found"
       end
       self   ## return self for (easy chaining)
     end

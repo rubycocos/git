@@ -17,7 +17,8 @@ class TestStats < MiniTest::Test
     assert_equal 0, stats.stars
     assert_nil      stats.history
 
-    stats.read( data_dir: "#{Hubba.root}/test/stats" )
+    Hubba.config.data_dir = "#{Hubba.root}/test/stats"
+    stats.read
 
     assert_equal 321, stats.size
     assert_equal 717, stats.stars
@@ -54,7 +55,8 @@ class TestStats < MiniTest::Test
     assert_equal 0, stats.stars
     assert_nil      stats.history
 
-    stats.read( data_dir: "#{Hubba.root}/test/stats" )
+    Hubba.config.data_dir = "#{Hubba.root}/test/stats"
+    stats.read
 
     assert_equal 1620, stats.size
     assert_equal 1526, stats.stars
@@ -91,7 +93,8 @@ class TestStats < MiniTest::Test
     assert_equal 0, stats.stars
     assert_nil      stats.history
 
-    stats.read( data_dir: "#{Hubba.root}/test/stats" )
+    Hubba.config.data_dir = "#{Hubba.root}/test/stats"
+    stats.read
 
     assert_equal 7355, stats.size
     assert_equal 539, stats.stars
@@ -99,7 +102,7 @@ class TestStats < MiniTest::Test
     assert_equal 536, stats.history[1].stars
     assert_equal 533, stats.history[2].stars
     assert_equal 457, stats.history[-1].stars
-    assert_equal 7,    stats.history.size
+    assert_equal 7,   stats.history.size
 
     assert_equal Date.new(2018,  2,  8 ), stats.history[0].date
     assert_equal Date.new(2018,  1, 28 ), stats.history[1].date

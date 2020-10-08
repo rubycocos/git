@@ -13,13 +13,12 @@ stats = Hubba::Stats.new( 'openfootball/deutschland' )
 pp stats
 puts
 
-stats.fetch( gh )
-## change to - add ??
-##    gh.update( stats )
+gh.update( stats )
 
 
 pp stats
 
-stats.write( data_dir: './tmp' )
+Hubba.config.data_dir = './tmp'
+stats.write
 
 

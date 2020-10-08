@@ -1,19 +1,21 @@
 module Hubba
 
 class Configuration
-  attr_accessor :token
+  def data_dir()         @data_dir || './data'; end
+  def data_dir=( value ) @data_dir = value;     end
 
-  attr_accessor :user
-  attr_accessor :password
+  # try default setup via ENV variables
+  def token()            @token || ENV[ 'HUBBA_TOKEN' ]; end
+  def token=( value )    @token = value;                 end
 
-  def initialize
-    # try default setup via ENV variables
-    @token    = ENV[ 'HUBBA_TOKEN' ]
+  # todo/check: use HUBBA_LOGIN - why? why not?
+  def user()             @user     || ENV[ 'HUBBA_USER' ]; end
+  def password()         @password || ENV[ 'HUBBA_PASSWORD' ]; end
+  def user=( value )     @user     = value;                end
+  def password=( value ) @password = value;                end
 
-    @user     = ENV[ 'HUBBA_USER' ]    ## use HUBBA_LOGIN - why? why not?
-    @password = ENV[ 'HUBBA_PASSWORD' ]
-  end
-end
+end  # class Configuration
+
 
 ## lets you use
 ##   Hubba.configure do |config|
@@ -32,6 +34,10 @@ end
 def self.configuration
  @configuration ||= Configuration.new
 end
+class << self
+  alias_method :config, :configuration
+end
+
 
 def self.configure
  yield( configuration )

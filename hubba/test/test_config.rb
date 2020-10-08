@@ -19,6 +19,13 @@ class TestConfig < MiniTest::Test
      assert_equal 'user1',     Hubba.configuration.user
      assert_equal 'password1', Hubba.configuration.password
      assert_equal 'token1',    Hubba.configuration.token
+
+     assert_equal 'user1',     Hubba.config.user
+     assert_equal 'password1', Hubba.config.password
+     assert_equal 'token1',    Hubba.config.token
+
+     assert_equal './data',    Hubba.configuration.data_dir
+     assert_equal './data',    Hubba.config.data_dir
   end
 
 end # class TestConfig
