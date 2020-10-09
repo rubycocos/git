@@ -115,8 +115,6 @@ Hubba has four built-in reports (for now):
 If you only generate a single report, use:
 
 ``` ruby
-require 'hubba'
-
 report = Hubba::ReportSummary.new( './repos.yml' )
 report.save( './SUMMARY.md' )
 ```
@@ -125,8 +123,6 @@ report.save( './SUMMARY.md' )
 If you generate more reports, (re)use the in-memory statistics cache / object:
 
 ``` ruby
-require 'hubba'
-
 stats = Hubba.stats( './repos.yml' )
 
 report = Hubba::ReportSummary.new( stats )
@@ -191,60 +187,62 @@ Your repos ranked by stars. Results in:
 (Live Example: [`STARS.md`](https://github.com/yorobot/backup/blob/master/STARS.md))
 
 
-##### Report Example - Timeline
+#### Report Example - Timeline
 
 Your repos in reverse chronological order by creation.
 Results in:
 
 ---
 
-# 593 repos @ 83 orgs
-
-## 2020
-
-### 9
-
-- 2020-09-18 ★1 **yorobot/workflow** (83 kb)
-
-### 6
-
-- 2020-06-27 ★2 **yorobot/sport.db.more** (80 kb)
-- 2020-06-24 ★1 **yorobot/stage** (554 kb)
-- 2020-06-11 ★1 **yorobot/cache.csv** (336 kb)
-...
+> 593 repos @ 83 orgs
+>
+> ## 2020
+>
+> ### 9
+>
+> - 2020-09-18 ★1 **yorobot/workflow** (83 kb)
+>
+> ### 6
+>
+> - 2020-06-27 ★2 **yorobot/sport.db.more** (80 kb)
+> - 2020-06-24 ★1 **yorobot/stage** (554 kb)
+> - 2020-06-11 ★1 **yorobot/cache.csv** (336 kb)
+>
+> ...
 
 ---
 
-(Live Example: [TIMELINE.md](https://github.com/yorobot/backup/blob/master/TIMELINE.md))
+(Live Example: [`TIMELINE.md`](https://github.com/yorobot/backup/blob/master/TIMELINE.md))
 
 
 
-##### Report Example - Updates
+#### Report Example - Updates
 
 Your repos in reverse chronological order by last commit. Results in:
 
 ---
 
-# 593 repos @ 83 orgs
-
-committed / pushed / updated / created
-
-- (1d) **yorobot/backup** ★4 - 2020-10-08 (=/=) / 2020-10-08 (=) / 2020-10-08 / 2015-04-04 - ‹› (1595 kb)
-- (1d) **yorobot/logs** ★1 - 2020-10-08 (=/=) / 2020-10-08 (=) / 2020-10-08 / 2016-09-13 - ‹› (172 kb)
-- (1d) **rubycoco/git** ★9 - 2020-10-08 (=/=) / 2020-10-08 (=) / 2020-10-08 / 2015-11-16 - ‹› (88 kb)
-- (1d) **openfootball/football.json** ★593 - 2020-10-08 (=/=) / 2020-10-08 (=) / 2020-10-08 / 2015-09-17 - ‹› (2135 kb)
-- (2d) **yorobot/workflow** ★1 - 2020-10-07 (=/=) / 2020-10-07 (=) / 2020-10-07 / 2020-09-18 - ‹› (83 kb)
-- (2d) **rubycoco/webclient** ★5 - 2020-10-07 (=/=) / 2020-10-07 (=) / 2020-10-07 / 2012-06-02 - ‹› (39 kb)
-- (3d) **footballcsv/belgium** ★1 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-25 - ‹› (314 kb)
-- (3d) **footballcsv/england** ★105 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-23 - ‹› (8666 kb)
-- (3d) **footballcsv/austria** ★1 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2018-07-16 - ‹› (91 kb)
-- (3d) **footballcsv/espana** ★15 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-23 - ‹› (1107 kb)
-- (3d) **footballcsv/deutschland** ★5 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-25 - ‹› (1343 kb)
-...
+> 593 repos @ 83 orgs
+>
+> committed / pushed / updated / created
+>
+> - (1d) **yorobot/backup** ★4 - 2020-10-08 (=/=) / 2020-10-08 (=) / 2020-10-08 / 2015-04-04 - ‹› (1595 kb)
+> - (1d) **yorobot/logs** ★1 - 2020-10-08 (=/=) / 2020-10-08 (=) / 2020-10-08 / 2016-09-13 - ‹› (172 kb)
+> - (1d) **rubycoco/git** ★9 - 2020-10-08 (=/=) / 2020-10-08 (=) / 2020-10-08 / 2015-11-16 - ‹› (88 kb)
+> - (1d) **openfootball/football.json** ★593 - 2020-10-08 (=/=) / 2020-10-08 (=) / 2020-10-08 / 2015-09-17 - ‹› (2135 kb)
+> - (2d) **yorobot/workflow** ★1 - 2020-10-07 (=/=) / 2020-10-07 (=) / 2020-10-07 / 2020-09-18 - ‹› (83 kb)
+> - (2d) **rubycoco/webclient** ★5 - 2020-10-07 (=/=) / 2020-10-07 (=) / 2020-10-07 / 2012-06-02 - ‹› (39 kb)
+> - (3d) **footballcsv/belgium** ★1 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-25 - ‹› (314 kb)
+> - (3d) **footballcsv/england** ★105 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-23 - ‹› (8666 kb)
+> - (3d) **footballcsv/austria** ★1 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2018-07-16 - ‹› (91 kb)
+> - (3d) **footballcsv/espana** ★15 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-23 - ‹› (1107 kb)
+> - (3d) **footballcsv/deutschland** ★5 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-25 - ‹› (1343 kb)
+>
+> ...
 
 ---
 
-(Live Example: [UPDATES.md](https://github.com/yorobot/backup/blob/master/UPDATES.md))
+(Live Example: [`UPDATES.md`](https://github.com/yorobot/backup/blob/master/UPDATES.md))
 
 
 
