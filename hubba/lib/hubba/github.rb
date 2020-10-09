@@ -87,16 +87,44 @@ end
 # more
 def update( obj )
   if obj.is_a?( Stats )
-    full_name = obj.full_name
+    stats = obj
+    full_name = stats.full_name
     puts "[update 1/2] fetching repo >#{full_name}<..."
     repo    = repo( full_name )
     puts "[update 2/2] fetching repo >#{full_name}< commits ..."
     commits = repo_commits( full_name )
 
-    obj.update( repo, commits )
+    stats.update( repo, commits )
   else
     raise ArgumentError, "unknown source object passed in - expected Hubba::Stats; got #{obj.class.name}"
   end
+end
+
+
+def update_stats( h )    ## todo/fix: change to Reposet - why? why not???
+    h.each do |org_with_counter,names|
+
+      ## remove optional number from key e.g.
+      ##   mrhydescripts (3)    =>  mrhydescripts
+      ##   footballjs (4)       =>  footballjs
+      ##   etc.
+
+      org = org_with_counter.sub( /\([0-9]+\)/, '' ).strip
+
+      ## puts "  -- #{key_with_counter} [#{key}] --"
+
+      names.each do |name|
+        full_name = "#{org}/#{name}"
+
+        ## puts "  fetching stats #{count+1}/#{repo_count} - >#{full_name}<..."
+        stats = Stats.new( full_name )
+        stats.read
+
+        update( stats )   ## fetch & update stats
+
+        stats.write
+      end
+    end
 end
 
 

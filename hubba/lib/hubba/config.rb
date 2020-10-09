@@ -1,8 +1,13 @@
 module Hubba
 
 class Configuration
-  def data_dir()         @data_dir || './data'; end
-  def data_dir=( value ) @data_dir = value;     end
+  def data_dir()          @data_dir || './data'; end
+  def data_dir=( value )  @data_dir = value;     end
+
+  ###  todo/check: rename to/use tmp_dir - why? why not?
+  def cache_dir()         @cache_dir || './cache'; end
+  def cache_dir=( value ) @cache_dir = value;      end
+
 
   # try default setup via ENV variables
   def token()            @token || ENV[ 'HUBBA_TOKEN' ]; end
