@@ -76,8 +76,8 @@ pp h
 ```
 
 
-Note: By default all your repos from organizations get auto-included
-- use the `orgs: false` option to turn off auto-inclusion.
+Note: By default all your repos from organizations get auto-included -
+use the `orgs: false` option to turn off auto-inclusion.
 
 Note: By default all (personal) repos, that is, repos in your primary (first)
 account that are forks get auto-excluded.
@@ -122,7 +122,7 @@ report.save( './SUMMARY.md' )
 ```
 
 
-If you generate more reports, (re)use the in-memory statistics data:
+If you generate more reports, (re)use the in-memory statistics cache / object:
 
 ``` ruby
 require 'hubba'
@@ -143,53 +143,52 @@ report.save( './UPDATES.md' )
 ```
 
 
-#### Report Examples
+### Report Examples
 
-##### Report Example - Summary
+#### Report Example - Summary
 
 A-Z list of your repos by orgs with stars and size in kb.
 Results in:
 
 ---
 
-# 593 repos @ 83 orgs
-
-### geraldb _(11)_
-
-**austria** ★1 (552 kb) · **catalog** ★3 (156 kb) · **chelitas** ★1 (168 kb) · **geraldb.github.io** ★1 (520 kb) ·
-**logos** ★1 (363 kb) · **sandbox** ★2 (529 kb) · **talks** ★200 (16203 kb) · **web-proxy-win** ★8 (152 kb) ·
-**webcomponents** ★1 (164 kb) · **webpub-reader** ★3 (11 kb) · **wine.db.tools** ★1 (252 kb)
-
-...
+> 593 repos @ 83 orgs
+>
+> ### geraldb _(11)_
+>
+> **austria** ★1 (552 kb) · **catalog** ★3 (156 kb) · **chelitas** ★1 (168 kb) · **geraldb.github.io** ★1 (520 kb) · **logos** ★1 (363 kb) · **sandbox** ★2 (529 kb) · **talks** ★200 (16203 kb) · **web-proxy-win** ★8 (152 kb) · **webcomponents** ★1 (164 kb) · **webpub-reader** ★3 (11 kb) · **wine.db.tools** ★1 (252 kb)
+>
+> ...
 
 ---
 
-(Live Example: [SUMMARY.md](https://github.com/yorobot/backup/blob/master/SUMMARY.md))
+(Live Example - [`SUMMARY.md`](https://github.com/yorobot/backup/blob/master/SUMMARY.md))
 
 
-##### Report Example - Stars
+#### Report Example - Stars
 
 Your repos ranked by stars. Results in:
 
 ---
 
-# 593 repos @ 83 orgs
-
-1. ★2936 **openblockchains/awesome-blockchains** (2514 kb)
-2. ★851 **planetjekyll/awesome-jekyll-plugins** (148 kb)
-3. ★604 **factbook/factbook.json** (7355 kb)
-4. ★593 **openfootball/football.json** (2135 kb)
-5. ★570 **openmundi/world.db** (1088 kb)
-6. ★552 **openblockchains/programming-blockchains** (552 kb)
-7. ★547 **mundimark/awesome-markdown** (83 kb)
-8. ★532 **planetjekyll/awesome-jekyll** (110 kb)
-9. ★489 **cryptocopycats/awesome-cryptokitties** (4154 kb)
-10. ★445 **openfootball/world-cup** (638 kb)
-...
+> 593 repos @ 83 orgs
+>
+> 1. ★2936 **openblockchains/awesome-blockchains** (2514 kb)
+> 2. ★851 **planetjekyll/awesome-jekyll-plugins** (148 kb)
+> 3. ★604 **factbook/factbook.json** (7355 kb)
+> 4. ★593 **openfootball/football.json** (2135 kb)
+> 5. ★570 **openmundi/world.db** (1088 kb)
+> 6. ★552 **openblockchains/programming-blockchains** (552 kb)
+> 7. ★547 **mundimark/awesome-markdown** (83 kb)
+> 8. ★532 **planetjekyll/awesome-jekyll** (110 kb)
+> 9. ★489 **cryptocopycats/awesome-cryptokitties** (4154 kb)
+> 10. ★445 **openfootball/world-cup** (638 kb)
+>
+> ...
 
 ---
 
-(Live Example: [STARS.md](https://github.com/yorobot/backup/blob/master/STARS.md))
+(Live Example: [`STARS.md`](https://github.com/yorobot/backup/blob/master/STARS.md))
 
 
 ##### Report Example - Timeline
