@@ -189,7 +189,7 @@ module Hubba
       ##  todo: check for better way (convert to float upfront - why? why not?)
 
       diff = (diff_stars * days * 1000) / diff_days
-      puts "diff=#{diff}:#{diff.class.name}"    ## check if it's a float
+      ##  puts "diff=#{diff}:#{diff.class.name}"    ## check if it's a float
       (diff.to_f/1000.0)
     end
   end
@@ -284,7 +284,7 @@ module Hubba
     def write
       basename = full_name.gsub( '/', '~' )   ## e.g. poole/hyde become poole~hyde
       data_dir = Hubba.config.data_dir
-      puts "writing stats to #{basename} (#{data_dir})..."
+      puts "  writing stats to #{basename} (#{data_dir})..."
 
       ## todo/fix: add FileUtils.makepath_r or such!!!
       File.open( "#{data_dir}/#{basename}.json", 'w:utf-8' ) do |f|
@@ -301,7 +301,7 @@ module Hubba
       path = "#{data_dir}/#{basename}.json"
 
       if File.exist?( path )
-        puts "reading stats from #{basename} (#{data_dir})..."
+        puts "  reading stats from #{basename} (#{data_dir})..."
         json = File.open( path, 'r:utf-8' ) { |f| f.read }
         @data = JSON.parse( json )
 

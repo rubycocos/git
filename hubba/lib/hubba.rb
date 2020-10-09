@@ -29,7 +29,7 @@ require 'hubba/stats'
 ## "higher level" porcelain services / helpers for easy (re)use
 require 'hubba/reposet'
 
-
+require 'hubba/reports'
 
 
 ############

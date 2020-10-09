@@ -1,30 +1,91 @@
-
-
 module Hubba
 
 
-
-def self.update_stats( obj='./repos.yml' )  ## move to reposet e.g. Reposet#update_status!!!!
-  h = if obj.is_a?( String )    ## assume it is a file path!!!
-        YAML.load_file( obj )
+def self.update_stats( host_or_path='./repos.yml' )  ## move to reposet e.g. Reposet#update_status!!!!
+  h = if hash_or_path.is_a?( String )    ## assume it is a file path!!!
+        path = hash_or_path
+        YAML.load_file( path )
       else
-        obj  # assume its a hash / reposet already!!!
+        hash_or_path  # assume its a hash / reposet already!!!
       end
 
-  gh = Hubba::Github.new
+  gh = Github.new
   gh.update_stats( h )
 end
 
 
-def self.stats( obj='./repos.yml' )   ## use read_stats or such - why? why not?
-  h = if obj.is_a?( String )    ## assume it is a file path!!!
-    YAML.load_file( obj )
-  else
-    obj  # assume its a hash / reposet already!!!
+def self.stats( hash_or_path='./repos.yml' )   ## use read_stats or such - why? why not?
+  h = if hash_or_path.is_a?( String )    ## assume it is a file path!!!
+        path = hash_or_path
+        YAML.load_file( path )
+      else
+        hash_or_path  # assume its a hash / reposet already!!!
+      end
+
+  Summary.new( h )  ## wrap in "easy-access" facade / wrapper
+end
+
+
+
+class Summary    # todo/check: use a different name e.g (Data)Base, Census, Catalog, Collection, Index, Register or such???
+
+class Repo  ## (nested) class
+
+  attr_reader :owner,
+              :name
+
+  def initialize( owner, name )
+    @owner = owner   ## rename to login, username - why? why not?
+    @name  = name    ## rename to reponame ??
   end
 
-  ## to be done
+  def full_name() "#{owner}/#{name}"; end
+
+  def stats
+    ## note: load stats on demand only (first access) for now - why? why not?
+    @stats ||= begin
+                 stats = Stats.new( full_name )
+                 stats.read
+                 stats
+               end
+  end
+
+  def diff
+    @diff ||= stats.calc_diff_stars( samples: 3, days: 30 )
+  end
+end  # (nested) class Repo
+
+
+attr_reader :orgs, :repos
+
+def initialize( hash )
+  @orgs     = []    # orgs and users -todo/check: use better name - logins or owners? why? why not?
+  @repos    = []
+  add( hash )
+
+  puts "#{@repos.size} repos @ #{@orgs.size} orgs"
 end
+
+#############
+## private helpes
+def add( hash )   ## add repos.yml set
+  hash.each do |org_with_counter, names|
+    ## remove optional number from key e.g.
+    ##   mrhydescripts (3)    =>  mrhydescripts
+    ##   footballjs (4)       =>  footballjs
+    ##   etc.
+    org = org_with_counter.sub( /\([0-9]+\)/, '' ).strip
+    repos = []
+    names.each do |name|
+      repo = Repo.new( org, name )
+      repos << repo
+    end
+    @orgs << [org, repos]
+    @repos += repos
+  end
+end
+end  # class Summary
+
 
 
 ## orgs  - include repos form org(anizations) too
