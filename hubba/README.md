@@ -84,7 +84,24 @@ account that are forks get auto-excluded.
 
 
 
-### Step 2: Generate some statistics / reports
+### Step 2: Update repo statistics (daily / weekly / monthly)
+
+
+Use `update_stats` to
+to get the latest commit, star count and more for all your repos
+listed in `./repos.yml` via the GitHub API:
+
+``` ruby
+Hubba.update_stats( './repos.yml' )
+```
+
+Note: By default the datafiles (one per repo)
+get stored in the `./data` directory.
+
+
+
+
+### Step 3: Generate some statistics / reports
 
 
 Hubba has four built-in reports (for now):
@@ -126,13 +143,15 @@ report.save( './UPDATES.md' )
 ```
 
 
-#### Summary
+#### Report Examples
+
+##### Report Example - Summary
 
 A-Z list of your repos by orgs with stars and size in kb.
 Results in:
 
+---
 
-``` markdown
 # 593 repos @ 83 orgs
 
 ### geraldb _(11)_
@@ -142,16 +161,18 @@ Results in:
 **webcomponents** ★1 (164 kb) · **webpub-reader** ★3 (11 kb) · **wine.db.tools** ★1 (252 kb)
 
 ...
-```
+
+---
 
 (Live Example: [SUMMARY.md](https://github.com/yorobot/backup/blob/master/SUMMARY.md))
 
 
-#### Stars
+##### Report Example - Stars
 
 Your repos ranked by stars. Results in:
 
-``` markdown
+---
+
 # 593 repos @ 83 orgs
 
 1. ★2936 **openblockchains/awesome-blockchains** (2514 kb)
@@ -165,17 +186,19 @@ Your repos ranked by stars. Results in:
 9. ★489 **cryptocopycats/awesome-cryptokitties** (4154 kb)
 10. ★445 **openfootball/world-cup** (638 kb)
 ...
-```
+
+---
 
 (Live Example: [STARS.md](https://github.com/yorobot/backup/blob/master/STARS.md))
 
 
-#### Timeline
+##### Report Example - Timeline
 
 Your repos in reverse chronological order by creation.
 Results in:
 
-``` markdown
+---
+
 # 593 repos @ 83 orgs
 
 ## 2020
@@ -190,18 +213,19 @@ Results in:
 - 2020-06-24 ★1 **yorobot/stage** (554 kb)
 - 2020-06-11 ★1 **yorobot/cache.csv** (336 kb)
 ...
-```
+
+---
 
 (Live Example: [TIMELINE.md](https://github.com/yorobot/backup/blob/master/TIMELINE.md))
 
 
 
-#### Updates
+##### Report Example - Updates
 
 Your repos in reverse chronological order by last commit. Results in:
 
+---
 
-``` markdown
 # 593 repos @ 83 orgs
 
 committed / pushed / updated / created
@@ -216,8 +240,10 @@ committed / pushed / updated / created
 - (3d) **footballcsv/england** ★105 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-23 - ‹› (8666 kb)
 - (3d) **footballcsv/austria** ★1 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2018-07-16 - ‹› (91 kb)
 - (3d) **footballcsv/espana** ★15 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-23 - ‹› (1107 kb)
-- (3d) **footballcsv/deutschland** ★5 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-25 - ‹› (1343 kb)...
-```
+- (3d) **footballcsv/deutschland** ★5 - 2020-10-06 (=/=) / 2020-10-06 (=) / 2020-10-06 / 2014-07-25 - ‹› (1343 kb)
+...
+
+---
 
 (Live Example: [UPDATES.md](https://github.com/yorobot/backup/blob/master/UPDATES.md))
 
