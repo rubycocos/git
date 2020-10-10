@@ -19,7 +19,20 @@ end # method initialize
 
 
 
-def get( request_uri )
+def get( request_uri, headers: {} )
+
+  extra_headers = headers    ## save "passed-in"
+
+  headers = {}
+  headers['User-Agent'] = 'ruby/hubba'                      ## required by GitHub API
+  headers['Accept']     = 'application/vnd.github.v3+json'  ## recommend by GitHub API
+
+  ## lets you overwrite headers
+  ##   e.g. Accept for api previews and suchs
+  headers = headers.merge( extra_headers )  if extra_headers && extra_headers.size > 0
+
+
+
   puts "GET #{request_uri}"
 
   ## note: request_uri ALWAYS starts with leading /, thus use + for now!!!
@@ -27,9 +40,6 @@ def get( request_uri )
   #               /users/geraldb/repos
   url = BASE_URL + request_uri
 
-  headers = {}
-  headers['User-Agent'] = 'ruby/hubba'                      ## required by GitHub API
-  headers['Accept']     = 'application/vnd.github.v3+json'  ## recommend by GitHub API
 
   auth = []
   ## check if credentials (user/password) present - if yes, use basic auth

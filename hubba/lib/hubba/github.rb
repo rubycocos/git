@@ -77,10 +77,43 @@ def repo( full_name )   ## full_name (handle) e.g. henrythemes/jekyll-starter-th
   Resource.new( get "/repos/#{full_name}" )
 end
 
+def repo_languages( full_name )
+  Resource.new( get "/repos/#{full_name}/languages" )
+end
+
+def repo_topics( full_name )
+  ## note: requires "api preview" accept headers (overwrites default v3+json)
+  headers = {}
+  headers['Accept'] = 'application/vnd.github.mercy-preview+json'
+  Resource.new( get( "/repos/#{full_name}/topics", headers: headers ) )
+end
+
+
 def repo_commits( full_name )
   Resource.new( get "/repos/#{full_name}/commits" )
 end
 
+
+def repo_traffic_clones( full_name )
+ # Get repository clones
+ # Get the total number of clones and breakdown per day or week
+ #   for the last 14 days.
+ # Timestamps are aligned to UTC midnight of the beginning of the day or week.
+ # Week begins on Monday.
+ Resource.new( get "/repos/#{full_name}/traffic/clones" )
+end
+
+def repo_traffic_popular_paths( full_name )
+ # Get top referral paths
+ # Get the top 10 popular contents over the last 14 days.
+ Resource.new( get "/repos/#{full_name}/traffic/popular/paths" )
+end
+
+def repo_traffic_popular_referrers( full_name )
+ # Get top referral sources
+ # Get the top 10 referrers over the last 14 days.
+ Resource.new( get "/repos/#{full_name}/traffic/popular/referrers" )
+end
 
 
 ####
@@ -129,8 +162,8 @@ end
 
 
 private
-def get( request_uri )
-  @client.get( request_uri )
+def get( request_uri, headers: {} )
+  @client.get( request_uri, headers: headers )
 end
 
 end  # class Github

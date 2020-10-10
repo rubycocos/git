@@ -236,20 +236,28 @@ module Hubba
       @data['updated_at'] = repo.data['updated_at']
       @data['pushed_at']  = repo.data['pushed_at']
 
-      @data['size']       = repo.data['size']  # size in kb (kilobyte)
+      @data['size']       = repo.data['size']  # note: size in kb (kilobyte)
 
+      @data['description'] = repo.data['description']
+      @data['language']    = repo.data['language']  ## note: might be nil!!!
+
+
+
+      ########################################
+      ####  history / by date record
       rec = {}
 
-      puts "stargazers_count"
-      puts repo.data['stargazers_count']
       rec['stargazers_count'] = repo.data['stargazers_count']
+      rec['forks_count']      = repo.data['forks_count']
+
 
       today = Date.today.strftime( '%Y-%m-%d' )   ## e.g. 2016-09-27
       puts "add record #{today} to history..."
       pp rec      # check if stargazers_count is a number (NOT a string)
 
       @data[ 'history' ] ||= {}
-      @data[ 'history' ][ today ] = rec
+      ## note: merge in (overwrite with new - but keep other key/value pairs if any e.g. pageviews, clones, etc.)
+      @data[ 'history' ][ today ] = @data[ 'history' ][ today ].merge( rec )
 
       ##########################
       ## also check / keep track of (latest) commit
