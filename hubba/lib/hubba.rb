@@ -32,6 +32,8 @@ require 'hubba/update'
 require 'hubba/update_traffic'
 
 require 'hubba/reports'
+require 'hubba/reports_traffic'
+
 
 
 ############

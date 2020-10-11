@@ -15,7 +15,12 @@ module Hubba
     end
 
 
-    def full_name() @data['full_name']; end
+    def full_name()    @data['full_name']; end
+    def description()  @data['description'] || ''; end  ## todo/check: return nil if not found - why? why not?
+    alias_method :descr, :description
+    alias_method :desc,  :description
+
+    def topics()      @data['topics'] || []; end   ## todo/check: return nil if not found - why? why not?
 
 
     ## note: return datetime objects (NOT strings); if not present/available return nil/null
@@ -50,7 +55,13 @@ module Hubba
       @cache['stars'] ||= history ? history[0].stars : 0
     end
 
+    ###################
+    # traffic
+    def traffic() @data['traffic']; end
 
+
+    ###########
+    # commits
     def commits() @data['commits']; end
 
     def last_commit   ## convenience shortcut; get first/last commit (use [0]) or nil
@@ -104,12 +115,13 @@ module Hubba
 
     class HistoryItem
 
-      attr_reader   :date, :stars    ## read-only attributes
+      attr_reader   :date, :stars, :forks    ## read-only attributes
       attr_accessor :prev, :next     ## read/write attributes (for double linked list/nodes/items)
 
-      def initialize( date:, stars: )
+      def initialize( date:, stars:, forks: )
         @date  = date
         @stars = stars
+        @forks = forks
         @next  = nil
       end
 
@@ -147,7 +159,8 @@ module Hubba
 
         item = HistoryItem.new(
                  date:  Date.strptime( key, '%Y-%m-%d' ),
-                 stars: h['stargazers_count'] || 0 )
+                 stars: h['stargazers_count'] || 0,
+                 forks: h['forks_count'] || 0 )
 
         ## link items
         last_item = items[-1]
