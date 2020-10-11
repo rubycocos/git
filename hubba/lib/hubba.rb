@@ -22,12 +22,14 @@ end
 # our own code
 require 'hubba/version'   # note: let version always go first
 require 'hubba/config'
-require 'hubba/client'
 require 'hubba/github'
 require 'hubba/stats'
 
 ## "higher level" porcelain services / helpers for easy (re)use
-require 'hubba/reposet'
+require 'hubba/folio'     ## "access layer" for reports
+require 'hubba/hubba'
+require 'hubba/update'
+require 'hubba/update_traffic'
 
 require 'hubba/reports'
 

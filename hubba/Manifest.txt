@@ -3,12 +3,14 @@ Manifest.txt
 README.md
 Rakefile
 lib/hubba.rb
-lib/hubba/client.rb
 lib/hubba/config.rb
+lib/hubba/folio.rb
 lib/hubba/github.rb
+lib/hubba/hubba.rb
 lib/hubba/reports.rb
-lib/hubba/reposet.rb
 lib/hubba/stats.rb
+lib/hubba/update.rb
+lib/hubba/update_traffic.rb
 lib/hubba/version.rb
 test/helper.rb
 test/stats/jekyll~minima.json
