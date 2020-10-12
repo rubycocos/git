@@ -86,6 +86,9 @@ end
 repos.each_with_index do |repo,i|
   buf << "#{i+1}. ★#{repo.stats.stars} **#{repo.full_name}** (#{repo.stats.size} kb)\n"
 end
+buf << "<!-- break -->\n"   ## markdown hack: add a list end marker
+buf << "\n\n"
+
 
 buf
 end  # method build
@@ -239,6 +242,8 @@ repos.each_with_index do |repo,i|
   buf <<  " (#{repo.stats.size} kb)"
   buf <<  "\n"
 end
+buf << "<!-- break -->\n"   ## markdown hack: add a list end marker
+buf << "\n\n"
 
 
 buf

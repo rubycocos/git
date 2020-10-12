@@ -49,6 +49,9 @@ repos.each_with_index do |repo,i|
   buf << " clones: #{summary['clones']['count']} / #{summary['clones']['uniques']}"
   buf << "\n"
 end
+buf << "<!-- break -->\n"   ## markdown hack: add a list end marker
+buf << "\n\n"
+
 
 buf
 end  # method build
@@ -114,6 +117,9 @@ lines.each_with_index do |line,i|
   buf <<  "#{i+1}. #{line['count']} / #{line['uniques']} -- #{line['path']}"
   buf <<  "\n"
 end
+buf << "<!-- break -->\n"   ## markdown hack: add a list end marker
+buf << "\n\n"
+
 
 buf
 end  # method build
@@ -210,11 +216,11 @@ lines_by_referrer.each_with_index do |(referrer, lines),i|
   buf << "\n"
 end
 
-
+buf << "<!-- break -->\n"   ## markdown hack: add a list end marker
+buf << "\n\n"
 
 
 ### all referrer sources / records by page views
-buf << "\n\n"
 buf << "All referrers:"
 buf << "\n\n"
 
@@ -222,6 +228,9 @@ lines.each_with_index do |line,i|
   buf <<  "- #{line['referrer']} -- #{line['count']} / #{line['uniques']} -- #{line['path']}"
   buf <<  "\n"
 end
+
+buf << "<!-- break -->\n"   ## markdown hack: add a list end marker
+buf << "\n\n"
 
 
 
