@@ -31,8 +31,16 @@ require 'hubba/hubba'
 require 'hubba/update'
 require 'hubba/update_traffic'
 
-require 'hubba/reports'
-require 'hubba/reports_traffic'
+require 'hubba/reports/base'
+require 'hubba/reports/size'
+require 'hubba/reports/stars'
+require 'hubba/reports/summary'
+require 'hubba/reports/timeline'
+require 'hubba/reports/traffic_pages'
+require 'hubba/reports/traffic_referrers'
+require 'hubba/reports/traffic'
+require 'hubba/reports/trending'
+require 'hubba/reports/updates'
 
 
 

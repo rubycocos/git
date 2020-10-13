@@ -7,7 +7,16 @@ lib/hubba/config.rb
 lib/hubba/folio.rb
 lib/hubba/github.rb
 lib/hubba/hubba.rb
-lib/hubba/reports.rb
+lib/hubba/reports/base.rb
+lib/hubba/reports/size.rb
+lib/hubba/reports/stars.rb
+lib/hubba/reports/summary.rb
+lib/hubba/reports/timeline.rb
+lib/hubba/reports/traffic.rb
+lib/hubba/reports/traffic_pages.rb
+lib/hubba/reports/traffic_referrers.rb
+lib/hubba/reports/trending.rb
+lib/hubba/reports/updates.rb
 lib/hubba/stats.rb
 lib/hubba/update.rb
 lib/hubba/update_traffic.rb
