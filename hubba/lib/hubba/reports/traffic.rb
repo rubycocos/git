@@ -8,8 +8,9 @@ def build
 
 ## note: orgs is orgs+users e.g. geraldb, yorobot etc
 buf = String.new('')
-buf << "# #{@stats.repos.size} repos @ #{@stats.orgs.size} orgs\n"
-buf << "\n"
+buf << "# Traffic"
+buf << " - #{@stats.repos.size} Repos @ #{@stats.orgs.size} Orgs"
+buf << "\n\n"
 
 buf << "traffic over the last 14 days - page views / unique, clones / unique\n"
 buf << "\n"
@@ -71,7 +72,8 @@ repos_by_org.each_with_index do |(owner, repos),i|
 
     summary = repo.stats.traffic['summary']
 
-    buf << "  - #{repo.name} -- "
+    ## note: sublist indent four (4) spaces
+    buf << "    - #{repo.name} -- "
     buf << " views: #{summary['views']['count']} / #{summary['views']['uniques']} - "
     buf << " clones: #{summary['clones']['count']} / #{summary['clones']['uniques']}"
     buf << "\n"

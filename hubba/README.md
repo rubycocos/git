@@ -148,8 +148,6 @@ Results in:
 
 ---
 
-> 593 repos @ 83 orgs
->
 > ### geraldb _(11)_
 >
 > **austria** ★1 (552 kb) · **catalog** ★3 (156 kb) · **chelitas** ★1 (168 kb) · **geraldb.github.io** ★1 (520 kb) · **logos** ★1 (363 kb) · **sandbox** ★2 (529 kb) · **talks** ★200 (16203 kb) · **web-proxy-win** ★8 (152 kb) · **webcomponents** ★1 (164 kb) · **webpub-reader** ★3 (11 kb) · **wine.db.tools** ★1 (252 kb)
@@ -167,8 +165,6 @@ Your repos ranked by stars. Results in:
 
 ---
 
-> 593 repos @ 83 orgs
->
 > 1. ★2936 **openblockchains/awesome-blockchains** (2514 kb)
 > 2. ★851 **planetjekyll/awesome-jekyll-plugins** (148 kb)
 > 3. ★604 **factbook/factbook.json** (7355 kb)
@@ -194,8 +190,6 @@ Results in:
 
 ---
 
-> 593 repos @ 83 orgs
->
 > ## 2020
 >
 > ### 9
@@ -222,8 +216,6 @@ Your repos in reverse chronological order by last commit. Results in:
 
 ---
 
-> 593 repos @ 83 orgs
->
 > committed / pushed / updated / created
 >
 > - (1d) **yorobot/backup** ★4 - 2020-10-08 (=/=) / 2020-10-08 (=) / 2020-10-08 / 2015-04-04 - ‹› (1595 kb)

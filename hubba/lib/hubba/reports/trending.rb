@@ -6,8 +6,9 @@ def build
 
 ## note: orgs is orgs+users e.g. geraldb, yorobot etc
 buf = String.new('')
-buf << "# #{@stats.repos.size} repos @ #{@stats.orgs.size} orgs\n"
-buf << "\n"
+buf << "# Trending"
+buf << " - #{@stats.repos.size} Repos @ #{@stats.orgs.size} Orgs"
+buf << "\n\n"
 
 ###
 ## todo:

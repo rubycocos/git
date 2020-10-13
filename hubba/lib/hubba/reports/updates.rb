@@ -7,8 +7,9 @@ def build
 
 ## note: orgs is orgs+users e.g. geraldb, yorobot etc
 buf = String.new('')
-buf << "# #{@stats.repos.size} repos @ #{@stats.orgs.size} orgs\n"
-buf << "\n"
+buf << "# Updates"
+buf << " - #{@stats.repos.size} Repos @ #{@stats.orgs.size} Orgs\n"
+buf << "\n\n"
 
 repos = @stats.repos.sort do |l,r|
   r.stats.committed.jd <=> l.stats.committed.jd

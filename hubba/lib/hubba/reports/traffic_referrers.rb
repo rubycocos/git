@@ -7,8 +7,9 @@ def build
 
 ## note: orgs is orgs+users e.g. geraldb, yorobot etc
 buf = String.new('')
-buf << "# #{@stats.repos.size} repos @ #{@stats.orgs.size} orgs\n"
-buf << "\n"
+buf << "# Traffic Referrers"
+buf << " - #{@stats.repos.size} Repos @ #{@stats.orgs.size} Orgs"
+buf << "\n\n"
 
 
 buf << "popular referrer sources over the last 14 days - page views / unique\n"
@@ -83,7 +84,8 @@ lines_by_referrer.each_with_index do |(referrer, lines),i|
 
   ### todo - sort by count / uniques !!
   lines.each do |line|
-    buf << "  - #{line['count']} / #{line['uniques']} -- #{line['path']}"
+    ## note: sublist indent four (4) spaces
+    buf << "    - #{line['count']} / #{line['uniques']} -- #{line['path']}"
     buf << "\n"
   end
 end

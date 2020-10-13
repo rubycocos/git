@@ -14,10 +14,20 @@ class Report
              end
   end
 
+
   def save( path )
     buf = build
+
+    banner =<<TXT
+Auto-generated github (statistics) report;
+built with [Hubba v#{Hubba::VERSION}](https://github.com/rubycoco/git/tree/master/hubba).
+
+
+TXT
+
     puts "writing report >#{path}< ..."
     File.open( path, "w:utf-8" ) do |f|
+      f.write( banner )   ## add banner for now - why? why not?
       f.write( buf )
     end
   end

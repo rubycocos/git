@@ -7,8 +7,9 @@ def build
 
 ## note: orgs is orgs+users e.g. geraldb, yorobot etc
 buf = String.new('')
-buf << "# #{@stats.repos.size} repos @ #{@stats.orgs.size} orgs\n"
-buf << "\n"
+buf << "# Traffic Pages"
+buf << " - #{@stats.repos.size} Repos @ #{@stats.orgs.size} Orgs"
+buf << "\n\n"
 
 buf << "popular pages over the last 14 days - page views / unique\n"
 buf << "\n"
@@ -39,8 +40,24 @@ repos.each do |repo|
   #  },
 
   paths  = summary['paths']
-  lines += paths  if paths
+  if paths
+    ### clean (normalize) paths
+    paths.each do |line|
+      # "/csvreader/csvreader" =>
+      #   csvreader/csvreader
+      path = line['path'][1..-1]  ## cut of leading slash (/)
+
+      ## /blob/master, /tree/master, /master
+      path = path.sub( %r{/blob/(master|gh-pages)(?=/)}, '' )
+      path = path.sub( %r{/tree/(master|gh-pages)(?=/)}, '' )
+      path = path.sub( %r{/(master|gh-pages)(?=/|$)}, '' )   ## ending in master (e.g. /search/master)
+
+      line['path'] = path
+    end
+    lines += paths
+  end
 end
+
 
 ## sort by 1) count
 ##         2) uniques
@@ -54,10 +71,7 @@ end
 
 
 lines_by_path = lines.group_by { |line|
-                                 # "/csvreader/csvreader" =>
-                                 #   csvreader/csvreader
-                                 path = line['path'][1..-1]  ## cut of leading slash (/)
-                                 parts = path.split( '/' )
+                                 parts = line['path'].split( '/' )
                                  parts[0]
                                }
                          .sort { |(lpath,llines), (rpath,rlines)|
@@ -80,18 +94,13 @@ lines_by_path.each_with_index do |(path, lines),i|
   ### todo - sort by count / uniques !!
   lines.each do |line|
     ## e.g. convert
-    ##        /openfootball/football.json/tree/master/2020  =>
-    ##                      football.json/tree/master/2020
-    path  = line['path'][1..-1]   ## cut-off leading slash (/)
-    parts = path.split( '/' )
+    ##        openfootball/football.json/tree/master/2020  =>
+    ##                     football.json/tree/master/2020
+    parts = line['path'].split( '/' )
     path =  parts[1..-1].join( '/' )
 
-    ## /blob/master, /tree/master, /master
-    path = path.sub( %r{/blob/(master|gh-pages)(?=/)}, '' )
-    path = path.sub( %r{/tree/(master|gh-pages)(?=/)}, '' )
-    path = path.sub( %r{/(master|gh-pages)(?=/|$)}, '' )   ## ending in master (e.g. /search/master)
-
-    buf << "  - #{line['count']} / #{line['uniques']} -- #{path}"
+    ## note: sublist indent four (4) spaces
+    buf << "    - #{line['count']} / #{line['uniques']} -- #{path}"
     buf << "\n"
   end
 end
@@ -105,14 +114,7 @@ buf << "All pages:"
 buf << "\n\n"
 
 lines.each_with_index do |line,i|
-  path = line['path'][1..-1]   ## cut-off leading slash (/)
-
-  ## /blob/master, /tree/master, /master
-  path = path.sub( %r{/blob/(master|gh-pages)(?=/)}, '' )
-  path = path.sub( %r{/tree/(master|gh-pages)(?=/)}, '' )
-  path = path.sub( %r{/(master|gh-pages)(?=/|$)}, '' )   ## ending in master (e.g. /search/master)
-
-  buf <<  "#{i+1}. #{line['count']} / #{line['uniques']} -- #{path}"
+  buf <<  "#{i+1}. #{line['count']} / #{line['uniques']} -- #{line['path']}"
   buf <<  "\n"
 end
 buf << "<!-- break -->\n"   ## markdown hack: add a list end marker

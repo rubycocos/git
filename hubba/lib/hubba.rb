@@ -32,6 +32,7 @@ require 'hubba/update'
 require 'hubba/update_traffic'
 
 require 'hubba/reports/base'
+require 'hubba/reports/catalog'
 require 'hubba/reports/size'
 require 'hubba/reports/stars'
 require 'hubba/reports/summary'
