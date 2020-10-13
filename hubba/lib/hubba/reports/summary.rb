@@ -29,8 +29,7 @@ buf << "\n\n"
   end
 
   buf << entries.join( ' · ' )   ## use interpunct? - was: • (bullet)
-  buf << "\n"
-  buf << "\n"
+  buf << "\n\n"
 end
 
 buf
