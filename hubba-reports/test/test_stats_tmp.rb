@@ -22,7 +22,7 @@ class TestStatsTmp < MiniTest::Test
     repos.each do |repo|
       stats = Hubba::Stats.new( repo )
 
-      Hubba.config.data_dir = "#{Hubba.root}/test/stats"
+      Hubba.config.data_dir = "#{HubbaReports.root}/test/stats"
       stats.read()
 
       puts "stars before fetch: #{stats.stars}"

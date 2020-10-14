@@ -8,16 +8,14 @@ require 'helper'
 
 class TestStats < MiniTest::Test
 
-
   def test_jekyll_minima
-
     stats = Hubba::Stats.new( 'jekyll/minima' )
 
     assert_equal 0, stats.size
     assert_equal 0, stats.stars
     assert_nil      stats.history
 
-    Hubba.config.data_dir = "#{Hubba.root}/test/stats"
+    Hubba.config.data_dir = "#{HubbaReports.root}/test/stats"
     stats.read
 
     assert_equal 321, stats.size
@@ -55,7 +53,7 @@ class TestStats < MiniTest::Test
     assert_equal 0, stats.stars
     assert_nil      stats.history
 
-    Hubba.config.data_dir = "#{Hubba.root}/test/stats"
+    Hubba.config.data_dir = "#{HubbaReports.root}/test/stats"
     stats.read
 
     assert_equal 1620, stats.size
@@ -93,7 +91,7 @@ class TestStats < MiniTest::Test
     assert_equal 0, stats.stars
     assert_nil      stats.history
 
-    Hubba.config.data_dir = "#{Hubba.root}/test/stats"
+    Hubba.config.data_dir = "#{HubbaReports.root}/test/stats"
     stats.read
 
     assert_equal 7355, stats.size

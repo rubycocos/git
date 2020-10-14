@@ -80,18 +80,4 @@ def self.reposet( *users, orgs: true,
   h
 end  ## method reposet
 
-
-def self.stats( hash_or_path='./repos.yml' )   ## use read_stats or such - why? why not?
-  h = if hash_or_path.is_a?( String )    ## assume it is a file path!!!
-        path = hash_or_path
-        YAML.load_file( path )
-      else
-        hash_or_path  # assume its a hash / reposet already!!!
-      end
-
-  Folio.new( h )  ## wrap in "easy-access" facade / wrapper
-end  ## method stats
-
-
 end # module Hubba
-

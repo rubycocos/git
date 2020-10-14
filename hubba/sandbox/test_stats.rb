@@ -13,7 +13,7 @@ stats = Hubba::Stats.new( 'openfootball/deutschland' )
 pp stats
 puts
 
-gh.update( stats )
+## gh.update( stats )
 
 
 pp stats

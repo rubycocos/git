@@ -20,7 +20,7 @@ class Report
 
     banner =<<TXT
 Auto-generated github (statistics) report;
-built with [Hubba v#{Hubba::VERSION}](https://github.com/rubycoco/git/tree/master/hubba).
+built with [Hubba v#{HubbaReports::VERSION}](https://github.com/rubycoco/git/tree/master/hubba-reports).
 
 
 TXT

@@ -23,26 +23,13 @@ end
 require 'hubba/version'   # note: let version always go first
 require 'hubba/config'
 require 'hubba/github'
-require 'hubba/stats'
+require 'hubba/reposet'
 
-## "higher level" porcelain services / helpers for easy (re)use
-require 'hubba/folio'     ## "access layer" for reports
-require 'hubba/hubba'
+### update stats (github data) machinery
+require 'hubba/stats'
 require 'hubba/update'
 require 'hubba/update_traffic'
 
-require 'hubba/reports/base'
-require 'hubba/reports/catalog'
-require 'hubba/reports/size'
-require 'hubba/reports/stars'
-require 'hubba/reports/summary'
-require 'hubba/reports/timeline'
-require 'hubba/reports/topics'
-require 'hubba/reports/traffic_pages'
-require 'hubba/reports/traffic_referrers'
-require 'hubba/reports/traffic'
-require 'hubba/reports/trending'
-require 'hubba/reports/updates'
 
 
 
@@ -54,4 +41,6 @@ end
 
 
 # say hello
-puts Hubba.banner    if defined?($RUBYCOCO_DEBUG)
+puts Hubba.banner
+
+
