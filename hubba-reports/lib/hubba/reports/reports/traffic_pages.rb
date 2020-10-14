@@ -87,8 +87,7 @@ lines_by_path = lines.group_by { |line|
 
 lines_by_path.each_with_index do |(path, lines),i|
   count   = lines.reduce(0) {|sum,line| sum+line['count']}
-  uniques = lines.reduce(0) {|sum,line| sum+line['uniques']}
-  buf << "#{i+1}. **#{path}** #{count} / #{uniques}  _(#{lines.size})_"
+  buf << "#{i+1}. **#{path}** #{count}   _(#{lines.size})_"
   buf << "\n"
 
   ### todo - sort by count / uniques !!

@@ -78,8 +78,7 @@ lines_by_referrer = lines.group_by { |line| line['referrer'] }
 
 lines_by_referrer.each_with_index do |(referrer, lines),i|
   count   = lines.reduce(0) {|sum,line| sum+line['count']}
-  uniques = lines.reduce(0) {|sum,line| sum+line['uniques']}
-  buf << "#{i+1}. **#{referrer}** #{count} / #{uniques}  _(#{lines.size})_"
+  buf << "#{i+1}. **#{referrer}** #{count}  _(#{lines.size})_"
   buf << "\n"
 
   ### todo - sort by count / uniques !!
