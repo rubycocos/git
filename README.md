@@ -7,6 +7,8 @@ Git Gems:
 
 <!-- break -->
 - [hubba](hubba) - (yet) another (lite) GitHub HTTP API client / library
+- [hubba-reports](hubba-reports)- auto-generate github statistics / analytics reports from github api data (stars, timeline, traffic, top pages, top referrers, etc.)
+
 
 <!-- break -->
 - [monos](monos) - monorepo / mono source tree tools and (startup) scripts
