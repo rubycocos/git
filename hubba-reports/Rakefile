@@ -18,7 +18,7 @@ Hoe.spec 'hubba-reports' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['hubba', '>= 0.7.0']
+    ['hubba', '>= 1.0.0']
   ]
 
   self.licenses = ['Public Domain']

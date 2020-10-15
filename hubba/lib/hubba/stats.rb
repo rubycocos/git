@@ -108,8 +108,9 @@ end  # method update_traffic
 
 
     def update( repo,
-                 commits: nil,
-                 topics:  nil )   ## update stats / fetch data from github via api
+                 commits:   nil,
+                 topics:    nil,
+                 languages: nil )   ## update stats / fetch data from github via api
       raise ArgumentError, "Github::Resource expected; got #{repo.class.name}"      unless repo.is_a?( Github::Resource )
 
       ## e.g. 2015-05-11T20:21:43Z
@@ -121,6 +122,8 @@ end  # method update_traffic
       @data['size']       = repo.data['size']  # note: size in kb (kilobyte)
 
       @data['description'] = repo.data['description']
+
+      ### todo/check -  remove language  (always use languages - see below) - why? why not?
       @data['language']    = repo.data['language']  ## note: might be nil!!!
 
 
@@ -190,8 +193,21 @@ end  # method update_traffic
       end
 
 
-      pp @data
+      if languages
+        raise ArgumentError, "Github::Resource expected; got #{languages.class.name}"   unless languages.is_a?( Github::Resource )
 
+        puts "update - languages:"
+
+
+        ## e.g.
+        ## {"Ruby"=>1020599, "HTML"=>3219, "SCSS"=>508, "CSS"=>388}
+        ##  or might be empty
+        ## {}
+
+        @data[ 'languages' ] = languages.data
+      end
+
+      pp @data
 
 
       ## reset (invalidate) cached values from data hash

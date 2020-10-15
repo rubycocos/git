@@ -27,16 +27,19 @@ def self.update_stats( hash_or_path='./repos.yml' )  ## move to reposet e.g. Rep
         stats = Stats.new( full_name )
         stats.read
 
-        puts "update >#{full_name}< [1/3] - fetching repo..."
-        repo    = gh.repo( full_name )
-        puts "update >#{full_name}< [2/3] - fetching repo commits ..."
-        commits = gh.repo_commits( full_name )
-        puts "update >#{full_name}< [3/3] - fetching repo topics ..."
-        topics  = gh.repo_topics( full_name )
+        puts "update >#{full_name}< [1/4] - fetching repo..."
+        repo      = gh.repo( full_name )
+        puts "update >#{full_name}< [2/4] - fetching repo commits ..."
+        commits   = gh.repo_commits( full_name )
+        puts "update >#{full_name}< [3/4] - fetching repo topics ..."
+        topics    = gh.repo_topics( full_name )
+        puts "update >#{full_name}< [4/4] - fetching repo languages ..."
+        languages = gh.repo_languages( full_name )
 
         stats.update( repo,
-                       commits: commits,
-                       topics:  topics )
+                       commits:   commits,
+                       topics:    topics,
+                       languages: languages )
         stats.write
       end
     end

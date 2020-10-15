@@ -13,7 +13,7 @@ module Hubba
     alias_method :desc,  :description
 
     def topics()      @data['topics'] || []; end   ## todo/check: return nil if not found - why? why not?
-
+    def languages()   @data['languages'] || {}; end  ## todo/check: return nil if not found - why? why not?
 
     ## note: return datetime objects (NOT strings); if not present/available return nil/null
     def created_at() @cache['created_at'] ||= parse_datetime( @data['created_at'] ); end
