@@ -1,4 +1,4 @@
-# git command line tools, libraries & scripts
+# git (and github) command line tools, libraries & scripts
 
 Git Gems:
 
