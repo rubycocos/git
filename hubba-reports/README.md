@@ -20,12 +20,16 @@ See the [hubba gem](https://github.com/rubycoco/git/tree/master/hubba) on how to
 ###  Generate some statistics / reports
 
 
-Hubba has four built-in reports (for now):
+Hubba has about a dozen built-in reports (for now):
 
 - `ReportSummary`  - A-Z list of your repos by orgs with stars and size in kb
 - `ReportStars`    - your repos ranked by stars
 - `ReportTimeline` - your repos in reverse chronological order by creation
 - `ReportUpdates`  - your repos in reverse chronological order by last commit
+- ...
+
+Look into the [/reports](https://github.com/rubycoco/git/tree/master/hubba-reports/lib/hubba/reports/reports)
+directory for all reports and, yes, on how to code your very own.
 
 
 If you only generate a single report, use:
@@ -54,6 +58,8 @@ report.save( './TIMELINE.md' )
 
 report = Hubba::ReportUpdates.new( stats )
 report.save( './UPDATES.md' )
+
+# ...
 ```
 
 
