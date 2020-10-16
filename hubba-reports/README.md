@@ -17,7 +17,7 @@ See the [hubba gem](https://github.com/rubycoco/git/tree/master/hubba) on how to
 
 
 
-###  Generate some statistics / reports
+###  Statistics / reports
 
 
 Hubba has about a dozen built-in reports (for now):
@@ -29,10 +29,12 @@ Hubba has about a dozen built-in reports (for now):
 - ...
 
 Look into the [/reports](https://github.com/rubycoco/git/tree/master/hubba-reports/lib/hubba/reports/reports)
-directory for all reports and, yes, on how to code your very own.
+directory for all reports and, yes, you can - on how to code your very own.
 
 
-If you only generate a single report, use:
+#### Generate statistic / reports
+
+If you only generate a single built-in report, use:
 
 ``` ruby
 require 'hubba/reports'

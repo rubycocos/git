@@ -48,9 +48,16 @@ langs_by_bytes = langs.sort {|(llang,lline),(rlang,rline)|
                .to_h    # convert back to hash (from array)
 
 
-## todo: add percentage!!!
+bytes_total = langs.reduce(0) {|sum,(lang,line)| sum+line['bytes'] }
 langs_by_bytes.each_with_index do |(lang, line),i|
-  buf << "#{i+1}. #{line['bytes']} **#{lang}** _(#{line['count']})_\n"
+  bytes = line['bytes']
+  percent = Float(100*bytes)/Float(bytes_total)
+
+  buf << "#{i+1}. "
+  buf << "#{bytes} (#{('%2.2f' % percent)}%) "
+  buf << "**#{lang}** "
+  buf << "_(#{line['count']})_"
+  buf << "\n"
 end
 buf << "<!-- break -->\n"   ## markdown hack: add a list end marker
 buf << "\n\n"
@@ -68,9 +75,16 @@ langs_by_count = langs.sort {|(llang,lline),(rlang,rline)|
                .to_h    # convert back to hash (from array)
 
 
-## todo: add percentage!!!
+count_total =  repos.size   # note: use (filtered) repos for count total
 langs_by_count.each_with_index do |(lang, line),i|
-  buf << "#{i+1}. #{line['count']} **#{lang}** (#{line['bytes']} bytes)\n"
+  count = line['count']
+  percent = Float(100*count)/Float(count_total)
+
+  buf << "#{i+1}. "
+  buf << "#{count} (#{('%2.2f' % percent)}%) "
+  buf << "**#{lang}** "
+  buf << "(#{line['bytes']} bytes)"
+  buf << "\n"
 end
 buf << "<!-- break -->\n"   ## markdown hack: add a list end marker
 buf << "\n\n"

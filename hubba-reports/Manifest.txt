@@ -6,6 +6,7 @@ lib/hubba/reports.rb
 lib/hubba/reports/folio.rb
 lib/hubba/reports/reports/base.rb
 lib/hubba/reports/reports/catalog.rb
+lib/hubba/reports/reports/languages.rb
 lib/hubba/reports/reports/size.rb
 lib/hubba/reports/reports/stars.rb
 lib/hubba/reports/reports/summary.rb
