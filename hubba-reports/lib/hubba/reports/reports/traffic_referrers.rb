@@ -76,6 +76,23 @@ lines_by_referrer = lines.group_by { |line| line['referrer'] }
                           .to_h  ## convert back to hash
 
 
+### start with summary
+##  limit to top 10 or top 20 - why? why not?
+lines_by_referrer.each_with_index do |(referrer, lines),i|
+  count   = lines.reduce(0) {|sum,line| sum+line['count']}
+  buf << "#{i+1}. **#{referrer}** #{count}  _(#{lines.size})_"
+  buf << "\n"
+end
+
+buf << "<!-- break -->\n"   ## markdown hack: add a list end marker
+buf << "\n\n"
+
+
+
+buf << "Details:"
+buf << "\n\n"
+
+
 lines_by_referrer.each_with_index do |(referrer, lines),i|
   count   = lines.reduce(0) {|sum,line| sum+line['count']}
   buf << "#{i+1}. **#{referrer}** #{count}  _(#{lines.size})_"

@@ -9,6 +9,7 @@ require 'hubba/reports/folio'
 
 require 'hubba/reports/reports/base'
 require 'hubba/reports/reports/catalog'
+require 'hubba/reports/reports/languages'
 require 'hubba/reports/reports/size'
 require 'hubba/reports/reports/stars'
 require 'hubba/reports/reports/summary'

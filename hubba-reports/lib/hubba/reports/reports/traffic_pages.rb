@@ -85,6 +85,22 @@ lines_by_path = lines.group_by { |line|
                         .to_h  ## convert back to hash
 
 
+### start with summary
+##  limit to top 10 or top 20 - why? why not?
+lines_by_path.each_with_index do |(path, lines),i|
+  count   = lines.reduce(0) {|sum,line| sum+line['count']}
+  buf << "#{i+1}. **#{path}** #{count}   _(#{lines.size})_"
+  buf << "\n"
+end
+
+buf << "<!-- break -->\n"   ## markdown hack: add a list end marker
+buf << "\n\n"
+
+
+
+buf << "Details:"
+buf << "\n\n"
+
 lines_by_path.each_with_index do |(path, lines),i|
   count   = lines.reduce(0) {|sum,line| sum+line['count']}
   buf << "#{i+1}. **#{path}** #{count}   _(#{lines.size})_"

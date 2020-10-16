@@ -60,6 +60,24 @@ repos_by_org = repos.group_by { |repo|
                         .to_h  ## convert back to hash
 
 
+### start with summary
+##  limit to top 10 or top 20 - why? why not?
+repos_by_org.each_with_index do |(owner, repos),i|
+  views  = repos.reduce(0) {|sum,repo| sum+repo.stats.traffic['summary']['views']['count'] }
+  clones = repos.reduce(0) {|sum,repo| sum+repo.stats.traffic['summary']['clones']['count'] }
+
+  buf << "#{i+1}. **#{owner}** views: #{views}, clones: #{clones}  _(#{repos.size})_"
+  buf << "\n"
+end
+
+buf << "<!-- break -->\n"   ## markdown hack: add a list end marker
+buf << "\n\n"
+
+
+
+buf << "Details:"   ## markdown hack: add a list end marker
+buf << "\n\n"
+
 repos_by_org.each_with_index do |(owner, repos),i|
   views  = repos.reduce(0) {|sum,repo| sum+repo.stats.traffic['summary']['views']['count'] }
   clones = repos.reduce(0) {|sum,repo| sum+repo.stats.traffic['summary']['clones']['count'] }
