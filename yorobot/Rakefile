@@ -5,7 +5,7 @@ Hoe.spec 'yorobot' do
 
   self.version = YorobotCore::VERSION
 
-  self.summary = "yorobot - automate, automate, automate - ready to use scripts"
+  self.summary = "yorbot gem - yo, robot - automate, automate, automate - ready to use scripts and command line tool"
   self.description = summary
 
   self.urls    = { home: 'https://github.com/rubycoco/git' }

@@ -1,6 +1,6 @@
 # yorobot-shell
 
-yorobot-shell gem - yorbot's shell command line helper / wrapper
+yorobot-shell gem  -  yo, robot's shell command line helper / wrapper
 
 * home  :: [github.com/rubycoco/git](https://github.com/rubycoco/git)
 * bugs  :: [github.com/rubycoco/git/issues](https://github.com/rubycoco/git/issues)

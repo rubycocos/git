@@ -5,7 +5,7 @@ Hoe.spec 'yorobot-shell' do
 
   self.version = Yorobot::Module::Shell::VERSION
 
-  self.summary = "yorobot-shell - yorbot's shell command line helper / wrapper"
+  self.summary = "yorobot-shell gem - yo, robot's shell command line helper / wrapper"
   self.description = summary
 
   self.urls    = { home: 'https://github.com/rubycoco/git' }

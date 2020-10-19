@@ -1,6 +1,6 @@
 # yorobot
 
-yorobot gem - yorobot - automate, automate, automate - ready to use scripts
+yorobot gem  -  yo, robot - automate, automate, automate - ready to use scripts and command line tool
 
 
 * home  :: [github.com/rubycoco/git](https://github.com/rubycoco/git)
