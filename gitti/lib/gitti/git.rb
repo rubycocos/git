@@ -1,17 +1,9 @@
 module Gitti
 
-## raised by Git::Shell.run -- check if top-level ShellError alread exists?
-##   use ShellError or RunError - why? why not?
-##   and make Git::Shell top-level e.g. Shell - why? why not?
-class GitError < StandardError
-end
-
-
 class Git   ## make Git a module - why? why not?
 
   ###
   ## todo/fix:  change opts=nil to *args or such - why? why not?
-
 
   ###############
   ## "setup" starter git commands
@@ -267,49 +259,6 @@ class Git   ## make Git a module - why? why not?
     alias_method :fsck,     :check   ## add alias
     alias_method :checksum, :check
   end
-
-
-
-###
-#  use nested class for "base" for running commands - why? why not?
-class Shell
-def self.run( cmd )
-  print "cmd exec >#{cmd}<..."
-  stdout, stderr, status = Open3.capture3( cmd )
-
-  if status.success?
-    print " OK"
-    print "\n"
-  else
-    print " FAIL (#{status.exitstatus})"
-    print "\n"
-  end
-
-  unless stdout.empty?
-    puts stdout
-  end
-
-  unless stderr.empty?
-    ## todo/check: or use >2: or &2: or such
-    ##  stderr output not always an error (that is, exit status might be 0)
-    puts "2>"
-    puts stderr
-  end
-
-  if status.success?
-    stdout   # return stdout string
-  else
-    puts "!! ERROR: cmd exec >#{cmd}< failed with exit status #{status.exitstatus}:"
-    puts stderr
-
-    ### todo/fix:  do NOT use GitError here!!! make it more "general"
-    ###   use a Git::Shell.run() wrapper or such - why? why not?
-    ##   or use a Shell.git() or Shell.git_run() ???
-    ##   or pass in error class - why? why not?
-    raise GitError, "cmd exec >#{cmd}< failed with exit status #{status.exitstatus}<: #{stderr}"
-  end
-end
-end # class Git::Shell
 
 end # class Git
 

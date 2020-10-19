@@ -17,12 +17,13 @@ Hoe.spec 'gitti' do
   self.readme_file  = 'README.md'
   self.history_file = 'CHANGELOG.md'
 
-  self.extra_deps = []
+  self.extra_deps = [
+    ['yorobot-shell', '>= 0.0.1' ],
+  ]
 
   self.licenses = ['Public Domain']
 
   self.spec_extras = {
    required_ruby_version: '>= 2.2.2'
   }
-
 end

@@ -1,0 +1,9 @@
+CHANGELOG.md
+Manifest.txt
+README.md
+Rakefile
+lib/yorobot/shell.rb
+lib/yorobot/shell/shell.rb
+lib/yorobot/shell/version.rb
+test/helper.rb
+test/test_shell.rb

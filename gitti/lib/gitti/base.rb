@@ -1,13 +1,16 @@
-require 'pp'
-require 'time'
-require 'date'    ## e.g. Date.today etc.
-require 'yaml'
-require 'json'
-require 'uri'
-require 'net/http'
-require "net/https"
-require 'open3'
-require 'fileutils'    ## e.g. FileUtils.mkdir_p etc.
+require 'yorobot/shell'   ## note: move shell execute for (re)use to its own (upstream) gem
+
+module Gitti
+  Shell      = Yorobot::Shell
+  ShellError = Yorobot::ShellError
+  GitError   = Yorobot::ShellError  ## raised if git exec returns with non-zero exit - just use ShellError - why? why not?
+  ## raised by Git::Shell.run
+  ##  todo/check: use ShellError or RunError - why? why not?
+  ##   and make Git::Shell top-level e.g. Shell - why? why not?
+
+  ##   differentiate into/use
+  ##     GitShell.run/GitCmd.run() or such and Shell.run  - why? why not?
+end
 
 
 
