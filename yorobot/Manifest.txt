@@ -2,5 +2,10 @@ CHANGELOG.md
 Manifest.txt
 README.md
 Rakefile
+bin/yo
+bin/yorobot
 lib/yorobot.rb
+lib/yorobot/base.rb
+lib/yorobot/echo.rb
+lib/yorobot/list.rb
 lib/yorobot/version.rb

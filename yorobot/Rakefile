@@ -17,7 +17,9 @@ Hoe.spec 'yorobot' do
   self.readme_file  = 'README.md'
   self.history_file = 'CHANGELOG.md'
 
-  self.extra_deps = []
+  self.extra_deps = [
+    ['gitti', '>= 0.5.0' ],
+  ]
 
   self.licenses = ['Public Domain']
 
