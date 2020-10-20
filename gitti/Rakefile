@@ -18,7 +18,7 @@ Hoe.spec 'gitti' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['yorobot-shell', '>= 0.0.1' ],
+    ['computer', '>= 0.1.0' ],
   ]
 
   self.licenses = ['Public Domain']

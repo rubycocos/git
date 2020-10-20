@@ -7,7 +7,7 @@
 
 module GittiCore    ## todo/check: rename GittiBase or GittiMeta or such - why? why not?
   MAJOR = 0    ## todo: namespace inside version or something - why? why not??
-  MINOR = 5
+  MINOR = 6
   PATCH = 0
   VERSION = [MAJOR,MINOR,PATCH].join('.')
 
@@ -20,7 +20,7 @@ module GittiCore    ## todo/check: rename GittiBase or GittiMeta or such - why? 
   end
 
   def self.root
-    "#{File.expand_path( File.dirname(File.dirname(File.dirname(__FILE__))) )}"
+    File.expand_path( File.dirname(File.dirname(File.dirname(__FILE__))) )
   end
 end # module GittiCore
 

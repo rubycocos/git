@@ -5,7 +5,11 @@ class Step
 
 def self.run( args=[] )
   step      = new
-  puts "--> (#{step.name}) #{args.join('·')}"
+  puts "--> (#{step.name}) #{args.size} arg(s):"
+  args.each_with_index do |arg,i|
+    puts "      #{[i]} >#{arg}<"
+  end
+  # args.join('·')
 
   step.call( args )   ## use run - why? why not?
 end

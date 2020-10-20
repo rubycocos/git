@@ -1,11 +1,11 @@
 require 'hoe'
-require './lib/yorobot/shell/version.rb'
+require './lib/computer/version.rb'
 
-Hoe.spec 'yorobot-shell' do
+Hoe.spec 'computer' do
 
-  self.version = Yorobot::Module::Shell::VERSION
+  self.version = Computer::VERSION
 
-  self.summary = "yorobot-shell gem - yo, robot's shell command line helper / wrapper"
+  self.summary = "computer gem  -  shell command line helper / wrapper 'n' more for your computer"
   self.description = summary
 
   self.urls    = { home: 'https://github.com/rubycoco/git' }

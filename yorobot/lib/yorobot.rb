@@ -4,6 +4,9 @@ require 'yorobot/version'   # note: let version always go first
 puts YorobotCore.banner
 
 
+####
+# more stdlibs
+require 'optparse'    ## todo/fix: also move to yorobot/shell - why? why not?
 
 ####
 #  3rd party gems / libs

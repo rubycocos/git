@@ -1,4 +1,4 @@
-module Yorobot
+module Computer
 
 
 ## raised / thrown by Shell.run if exit status non-zero
@@ -54,4 +54,4 @@ class Shell
     end
   end
   end # class Shell
-end  # module Yorobot
+end  # module Computer

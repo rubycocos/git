@@ -1,9 +1,9 @@
-require 'yorobot/shell'   ## note: move shell execute for (re)use to its own (upstream) gem
+require 'computer'   ## note: move shell execute for (re)use to its own (upstream) gem
 
 module Gitti
-  Shell      = Yorobot::Shell
-  ShellError = Yorobot::ShellError
-  GitError   = Yorobot::ShellError  ## raised if git exec returns with non-zero exit - just use ShellError - why? why not?
+  Shell      = Computer::Shell
+  ShellError = Computer::ShellError
+  GitError   = Computer::ShellError  ## raised if git exec returns with non-zero exit - just use ShellError - why? why not?
   ## raised by Git::Shell.run
   ##  todo/check: use ShellError or RunError - why? why not?
   ##   and make Git::Shell top-level e.g. Shell - why? why not?

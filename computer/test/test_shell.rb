@@ -6,7 +6,7 @@ require 'helper'
 
 class TestShell < MiniTest::Test
 
-  Shell = Yorobot::Shell
+  Shell = Computer::Shell
 
   def test_run
     Shell.run( 'git config user.name' )
