@@ -1,25 +1,20 @@
-#####
-# say hello
-require 'yorobot/version'   # note: let version always go first
-puts YorobotCore.banner
-
-
-####
-# more stdlibs
-require 'optparse'    ## todo/fix: also move to yorobot/shell - why? why not?
-
 ####
 #  3rd party gems / libs
 #
-# require 'yorobot/shell'    # add shell run/call etc. machinery
-#   add via gitti
+# require 'computer'    # add shell run/call etc. machinery
+#   add via gitti & hubba
 require 'gitti'
+require 'hubba'
 
 
 # our own code
+require 'yorobot/version'   # note: let version always go first
 require 'yorobot/base'
 require 'yorobot/echo'
 require 'yorobot/list'
+
+require 'yorobot/github'
+
 
 
 module Yorobot
@@ -35,3 +30,5 @@ module Yorobot
   end # class Tool
 end  # module Yorobot
 
+
+puts YorobotCore.banner             # say hello

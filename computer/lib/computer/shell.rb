@@ -53,5 +53,5 @@ class Shell
       raise ShellError, "Shell.run >#{cmd}< failed with exit status #{status.exitstatus}<: #{stderr}"
     end
   end
-  end # class Shell
+end  # class Shell
 end  # module Computer

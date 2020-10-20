@@ -3,7 +3,7 @@ module Yorobot
 
 class List < Step
 
-  def call( args )
+  def call
     ## list all know steps
     steps = Yorobot.steps
     puts "#{steps.size} step(s):"

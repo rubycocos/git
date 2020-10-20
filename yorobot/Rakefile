@@ -19,6 +19,7 @@ Hoe.spec 'yorobot' do
 
   self.extra_deps = [
     ['gitti', '>= 0.5.0' ],
+    ['hubba', '>= 1.0.0' ],
   ]
 
   self.licenses = ['Public Domain']

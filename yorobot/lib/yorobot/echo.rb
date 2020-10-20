@@ -3,7 +3,7 @@ module Yorobot
 
 class Echo < Step
 
-  def call( args )
+  def call( *args )
     puts args.join( ' ' )
   end
 
