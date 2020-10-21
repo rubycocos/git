@@ -15,6 +15,5 @@ lib/mono/commands/sync.rb
 lib/mono/tool.rb
 lib/mono/version.rb
 lib/monos.rb
-lib/sportdb/setup.rb
 test/helper.rb
 test/test_base.rb

@@ -8,7 +8,7 @@ Hoe.spec 'monos' do
   self.summary = "monos - monorepo / mono source tree tools and (startup) scripts"
   self.description = summary
 
-  self.urls = { home: 'https://github.com/rubycoco/monos' }
+  self.urls = { home: 'https://github.com/rubycoco/git' }
 
   self.author = 'Gerald Bauer'
   self.email  = 'opensport@googlegroups.com'
@@ -20,7 +20,7 @@ Hoe.spec 'monos' do
   self.licenses = ['Public Domain']
 
   self.extra_deps = [
-    ['gitti',         '>= 0.4.0' ],
+    ['gitti',         '>= 0.6.0' ],
     ['gitti-backup',  '>= 0.4.1' ],
   ]
 
