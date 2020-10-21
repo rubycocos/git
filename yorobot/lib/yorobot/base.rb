@@ -3,19 +3,22 @@ module Yorobot
 
 class Step
 
+def self.option_defs
+  @option_defs ||= {}
+end
+
+def self.option( key, *args )
+  option_defs[ key ] = args
+end
+
 
 
 def options
   @options ||= {}
 end
 
-def on_parse_options( parser )  ## todo/check: find a better name?
-  ## do nothing; overwrite
-end
-
-
 def parse!( args )
-  ### cache option parser - why? why not?
+  ### todo/check - cache option parser!!!! - why? why not?
   OptionParser.new do |parser|
     ## add default banner - overwrite if needed/to customize
     parser.banner = <<TXT
@@ -24,10 +27,13 @@ Usage: #{name} [OPTIONS] ARGUMENTS
 
 TXT
 
-    on_parse_options( parser )
+    self.class.option_defs.each do | key, on_args|
+      parser.on( *on_args ) do |value|
+        options[ key ] = value
+      end
+    end
   end.parse!( args )
 end
-
 
 
 
@@ -44,9 +50,6 @@ def self.run( args=[] )
   args.each_with_index do |arg,i|
     puts "            #{[i]} >#{arg}<"
   end
-
-  #
-
 
 
   if args.size > 0

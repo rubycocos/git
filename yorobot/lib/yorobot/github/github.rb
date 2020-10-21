@@ -1,21 +1,12 @@
 module Yorobot
 
-
-
 class Github < Step     ## change to GithubStats or such - why? why not?
 
+  ## todo/check: use --data-dir/--datadir  - why? why not?
+  option :data_dir, "-d DIR", "--dir DIR",
+                    "data dir (defaults to #{Hubba.config.data_dir})"
 
-  def on_parse_options( parser )
-    ## todo/check: use --data-dir/--datadir  - why? why not?
-    parser.on( "-d DIR",
-               "--dir DIR",
-               "data dir (defaults to #{Hubba.config.data_dir}",
-             ) do |data_dir|
-                  options[:data_dir] = data_dir
-               end
-
-    ## add switch  --[no]-traffic  - why? why not?
-  end
+  ## todo/check: add switch  --[no]-traffic  - why? why not?
 
 
   def call( username )
@@ -35,6 +26,5 @@ class Github < Step     ## change to GithubStats or such - why? why not?
   end
 
 end # class Github
-
 end # module Yorobot
 

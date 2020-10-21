@@ -13,7 +13,8 @@ require 'yorobot/base'
 require 'yorobot/echo'
 require 'yorobot/list'
 
-require 'yorobot/github'
+require 'yorobot/github/git'
+require 'yorobot/github/github'
 
 
 

@@ -5,8 +5,8 @@
 
 module YorobotCore    ## todo/check: rename GittiBase or GittiMeta or such - why? why not?
   MAJOR = 0    ## todo: namespace inside version or something - why? why not??
-  MINOR = 1
-  PATCH = 1
+  MINOR = 2
+  PATCH = 2
   VERSION = [MAJOR,MINOR,PATCH].join('.')
 
   def self.version
