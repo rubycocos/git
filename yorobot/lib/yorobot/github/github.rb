@@ -1,6 +1,6 @@
 module Yorobot
 
-class Github < Step     ## change to GithubStats or such - why? why not?
+class Github < Command     ## change to GithubStats or such - why? why not?
 
   ## todo/check: use --data-dir/--datadir  - why? why not?
   option :data_dir, "-d DIR", "--dir DIR",

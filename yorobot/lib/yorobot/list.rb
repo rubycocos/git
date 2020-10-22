@@ -1,14 +1,14 @@
 module Yorobot
 
-
-class List < Step
-
+class List < Command
   def call
-    ## list all know steps
-    steps = Yorobot.steps
-    puts "#{steps.size} step(s):"
-    steps.each do |name, step|
-      puts "  #{name}   | #{step.class.name}"
+    ## list all known commands
+    commands = Commands.commands
+    puts "#{commands.size} command(s):"
+    commands.each do |name, command|
+      print "  %-10s" % name
+      print " | #{command.class.name} (#{command.name})"
+      print "\n"
     end
   end
 end
@@ -16,10 +16,4 @@ end
 end # module Yorobot
 
 
-#####
-#
-#
-#    -- add "shortcut why? why not?"
-#  step [:list, :ls] do |args|
-#    ....
-#  end
+

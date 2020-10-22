@@ -5,7 +5,6 @@ Rakefile
 bin/yo
 bin/yorobot
 lib/yorobot.rb
-lib/yorobot/base.rb
 lib/yorobot/echo.rb
 lib/yorobot/github/git.rb
 lib/yorobot/github/github.rb

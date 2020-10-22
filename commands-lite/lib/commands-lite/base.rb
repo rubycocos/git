@@ -1,7 +1,4 @@
-module Yorobot
-
-
-class Step
+class Command
 
 def self.option_defs
   @option_defs ||= {}
@@ -38,14 +35,14 @@ end
 
 
 def self.run( args=[] )
-  step      = new
+  command      = new
 
-  puts "--> (#{step.name})  #{args.join('·')}"
+  puts "--> (#{command.name})  #{args.join('·')}"
 
   ## check for options
-  step.parse!( args )
+  command.parse!( args )
 
-  puts "     #{step.options.size} opt(s): #{step.options.pretty_inspect}"
+  puts "     #{command.options.size} opt(s): #{command.options.pretty_inspect}"
   puts "     #{args.size} arg(s):"
   args.each_with_index do |arg,i|
     puts "            #{[i]} >#{arg}<"
@@ -54,24 +51,24 @@ def self.run( args=[] )
 
   if args.size > 0
     ## todo/check: check/verify arity of run - why? why not?
-    step.call( *args )   ## use run - why? why not?
+    command.call( *args )   ## use run - why? why not?
   else
-    step. call
+    command.call
   end
 end
 
 
-def self.step_name
+def self.command_name
   ## note: cut-off leading Yorobot:: for now in class name!!!
   ## note: always remove _ for now too!!!
   ## note: do NOT use @@name!!! - one instance variable per class needed!!
   @name ||= self.name.downcase
-                     .sub( /^yorobot::/, '' )
+                     .sub( /^yorobot::/, '' )   ## todo/fix: make "exclude" list configure-able  why? why not?
                      .gsub( /[_-]/, '' )
   @name
 end
 
-def name() self.class.step_name; end
+def name() self.class.command_name; end
 
 
 
@@ -79,46 +76,54 @@ def name() self.class.step_name; end
 
 def self.inherited( klass )
   # puts  klass.class.name  #=> Class
-  ## auto-register steps for now - why? why not?
-  Yorobot.register( klass )
+  ## auto-register commands for now - why? why not?
+  Commands.register( klass )
 end
 
-end  # class Step
+end  # class Command
 
 
+############################
+#  Commands/Commander registry
+class Commands   ## todo/check: use Commander/Command{Index,Registry,...} or such - why? why not?
 
-def self.steps  ## todo/check: change to registry or such - why? why not?
+def self.commands  ## todo/check: change to registry or such - why? why not?
   @@register ||= {}
 end
 
 def self.register( klass )
-  raise ArgumentError, "class MUST be a Yorobot::Step"   unless klass.ancestors.include?( Step )
+  raise ArgumentError, "class MUST be a Command"   unless klass.ancestors.include?( Command )
 
-  h = steps
-  h[ klass.step_name] = klass
+  h = commands
+  h[ klass.command_name] = klass
   h
 end
 
 
 def self.run( args=[] )
-  step_name = args.shift
+  command_name = args.shift
 
   ## 1) downcase  e.g. GithubStats
   ## 2) remove - to _   ## treat them the same e.g. github-stats => github_stats
-  step_name = step_name
-                 .gsub( /[_-]/, '' )
-                 .downcase
+  command_name = command_name
+                   .gsub( /[_-]/, '' )
+                   .downcase
 
-  step = steps[ step_name ]
-  if step.nil?
-    puts "!! ERROR: no step definition found for >#{step_name}<; known steps include:"
-    List.run
+  command = commands[ command_name ]
+  if command.nil?
+    puts "!! ERROR: no command definition found for >#{command_name}<; known commands include:"
+    pp commands
     exit 1
   end
 
-  step.run( args )
+  command.run( args )
 end
 
+end # class Commands
 
 
-end # module Yorobot
+###########################
+## add a alias / alternative name - why? why not
+Commander = Commands
+
+

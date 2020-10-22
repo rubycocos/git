@@ -1,4 +1,4 @@
-require 'computer'   ## note: move shell execute for (re)use to its own (upstream) gem
+require 'shell-lite'   ## note: move shell execute for (re)use to its own (upstream) gem
 
 module Gitti
   Shell      = Computer::Shell

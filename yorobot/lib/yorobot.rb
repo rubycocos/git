@@ -3,13 +3,13 @@
 #
 # require 'computer'    # add shell run/call etc. machinery
 #   add via gitti & hubba
+require 'commands-lite'
 require 'gitti'
 require 'hubba'
 
 
 # our own code
 require 'yorobot/version'   # note: let version always go first
-require 'yorobot/base'
 require 'yorobot/echo'
 require 'yorobot/list'
 
@@ -19,13 +19,17 @@ require 'yorobot/github/github'
 
 
 module Yorobot
+  def self.run( args )  Commands.run( args ); end
+  def self.list()       List.run; end
+
+
   class Tool
     def self.main( args=ARGV )
       if args.size > 0
         Yorobot.run( args )
       else
-        # list all known steps
-        List.run
+        # list all known commands
+        Yorobot.list
       end
     end
   end # class Tool

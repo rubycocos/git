@@ -8,6 +8,7 @@ Yorobot::Echo.run( ['Hello,', 'World!'] )
 Yorobot.run( ['list'] )
 Yorobot.run( ['echo', 'Hello,', 'World!'] )
 
+Yorobot.list
 
 Yorobot::Tool.main( ['echo', 'Hello,', 'World!'] )
 Yorobot::Tool.main

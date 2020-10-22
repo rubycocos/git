@@ -1,7 +1,7 @@
 module Yorobot
 
 
-class Setup < Step
+class Setup < Command
 
 =begin
 # check ssh
@@ -69,7 +69,7 @@ end # class Setup
 
 
 
-class Clone < Step     ## change to SshClone(r) or such - why? why not?
+class Clone < Command     ## change to SshClone(r) or such - why? why not?
   option :depth, "--depth DEPTH", Integer, "shallow clone depth"
 
   def call( *repos )
@@ -88,7 +88,7 @@ end # class Clone
 
 
 
-class Push < Step     ## change to SshPush(r) or such - why? why not?
+class Push < Command     ## change to SshPush(r) or such - why? why not?
 
   def call( *paths )  ## e.g. "./cache.github" etc.
      msg = "auto-update week #{Date.today.cweek}"

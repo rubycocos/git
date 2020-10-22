@@ -18,7 +18,7 @@ Hoe.spec 'gitti' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['computer', '>= 0.1.0' ],
+    ['shell-lite', '>= 0.0.1' ],
   ]
 
   self.licenses = ['Public Domain']
