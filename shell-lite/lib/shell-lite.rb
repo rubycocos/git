@@ -16,8 +16,8 @@ require 'rbconfig'
 
 #####################
 # our own code
-require 'computer/version'   # note: let version always go first
-require 'computer/shell'
+require 'shell-lite/version'   # note: let version always go first
+require 'shell-lite/shell'
 
 
 
@@ -81,4 +81,4 @@ Compu = Computer
 
 
 # say hello
-puts Computer.banner
+puts ShellLite.banner

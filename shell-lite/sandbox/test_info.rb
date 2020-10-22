@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift( "./lib" )
-require 'computer'
+require 'shell-lite'
 
 
 puts "os:   #{Computer.os}"

@@ -1,7 +1,7 @@
-module Computer
+module ShellLite
 
   MAJOR = 0    ## todo: namespace inside version or something - why? why not??
-  MINOR = 1
+  MINOR = 0
   PATCH = 1
   VERSION = [MAJOR,MINOR,PATCH].join('.')
 
@@ -10,12 +10,12 @@ module Computer
   end
 
   def self.banner
-    "computer/#{VERSION} on Ruby #{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) [#{RUBY_PLATFORM}]"
+    "shell-lite/#{VERSION} on Ruby #{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) [#{RUBY_PLATFORM}]"
   end
 
   def self.root
     File.expand_path( File.dirname(File.dirname(File.dirname(__FILE__))) )
   end
 
-end # module Computer
+end # module ShellLite
 

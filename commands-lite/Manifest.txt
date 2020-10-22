@@ -1,0 +1,6 @@
+CHANGELOG.md
+Manifest.txt
+README.md
+Rakefile
+lib/commands-lite.rb
+lib/commands-lite/version.rb

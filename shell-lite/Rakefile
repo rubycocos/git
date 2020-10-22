@@ -1,11 +1,11 @@
 require 'hoe'
-require './lib/computer/version.rb'
+require './lib/shell-lite/version.rb'
 
-Hoe.spec 'computer' do
+Hoe.spec 'shell-lite' do
 
-  self.version = Computer::VERSION
+  self.version = ShellLite::VERSION
 
-  self.summary = "computer gem  -  shell command line helper / wrapper 'n' more for your computer"
+  self.summary = "shell-lite gem  -  shell command line helper / wrapper 'n' more for your computer"
   self.description = summary
 
   self.urls    = { home: 'https://github.com/rubycoco/git' }

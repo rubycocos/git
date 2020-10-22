@@ -3,7 +3,7 @@ require 'minitest/autorun'
 
 
 ## our own code
-require 'computer'
+require 'shell-lite'
 
 
 
