@@ -32,7 +32,7 @@ step :third_step do
 end
 ```
 
-And than use the `flow` command line tool to run a step.
+And then use the `flow` command line tool to run a step.
 Example:
 
 ```
