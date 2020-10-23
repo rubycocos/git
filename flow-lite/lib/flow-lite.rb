@@ -40,7 +40,20 @@ end # class Step
 
 
 class Base    ## base class for flow class (auto)-constructed/build from flowfile
-end
+  def self.define_step( step )
+    name = step.names[0]
+    puts "    adding step  >#{name}<..."
+    define_method( name, &step.block )
+    alias_method( :"step_#{name}", name )  ## (auto-)add step_<name> alias
+
+    alt_names = step.names[1..-1]
+    alt_names.each do |alt_name|
+      puts "      adding alias >#{alt_name}< for >#{name}<..."
+      alias_method( alt_name, name )
+    end
+  end
+end  # class Base
+
 
 
 class Flowfile
@@ -66,20 +79,12 @@ class Flowfile
 
   def build_flow_class
     puts "  building flow class..."
-    flowfile = self
-    klass = Class.new( Base ) do
-      flowfile.steps.each_with_index do |step,i|
-        name = step.names[0]
-        puts "    adding step #{i+1}/#{flowfile.steps.size} >#{name}<..."
-        define_method( name, &step.block )
+    klass = Class.new( Base )
 
-        alt_names = step.names[1..-1]
-        alt_names.each do |alt_name|
-          puts "      adding alias >#{alt_name}< for >#{name}<..."
-          alias_method( alt_name, name )
-        end
-      end
+    steps.each do |step|
+      klass.define_step( step )
     end
+
     klass
   end
 

@@ -29,12 +29,14 @@ pp flowfile
 flowfile.run( :hello )
 
 flow = flowfile.flow
-flow.hello
-flow.hi
-flow.gruzi
-flow.hola
+pp flow.class.instance_methods( false )   ## false => exlclude all inherited methods
+pp flow.class.instance_methods.grep( /^step_/ )
+pp flow.hello
+pp flow.hi
+pp flow.gruzi
+pp flow.hola
 
-
+__END__
 
 DATASETS = %w[a b c]
 
