@@ -13,11 +13,12 @@ flowfile.run( :first_step )
 puts
 puts "---"
 flowfile = Flow::Flowfile.load( <<TXT )
-  step :hello do
+  step [:hello, :hi] do
     puts "hello"
-    step( :gruzi ) { puts "gruzi" }
     gruzi
   end
+
+  step( :gruzi ) { puts "gruzi" }
 
   step :hola do
     puts "holla"
@@ -26,6 +27,13 @@ TXT
 pp flowfile
 
 flowfile.run( :hello )
+
+flow = flowfile.flow
+flow.hello
+flow.hi
+flow.gruzi
+flow.hola
+
 
 
 DATASETS = %w[a b c]
