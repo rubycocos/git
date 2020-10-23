@@ -12,7 +12,80 @@ flow-lite gem - (yet) another (lite) workflow engine; let's you define your work
 
 ## Usage
 
-To be done
+
+Define the workflow steps in a Flowfile. Example:
+
+
+``` ruby
+step :first_step do
+  puts "first_step"
+  second_step    # note: you can call other steps like methods
+end
+
+step :second_step do
+  puts "second_step"
+  third_step
+end
+
+step :third_step do
+  puts "third_step"
+end
+```
+
+And than use the `flow` command line tool to run a step.
+Example:
+
+```
+$ flow first_step
+```
+
+Note: By default the `flow` reads in the `Flowfile`. Use `-f/--flowfile` option to use a different file.
+
+
+That's it for now.
+
+
+
+## Backstage Internals / Inside Flowfiles
+
+
+If you read in a `Flowfile` the flow machinery
+builds a new (regular) class derived from `Flow::Base`
+and every step becomes a (regular) method. Example:
+
+``` ruby
+require 'flow-lite'
+
+flowfile = Flow::Flowfile.load( <<TXT )
+  step :hello do
+    puts "Hello, world!"
+  end
+
+  step :hola do
+    puts "¡Hola, mundo!"
+  end
+TXT
+
+flow = flowfile.flow  # builds a flow class (and constructs/returns an instance)
+flow.hello             #=> "Hello, world!"
+flow.hola              #=> "¡Hola, mundo!"
+# or use ruby's message machinery
+flow.send( :hello )    #=> "Hello, world!"
+flow.send( :hola  )    #=> "¡Hola, mundo!"
+# ...
+```
+
+
+
+## Installation
+
+Use
+
+    gem install flow-lite
+
+or add to your Gemfile
+
+    gem 'flow-lite'
 
 
 
