@@ -1,0 +1,20 @@
+
+
+step :first_step do
+  puts "first_step"
+
+  second_step
+end
+
+step :second_step do
+  puts "second_step"
+
+  third_step
+end
+
+step :third_step do
+  puts "third_step"
+end
+
+
+puts "hello from Flowfile"
