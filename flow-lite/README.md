@@ -144,6 +144,10 @@ and than use (regular) include e.g.:
 class Flow::Base
   include GitHubActions
 end
+
+#-or-
+
+Flow::Base.include( GitHubActions )
 ```
 
 Now all your flows can (re)use `setup` or any other methods you define.
