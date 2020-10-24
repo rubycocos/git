@@ -1,9 +1,8 @@
-$LOAD_PATH.unshift( "./lib" )
-require 'mono'
+##############
+# experimental stuff
+#
 
-puts
-puts Mono.root
-
+module Mono
 
 ######################
 ### lint/print mono (source) tree
@@ -14,18 +13,27 @@ puts Mono.root
 #   - lint or
 #   - doctor or
 #   - check or such command - why? why not?
+def self.walk( path=root)
+   repos = walk_dir( path )
+   repos
+end
 
 
-def walk_dir( path, repos=[], level=1, depth: nil )  ## use max_depth or max_level or such - why? why not?
-  entries = Dir.entries(path)
+###############
+# private helpers
+private
+
+## todo/check - use max_depth or max_level or such - why? why not?
+def self.walk_dir( path, repos=[], level=1, depth: nil )
+  entries = ::Dir.entries(path)
 
   ## filter dirs
   dirs = entries.select do |entry|
     if ['..', '.'].include?( entry )  ## first check for excludes
       false
     else
-      full_path = File.join( path, entry )
-      File.directory?( full_path )
+      full_path = ::File.join( path, entry )
+      ::File.directory?( full_path )
     end
   end
 
@@ -45,9 +53,9 @@ def walk_dir( path, repos=[], level=1, depth: nil )  ## use max_depth or max_lev
   buf << ">#{path}< - level #{level}:\n"
   dirs.each do |entry|
     next if ['..', '.', '.git'].include?( entry )
-    full_path = File.join( path, entry )
+    full_path = ::File.join( path, entry )
 
-    if Dir.exist?( File.join( full_path, '.git' ))
+    if ::Dir.exist?( ::File.join( full_path, '.git' ))
       repos_count += 1
 
       if level == 1
@@ -61,15 +69,15 @@ def walk_dir( path, repos=[], level=1, depth: nil )  ## use max_depth or max_lev
       end
 
       buf << "    repo ##{'%-2d' % repos_count} | "
-      buf << "#{'%-20s' % entry} @ #{File.basename(path)} (#{path})"
+      buf << "#{'%-20s' % entry} @ #{::File.basename(path)} (#{path})"
       buf << "\n"
-      repos << path
+      repos << full_path
 
     ## check for bare bone git repos  - todo/fix: add .gitconfig or such and more - why? why not?
-    elsif Dir.exist?( File.join( full_path, 'hooks' )) &&
-          Dir.exist?( File.join( full_path, 'info' )) &&
-          Dir.exist?( File.join( full_path, 'objects' )) &&
-          Dir.exist?( File.join( full_path, 'refs' ))
+    elsif ::Dir.exist?( ::File.join( full_path, 'hooks' )) &&
+          ::Dir.exist?( ::File.join( full_path, 'info' )) &&
+          ::Dir.exist?( ::File.join( full_path, 'objects' )) &&
+          ::Dir.exist?( ::File.join( full_path, 'refs' ))
       warns_count += 1
       buf << "!! WARN - skip bare git repo >#{entry}< @ #{path}\n"
     else
@@ -86,14 +94,11 @@ def walk_dir( path, repos=[], level=1, depth: nil )  ## use max_depth or max_lev
 
   sub_dirs.each do |entry|
     ## continue walking
-    full_path = File.join( path, entry )
+    full_path = ::File.join( path, entry )
     walk_dir( full_path, repos, level+1, depth: depth )
   end
 
   repos
 end
 
-
-
-repos = walk_dir( Mono.root )
-## pp repos
+end  # module Mono

@@ -1,5 +1,4 @@
 module Mono
-
   ## pass along hash of repos (e.g. monorepo.yml or repos.yml )
   def self.fetch
     repos = Mono.monofile
@@ -19,8 +18,8 @@ module Mono
 
           repo = GitHubRepo.new( org, name )  ## owner, name e.g. rubylibs/webservice
 
-          Dir.chdir( org_path ) do
-            if Dir.exist?( repo.name )
+          ::Dir.chdir( org_path ) do
+            if ::Dir.exist?( repo.name )
               GitProject.open( repo.name ) do |proj|
                 proj.fetch
               end

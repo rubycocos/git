@@ -18,8 +18,9 @@ end
 
 ###
 # our own code
-require 'mono/version' # let version always go first
+require 'mono/version'      # let version always go first
 require 'mono/base'
+require 'mono/experimental'
 
 require 'mono/commands/status'
 require 'mono/commands/fetch'
@@ -28,7 +29,6 @@ require 'mono/commands/env'
 require 'mono/commands/backup'
 require 'mono/commands/run'
 require 'mono/tool'
-
 
 
 puts MonoCore.banner   # say hello

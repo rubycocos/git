@@ -11,15 +11,15 @@ module Mono
 
     repos.each do |org,names|
       org_path = "#{Mono.root}/#{org}"
-      FileUtils.mkdir_p( org_path ) unless Dir.exist?( org_path )   ## make sure path exists
+      ::FileUtils.mkdir_p( org_path ) unless ::Dir.exist?( org_path )   ## make sure path exists
 
       names.each do |name|
           puts "[#{count_repos+1}/#{total_repos}] #{org}@#{name}..."
 
           repo = GitHubRepo.new( org, name )  ## owner, name e.g. rubylibs/webservice
 
-          Dir.chdir( org_path ) do
-            if Dir.exist?( repo.name )
+          ::Dir.chdir( org_path ) do
+            if ::Dir.exist?( repo.name )
               GitProject.open( repo.name ) do |proj|
                 if proj.changes?
                   puts "!! WARN - local changes in workdir; skipping fast forward (remote) sync / merge"

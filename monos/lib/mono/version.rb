@@ -6,7 +6,7 @@ module MonoCore   ## todo/check: rename to MonoMeta, MonoModule or such - why? w
   ## note: move root to its own namespace to avoid
   ##   conflict with Mono.root!!!!
   MAJOR = 0    ## todo: namespace inside version or something - why? why not??
-  MINOR = 5
+  MINOR = 6
   PATCH = 0
   VERSION = [MAJOR,MINOR,PATCH].join('.')
 

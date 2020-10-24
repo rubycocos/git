@@ -12,6 +12,7 @@ lib/mono/commands/fetch.rb
 lib/mono/commands/run.rb
 lib/mono/commands/status.rb
 lib/mono/commands/sync.rb
+lib/mono/experimental.rb
 lib/mono/tool.rb
 lib/mono/version.rb
 lib/monos.rb
