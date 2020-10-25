@@ -5,14 +5,12 @@ puts
 puts Mono.root
 
 
-puts MonoFile.expand_path( 'tmp/test/hello.txt' )
 puts MonoFile.real_path( 'tmp/test/hello.txt' )
 
 
 puts MonoFile.read_utf8( 'tmp/test/hello.txt' )
 pp MonoFile.exist?( 'tmp/test/hello.txt' )
 pp MonoFile.exist?( 'tmp/test/hola.txt' )
-pp MonoFile.exists?( 'tmp/test/hola.txt' )
 
 
 MonoFile.open( 'tmp/test/test.txt', 'w:utf-8' ) do |f|
@@ -24,6 +22,7 @@ MonoGitProject.open( 'testgit/erste-schritte') do |proj|
    puts proj.status
    puts proj.changes?
 end
+
 
 
 Mono.open( 'testgit/erste-schritte') do |proj|

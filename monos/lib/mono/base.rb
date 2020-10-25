@@ -57,7 +57,7 @@ end  ## module Mono
 
 class MonoGitHub
   def self.clone( name )
-    path = MonoFile.expand_path( name )
+    path = MonoFile.real_path( name )
 
     org_path = File.dirname( path )
     FileUtils.mkdir_p( org_path ) unless Dir.exist?( org_path )   ## make sure path exists
@@ -77,16 +77,9 @@ MonoGithub = MonoGitHub  ## add convenience (typo?) alias
 
 class MonoGitProject
   def self.open( name, &block )
-    path = MonoFile.expand_path( name )
+    path = MonoFile.real_path( name )
     Gitti::GitProject.open( path, &block )
   end
-end
-
-
-module Mono
-  ## add some short cuts
-  def self.open( name, &block ) MonoGitProject.open( name, &block ); end
-  def self.clone( name )        MonoGitHub.clone( name ); end
 end
 
 
@@ -96,27 +89,19 @@ class MonoFile
     ##      expand to to "real" absolute path
     ##
     ## todo/check: assert name must be  {orgname,username}/reponame
-    def self.expand_path( path )
+    def self.real_path( path )
       "#{Mono.root}/#{path}"
     end
     def self.exist?( path )
-      ::File.exist?( expand_path( path ))
+      ::File.exist?( real_path( path ))
     end
-
-
-    ## add some aliases - why? why not?
-    class << self
-      alias_method :real_path, :expand_path
-      alias_method :exists?,   :exist?   ## add deprecated exists? too - why? why not?
-    end
-
 
 
     ## path always relative to Mono.root
     ##   todo/fix:  use File.expand_path( path, Mono.root ) - why? why not?
     ##    or always enfore "absolut" path e.g. do NOT allow ../ or ./ or such
     def self.open( path, mode='r:utf-8', &block )
-       full_path = "#{Mono.root}/#{path}"
+       full_path = real_path( path )
        ## make sure path exists if we open for writing/appending - why? why not?
        if mode[0] == 'w' || mode[0] == 'a'
         ::FileUtils.mkdir_p( ::File.dirname( full_path ) )  ## make sure path exists
@@ -132,6 +117,15 @@ class MonoFile
     end
 end  ## class MonoFile
 
+
+
+module Mono
+  #################
+  ## add some short cuts
+  def self.open( name, &block ) MonoGitProject.open( name, &block ); end
+  def self.clone( name )        MonoGitHub.clone( name ); end
+  def self.real_path( name)     MonoFile.real_path( name ); end
+end  ## module Mono
 
 
 

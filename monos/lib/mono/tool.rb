@@ -30,6 +30,11 @@ class Tool
       Mono.backup
    when 'run', 'r', 'exec'
       Mono.run( args )
+
+   ##################
+   ## for debugging / linting
+   when 'walk'
+      Mono.walk
    else
      puts "!! ERROR: unknown command >#{cmd}<"
      exit 1
