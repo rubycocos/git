@@ -6,6 +6,9 @@ step [:hi,:hello] do
   pp DATASETS
 end
 
+
+require 'gitti'
+
 step :git do
   Git.version
 end

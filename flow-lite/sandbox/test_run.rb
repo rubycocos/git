@@ -36,7 +36,7 @@ pp flow.hi
 pp flow.gruzi
 pp flow.hola
 
-__END__
+
 
 DATASETS = %w[a b c]
 

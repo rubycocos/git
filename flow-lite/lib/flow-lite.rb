@@ -1,15 +1,19 @@
+##
+## "prelude / prolog " add some common used stdlibs
+##   add more - why? why not?
 require 'pp'
+require 'time'
+require 'date'
+require 'json'
+require 'yaml'
+require 'fileutils'
+
+require 'uri'
+require 'net/http'
+require 'net/https'
+
+
 require 'optparse'
-
-
-
-####################
-# "prelude/prolog" add some 3rd party libs/gems
-# -- our own
-require 'gitti'
-require 'hubba'  ## todo/fix: rename to gitti-api/gitti-apis
-require 'mono'
-# -- some more ???
 
 
 
@@ -42,13 +46,13 @@ end # class Step
 class Base    ## base class for flow class (auto)-constructed/build from flowfile
   def self.define_step( step )
     name = step.names[0]
-    puts "    adding step  >#{name}<..."
+    puts "[flow]    adding step  >#{name}<..."
     define_method( name, &step.block )
     alias_method( :"step_#{name}", name )  ## (auto-)add step_<name> alias
 
     alt_names = step.names[1..-1]
     alt_names.each do |alt_name|
-      puts "      adding alias >#{alt_name}< for >#{name}<..."
+      puts "[flow]      adding alias >#{alt_name}< for >#{name}<..."
       alias_method( alt_name, name )
     end
   end
@@ -78,7 +82,7 @@ class Flowfile
   end
 
   def build_flow_class
-    puts "  building flow class..."
+    puts "[flow]  building flow class..."
     klass = Class.new( Base )
 
     steps.each do |step|
