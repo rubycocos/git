@@ -5,7 +5,7 @@ Hoe.spec 'commands-lite' do
 
   self.version = CommandsLite::VERSION
 
-  self.summary = "commmands-lite gem - (lite) commands 'n' options helper / wrapper / parser / runner"
+  self.summary = "commands-lite gem - (lite) commands 'n' options helper / wrapper / parser / runner"
   self.description = summary
 
   self.urls    = { home: 'https://github.com/rubycoco/git' }
