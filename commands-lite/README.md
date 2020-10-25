@@ -1,12 +1,12 @@
-# commmands-lite
+# commands-lite
 
-commmands-lite gem - (lite) commands 'n' options helper / wrapper / parser / runner
+commands-lite gem - (lite) commands 'n' options helper / wrapper / parser / runner
 
 
 * home  :: [github.com/rubycoco/git](https://github.com/rubycoco/git)
 * bugs  :: [github.com/rubycoco/git/issues](https://github.com/rubycoco/git/issues)
-* gem   :: [rubygems.org/gems/commmands-lite](https://rubygems.org/gems/commmands-lite)
-* rdoc  :: [rubydoc.info/gems/commmands-lite](http://rubydoc.info/gems/commmands-lite)
+* gem   :: [rubygems.org/gems/commands-lite](https://rubygems.org/gems/commands-lite)
+* rdoc  :: [rubydoc.info/gems/commands-lite](http://rubydoc.info/gems/commands-lite)
 
 
 
