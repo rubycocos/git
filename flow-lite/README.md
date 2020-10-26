@@ -10,6 +10,7 @@ flow-lite gem - (yet) another (lite) workflow engine; let's you define your work
 
 
 
+
 ## Usage
 
 
@@ -19,12 +20,12 @@ Define the workflow steps in a Flowfile. Example:
 ``` ruby
 step :first_step do
   puts "first_step"
-  second_step    # note: you can call other steps like methods
+  step :second_step    # note: you can call other steps with step
 end
 
 step :second_step do
   puts "second_step"
-  third_step
+  step :third_step
 end
 
 step :third_step do
@@ -39,7 +40,28 @@ Example:
 $ flow first_step
 ```
 
-Note: By default the `flow` command line tool reads in the `Flowfile`. Use `-f/--flowfile` option to use a different file.
+Note: By default the `flow` command line tool reads in and looks for `flowfile`, `Flowfile`, `flowfile.rb`, `Flowfile.rb`
+in that order.
+Use the `-f/--flowfile` option to use a different file
+and use the `-r/--require` to (auto-)require
+some extra libraries or scripts.
+By default for now the "prelude / prolog" that always
+gets auto-required includes:
+
+``` ruby
+require 'pp'
+require 'time'
+require 'date'
+require 'json'
+require 'yaml'
+require 'fileutils'
+
+require 'uri'
+require 'net/http'
+require 'net/https'
+```
+
+Tip: See the [`flow-lite.rb`](https://github.com/rubycoco/git/blob/master/flow-lite/lib/flow-lite.rb) source for the definite always up-to-date list.
 
 
 That's it for now.
@@ -66,14 +88,16 @@ flowfile = Flow::Flowfile.load( <<TXT )
   end
 TXT
 
-flow = flowfile.flow   # (auto-)builds a flow class (see Note 1)
-                       # and constructs/returns an instance
-flow.hello             #=> "Hello, world!"
-flow.hola              #=> "¡Hola, mundo!"
+flow = flowfile.flow_class.new   # (auto-)build a flow class (see Note 1)
+                                 # and construct/return a new instance
+flow.step_hello             #=> "Hello, world!"
+flow.step_hola              #=> "¡Hola, mundo!"
+flow.step( :hello )         #=> "Hello, world!"
+flow.step( :hola )          #=> "¡Hola, mundo!"
 
 # or use ruby's (regular) message/metaprogramming machinery
-flow.send( :hello )    #=> "Hello, world!"
-flow.send( :hola  )    #=> "¡Hola, mundo!"
+flow.send( :step_hello )    #=> "Hello, world!"
+flow.send( :step_hola  )    #=> "¡Hola, mundo!"
 # or try
 flow.class.instance_methods.grep( /^step_/ ) #=> [:step_hello, :step_hola]
 # ...
@@ -95,17 +119,38 @@ gets used to (auto-) build (via metaprogramming) a flow class like:
 
 ``` ruby
 class Greeter < Flow::Base
-  def hello
+  def step_hello
     puts "Hello, world!"
   end
-  alias_method :step_hello, :hello
 
-  def hola
+  def step_hola
     puts "¡Hola, mundo!"
   end
-  alias_method :step_hola, :hola
 end
 ```
+
+
+Note: Behind the stage the metaprogramming "class macro"
+`define_step( symbol, method )`
+or `define_step( symbol ) { block }` defined in `Flow::Base`
+gets used, thus,
+if you want to create steps in a "hand-coded" class
+use:
+
+
+``` ruby
+class Greeter < Flow::Base
+  define_step :hello do
+    puts "Hello, world!"
+  end
+
+  define_step :hola do
+    puts "¡Hola, mundo!"
+  end
+end
+```
+
+
 
 
 
@@ -115,7 +160,7 @@ Auto-include pre-build / pre-defined steps. Use a (regular) Module e.g.:
 
 ``` ruby
 module GitHubActions
-  def setup
+  def step_setup
      # setup ssh
      ssh_key  = ENV['SSH_KEY']
      ssh_path = File.expand_path( '~/.ssh' )
@@ -133,8 +178,6 @@ module GitHubActions
 
      # ...
   end
-  # optional - for auto-discovery add a step alias
-  alias_method :step_setup, :setup
 end
 ```
 
@@ -150,7 +193,52 @@ end
 Flow::Base.include( GitHubActions )
 ```
 
-Now all your flows can (re)use `setup` or any other methods you define.
+Now all your flows can (re)use `setup` or any other step methods you define.
+
+
+
+
+## Real World Examples
+
+**Collect GitHub Statistics**
+
+Use GitHub Actions to collect
+GitHub Statistics via GitHub API calls
+and update the JSON datasets
+in the `/cache.github` repo.
+
+``` ruby
+step :clone do
+  Mono.clone( 'yorobot/cache.github' )
+end
+
+
+step :update do
+  Hubba.config.data_dir = Mono.real_path( 'yorobot/cache.github' )
+
+  username = 'geraldb'
+  h = Hubba.reposet( username )
+  pp h
+
+  Hubba.update_stats( h )
+  Hubba.update_traffic( h )
+  puts "Done."
+end
+
+
+step :push do
+  msg = "auto-update week #{Date.today.cweek}"
+
+  Mono.open( 'yorobot/cache.github' ) do |proj|
+    if proj.changes?
+      proj.add( "." )
+      proj.commit( msg )
+      proj.push
+    end
+  end
+end
+```
+(Source: [`Flowfile` @ `yorobot/backup`](https://github.com/yorobot/backup/blob/master/Flowfile.rb))
 
 
 
