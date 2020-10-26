@@ -8,6 +8,7 @@ require 'flow-lite'
 #   add via gitti & hubba
 require 'gitti'
 require 'hubba'
+require 'hubba/reports'
 require 'mono'
 
 

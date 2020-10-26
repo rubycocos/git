@@ -21,7 +21,8 @@ Hoe.spec 'yorobot' do
     ['flow-lite',     '>= 1.0.0'],
     ['gitti',         '>= 0.6.1'],
     ['hubba',         '>= 1.0.0'],
-    ['monos',         '>= 1.0.0'],
+    ['hubba-reports', '>= 1.0.1'],
+    ['monos',         '>= 1.0.1'],
   ]
 
   self.licenses = ['Public Domain']
