@@ -56,7 +56,7 @@ end  ## module Mono
 ##   (rename to mononame and monopath) - why? why not?
 
 class MonoGitHub
-  def self.clone( name )
+  def self.clone( name, depth: nil )
     path = MonoFile.real_path( name )
 
     org_path = File.dirname( path )
@@ -67,7 +67,7 @@ class MonoGitHub
     ssh_clone_url = "git@github.com:#{name}.git"
 
     Dir.chdir( org_path ) do
-      Gitti::Git.clone( ssh_clone_url )
+      Gitti::Git.clone( ssh_clone_url, depth: depth )
     end
   end
 end
@@ -122,10 +122,9 @@ end  ## class MonoFile
 module Mono
   #################
   ## add some short cuts
-  def self.open( name, &block ) MonoGitProject.open( name, &block ); end
-  def self.clone( name )        MonoGitHub.clone( name ); end
-  def self.real_path( name)     MonoFile.real_path( name ); end
+  def self.open( name, &block )      MonoGitProject.open( name, &block ); end
+  def self.clone( name, depth: nil ) MonoGitHub.clone( name, depth: depth ); end
+  def self.real_path( name)          MonoFile.real_path( name ); end
 end  ## module Mono
-
 
 

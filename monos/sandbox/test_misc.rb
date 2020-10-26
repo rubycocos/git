@@ -41,4 +41,5 @@ MonoGitProject.open( 'rubycoco/fotos' ) do |proj|
   puts proj.changes?
 end
 
+Mono.clone( 'rubycoco/gutenberg', depth: 1 )
 ## Mono.clone( 'rubycoco/fizzubuzzer' )
