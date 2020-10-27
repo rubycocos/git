@@ -18,11 +18,11 @@ Hoe.spec 'yorobot' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['flow-lite',     '>= 1.0.0'],
+    ['flow-lite',     '>= 1.0.1'],
     ['gitti',         '>= 0.6.1'],
     ['hubba',         '>= 1.0.0'],
     ['hubba-reports', '>= 1.0.1'],
-    ['monos',         '>= 1.0.1'],
+    ['monos',         '>= 1.0.2'],
   ]
 
   self.licenses = ['Public Domain']

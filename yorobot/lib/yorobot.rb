@@ -36,7 +36,7 @@ class Base
      git config --global user.email "gerald.bauer+yorobot@gmail.com"
      git config -l --show-origin
 =end
-  def setup
+  def step_setup
     ##############
     ## setup ssh
 
@@ -82,17 +82,41 @@ class Base
 
     Computer::Shell.run( %Q{git config -l --show-origin} )
   end
-  alias_method :step_setup, :setup
 
 end  # class Base
 end  # module Flow
 
 
 
-
-
 module Yorobot
-  Tool = ::Flow::Tool
+  def self.main( args=ARGV )
+
+    ## setup/check mono root
+    puts "[flow] pwd: #{Dir.pwd}"
+
+
+    ## quick hack:
+    ##   if /sites  does not exists
+    ##               assume running with GitHub Actions or such
+    ## and use working dir as root? or change to home dir ~/ or ~/mono - why? why not?
+    ##
+    ##   in the future use some -e/-env(ironemt)  settings and scripts - why? why not?
+    if Dir.exist?( 'C:/Sites' )
+      Mono.root = 'C:/Sites'     ## use local (dev) setup for testing flow steps
+
+      puts "[flow]   assume local (dev) setup for testing"
+    else
+      Mono.root = Dir.pwd
+
+      ## for debugging print / walk mono (source) tree
+      Mono.walk
+    end
+    puts "[flow] Mono.root: #{Mono.root}"
+
+
+    ## pass along to "standard" flow engine
+    ::Flow::Tool.main( args )
+  end
 end  # module Yorobot
 
 
