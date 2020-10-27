@@ -18,3 +18,4 @@ lib/mono/version.rb
 lib/monos.rb
 test/helper.rb
 test/test_base.rb
+test/test_path.rb

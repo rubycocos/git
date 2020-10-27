@@ -25,15 +25,15 @@ private
 
 ## todo/check - use max_depth or max_level or such - why? why not?
 def self.walk_dir( path, repos=[], level=1, depth: nil )
-  entries = ::Dir.entries(path)
+  entries = Dir.entries(path)
 
   ## filter dirs
   dirs = entries.select do |entry|
     if ['..', '.'].include?( entry )  ## first check for excludes
       false
     else
-      full_path = ::File.join( path, entry )
-      ::File.directory?( full_path )
+      full_path = File.join( path, entry )
+      File.directory?( full_path )
     end
   end
 
@@ -53,9 +53,9 @@ def self.walk_dir( path, repos=[], level=1, depth: nil )
   buf << ">#{path}< - level #{level}:\n"
   dirs.each do |entry|
     next if ['..', '.', '.git'].include?( entry )
-    full_path = ::File.join( path, entry )
+    full_path = File.join( path, entry )
 
-    if ::Dir.exist?( ::File.join( full_path, '.git' ))
+    if Dir.exist?( File.join( full_path, '.git' ))
       repos_count += 1
 
       if level == 1
@@ -69,15 +69,15 @@ def self.walk_dir( path, repos=[], level=1, depth: nil )
       end
 
       buf << "    repo ##{'%-2d' % repos_count} | "
-      buf << "#{'%-20s' % entry} @ #{::File.basename(path)} (#{path})"
+      buf << "#{'%-20s' % entry} @ #{File.basename(path)} (#{path})"
       buf << "\n"
       repos << full_path
 
     ## check for bare bone git repos  - todo/fix: add .gitconfig or such and more - why? why not?
-    elsif ::Dir.exist?( ::File.join( full_path, 'hooks' )) &&
-          ::Dir.exist?( ::File.join( full_path, 'info' )) &&
-          ::Dir.exist?( ::File.join( full_path, 'objects' )) &&
-          ::Dir.exist?( ::File.join( full_path, 'refs' ))
+    elsif Dir.exist?( File.join( full_path, 'hooks' )) &&
+          Dir.exist?( File.join( full_path, 'info' )) &&
+          Dir.exist?( File.join( full_path, 'objects' )) &&
+          Dir.exist?( File.join( full_path, 'refs' ))
       warns_count += 1
       buf << "!! WARN - skip bare git repo >#{entry}< @ #{path}\n"
     else
@@ -94,7 +94,7 @@ def self.walk_dir( path, repos=[], level=1, depth: nil )
 
   sub_dirs.each do |entry|
     ## continue walking
-    full_path = ::File.join( path, entry )
+    full_path = File.join( path, entry )
     walk_dir( full_path, repos, level+1, depth: depth )
   end
 

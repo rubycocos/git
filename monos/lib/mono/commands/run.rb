@@ -22,8 +22,8 @@ module Mono
 
           repo = GitHubRepo.new( org, name )  ## owner, name e.g. rubylibs/webservice
 
-          ::Dir.chdir( org_path ) do
-            if ::Dir.exist?( repo.name )
+          Dir.chdir( org_path ) do
+            if Dir.exist?( repo.name )
               GitProject.open( repo.name ) do |proj|
                 proj.run( cmd )
               end

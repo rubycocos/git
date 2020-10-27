@@ -5,27 +5,27 @@ puts
 puts Mono.root
 
 
-puts MonoFile.real_path( 'tmp/test/hello.txt' )
+puts MonoFile.real_path( 'hello.txt@tmp/test' )
 
 
-puts MonoFile.read_utf8( 'tmp/test/hello.txt' )
-pp MonoFile.exist?( 'tmp/test/hello.txt' )
-pp MonoFile.exist?( 'tmp/test/hola.txt' )
+puts MonoFile.read_utf8( 'hello.txt@tmp/test' )
+pp MonoFile.exist?( 'hello.txt@tmp/test' )
+pp MonoFile.exist?( 'hola.txt@tmp/test' )
 
 
-MonoFile.open( 'tmp/test/test.txt', 'w:utf-8' ) do |f|
+MonoFile.open( 'test.txt@tmp/test', 'w:utf-8' ) do |f|
   f.write( "test test test\n" )
   f.write( "#{Time.now}\n")
 end
 
-MonoGitProject.open( 'testgit/erste-schritte') do |proj|
+MonoGitProject.open( 'erste-schritte@testgit') do |proj|
    puts proj.status
    puts proj.changes?
 end
 
 
 
-Mono.open( 'testgit/erste-schritte') do |proj|
+Mono.open( 'erste-schritte@testgit') do |proj|
   puts proj.status
   puts proj.changes?
 end
@@ -34,12 +34,12 @@ Mono.root = "/Sites/tmp/#{Time.now.to_i}"
 puts Mono.root
 
 
-MonoGitHub.clone( 'rubycoco/fotos')
+MonoGitHub.clone( 'fotos@rubycoco')
 
-MonoGitProject.open( 'rubycoco/fotos' ) do |proj|
+MonoGitProject.open( 'fotos@rubycoco' ) do |proj|
   puts proj.status
   puts proj.changes?
 end
 
-Mono.clone( 'rubycoco/gutenberg', depth: 1 )
-## Mono.clone( 'rubycoco/fizzubuzzer' )
+Mono.clone( 'gutenberg@rubycoco', depth: 1 )
+## Mono.clone( 'fizzubuzzer@rubycoco' )

@@ -8,8 +8,8 @@ module Mono
         ##  check if root directory exists?
         if ENV['MOPATH']
           ## use expand path to make (assure) absolute path - why? why not?
-          ::File.expand_path( ENV['MOPATH'] )
-        elsif ::Dir.exist?( 'C:/Sites' )
+          File.expand_path( ENV['MOPATH'] )
+        elsif Dir.exist?( 'C:/Sites' )
           'C:/Sites'
         else
           '/sites'
@@ -19,27 +19,29 @@ module Mono
 
   def self.root=( path )
     ## use expand path to make (assure) absolute path - why? why not?
-    @@root = ::File.expand_path( path )
+    @@root = File.expand_path( path )
   end
 
 
 
 
+  MONOFILES = ['monorepo.yml', 'monotree.yml', 'repos.yml']
+
+  def self.find_monofile
+    MONOFILES.each do |name|
+      return "./#{name}"  if File.exist?( "./#{name}")
+    end
+
+    nil  ## no monofile found; return nil
+  end
+
   def self.monofile
-    path =  if ::File.exist?( './monorepo.yml' )
-               './monorepo.yml'
-            elsif ::File.exist?( './monotree.yml' )
-               './monotree.yml'
-            elsif ::File.exist?( './repos.yml' )
-               './repos.yml'
-            else
-               puts "!! WARN: no mono configuration file (that is, {monorepo,monotree,repos}.yml) found in >#{Dir.getwd}<"
-               nil
-            end
+    path = find_monofile
 
     if path
       GitRepoSet.read( path )
     else
+      puts "!! WARN: no mono configuration file found; looking for #{MONOFILES.join(', ')} in (#{Dir.getwd})"
       GitRepoSet.new( {} )  ## return empty set -todo/check: return nil - why? why not?
     end
   end
@@ -57,14 +59,19 @@ end  ## module Mono
 
 class MonoGitHub
   def self.clone( name, depth: nil )
-    path = MonoFile.real_path( name )
+    ## lets you use:
+    ##   @rubycoco/gitti  or
+    ##   gitti@rubycoco
+    ##  =>  rubycoco/gitti
+    norm_name = MonoFile.norm_name( name )
+    path      = "#{Mono.root}/#{norm_name}"
 
     org_path = File.dirname( path )
     FileUtils.mkdir_p( org_path ) unless Dir.exist?( org_path )   ## make sure path exists
 
     ### note: use a github clone url (using ssh) like:
     ##     git@github.com:rubycoco/gitti.git
-    ssh_clone_url = "git@github.com:#{name}.git"
+    ssh_clone_url = "git@github.com:#{norm_name}.git"
 
     Dir.chdir( org_path ) do
       Gitti::Git.clone( ssh_clone_url, depth: depth )
@@ -90,10 +97,33 @@ class MonoFile
     ##
     ## todo/check: assert name must be  {orgname,username}/reponame
     def self.real_path( path )
-      "#{Mono.root}/#{path}"
+      "#{Mono.root}/#{norm_name( path )}"
     end
+
+    def self.norm_name( path )
+      #  turn
+      #  - @yorobot/stage/one
+      #  - one@yorobot/stage
+      #  - stage/one@yorobot
+      #      => into
+      #  - yorobot/stage/one
+
+
+      parts = path.split( '@' )
+      raise ArgumentError, "no (required) @ found in name; got >#{path}<"               if parts.size == 1
+      raise ArgumentError, "too many @ found (#{parts.size-1}) in name; got >#{path}<"  if parts.size > 2
+
+      norm_name = String.new('')
+      norm_name << parts[1]  ## add orgs path first
+      if parts[0].length > 0   ## has leading repo name (w/ optional path)
+        norm_name << '/'
+        norm_name << parts[0]
+      end
+      norm_name
+    end
+
     def self.exist?( path )
-      ::File.exist?( real_path( path ))
+      File.exist?( real_path( path ))
     end
 
 
@@ -104,10 +134,10 @@ class MonoFile
        full_path = real_path( path )
        ## make sure path exists if we open for writing/appending - why? why not?
        if mode[0] == 'w' || mode[0] == 'a'
-        ::FileUtils.mkdir_p( ::File.dirname( full_path ) )  ## make sure path exists
+        FileUtils.mkdir_p( File.dirname( full_path ) )  ## make sure path exists
        end
 
-       ::File.open( full_path, mode ) do |file|
+       File.open( full_path, mode ) do |file|
          block.call( file )
        end
     end
@@ -124,7 +154,7 @@ module Mono
   ## add some short cuts
   def self.open( name, &block )      MonoGitProject.open( name, &block ); end
   def self.clone( name, depth: nil ) MonoGitHub.clone( name, depth: depth ); end
-  def self.real_path( name)          MonoFile.real_path( name ); end
+  def self.real_path( name )         MonoFile.real_path( name ); end
 end  ## module Mono
 
 
