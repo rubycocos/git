@@ -89,6 +89,7 @@ end  # module Flow
 
 
 module Yorobot
+class Tool
   def self.main( args=ARGV )
 
     ## setup/check mono root
@@ -117,6 +118,7 @@ module Yorobot
     ## pass along to "standard" flow engine
     ::Flow::Tool.main( args )
   end
+end  # class Tool
 end  # module Yorobot
 
 
