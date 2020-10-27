@@ -68,24 +68,46 @@ class Base    ## base class for flow class (auto)-constructed/build from flowfil
 
   ## run step by symbol/name (e.g. step :hello - etc.)
   def step( name )
-    name = name.to_sym  ## make sure we always use symbols
+    name = :"step_#{name}"  ## note: make sure we always use symbols
     if respond_to?( name )
        send( name )
     else
-      puts "!! ERROR: step definition >#{name}< not found; cannot run/execute - known steps include:"
-      pp self.class.instance_methods.grep( /^step_/ )   #=> e.g. [:step_hello, ...]
+      puts "!! ERROR: step definition >#{name}< not found; cannot run/execute - known (defined) steps include:"
+      pp self.class.step_methods  #=> e.g. [:hello, ...]
       exit 1
     end
   end  # method step
 
+  def self.step_methods
+    names = instance_methods.reduce([]) do |names, name|
+                                          names << $1.to_sym  if name =~ /^step_(.+)/
+                                          names
+                                        end
+    names
+  end
 end  # class Base
 
 
 
 
 class Flowfile
+
+  ## find flowfile path by convention
+  ## check for name by convention in this order:
+  FLOWFILES = ['flowfile',    'Flowfile',
+               'flowfile.rb', 'Flowfile.rb']
+  def self.find_file
+    FLOWFILES.each do |name|
+      return "./#{name}"   if File.exist?( "./#{name}" )
+    end
+
+    STDERR.puts "!! ERROR - no flowfile found, sorry - looking for: #{FLOWFILES.join(', ')} in (#{Dir.pwd})"
+    exit 1
+  end # method self.find_file
+
+
   ## convenience method - use like Flowfile.load_file()
-  def self.load_file( path='./Flowfile' )
+  def self.load_file( path=find_file )
     code = File.open( path, 'r:utf-8' ) { |f| f.read }
     load( code )
   end
@@ -152,7 +174,7 @@ class Tool
 
       ## note:
       ##  you can add many/multiple modules
-      ##  e.g. -r gitti -r hubba etc.
+      ##  e.g. -r gitti -r mono etc.
       parser.on( '-r NAME', '--require NAME') do |name|
         options[:requires] ||= []
         options[:requires] << name
@@ -165,17 +187,14 @@ class Tool
       names = options[:requires]
       names.each do |name|
         ## todo/check: add some error/exception handling here - why? why not?
-        puts "[flow] require >#{name}<..."
+        puts "[flow] (auto-)require >#{name}<..."
         require( name )
       end
     end
 
 
-    path = options[:flowfile] || find_flowfile
+    path = options[:flowfile] || Flowfile.find_file
 
-    ## todo/fix/check:
-    ##   check rake for error message - no Flowfile/Rakefile or such
-    ##   add here  if path.nil? exit 1
 
     puts "[flow] loading >#{path}<..."
     flowfile = Flowfile.load_file( path )
@@ -187,21 +206,6 @@ class Tool
       flowfile.run( arg )
     end
   end # method self.main
-
-  ####################
-  # helpers
-  def self.find_flowfile
-    ## find flowfile path by convention
-    ## check for name by convention in this order:
-    names = ['flowfile',    'Flowfile',
-             'flowfile.rb', 'Flowfile.rb']
-
-    names.each do |name|
-      return name   if File.exist?( "./#{name}" )
-    end
-
-    nil
-  end # method self.find_flowfile
 end # class Tool
 
 end # module Flow

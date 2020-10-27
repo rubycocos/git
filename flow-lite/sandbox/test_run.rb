@@ -15,10 +15,10 @@ puts "---"
 flowfile = Flow::Flowfile.load( <<TXT )
   step [:hello, :hi] do
     puts "hello"
-    gruzi
+    step :grüezi
   end
 
-  step( :gruzi ) { puts "gruzi" }
+  step( :grüezi ) { puts "grüezi" }
 
   step :hola do
     puts "holla"
@@ -29,13 +29,18 @@ pp flowfile
 flowfile.run( :hello )
 
 flow = flowfile.flow
+pp flow.class.step_methods
 pp flow.class.instance_methods( false )   ## false => exlclude all inherited methods
 pp flow.class.instance_methods.grep( /^step_/ )
-pp flow.hello
-pp flow.hi
-pp flow.gruzi
-pp flow.hola
+flow.step_hello
+flow.step_hi
+flow.step_grüezi
+flow.step_hola
 
+flow.step( :hello )
+flow.step( :hi )
+flow.step( :grüezi )
+flow.step( :hola )
 
 
 DATASETS = %w[a b c]
@@ -56,4 +61,8 @@ flowfile.run( :hi )
 flowfile.run( :git )
 
 #  flowfile.run( :bye )
+
+puts "bye"
+
+
 

@@ -3,13 +3,15 @@
 step :first_step do
   puts "first_step"
 
-  second_step
+  step :second_step
+  step_second_step
 end
 
 step :second_step do
   puts "second_step"
 
-  third_step
+  step :third_step
+  step_third_step
 end
 
 step :third_step do

@@ -94,6 +94,7 @@ flow.step_hello             #=> "Hello, world!"
 flow.step_hola              #=> "¡Hola, mundo!"
 flow.step( :hello )         #=> "Hello, world!"
 flow.step( :hola )          #=> "¡Hola, mundo!"
+flow.class.step_methods     #=> [:hello, :hola]
 
 # or use ruby's (regular) message/metaprogramming machinery
 flow.send( :step_hello )    #=> "Hello, world!"
@@ -205,16 +206,16 @@ Now all your flows can (re)use `setup` or any other step methods you define.
 Use GitHub Actions to collect
 GitHub Statistics via GitHub API calls
 and update the JSON datasets
-in the `/cache.github` repo.
+in the `/cache.github` repo at the `yorobot` org(anization):
 
 ``` ruby
 step :clone do
-  Mono.clone( 'yorobot/cache.github' )
+  Mono.clone( '@yorobot/cache.github' )
 end
 
 
 step :update do
-  Hubba.config.data_dir = Mono.real_path( 'yorobot/cache.github' )
+  Hubba.config.data_dir = Mono.real_path( '@yorobot/cache.github' )
 
   username = 'geraldb'
   h = Hubba.reposet( username )
@@ -229,7 +230,7 @@ end
 step :push do
   msg = "auto-update week #{Date.today.cweek}"
 
-  Mono.open( 'yorobot/cache.github' ) do |proj|
+  Mono.open( '@yorobot/cache.github' ) do |proj|
     if proj.changes?
       proj.add( "." )
       proj.commit( msg )
@@ -238,7 +239,9 @@ step :push do
   end
 end
 ```
-(Source: [`Flowfile` @ `yorobot/backup`](https://github.com/yorobot/backup/blob/master/Flowfile.rb))
+
+(Sources: [`Flowfile`](https://github.com/yorobot/backup/blob/master/Flowfile.rb), [`workflows/update.yml`](https://github.com/yorobot/backup/blob/master/.github/workflows/update.yml) @ `yorobot/backup`)
+
 
 
 
