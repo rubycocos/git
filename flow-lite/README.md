@@ -42,8 +42,13 @@ $ flow first_step
 
 Note: By default the `flow` command line tool reads in and looks for `flowfile`, `Flowfile`, `flowfile.rb`, `Flowfile.rb`
 in that order.
-Use the `-f/--flowfile` option to use a different file
-and use the `-r/--require` to (auto-)require
+Use the `-f/--flowfile` option to use a different file.
+
+
+
+**Prelude / Prolog**
+
+Use the `-r/--require` option to (auto-)require
 some extra libraries or scripts.
 By default for now the "prelude / prolog" that always
 gets auto-required includes:
