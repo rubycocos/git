@@ -68,15 +68,33 @@ class Base    ## base class for flow class (auto)-constructed/build from flowfil
 
   ## run step by symbol/name (e.g. step :hello - etc.)
   def step( name )
-    name = :"step_#{name}"  ## note: make sure we always use symbols
-    if respond_to?( name )
-       send( name )
+    step_name = :"step_#{name}"  ## note: make sure we always use symbols
+    if respond_to?( step_name )
+      #######
+      ## check: track (and report) call stack - why? why not?
+      ## e.g.
+      ##   [flow >(1) first_step)] step >first_step< - starting...
+      ##   [flow >(2) ..first_step > second_step)] step >second_step< - starting...
+      ##   [flow >(3) ....first_step > second_step > third_step)] step >third_step< - starting...
+      @stack ||= []   ## use a call stack of step names
+      @stack.push( name )
+
+      puts "[flow >(#{@stack.size}) #{'..'*(@stack.size-1)}#{@stack.join(' > ')})] step >#{name}< - starting..."
+      start_time = Time.now   ## todo: use Timer? t = Timer.start / stop / diff etc. - why? why not?
+
+      __send__( step_name )
+
+      end_time = Time.now
+      diff_time = end_time - start_time
+      puts "[flow <(#{@stack.size}) #{'..'*(@stack.size-1)}#{@stack.join(' < ')})] step >#{name}< - done in #{diff_time} sec(s)"
+      @stack.pop
     else
       puts "!! ERROR: step definition >#{name}< not found; cannot run/execute - known (defined) steps include:"
       pp self.class.step_methods  #=> e.g. [:hello, ...]
       exit 1
     end
   end  # method step
+
 
   def self.step_methods
     names = instance_methods.reduce([]) do |names, name|
