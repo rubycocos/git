@@ -8,6 +8,7 @@
 _a (light-weight) package manager for installing and updating projects from git repos_
 
 - <https://github.com/bradurani/Gitfile> by Brad Urani
+  - <https://github.com/bradurani/Gitfile/blob/master/gitfile/gitfile.go>
 - <http://fractalbanana.com/blog/2016/08/15/gitfile-a-package-manager-for-git-repos/>
 
 ``` yaml
@@ -27,7 +28,7 @@ _a (light-weight) package manager for installing and updating projects from git 
 _download and manage multiple git repos_
 
 - <https://github.com/Bobonium/gitfile>
-- <https://github.com/Bobonium/gitfile/blob/master/gitfile.sh>
+  - <https://github.com/Bobonium/gitfile/blob/master/gitfile.sh>
 
 Example:
 

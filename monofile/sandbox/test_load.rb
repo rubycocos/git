@@ -2,8 +2,26 @@ $LOAD_PATH.unshift( "./lib" )
 require 'monofile'
 
 
-monofile = Monofile.read( "./sandbox/monofile.yml" )
+monofile = Monofile.load( <<TXT )
+
+### some comments
+project "@yorobt/backup"
+project "@yorobt/football.json"
+project "@geraldb/austria"
+
+project "geraldb", "catalog"
+
+
+puts "hello from monofile"
+TXT
+
+
+
+puts "---"
 pp monofile
+
+
+
 puts
 puts "to_a:"
 pp monofile.to_a

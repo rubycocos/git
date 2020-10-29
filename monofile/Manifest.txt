@@ -2,5 +2,6 @@ CHANGELOG.md
 Manifest.txt
 README.md
 Rakefile
+bin/monofile
 lib/monofile.rb
 lib/monofile/version.rb

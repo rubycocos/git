@@ -13,6 +13,10 @@ require 'net/http'
 require 'net/https'
 
 
+require 'optparse'
+
+
+
 #####################
 # our own code
 require 'monofile/version'   # note: let version always go first
@@ -69,13 +73,24 @@ class Monofile
   class Project
 
     ## use some different names / attributes ??
-    attr_reader :org, :name
+    attr_reader :org,    ## todo/check: find a different name (or add alias e.g. login/user/etc.)
+                :name
 
     ## todo/fix:
     ##  - use *args  and than split if args==2 or args==1 etc.
-    def initialize( org, name )
-      @org  = org
-      @name = name
+    def initialize( *args )
+      if args.size == 2 && args[0].is_a?(String) && args[1].is_a?(String)
+        ## assume [org, name]
+        @org  = args[0]
+        @name = args[1]
+      elsif args.size == 1 && args[0].is_a?( String )
+        ## todo/fix:  use norm_name parser or such!!!!
+        parts = args[0].split( '/' )
+        @org  = parts[0][1..-1]   ## cut-off leading @ (always assume for now!!)
+        @name = parts[1]
+      else
+        raise ArgumentError, "[Monorepo::Project] one or two string args expected; got: #{args.pretty_inspect}"
+      end
     end
 
     def to_s()    "@#{org}/#{name}"; end
@@ -86,13 +101,50 @@ class Monofile
 
 
 
-  NAMES = ['monofile.yml',
-           'monotree.yml',
-           'monorepo.yml',
-           'repos.yml']         ## todo/check: add mono.yml too - why? why not?
+  class Builder     ## "clean room" pattern/spell - keep accessible methods to a minimum (by eval in "cleanroom")
+    def initialize( monofile )
+      @monofile = monofile
+    end
+
+    def project( *args )
+      project = Project.new( *args )
+      @monofile.projects << project
+    end
+  end  # (nested) class Builder
+
+
+
+  RUBY_NAMES = ['monofile',
+                'Monofile',
+                'monofile.rb',
+                'Monofile.rb',
+               ]
+
+  TXT_NAMES  = ['monofile.txt',
+                'monotree.txt',  ## keep monotree - why? why not?
+                'monorepo.txt',
+                'repos.txt']
+
+  ## note: yaml always requires an extension
+  YML_NAMES = ['monofile.yml',   'monofile.yaml',
+                'monotree.yml',   'monotree.yaml',  ## keep monotree - why? why not?
+                'monorepo.yml',   'monorepo.yaml',
+                'repos.yml',      'repos.yaml',
+               ]    ## todo/check: add mono.yml too - why? why not?
+
+  NAMES = RUBY_NAMES + TXT_NAMES + YML_NAMES
+
 
   def self.find
-    NAMES.each do |name|
+    RUBY_NAMES.each do |name|
+      return "./#{name}"  if File.exist?( "./#{name}")
+    end
+
+    TXT_NAMES.each do |name|
+      return "./#{name}"  if File.exist?( "./#{name}")
+    end
+
+    YML_NAMES.each do |name|
       return "./#{name}"  if File.exist?( "./#{name}")
     end
 
@@ -100,18 +152,39 @@ class Monofile
   end
 
 
-  def self.read( path=find )
-    if path
+  def self.read( path )
       txt  = File.open( path, 'r:utf-8') { |f| f.read }
-      hash = YAML.load( txt )
-      new( hash )
-    else
-      puts "!! WARN: no mono configuration file found; looking for #{NAMES.join(', ')} in (#{Dir.getwd})"
-      new
-    end
+
+      ## check for yml or yaml extension;
+      ##    or for txt extension; otherwise assume ruby
+      extname = File.extname( path ).downcase
+      if ['.yml', '.yaml'].include?( extname )
+        hash = YAML.load( txt )
+        new( hash )
+      elsif ['.txt'].include?( extname )
+        new( txt )
+      else  ## assume ruby code (as text in string)
+        new().load( txt )
+      end
   end
 
 
+
+  def self.load( code )
+    monofile = new
+    monofile.load( code )
+    monofile
+  end
+
+  def self.load_file( path )  ## keep (or add load_yaml to or such) - why? why not?
+    code  = File.open( path, 'r:utf-8') { |f| f.read }
+    load( code )
+  end
+
+
+  ### attr readers
+  def projects() @projects; end
+  def size()     @projects.size; end
 
 
   def initialize( obj={} )    ## todo/fix: change default to obj=[]
@@ -121,8 +194,19 @@ class Monofile
     add( obj )
   end
 
+  def load( code )  ## note: code is text as a string
+    builder = Builder.new( self )
+    builder.instance_eval( code )
+    self  ## note: for chaining always return self
+  end
+
+
   def add( obj )
-    if obj.is_a?( Array )
+    ## todo/check: check for proc too! and use load( proc/block ) - possible?
+    if obj.is_a?( String )
+      puts "sorry add String - to be done!!!"
+      exit 1
+    elsif obj.is_a?( Array )
       puts "sorry add Array- to be done!!!"
       exit 1
     elsif obj.is_a?( Hash )
@@ -133,6 +217,7 @@ class Monofile
     end
     self ## note: return self for chaining
   end
+
 
   def add_hash( hash )
     hash.each do |org_with_counter, names|
@@ -154,7 +239,6 @@ class Monofile
     self  ## note: return self for chaining
   end
 
-  def size; @projects.size; end
 
 
   def each( &block )
@@ -214,6 +298,38 @@ class Monofile
 end # class Monofile
 
 
+
+
+
+class Monofile
+class Tool
+  def self.main( args=ARGV )
+
+    path = Monofile.find
+    if path.nil?
+      puts "!! ERROR: no mono configuration file found; looking for #{Monofile::NAMES.join(', ')} in (#{Dir.getwd})"
+      exit 1
+    end
+
+    ## add check for auto-require (e.g. ./config.rb)
+    config_path = "./config.rb"
+    if File.exist?( config )
+      puts "[monofile] auto-require >#{config_path}<..."
+      require( config_path )
+    end
+
+    puts "[monofile] reading >#{path}<..."
+    monofile=Monofile.read( path )
+    pp monofile
+
+    ## print one project per line
+    puts "---"
+    monofile.each do |proj|
+      puts proj.to_s
+    end
+  end
+end # (nested) class Tool
+end # class Monofile
 
 
 Mono::Module::Monofile.banner
