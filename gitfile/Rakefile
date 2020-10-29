@@ -1,0 +1,26 @@
+require 'hoe'
+
+Hoe.spec 'gitfile' do
+
+  self.version = '0.0.1'   # note: for now add version inline
+
+  self.summary = "gitfile - a (light-weight) package manager for installing and updating projects from git repos"
+  self.description = summary
+
+  self.urls = { home: 'https://github.com/rubycoco/git' }
+
+  self.author = 'Gerald Bauer'
+  self.email = 'opensport@googlegroups.com'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
+
+  self.licenses = ['Public Domain']
+
+  self.extra_deps = []
+
+  self.spec_extras = {
+    required_ruby_version: '>= 2.2.2'
+  }
+end
