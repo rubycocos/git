@@ -21,16 +21,23 @@ More
 
 
 
+
 ### Tooling
+
+#### Repo (Python)
+_a tool built on top of Git. Repo helps manage many Git repositories, does the uploads to revision control systems, and automates parts of the development workflow. Repo is not meant to replace Git, only to make it easier to work with Git. The repo command is an executable Python script that you can put anywhere in your path_
+
+- <https://gerrit.googlesource.com/git-repo/>
+- <https://gerrit.googlesource.com/git-repo/+/HEAD/docs/manifest-format.md>  - Manifest Format
+- <https://source.android.com/setup/develop/repo>
 
 #### Lerna  (Javascript/Node)
 - <https://github.com/lerna/lerna> - a tool for managing JavaScript projects with multiple packages
 
-### Yarn Workspaces (Javascript/Node)
+#### Yarn Workspaces (Javascript/Node)
 - <https://classic.yarnpkg.com/en/docs/workspaces/>
 
-
-### Rush  (Javascript/Node)
+#### Rush  (Javascript/Node)
 
 _a scalable monorepo manager for the web_
 
