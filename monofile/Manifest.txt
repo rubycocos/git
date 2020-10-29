@@ -3,3 +3,4 @@ Manifest.txt
 README.md
 Rakefile
 lib/monofile.rb
+lib/monofile/version.rb

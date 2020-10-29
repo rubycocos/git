@@ -1,8 +1,10 @@
 require 'hoe'
+require './lib/monofile/version.rb'
+
 
 Hoe.spec 'monofile' do
 
-  self.version = '0.0.1'   # note: for now add version inline
+  self.version = Mono::Module::Monofile::VERSION
 
   self.summary = "monofile - read in/ parse mono (source) tree defintions with git (and github) projects, and more"
   self.description = summary

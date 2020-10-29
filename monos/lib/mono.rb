@@ -31,4 +31,4 @@ require 'mono/commands/run'
 require 'mono/tool'
 
 
-puts MonoCore.banner   # say hello
+puts Mono::Module::Tool.banner   # say hello
