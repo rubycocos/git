@@ -1,6 +1,0 @@
-puts "hello from flowfile"
-
-step :echo do
-  puts "hello from echo"
-end
-
