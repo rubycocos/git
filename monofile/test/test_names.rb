@@ -20,8 +20,6 @@ def test_parse
 
     assert_equal 'yorobot',            mono.org
     assert_equal 'stage',              mono.name
-    assert_equal false,                mono.path?
-    assert_nil                         mono.path
   end
 
 
@@ -30,14 +28,13 @@ def test_parse
     one@yorobot/stage
     stage/one@yorobot
   ].each do |line|
-    mono = Mononame.parse( line )
+    mono = Monopath.parse( line )
 
     assert_equal '@yorobot/stage/one', mono.to_s
     assert_equal 'yorobot/stage/one',  mono.to_path
 
     assert_equal 'yorobot',            mono.org
     assert_equal 'stage',              mono.name
-    assert_equal true,                 mono.path?
     assert_equal 'one',                mono.path
   end
 
@@ -46,17 +43,15 @@ def test_parse
     hello.txt@yorobot/stage/one
     stage/one/hello.txt@yorobot
   ].each do |line|
-    mono = Mononame.parse( line )
+    mono = Monopath.parse( line )
 
     assert_equal '@yorobot/stage/one/hello.txt', mono.to_s
     assert_equal 'yorobot/stage/one/hello.txt',  mono.to_path
 
     assert_equal 'yorobot',            mono.org
     assert_equal 'stage',              mono.name
-    assert_equal true,                 mono.path?
     assert_equal 'one/hello.txt',      mono.path
   end
-
 end   # method test_parse
 
 
@@ -68,18 +63,15 @@ def test_init
 
   assert_equal 'yorobot',            mono.org
   assert_equal 'stage',              mono.name
-  assert_equal false,                mono.path?
-  assert_nil                         mono.path
 
 
-  mono = Mononame.new( 'yorobot', 'stage', 'one' )
+  mono = Monopath.new( 'yorobot', 'stage', 'one' )
 
   assert_equal '@yorobot/stage/one', mono.to_s
   assert_equal 'yorobot/stage/one',  mono.to_path
 
   assert_equal 'yorobot',            mono.org
   assert_equal 'stage',              mono.name
-  assert_equal true,                 mono.path?
   assert_equal 'one',                mono.path
 
 
@@ -89,14 +81,13 @@ def test_init
   ##  todo/check/fix:
   ##    find a better name for path/path? component / part - why? why not?
   ##      to_path and path/path? to confusing!!!
-  mono = Mononame.new( 'yorobot', 'stage', 'one/hello.txt' )
+  mono = Monopath.new( 'yorobot', 'stage', 'one/hello.txt' )
 
   assert_equal '@yorobot/stage/one/hello.txt', mono.to_s
   assert_equal 'yorobot/stage/one/hello.txt',  mono.to_path
 
   assert_equal 'yorobot',            mono.org
   assert_equal 'stage',              mono.name
-  assert_equal true,                 mono.path?
   assert_equal 'one/hello.txt',      mono.path
 end   # method test_init
 
