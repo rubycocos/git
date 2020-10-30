@@ -20,7 +20,7 @@ require 'optparse'
 #####################
 # our own code
 require 'monofile/version'   # note: let version always go first
-
+require 'monofile/mononame'
 
 
 
@@ -61,7 +61,6 @@ module Mono
 #    end
   end
 end  ## module Mono
-
 
 
 
@@ -305,6 +304,11 @@ class Monofile
 class Tool
   def self.main( args=ARGV )
 
+
+    ## todo/fix:
+    ##   check args - if any, use/read monofiles in args!!!
+
+
     path = Monofile.find
     if path.nil?
       puts "!! ERROR: no mono configuration file found; looking for #{Monofile::NAMES.join(', ')} in (#{Dir.getwd})"
@@ -313,7 +317,7 @@ class Tool
 
     ## add check for auto-require (e.g. ./config.rb)
     config_path = "./config.rb"
-    if File.exist?( config )
+    if File.exist?( config_path )
       puts "[monofile] auto-require >#{config_path}<..."
       require( config_path )
     end
