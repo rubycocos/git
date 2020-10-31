@@ -1,9 +1,0 @@
-CHANGELOG.md
-Manifest.txt
-README.md
-Rakefile
-lib/shell-lite.rb
-lib/shell-lite/shell.rb
-lib/shell-lite/version.rb
-test/helper.rb
-test/test_shell.rb
