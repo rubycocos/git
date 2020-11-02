@@ -1,5 +1,10 @@
 # Notes
 
+## Git
+
+- libgit2 bindings in Ruby, see <https://github.com/libgit2/rugged>
+
+
 ## GitHub API
 
 - see <https://github.com/mbleigh/ruby-github>
