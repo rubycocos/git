@@ -9,6 +9,7 @@
 
 - see <https://github.com/octokit/octokit.rb> - (official) Ruby toolkit for the GitHub API
 
+<!-- break -->
 
 - see <https://github.com/mbleigh/ruby-github>
   - see <https://github.com/mbleigh/ruby-github/blob/master/lib/ruby-github.rb>
