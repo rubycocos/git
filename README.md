@@ -1,4 +1,4 @@
-# git (and github) & monorepo / mono source tree tools command line tools, libraries & scripts
+# git (and github) & monorepo / mono source tree command line tools, libraries & scripts
 
 Git Gems:
 
