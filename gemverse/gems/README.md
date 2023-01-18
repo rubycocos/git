@@ -2,15 +2,19 @@
 
 ## 2023
 
+**Week 2023/03**
+
+4 Gem Update(s)  - [**eventdb**](https://rubygems.org/gems/eventdb/versions/1.1.2 "Wed 18 Jan 2023") 1.1.2, [**whatson**](https://rubygems.org/gems/whatson/versions/2023.0.0 "Wed 18 Jan 2023") 2023.0.0, [**ethlite-contracts**](https://rubygems.org/gems/ethlite-contracts/versions/0.1.4 "Mon 16 Jan 2023") 0.1.4, [**ethname**](https://rubygems.org/gems/ethname/versions/0.1.2 "Mon 16 Jan 2023") 0.1.2
+
 **Week 2023/02**
 
-**NEW!** - 4 Gem(s) - [**ethers**](https://rubygems.org/gems/ethers/versions/0.0.1 "Sat 14 Jan 2023") 0.0.1, [**abigen**](https://rubygems.org/gems/abigen/versions/0.0.1 "Tue 10 Jan 2023") 0.0.1, [**hexutils**](https://rubygems.org/gems/hexutils/versions/0.0.1 "Tue 10 Jan 2023") 0.0.1, [**ethlite-contracts**](https://rubygems.org/gems/ethlite-contracts/versions/0.0.1 "Mon 09 Jan 2023") 0.0.1
+**NEW!** - 5 Gem(s) - [**ethers**](https://rubygems.org/gems/ethers/versions/0.0.1 "Sat 14 Jan 2023") 0.0.1, [**natspec**](https://rubygems.org/gems/natspec/versions/0.0.1 "Fri 13 Jan 2023") 0.0.1, [**abigen**](https://rubygems.org/gems/abigen/versions/0.0.1 "Tue 10 Jan 2023") 0.0.1, [**hexutils**](https://rubygems.org/gems/hexutils/versions/0.0.1 "Tue 10 Jan 2023") 0.0.1, [**ethlite-contracts**](https://rubygems.org/gems/ethlite-contracts/versions/0.0.1 "Mon 09 Jan 2023") 0.0.1
 
-4 Gem Update(s)  - [**ethlite-contracts**](https://rubygems.org/gems/ethlite-contracts/versions/0.1.3 "Sun 15 Jan 2023") 0.1.3, [**ethlite-contracts**](https://rubygems.org/gems/ethlite-contracts/versions/0.1.2 "Sun 15 Jan 2023") 0.1.2, [**ethlite-contracts**](https://rubygems.org/gems/ethlite-contracts/versions/0.1.1 "Fri 13 Jan 2023") 0.1.1, [**ethlite-contracts**](https://rubygems.org/gems/ethlite-contracts/versions/0.1.0 "Thu 12 Jan 2023") 0.1.0
+9 Gem Update(s)  - [**ethlite-contracts**](https://rubygems.org/gems/ethlite-contracts/versions/0.1.3 "Sun 15 Jan 2023") 0.1.3, [**ethlite-contracts**](https://rubygems.org/gems/ethlite-contracts/versions/0.1.2 "Sun 15 Jan 2023") 0.1.2, [**ethers**](https://rubygems.org/gems/ethers/versions/0.1.0 "Sat 14 Jan 2023") 0.1.0, [**abigen**](https://rubygems.org/gems/abigen/versions/0.1.0 "Fri 13 Jan 2023") 0.1.0, [**ethlite-contracts**](https://rubygems.org/gems/ethlite-contracts/versions/0.1.1 "Fri 13 Jan 2023") 0.1.1, [**ethlite-contracts**](https://rubygems.org/gems/ethlite-contracts/versions/0.1.0 "Thu 12 Jan 2023") 0.1.0, [**hexutils**](https://rubygems.org/gems/hexutils/versions/1.0.0 "Tue 10 Jan 2023") 1.0.0, [**abiparser**](https://rubygems.org/gems/abiparser/versions/0.1.2 "Mon 09 Jan 2023") 0.1.2, [**ethlite**](https://rubygems.org/gems/ethlite/versions/1.0.0 "Mon 09 Jan 2023") 1.0.0
 
 **Week 2023/01**
 
-3 Gem Update(s)  - [**abiparser**](https://rubygems.org/gems/abiparser/versions/0.1.1 "Sun 08 Jan 2023") 0.1.1, [**abicoder**](https://rubygems.org/gems/abicoder/versions/1.0.0 "Fri 06 Jan 2023") 1.0.0, [**abicoder**](https://rubygems.org/gems/abicoder/versions/0.1.1 "Wed 04 Jan 2023") 0.1.1
+4 Gem Update(s)  - [**abicoder**](https://rubygems.org/gems/abicoder/versions/1.0.1 "Sun 08 Jan 2023") 1.0.1, [**abiparser**](https://rubygems.org/gems/abiparser/versions/0.1.1 "Sun 08 Jan 2023") 0.1.1, [**abicoder**](https://rubygems.org/gems/abicoder/versions/1.0.0 "Fri 06 Jan 2023") 1.0.0, [**abicoder**](https://rubygems.org/gems/abicoder/versions/0.1.1 "Wed 04 Jan 2023") 0.1.1
 
 ## 2022
 
@@ -18,49 +22,51 @@
 
 **NEW!** - 3 Gem(s) - [**abicoder**](https://rubygems.org/gems/abicoder/versions/0.0.1 "Fri 30 Dec 2022") 0.0.1, [**abidoc**](https://rubygems.org/gems/abidoc/versions/0.0.1 "Mon 26 Dec 2022") 0.0.1, [**abiparser**](https://rubygems.org/gems/abiparser/versions/0.0.1 "Mon 26 Dec 2022") 0.0.1
 
-2 Gem Update(s)  - [**abicoder**](https://rubygems.org/gems/abicoder/versions/0.1.0 "Fri 30 Dec 2022") 0.1.0, [**abiparser**](https://rubygems.org/gems/abiparser/versions/0.1.0 "Tue 27 Dec 2022") 0.1.0
+3 Gem Update(s)  - [**abicoder**](https://rubygems.org/gems/abicoder/versions/0.1.0 "Fri 30 Dec 2022") 0.1.0, [**abidoc**](https://rubygems.org/gems/abidoc/versions/0.1.0 "Tue 27 Dec 2022") 0.1.0, [**abiparser**](https://rubygems.org/gems/abiparser/versions/0.1.0 "Tue 27 Dec 2022") 0.1.0
 
 **Week 2022/51**
 
-1 Gem Update(s)  - [**ethname**](https://rubygems.org/gems/ethname/versions/0.1.1 "Mon 19 Dec 2022") 0.1.1
+2 Gem Update(s)  - [**artq**](https://rubygems.org/gems/artq/versions/0.3.1 "Fri 23 Dec 2022") 0.3.1, [**ethname**](https://rubygems.org/gems/ethname/versions/0.1.1 "Mon 19 Dec 2022") 0.1.1
 
 **Week 2022/50**
 
 **NEW!** - 2 Gem(s) - [**ethname**](https://rubygems.org/gems/ethname/versions/0.0.1 "Fri 16 Dec 2022") 0.0.1, [**etherscan-lite**](https://rubygems.org/gems/etherscan-lite/versions/0.0.1 "Thu 15 Dec 2022") 0.0.1
 
-3 Gem Update(s)  - [**ethname**](https://rubygems.org/gems/ethname/versions/0.1.0 "Sat 17 Dec 2022") 0.1.0, [**etherscan-lite**](https://rubygems.org/gems/etherscan-lite/versions/0.1.0 "Thu 15 Dec 2022") 0.1.0, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.4.1 "Mon 12 Dec 2022") 0.4.1
+4 Gem Update(s)  - [**etherscan-lite**](https://rubygems.org/gems/etherscan-lite/versions/0.1.1 "Sun 18 Dec 2022") 0.1.1, [**ethname**](https://rubygems.org/gems/ethname/versions/0.1.0 "Sat 17 Dec 2022") 0.1.0, [**etherscan-lite**](https://rubygems.org/gems/etherscan-lite/versions/0.1.0 "Thu 15 Dec 2022") 0.1.0, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.4.1 "Mon 12 Dec 2022") 0.4.1
 
 **Week 2022/49**
 
-**NEW!** - 1 Gem(s) - [**synthpunks**](https://rubygems.org/gems/synthpunks/versions/0.0.1 "Tue 06 Dec 2022") 0.0.1
+**NEW!** - 2 Gem(s) - [**digest-lite**](https://rubygems.org/gems/digest-lite/versions/0.0.1 "Thu 08 Dec 2022") 0.0.1, [**synthpunks**](https://rubygems.org/gems/synthpunks/versions/0.0.1 "Tue 06 Dec 2022") 0.0.1
 
-8 Gem Update(s)  - [**bytes**](https://rubygems.org/gems/bytes/versions/0.2.0 "Sat 10 Dec 2022") 0.2.0, [**bytes**](https://rubygems.org/gems/bytes/versions/0.1.1 "Sat 10 Dec 2022") 0.1.1, [**crypto-lite**](https://rubygems.org/gems/crypto-lite/versions/0.3.1 "Fri 09 Dec 2022") 0.3.1, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.4.0 "Fri 09 Dec 2022") 0.4.0, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.3.2 "Thu 08 Dec 2022") 0.3.2, [**synthpunks**](https://rubygems.org/gems/synthpunks/versions/1.0.1 "Tue 06 Dec 2022") 1.0.1, [**synthpunks**](https://rubygems.org/gems/synthpunks/versions/1.0.0 "Tue 06 Dec 2022") 1.0.0, [**synthpunks**](https://rubygems.org/gems/synthpunks/versions/0.1.0 "Tue 06 Dec 2022") 0.1.0
+12 Gem Update(s)  - [**bytes**](https://rubygems.org/gems/bytes/versions/1.0.0 "Sun 11 Dec 2022") 1.0.0, [**crypto-lite**](https://rubygems.org/gems/crypto-lite/versions/0.4.0 "Sun 11 Dec 2022") 0.4.0, [**bytes**](https://rubygems.org/gems/bytes/versions/0.2.0 "Sat 10 Dec 2022") 0.2.0, [**bytes**](https://rubygems.org/gems/bytes/versions/0.1.1 "Sat 10 Dec 2022") 0.1.1, [**crypto-lite**](https://rubygems.org/gems/crypto-lite/versions/0.3.1 "Fri 09 Dec 2022") 0.3.1, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.4.0 "Fri 09 Dec 2022") 0.4.0, [**rlp-lite**](https://rubygems.org/gems/rlp-lite/versions/0.2.0 "Fri 09 Dec 2022") 0.2.0, [**synthpunks**](https://rubygems.org/gems/synthpunks/versions/1.0.2 "Fri 09 Dec 2022") 1.0.2, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.3.2 "Thu 08 Dec 2022") 0.3.2, [**synthpunks**](https://rubygems.org/gems/synthpunks/versions/1.0.1 "Tue 06 Dec 2022") 1.0.1, [**synthpunks**](https://rubygems.org/gems/synthpunks/versions/1.0.0 "Tue 06 Dec 2022") 1.0.0, [**synthpunks**](https://rubygems.org/gems/synthpunks/versions/0.1.0 "Tue 06 Dec 2022") 0.1.0
 
 **Week 2022/47**
 
-**NEW!** - 1 Gem(s) - [**artq**](https://rubygems.org/gems/artq/versions/0.0.1 "Tue 22 Nov 2022") 0.0.1
+**NEW!** - 3 Gem(s) - [**artbase-cocos**](https://rubygems.org/gems/artbase-cocos/versions/0.0.1 "Sat 26 Nov 2022") 0.0.1, [**artbase-importers**](https://rubygems.org/gems/artbase-importers/versions/0.0.1 "Sat 26 Nov 2022") 0.0.1, [**artq**](https://rubygems.org/gems/artq/versions/0.0.1 "Tue 22 Nov 2022") 0.0.1
 
-6 Gem Update(s)  - [**artq**](https://rubygems.org/gems/artq/versions/0.3.0 "Thu 24 Nov 2022") 0.3.0, [**artq**](https://rubygems.org/gems/artq/versions/0.2.0 "Wed 23 Nov 2022") 0.2.0, [**artq**](https://rubygems.org/gems/artq/versions/0.1.0 "Tue 22 Nov 2022") 0.1.0, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.3.1 "Tue 22 Nov 2022") 0.3.1, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.3.0 "Mon 21 Nov 2022") 0.3.0, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.5 "Mon 21 Nov 2022") 0.2.5
+7 Gem Update(s)  - [**artbase**](https://rubygems.org/gems/artbase/versions/0.3.0 "Sat 26 Nov 2022") 0.3.0, [**artq**](https://rubygems.org/gems/artq/versions/0.3.0 "Thu 24 Nov 2022") 0.3.0, [**artq**](https://rubygems.org/gems/artq/versions/0.2.0 "Wed 23 Nov 2022") 0.2.0, [**artq**](https://rubygems.org/gems/artq/versions/0.1.0 "Tue 22 Nov 2022") 0.1.0, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.3.1 "Tue 22 Nov 2022") 0.3.1, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.3.0 "Mon 21 Nov 2022") 0.3.0, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.5 "Mon 21 Nov 2022") 0.2.5
 
 **Week 2022/46**
 
 **NEW!** - 2 Gem(s) - [**rlp-lite**](https://rubygems.org/gems/rlp-lite/versions/0.0.1 "Wed 16 Nov 2022") 0.0.1, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.1.0 "Mon 14 Nov 2022") 0.1.0
 
-8 Gem Update(s)  - [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.4 "Sat 19 Nov 2022") 0.2.4, [**rlp-lite**](https://rubygems.org/gems/rlp-lite/versions/0.1.2 "Sat 19 Nov 2022") 0.1.2, [**rlp-lite**](https://rubygems.org/gems/rlp-lite/versions/0.1.1 "Sat 19 Nov 2022") 0.1.1, [**rlp-lite**](https://rubygems.org/gems/rlp-lite/versions/0.1.0 "Wed 16 Nov 2022") 0.1.0, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.3 "Tue 15 Nov 2022") 0.2.3, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.2 "Mon 14 Nov 2022") 0.2.2, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.1 "Mon 14 Nov 2022") 0.2.1, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.0 "Mon 14 Nov 2022") 0.2.0
+9 Gem Update(s)  - [**sportdb-structs**](https://rubygems.org/gems/sportdb-structs/versions/0.1.3 "Sun 20 Nov 2022") 0.1.3, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.4 "Sat 19 Nov 2022") 0.2.4, [**rlp-lite**](https://rubygems.org/gems/rlp-lite/versions/0.1.2 "Sat 19 Nov 2022") 0.1.2, [**rlp-lite**](https://rubygems.org/gems/rlp-lite/versions/0.1.1 "Sat 19 Nov 2022") 0.1.1, [**rlp-lite**](https://rubygems.org/gems/rlp-lite/versions/0.1.0 "Wed 16 Nov 2022") 0.1.0, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.3 "Tue 15 Nov 2022") 0.2.3, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.2 "Mon 14 Nov 2022") 0.2.2, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.1 "Mon 14 Nov 2022") 0.2.1, [**ethlite**](https://rubygems.org/gems/ethlite/versions/0.2.0 "Mon 14 Nov 2022") 0.2.0
 
 **Week 2022/41**
 
-1 Gem Update(s)  - [**readymades**](https://rubygems.org/gems/readymades/versions/1.0.0 "Mon 10 Oct 2022") 1.0.0
+10 Gem Update(s)  - [**originals**](https://rubygems.org/gems/originals/versions/1.2.2 "Tue 11 Oct 2022") 1.2.2, [**readymades**](https://rubygems.org/gems/readymades/versions/1.0.1 "Tue 11 Oct 2022") 1.0.1, [**shibainus**](https://rubygems.org/gems/shibainus/versions/1.0.0 "Tue 11 Oct 2022") 1.0.0, [**smileys**](https://rubygems.org/gems/smileys/versions/0.1.0 "Tue 11 Oct 2022") 0.1.0, [**coolcats**](https://rubygems.org/gems/coolcats/versions/1.0.0 "Mon 10 Oct 2022") 1.0.0, [**cyberpunks**](https://rubygems.org/gems/cyberpunks/versions/1.0.0 "Mon 10 Oct 2022") 1.0.0, [**goblins**](https://rubygems.org/gems/goblins/versions/1.0.0 "Mon 10 Oct 2022") 1.0.0, [**moonbirds**](https://rubygems.org/gems/moonbirds/versions/1.2.1 "Mon 10 Oct 2022") 1.2.1, [**nouns**](https://rubygems.org/gems/nouns/versions/1.0.0 "Mon 10 Oct 2022") 1.0.0, [**readymades**](https://rubygems.org/gems/readymades/versions/1.0.0 "Mon 10 Oct 2022") 1.0.0
 
 **Week 2022/40**
 
 **NEW!** - 1 Gem(s) - [**smileys**](https://rubygems.org/gems/smileys/versions/0.0.1 "Tue 04 Oct 2022") 0.0.1
 
+2 Gem Update(s)  - [**backgrounds**](https://rubygems.org/gems/backgrounds/versions/0.2.1 "Sun 09 Oct 2022") 0.2.1, [**belles**](https://rubygems.org/gems/belles/versions/1.0.0 "Sun 09 Oct 2022") 1.0.0
+
 **Week 2022/38**
 
 **NEW!** - 1 Gem(s) - [**artserve**](https://rubygems.org/gems/artserve/versions/0.0.1 "Mon 19 Sep 2022") 0.0.1
 
-1 Gem Update(s)  - [**artserve**](https://rubygems.org/gems/artserve/versions/0.1.0 "Tue 20 Sep 2022") 0.1.0
+2 Gem Update(s)  - [**artserve**](https://rubygems.org/gems/artserve/versions/0.1.1 "Fri 23 Sep 2022") 0.1.1, [**artserve**](https://rubygems.org/gems/artserve/versions/0.1.0 "Tue 20 Sep 2022") 0.1.0
 
 **Week 2022/37**
 
@@ -72,15 +78,15 @@
 
 **Week 2022/34**
 
-2 Gem Update(s)  - [**artbase**](https://rubygems.org/gems/artbase/versions/0.2.1 "Mon 22 Aug 2022") 0.2.1, [**cocos**](https://rubygems.org/gems/cocos/versions/0.2.0 "Mon 22 Aug 2022") 0.2.0
+3 Gem Update(s)  - [**cocos**](https://rubygems.org/gems/cocos/versions/0.2.1 "Tue 23 Aug 2022") 0.2.1, [**artbase**](https://rubygems.org/gems/artbase/versions/0.2.1 "Mon 22 Aug 2022") 0.2.1, [**cocos**](https://rubygems.org/gems/cocos/versions/0.2.0 "Mon 22 Aug 2022") 0.2.0
 
 **Week 2022/33**
 
-1 Gem Update(s)  - [**cocos**](https://rubygems.org/gems/cocos/versions/0.1.2 "Sat 20 Aug 2022") 0.1.2
+3 Gem Update(s)  - [**cocos**](https://rubygems.org/gems/cocos/versions/0.1.2 "Sat 20 Aug 2022") 0.1.2, [**profilepic**](https://rubygems.org/gems/profilepic/versions/0.1.5 "Fri 19 Aug 2022") 0.1.5, [**pixelart**](https://rubygems.org/gems/pixelart/versions/1.3.6 "Wed 17 Aug 2022") 1.3.6
 
 **Week 2022/32**
 
-1 Gem Update(s)  - [**profilepic**](https://rubygems.org/gems/profilepic/versions/0.1.4 "Mon 08 Aug 2022") 0.1.4
+2 Gem Update(s)  - [**punks**](https://rubygems.org/gems/punks/versions/0.5.3 "Sat 13 Aug 2022") 0.5.3, [**profilepic**](https://rubygems.org/gems/profilepic/versions/0.1.4 "Mon 08 Aug 2022") 0.1.4
 
 **Week 2022/31**
 
@@ -102,6 +108,8 @@
 
 **Week 2022/27**
 
+**NEW!** - 1 Gem(s) - [**pixelart-colors**](https://rubygems.org/gems/pixelart-colors/versions/0.1.0 "Sat 09 Jul 2022") 0.1.0
+
 3 Gem Update(s)  - [**pixelart**](https://rubygems.org/gems/pixelart/versions/1.3.4 "Sat 09 Jul 2022") 1.3.4, [**pixelart**](https://rubygems.org/gems/pixelart/versions/1.3.3 "Sat 09 Jul 2022") 1.3.3, [**punks**](https://rubygems.org/gems/punks/versions/0.2.2 "Tue 05 Jul 2022") 0.2.2
 
 **Week 2022/25**
@@ -116,7 +124,7 @@
 
 **NEW!** - 4 Gem(s) - [**punks**](https://rubygems.org/gems/punks/versions/0.0.1 "Fri 10 Jun 2022") 0.0.1, [**artfactory**](https://rubygems.org/gems/artfactory/versions/0.1.0 "Thu 09 Jun 2022") 0.1.0, [**backgrounds**](https://rubygems.org/gems/backgrounds/versions/0.0.1 "Wed 08 Jun 2022") 0.0.1, [**spritesheet**](https://rubygems.org/gems/spritesheet/versions/1.0.0 "Wed 08 Jun 2022") 1.0.0
 
-15 Gem Update(s)  - [**cryptopunks**](https://rubygems.org/gems/cryptopunks/versions/3.0.0 "Sat 11 Jun 2022") 3.0.0, [**punks**](https://rubygems.org/gems/punks/versions/0.2.0 "Sat 11 Jun 2022") 0.2.0, [**backgrounds**](https://rubygems.org/gems/backgrounds/versions/0.2.0 "Fri 10 Jun 2022") 0.2.0, [**cyberpunks**](https://rubygems.org/gems/cyberpunks/versions/0.2.0 "Fri 10 Jun 2022") 0.2.0, [**punks**](https://rubygems.org/gems/punks/versions/0.1.1 "Fri 10 Jun 2022") 0.1.1, [**punks**](https://rubygems.org/gems/punks/versions/0.1.0 "Fri 10 Jun 2022") 0.1.0, [**readymades**](https://rubygems.org/gems/readymades/versions/0.1.3 "Fri 10 Jun 2022") 0.1.3, [**backgrounds**](https://rubygems.org/gems/backgrounds/versions/0.1.1 "Thu 09 Jun 2022") 0.1.1, [**originals**](https://rubygems.org/gems/originals/versions/1.2.0 "Thu 09 Jun 2022") 1.2.0, [**readymades**](https://rubygems.org/gems/readymades/versions/0.1.2 "Thu 09 Jun 2022") 0.1.2, [**readymades**](https://rubygems.org/gems/readymades/versions/0.1.1 "Thu 09 Jun 2022") 0.1.1, [**backgrounds**](https://rubygems.org/gems/backgrounds/versions/0.1.0 "Wed 08 Jun 2022") 0.1.0, [**spritesheet**](https://rubygems.org/gems/spritesheet/versions/1.0.1 "Wed 08 Jun 2022") 1.0.1, [**originals**](https://rubygems.org/gems/originals/versions/1.1.1 "Mon 06 Jun 2022") 1.1.1, [**originals**](https://rubygems.org/gems/originals/versions/1.1.0 "Mon 06 Jun 2022") 1.1.0
+18 Gem Update(s)  - [**cryptopunks**](https://rubygems.org/gems/cryptopunks/versions/3.0.1 "Sat 11 Jun 2022") 3.0.1, [**cryptopunks**](https://rubygems.org/gems/cryptopunks/versions/3.0.0 "Sat 11 Jun 2022") 3.0.0, [**punks**](https://rubygems.org/gems/punks/versions/0.2.0 "Sat 11 Jun 2022") 0.2.0, [**artfactory**](https://rubygems.org/gems/artfactory/versions/0.2.0 "Fri 10 Jun 2022") 0.2.0, [**backgrounds**](https://rubygems.org/gems/backgrounds/versions/0.2.0 "Fri 10 Jun 2022") 0.2.0, [**cyberpunks**](https://rubygems.org/gems/cyberpunks/versions/0.2.0 "Fri 10 Jun 2022") 0.2.0, [**punks**](https://rubygems.org/gems/punks/versions/0.1.1 "Fri 10 Jun 2022") 0.1.1, [**punks**](https://rubygems.org/gems/punks/versions/0.1.0 "Fri 10 Jun 2022") 0.1.0, [**readymades**](https://rubygems.org/gems/readymades/versions/0.1.3 "Fri 10 Jun 2022") 0.1.3, [**backgrounds**](https://rubygems.org/gems/backgrounds/versions/0.1.1 "Thu 09 Jun 2022") 0.1.1, [**originals**](https://rubygems.org/gems/originals/versions/1.2.0 "Thu 09 Jun 2022") 1.2.0, [**readymades**](https://rubygems.org/gems/readymades/versions/0.1.2 "Thu 09 Jun 2022") 0.1.2, [**readymades**](https://rubygems.org/gems/readymades/versions/0.1.1 "Thu 09 Jun 2022") 0.1.1, [**spritesheet**](https://rubygems.org/gems/spritesheet/versions/1.1.0 "Thu 09 Jun 2022") 1.1.0, [**backgrounds**](https://rubygems.org/gems/backgrounds/versions/0.1.0 "Wed 08 Jun 2022") 0.1.0, [**spritesheet**](https://rubygems.org/gems/spritesheet/versions/1.0.1 "Wed 08 Jun 2022") 1.0.1, [**originals**](https://rubygems.org/gems/originals/versions/1.1.1 "Mon 06 Jun 2022") 1.1.1, [**originals**](https://rubygems.org/gems/originals/versions/1.1.0 "Mon 06 Jun 2022") 1.1.0
 
 **Week 2022/22**
 
@@ -140,6 +148,10 @@
 
 1 Gem Update(s)  - [**pixelart**](https://rubygems.org/gems/pixelart/versions/1.3.0 "Tue 03 May 2022") 1.3.0
 
+**Week 2022/17**
+
+1 Gem Update(s)  - [**webclient**](https://rubygems.org/gems/webclient/versions/0.2.2 "Thu 28 Apr 2022") 0.2.2
+
 **Week 2022/09**
 
 1 Gem Update(s)  - [**pixelart**](https://rubygems.org/gems/pixelart/versions/1.2.3 "Sun 06 Mar 2022") 1.2.3
@@ -159,6 +171,10 @@
 1 Gem Update(s)  - [**cryptopunks**](https://rubygems.org/gems/cryptopunks/versions/2.1.0 "Sun 09 Jan 2022") 2.1.0
 
 ## 2021
+
+**Week 2021/48**
+
+1 Gem Update(s)  - [**cryptopunks-gui**](https://rubygems.org/gems/cryptopunks-gui/versions/0.0.15 "Sun 05 Dec 2021") 0.0.15
 
 **Week 2021/47**
 
@@ -184,7 +200,7 @@
 
 **Week 2021/40**
 
-1 Gem Update(s)  - [**cryptopunks**](https://rubygems.org/gems/cryptopunks/versions/1.2.2 "Sun 10 Oct 2021") 1.2.2
+2 Gem Update(s)  - [**cryptopunks**](https://rubygems.org/gems/cryptopunks/versions/1.2.2 "Sun 10 Oct 2021") 1.2.2, [**csvreader**](https://rubygems.org/gems/csvreader/versions/1.2.5 "Tue 05 Oct 2021") 1.2.5
 
 **Week 2021/39**
 
@@ -193,6 +209,18 @@
 **Week 2021/38**
 
 3 Gem Update(s)  - [**pixelart**](https://rubygems.org/gems/pixelart/versions/1.1.1 "Sat 25 Sep 2021") 1.1.1, [**pixelart**](https://rubygems.org/gems/pixelart/versions/1.1.0 "Fri 24 Sep 2021") 1.1.0, [**pixelart**](https://rubygems.org/gems/pixelart/versions/1.0.0 "Tue 21 Sep 2021") 1.0.0
+
+**Week 2021/24**
+
+1 Gem Update(s)  - [**footty**](https://rubygems.org/gems/footty/versions/0.4.1 "Tue 15 Jun 2021") 0.4.1
+
+**Week 2021/22**
+
+**NEW!** - 1 Gem(s) - [**elliptic-lite**](https://rubygems.org/gems/elliptic-lite/versions/0.1.0 "Sun 06 Jun 2021") 0.1.0
+
+**Week 2021/20**
+
+**NEW!** - 1 Gem(s) - [**pixelart-characters**](https://rubygems.org/gems/pixelart-characters/versions/0.1.0 "Tue 18 May 2021") 0.1.0
 
 **Week 2021/19**
 
@@ -204,7 +232,7 @@
 
 **Week 2021/17**
 
-1 Gem Update(s)  - [**mooncats**](https://rubygems.org/gems/mooncats/versions/1.1.0 "Tue 27 Apr 2021") 1.1.0
+2 Gem Update(s)  - [**mooncats**](https://rubygems.org/gems/mooncats/versions/1.1.1 "Fri 30 Apr 2021") 1.1.1, [**mooncats**](https://rubygems.org/gems/mooncats/versions/1.1.0 "Tue 27 Apr 2021") 1.1.0
 
 **Week 2021/16**
 
@@ -216,9 +244,9 @@
 
 **Week 2021/14**
 
-**NEW!** - 1 Gem(s) - [**pixelart**](https://rubygems.org/gems/pixelart/versions/0.1.0 "Thu 08 Apr 2021") 0.1.0
+**NEW!** - 2 Gem(s) - [**pixelart**](https://rubygems.org/gems/pixelart/versions/0.1.0 "Thu 08 Apr 2021") 0.1.0, [**kittyverse-graphql**](https://rubygems.org/gems/kittyverse-graphql/versions/0.0.1 "Wed 07 Apr 2021") 0.0.1
 
-1 Gem Update(s)  - [**webclient**](https://rubygems.org/gems/webclient/versions/0.2.1 "Mon 05 Apr 2021") 0.2.1
+3 Gem Update(s)  - [**cryptopunks-graphql**](https://rubygems.org/gems/cryptopunks-graphql/versions/0.1.1 "Mon 05 Apr 2021") 0.1.1, [**mooncats-graphql**](https://rubygems.org/gems/mooncats-graphql/versions/0.1.1 "Mon 05 Apr 2021") 0.1.1, [**webclient**](https://rubygems.org/gems/webclient/versions/0.2.1 "Mon 05 Apr 2021") 0.2.1
 
 **Week 2021/13**
 
@@ -234,23 +262,31 @@
 
 **NEW!** - 1 Gem(s) - [**mooncats**](https://rubygems.org/gems/mooncats/versions/0.1.0 "Tue 16 Mar 2021") 0.1.0
 
+**Week 2021/10**
+
+1 Gem Update(s)  - [**factbook-codes**](https://rubygems.org/gems/factbook-codes/versions/0.1.2 "Mon 08 Mar 2021") 0.1.2
+
 **Week 2021/09**
 
-**NEW!** - 1 Gem(s) - [**factbook-codes**](https://rubygems.org/gems/factbook-codes/versions/0.1.0 "Wed 03 Mar 2021") 0.1.0
+**NEW!** - 2 Gem(s) - [**factbook-fields**](https://rubygems.org/gems/factbook-fields/versions/0.1.0 "Fri 05 Mar 2021") 0.1.0, [**factbook-codes**](https://rubygems.org/gems/factbook-codes/versions/0.1.0 "Wed 03 Mar 2021") 0.1.0
 
-1 Gem Update(s)  - [**factbook-codes**](https://rubygems.org/gems/factbook-codes/versions/0.1.1 "Fri 05 Mar 2021") 0.1.1
+2 Gem Update(s)  - [**factbook-codes**](https://rubygems.org/gems/factbook-codes/versions/0.1.1 "Fri 05 Mar 2021") 0.1.1, [**factbook-readers**](https://rubygems.org/gems/factbook-readers/versions/1.1.0 "Fri 05 Mar 2021") 1.1.0
 
 **Week 2021/07**
 
-**NEW!** - 1 Gem(s) - [**kittypedia**](https://rubygems.org/gems/kittypedia/versions/0.0.1 "Wed 17 Feb 2021") 0.0.1
+**NEW!** - 2 Gem(s) - [**kittypedia**](https://rubygems.org/gems/kittypedia/versions/0.0.1 "Wed 17 Feb 2021") 0.0.1, [**kittyverse-api**](https://rubygems.org/gems/kittyverse-api/versions/1.0.0 "Wed 17 Feb 2021") 1.0.0
 
-1 Gem Update(s)  - [**kittyverse**](https://rubygems.org/gems/kittyverse/versions/1.0.0 "Wed 17 Feb 2021") 1.0.0
+4 Gem Update(s)  - [**webget**](https://rubygems.org/gems/webget/versions/0.2.5 "Sun 21 Feb 2021") 0.2.5, [**kittypedia**](https://rubygems.org/gems/kittypedia/versions/0.1.0 "Thu 18 Feb 2021") 0.1.0, [**kittyverse**](https://rubygems.org/gems/kittyverse/versions/1.0.1 "Wed 17 Feb 2021") 1.0.1, [**kittyverse**](https://rubygems.org/gems/kittyverse/versions/1.0.0 "Wed 17 Feb 2021") 1.0.0
 
 **Week 2021/06**
 
 **NEW!** - 1 Gem(s) - [**cryptopunks**](https://rubygems.org/gems/cryptopunks/versions/0.0.1 "Wed 10 Feb 2021") 0.0.1
 
 3 Gem Update(s)  - [**cryptopunks**](https://rubygems.org/gems/cryptopunks/versions/1.1.0 "Sun 14 Feb 2021") 1.1.0, [**cryptopunks**](https://rubygems.org/gems/cryptopunks/versions/1.0.1 "Wed 10 Feb 2021") 1.0.1, [**cryptopunks**](https://rubygems.org/gems/cryptopunks/versions/1.0.0 "Wed 10 Feb 2021") 1.0.0
+
+**Week 2021/04**
+
+1 Gem Update(s)  - [**elliptic**](https://rubygems.org/gems/elliptic/versions/1.0.2 "Mon 25 Jan 2021") 1.0.2
 
 **Week 2021/03**
 
@@ -262,7 +298,11 @@
 
 **NEW!** - 2 Gem(s) - [**base58-alphabets**](https://rubygems.org/gems/base58-alphabets/versions/0.0.1 "Sat 16 Jan 2021") 0.0.1, [**crypto-lite**](https://rubygems.org/gems/crypto-lite/versions/0.0.1 "Thu 14 Jan 2021") 0.0.1
 
-4 Gem Update(s)  - [**base58-alphabets**](https://rubygems.org/gems/base58-alphabets/versions/0.1.0 "Sat 16 Jan 2021") 0.1.0, [**crypto-lite**](https://rubygems.org/gems/crypto-lite/versions/0.2.1 "Fri 15 Jan 2021") 0.2.1, [**crypto-lite**](https://rubygems.org/gems/crypto-lite/versions/0.2.0 "Fri 15 Jan 2021") 0.2.0, [**crypto-lite**](https://rubygems.org/gems/crypto-lite/versions/0.1.0 "Thu 14 Jan 2021") 0.1.0
+6 Gem Update(s)  - [**base58-alphabets**](https://rubygems.org/gems/base58-alphabets/versions/1.0.0 "Sun 17 Jan 2021") 1.0.0, [**base32-alphabets**](https://rubygems.org/gems/base32-alphabets/versions/1.2.0 "Sat 16 Jan 2021") 1.2.0, [**base58-alphabets**](https://rubygems.org/gems/base58-alphabets/versions/0.1.0 "Sat 16 Jan 2021") 0.1.0, [**crypto-lite**](https://rubygems.org/gems/crypto-lite/versions/0.2.1 "Fri 15 Jan 2021") 0.2.1, [**crypto-lite**](https://rubygems.org/gems/crypto-lite/versions/0.2.0 "Fri 15 Jan 2021") 0.2.0, [**crypto-lite**](https://rubygems.org/gems/crypto-lite/versions/0.1.0 "Thu 14 Jan 2021") 0.1.0
+
+**Week 2021/01**
+
+4 Gem Update(s)  - [**blockchain-lite**](https://rubygems.org/gems/blockchain-lite/versions/1.4.1 "Sun 10 Jan 2021") 1.4.1, [**centralbank**](https://rubygems.org/gems/centralbank/versions/0.2.2 "Sun 10 Jan 2021") 0.2.2, [**cryptoquotes**](https://rubygems.org/gems/cryptoquotes/versions/1.1.0 "Sun 10 Jan 2021") 1.1.0, [**merkletree**](https://rubygems.org/gems/merkletree/versions/0.1.1 "Sun 10 Jan 2021") 0.1.1
 
 ## 2020
 
@@ -270,9 +310,11 @@
 
 **NEW!** - 1 Gem(s) - [**cryptoquotes**](https://rubygems.org/gems/cryptoquotes/versions/0.0.1 "Tue 15 Dec 2020") 0.0.1
 
-2 Gem Update(s)  - [**cryptoquotes**](https://rubygems.org/gems/cryptoquotes/versions/1.0.1 "Fri 18 Dec 2020") 1.0.1, [**cryptoquotes**](https://rubygems.org/gems/cryptoquotes/versions/1.0.0 "Thu 17 Dec 2020") 1.0.0
+3 Gem Update(s)  - [**quik**](https://rubygems.org/gems/quik/versions/1.0.0 "Sun 20 Dec 2020") 1.0.0, [**cryptoquotes**](https://rubygems.org/gems/cryptoquotes/versions/1.0.1 "Fri 18 Dec 2020") 1.0.1, [**cryptoquotes**](https://rubygems.org/gems/cryptoquotes/versions/1.0.0 "Thu 17 Dec 2020") 1.0.0
 
 **Week 2020/49**
+
+**NEW!** - 2 Gem(s) - [**wikiscript-parser**](https://rubygems.org/gems/wikiscript-parser/versions/0.0.1 "Mon 30 Nov 2020") 0.0.1, [**wikitree**](https://rubygems.org/gems/wikitree/versions/0.0.1 "Mon 30 Nov 2020") 0.0.1
 
 1 Gem Update(s)  - [**webget**](https://rubygems.org/gems/webget/versions/0.2.4 "Sun 06 Dec 2020") 0.2.4
 
@@ -280,45 +322,47 @@
 
 **NEW!** - 1 Gem(s) - [**factbook-readers**](https://rubygems.org/gems/factbook-readers/versions/0.0.1 "Thu 26 Nov 2020") 0.0.1
 
-3 Gem Update(s)  - [**factbook-readers**](https://rubygems.org/gems/factbook-readers/versions/1.0.1 "Fri 27 Nov 2020") 1.0.1, [**factbook-readers**](https://rubygems.org/gems/factbook-readers/versions/1.0.0 "Fri 27 Nov 2020") 1.0.0, [**factbook**](https://rubygems.org/gems/factbook/versions/2.0.0 "Tue 24 Nov 2020") 2.0.0
+5 Gem Update(s)  - [**factbook**](https://rubygems.org/gems/factbook/versions/2.0.1 "Fri 27 Nov 2020") 2.0.1, [**factbook-readers**](https://rubygems.org/gems/factbook-readers/versions/1.0.1 "Fri 27 Nov 2020") 1.0.1, [**factbook-readers**](https://rubygems.org/gems/factbook-readers/versions/1.0.0 "Fri 27 Nov 2020") 1.0.0, [**factbook**](https://rubygems.org/gems/factbook/versions/2.0.0 "Tue 24 Nov 2020") 2.0.0, [**webget-football**](https://rubygems.org/gems/webget-football/versions/0.1.2 "Mon 23 Nov 2020") 0.1.2
 
 **Week 2020/47**
 
-3 Gem Update(s)  - [**sportdb-structs**](https://rubygems.org/gems/sportdb-structs/versions/0.1.2 "Sun 22 Nov 2020") 0.1.2, [**webget-football**](https://rubygems.org/gems/webget-football/versions/0.1.1 "Sat 21 Nov 2020") 0.1.1, [**webget**](https://rubygems.org/gems/webget/versions/0.2.3 "Fri 20 Nov 2020") 0.2.3
+**NEW!** - 2 Gem(s) - [**season-formats**](https://rubygems.org/gems/season-formats/versions/0.0.1 "Sun 22 Nov 2020") 0.0.1, [**sportdb-setup**](https://rubygems.org/gems/sportdb-setup/versions/0.0.1 "Mon 16 Nov 2020") 0.0.1
+
+4 Gem Update(s)  - [**sportdb-structs**](https://rubygems.org/gems/sportdb-structs/versions/0.1.2 "Sun 22 Nov 2020") 0.1.2, [**football-sources**](https://rubygems.org/gems/football-sources/versions/0.1.0 "Sat 21 Nov 2020") 0.1.0, [**webget-football**](https://rubygems.org/gems/webget-football/versions/0.1.1 "Sat 21 Nov 2020") 0.1.1, [**webget**](https://rubygems.org/gems/webget/versions/0.2.3 "Fri 20 Nov 2020") 0.2.3
 
 **Week 2020/46**
 
-**NEW!** - 4 Gem(s) - [**football-cat**](https://rubygems.org/gems/football-cat/versions/0.0.1 "Sun 15 Nov 2020") 0.0.1, [**footballdata-12xpert**](https://rubygems.org/gems/footballdata-12xpert/versions/0.0.1 "Thu 12 Nov 2020") 0.0.1, [**football-sources**](https://rubygems.org/gems/football-sources/versions/0.0.1 "Tue 10 Nov 2020") 0.0.1, [**webget-football**](https://rubygems.org/gems/webget-football/versions/0.0.1 "Tue 10 Nov 2020") 0.0.1
+**NEW!** - 5 Gem(s) - [**football-cat**](https://rubygems.org/gems/football-cat/versions/0.0.1 "Sun 15 Nov 2020") 0.0.1, [**sportdb-writers**](https://rubygems.org/gems/sportdb-writers/versions/0.0.1 "Sun 15 Nov 2020") 0.0.1, [**footballdata-12xpert**](https://rubygems.org/gems/footballdata-12xpert/versions/0.0.1 "Thu 12 Nov 2020") 0.0.1, [**football-sources**](https://rubygems.org/gems/football-sources/versions/0.0.1 "Tue 10 Nov 2020") 0.0.1, [**webget-football**](https://rubygems.org/gems/webget-football/versions/0.0.1 "Tue 10 Nov 2020") 0.0.1
 
-5 Gem Update(s)  - [**football-cat**](https://rubygems.org/gems/football-cat/versions/0.1.0 "Sun 15 Nov 2020") 0.1.0, [**footballdata-12xpert**](https://rubygems.org/gems/footballdata-12xpert/versions/0.1.0 "Thu 12 Nov 2020") 0.1.0, [**webclient**](https://rubygems.org/gems/webclient/versions/0.2.0 "Wed 11 Nov 2020") 0.2.0, [**webget**](https://rubygems.org/gems/webget/versions/0.2.2 "Wed 11 Nov 2020") 0.2.2, [**webget-football**](https://rubygems.org/gems/webget-football/versions/0.1.0 "Tue 10 Nov 2020") 0.1.0
+8 Gem Update(s)  - [**football-cat**](https://rubygems.org/gems/football-cat/versions/0.1.1 "Sun 15 Nov 2020") 0.1.1, [**football-cat**](https://rubygems.org/gems/football-cat/versions/0.1.0 "Sun 15 Nov 2020") 0.1.0, [**footballdata-12xpert**](https://rubygems.org/gems/footballdata-12xpert/versions/0.1.1 "Sat 14 Nov 2020") 0.1.1, [**sportdb-importers**](https://rubygems.org/gems/sportdb-importers/versions/1.2.0 "Sat 14 Nov 2020") 1.2.0, [**footballdata-12xpert**](https://rubygems.org/gems/footballdata-12xpert/versions/0.1.0 "Thu 12 Nov 2020") 0.1.0, [**webclient**](https://rubygems.org/gems/webclient/versions/0.2.0 "Wed 11 Nov 2020") 0.2.0, [**webget**](https://rubygems.org/gems/webget/versions/0.2.2 "Wed 11 Nov 2020") 0.2.2, [**webget-football**](https://rubygems.org/gems/webget-football/versions/0.1.0 "Tue 10 Nov 2020") 0.1.0
 
 **Week 2020/45**
 
-5 Gem Update(s)  - [**webget**](https://rubygems.org/gems/webget/versions/0.2.1 "Sat 07 Nov 2020") 0.2.1, [**flow-lite**](https://rubygems.org/gems/flow-lite/versions/1.0.3 "Tue 03 Nov 2020") 1.0.3, [**monofile**](https://rubygems.org/gems/monofile/versions/0.2.3 "Tue 03 Nov 2020") 0.2.3, [**monofile**](https://rubygems.org/gems/monofile/versions/0.2.2 "Mon 02 Nov 2020") 0.2.2, [**monos**](https://rubygems.org/gems/monos/versions/1.1.0 "Mon 02 Nov 2020") 1.1.0
+9 Gem Update(s)  - [**webget**](https://rubygems.org/gems/webget/versions/0.2.1 "Sat 07 Nov 2020") 0.2.1, [**flow-lite**](https://rubygems.org/gems/flow-lite/versions/1.1.0 "Wed 04 Nov 2020") 1.1.0, [**monofile**](https://rubygems.org/gems/monofile/versions/0.2.4 "Wed 04 Nov 2020") 0.2.4, [**monos**](https://rubygems.org/gems/monos/versions/1.1.1 "Wed 04 Nov 2020") 1.1.1, [**yorobot**](https://rubygems.org/gems/yorobot/versions/1.1.0 "Wed 04 Nov 2020") 1.1.0, [**flow-lite**](https://rubygems.org/gems/flow-lite/versions/1.0.3 "Tue 03 Nov 2020") 1.0.3, [**monofile**](https://rubygems.org/gems/monofile/versions/0.2.3 "Tue 03 Nov 2020") 0.2.3, [**monofile**](https://rubygems.org/gems/monofile/versions/0.2.2 "Mon 02 Nov 2020") 0.2.2, [**monos**](https://rubygems.org/gems/monos/versions/1.1.0 "Mon 02 Nov 2020") 1.1.0
 
 **Week 2020/44**
 
-**NEW!** - 1 Gem(s) - [**monofile**](https://rubygems.org/gems/monofile/versions/0.0.1 "Thu 29 Oct 2020") 0.0.1
+**NEW!** - 4 Gem(s) - [**flowfile**](https://rubygems.org/gems/flowfile/versions/0.0.1 "Thu 29 Oct 2020") 0.0.1, [**gitfile**](https://rubygems.org/gems/gitfile/versions/0.0.1 "Thu 29 Oct 2020") 0.0.1, [**monofile**](https://rubygems.org/gems/monofile/versions/0.0.1 "Thu 29 Oct 2020") 0.0.1, [**football-to-psql**](https://rubygems.org/gems/football-to-psql/versions/0.1.0 "Wed 28 Oct 2020") 0.1.0
 
 12 Gem Update(s)  - [**monofile**](https://rubygems.org/gems/monofile/versions/0.2.1 "Sat 31 Oct 2020") 0.2.1, [**monofile**](https://rubygems.org/gems/monofile/versions/0.2.0 "Fri 30 Oct 2020") 0.2.0, [**monofile**](https://rubygems.org/gems/monofile/versions/0.1.1 "Fri 30 Oct 2020") 0.1.1, [**monofile**](https://rubygems.org/gems/monofile/versions/0.1.0 "Thu 29 Oct 2020") 0.1.0, [**flow-lite**](https://rubygems.org/gems/flow-lite/versions/1.0.2 "Wed 28 Oct 2020") 1.0.2, [**flow-lite**](https://rubygems.org/gems/flow-lite/versions/1.0.1 "Tue 27 Oct 2020") 1.0.1, [**monos**](https://rubygems.org/gems/monos/versions/1.0.2 "Tue 27 Oct 2020") 1.0.2, [**yorobot**](https://rubygems.org/gems/yorobot/versions/1.0.5 "Tue 27 Oct 2020") 1.0.5, [**yorobot**](https://rubygems.org/gems/yorobot/versions/1.0.4 "Tue 27 Oct 2020") 1.0.4, [**yorobot**](https://rubygems.org/gems/yorobot/versions/1.0.3 "Tue 27 Oct 2020") 1.0.3, [**monos**](https://rubygems.org/gems/monos/versions/1.0.1 "Mon 26 Oct 2020") 1.0.1, [**yorobot**](https://rubygems.org/gems/yorobot/versions/1.0.2 "Mon 26 Oct 2020") 1.0.2
 
 **Week 2020/43**
 
-**NEW!** - 4 Gem(s) - [**flow-lite**](https://rubygems.org/gems/flow-lite/versions/0.0.1 "Fri 23 Oct 2020") 0.0.1, [**commands-lite**](https://rubygems.org/gems/commands-lite/versions/0.0.1 "Thu 22 Oct 2020") 0.0.1, [**computer**](https://rubygems.org/gems/computer/versions/0.0.1 "Tue 20 Oct 2020") 0.0.1, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.0.1 "Mon 19 Oct 2020") 0.0.1
+**NEW!** - 5 Gem(s) - [**flow-lite**](https://rubygems.org/gems/flow-lite/versions/0.0.1 "Fri 23 Oct 2020") 0.0.1, [**commands-lite**](https://rubygems.org/gems/commands-lite/versions/0.0.1 "Thu 22 Oct 2020") 0.0.1, [**shell-lite**](https://rubygems.org/gems/shell-lite/versions/0.0.1 "Thu 22 Oct 2020") 0.0.1, [**computer**](https://rubygems.org/gems/computer/versions/0.0.1 "Tue 20 Oct 2020") 0.0.1, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.0.1 "Mon 19 Oct 2020") 0.0.1
 
-16 Gem Update(s)  - [**flow-lite**](https://rubygems.org/gems/flow-lite/versions/1.0.0 "Sun 25 Oct 2020") 1.0.0, [**monos**](https://rubygems.org/gems/monos/versions/1.0.0 "Sun 25 Oct 2020") 1.0.0, [**yorobot**](https://rubygems.org/gems/yorobot/versions/1.0.1 "Sun 25 Oct 2020") 1.0.1, [**yorobot**](https://rubygems.org/gems/yorobot/versions/1.0.0 "Sun 25 Oct 2020") 1.0.0, [**monos**](https://rubygems.org/gems/monos/versions/0.6.0 "Sat 24 Oct 2020") 0.6.0, [**flow-lite**](https://rubygems.org/gems/flow-lite/versions/0.1.0 "Fri 23 Oct 2020") 0.1.0, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.3.0 "Thu 22 Oct 2020") 0.3.0, [**monos**](https://rubygems.org/gems/monos/versions/0.5.0 "Wed 21 Oct 2020") 0.5.0, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.2.2 "Wed 21 Oct 2020") 0.2.2, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.2.1 "Wed 21 Oct 2020") 0.2.1, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.2.0 "Wed 21 Oct 2020") 0.2.0, [**computer**](https://rubygems.org/gems/computer/versions/0.1.0 "Tue 20 Oct 2020") 0.1.0, [**gitti**](https://rubygems.org/gems/gitti/versions/0.6.0 "Tue 20 Oct 2020") 0.6.0, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.1.1 "Tue 20 Oct 2020") 0.1.1, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.1.0 "Tue 20 Oct 2020") 0.1.0, [**gitti**](https://rubygems.org/gems/gitti/versions/0.5.0 "Mon 19 Oct 2020") 0.5.0
+19 Gem Update(s)  - [**flow-lite**](https://rubygems.org/gems/flow-lite/versions/1.0.0 "Sun 25 Oct 2020") 1.0.0, [**monos**](https://rubygems.org/gems/monos/versions/1.0.0 "Sun 25 Oct 2020") 1.0.0, [**yorobot**](https://rubygems.org/gems/yorobot/versions/1.0.1 "Sun 25 Oct 2020") 1.0.1, [**yorobot**](https://rubygems.org/gems/yorobot/versions/1.0.0 "Sun 25 Oct 2020") 1.0.0, [**monos**](https://rubygems.org/gems/monos/versions/0.6.0 "Sat 24 Oct 2020") 0.6.0, [**flow-lite**](https://rubygems.org/gems/flow-lite/versions/0.1.0 "Fri 23 Oct 2020") 0.1.0, [**commands-lite**](https://rubygems.org/gems/commands-lite/versions/0.1.0 "Thu 22 Oct 2020") 0.1.0, [**gitti**](https://rubygems.org/gems/gitti/versions/0.6.1 "Thu 22 Oct 2020") 0.6.1, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.3.0 "Thu 22 Oct 2020") 0.3.0, [**monos**](https://rubygems.org/gems/monos/versions/0.5.0 "Wed 21 Oct 2020") 0.5.0, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.2.2 "Wed 21 Oct 2020") 0.2.2, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.2.1 "Wed 21 Oct 2020") 0.2.1, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.2.0 "Wed 21 Oct 2020") 0.2.0, [**computer**](https://rubygems.org/gems/computer/versions/0.1.1 "Tue 20 Oct 2020") 0.1.1, [**computer**](https://rubygems.org/gems/computer/versions/0.1.0 "Tue 20 Oct 2020") 0.1.0, [**gitti**](https://rubygems.org/gems/gitti/versions/0.6.0 "Tue 20 Oct 2020") 0.6.0, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.1.1 "Tue 20 Oct 2020") 0.1.1, [**yorobot**](https://rubygems.org/gems/yorobot/versions/0.1.0 "Tue 20 Oct 2020") 0.1.0, [**gitti**](https://rubygems.org/gems/gitti/versions/0.5.0 "Mon 19 Oct 2020") 0.5.0
 
 **Week 2020/42**
 
 **NEW!** - 2 Gem(s) - [**football-to-sqlite**](https://rubygems.org/gems/football-to-sqlite/versions/0.0.1 "Fri 16 Oct 2020") 0.0.1, [**hubba-reports**](https://rubygems.org/gems/hubba-reports/versions/0.1.0 "Wed 14 Oct 2020") 0.1.0
 
-5 Gem Update(s)  - [**football-to-sqlite**](https://rubygems.org/gems/football-to-sqlite/versions/0.2.1 "Sat 17 Oct 2020") 0.2.1, [**football-to-sqlite**](https://rubygems.org/gems/football-to-sqlite/versions/0.2.0 "Sat 17 Oct 2020") 0.2.0, [**football-to-sqlite**](https://rubygems.org/gems/football-to-sqlite/versions/0.1.0 "Fri 16 Oct 2020") 0.1.0, [**hubba-reports**](https://rubygems.org/gems/hubba-reports/versions/1.0.0 "Thu 15 Oct 2020") 1.0.0, [**hubba**](https://rubygems.org/gems/hubba/versions/0.7.0 "Wed 14 Oct 2020") 0.7.0
+10 Gem Update(s)  - [**football-to-sqlite**](https://rubygems.org/gems/football-to-sqlite/versions/0.2.2 "Sat 17 Oct 2020") 0.2.2, [**football-to-sqlite**](https://rubygems.org/gems/football-to-sqlite/versions/0.2.1 "Sat 17 Oct 2020") 0.2.1, [**football-to-sqlite**](https://rubygems.org/gems/football-to-sqlite/versions/0.2.0 "Sat 17 Oct 2020") 0.2.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/2.3.2 "Sat 17 Oct 2020") 2.3.2, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/2.0.3 "Sat 17 Oct 2020") 2.0.3, [**football-to-sqlite**](https://rubygems.org/gems/football-to-sqlite/versions/0.1.0 "Fri 16 Oct 2020") 0.1.0, [**hubba-reports**](https://rubygems.org/gems/hubba-reports/versions/1.0.1 "Fri 16 Oct 2020") 1.0.1, [**hubba**](https://rubygems.org/gems/hubba/versions/1.0.0 "Thu 15 Oct 2020") 1.0.0, [**hubba-reports**](https://rubygems.org/gems/hubba-reports/versions/1.0.0 "Thu 15 Oct 2020") 1.0.0, [**hubba**](https://rubygems.org/gems/hubba/versions/0.7.0 "Wed 14 Oct 2020") 0.7.0
 
 **Week 2020/41**
 
 **NEW!** - 1 Gem(s) - [**webclient**](https://rubygems.org/gems/webclient/versions/0.0.1 "Tue 06 Oct 2020") 0.0.1
 
-9 Gem Update(s)  - [**hubba**](https://rubygems.org/gems/hubba/versions/0.6.2 "Sun 11 Oct 2020") 0.6.2, [**hubba**](https://rubygems.org/gems/hubba/versions/0.6.1 "Fri 09 Oct 2020") 0.6.1, [**hubba**](https://rubygems.org/gems/hubba/versions/0.6.0 "Thu 08 Oct 2020") 0.6.0, [**hubba**](https://rubygems.org/gems/hubba/versions/0.5.2 "Wed 07 Oct 2020") 0.5.2, [**hubba**](https://rubygems.org/gems/hubba/versions/0.5.1 "Wed 07 Oct 2020") 0.5.1, [**webclient**](https://rubygems.org/gems/webclient/versions/0.1.1 "Wed 07 Oct 2020") 0.1.1, [**webclient**](https://rubygems.org/gems/webclient/versions/0.1.0 "Tue 06 Oct 2020") 0.1.0, [**webget**](https://rubygems.org/gems/webget/versions/0.2.0 "Tue 06 Oct 2020") 0.2.0, [**webget**](https://rubygems.org/gems/webget/versions/0.1.1 "Mon 05 Oct 2020") 0.1.1
+10 Gem Update(s)  - [**hubba**](https://rubygems.org/gems/hubba/versions/0.6.2 "Sun 11 Oct 2020") 0.6.2, [**hubba**](https://rubygems.org/gems/hubba/versions/0.6.1 "Fri 09 Oct 2020") 0.6.1, [**hubba**](https://rubygems.org/gems/hubba/versions/0.6.0 "Thu 08 Oct 2020") 0.6.0, [**hubba**](https://rubygems.org/gems/hubba/versions/0.5.2 "Wed 07 Oct 2020") 0.5.2, [**hubba**](https://rubygems.org/gems/hubba/versions/0.5.1 "Wed 07 Oct 2020") 0.5.1, [**webclient**](https://rubygems.org/gems/webclient/versions/0.1.1 "Wed 07 Oct 2020") 0.1.1, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.1.6 "Tue 06 Oct 2020") 1.1.6, [**webclient**](https://rubygems.org/gems/webclient/versions/0.1.0 "Tue 06 Oct 2020") 0.1.0, [**webget**](https://rubygems.org/gems/webget/versions/0.2.0 "Tue 06 Oct 2020") 0.2.0, [**webget**](https://rubygems.org/gems/webget/versions/0.1.1 "Mon 05 Oct 2020") 0.1.1
 
 **Week 2020/40**
 
@@ -328,11 +372,13 @@
 
 **Week 2020/39**
 
-2 Gem Update(s)  - [**gitti**](https://rubygems.org/gems/gitti/versions/0.4.2 "Mon 21 Sep 2020") 0.4.2, [**gitti**](https://rubygems.org/gems/gitti/versions/0.4.1 "Mon 21 Sep 2020") 0.4.1
+**NEW!** - 1 Gem(s) - [**sportdb-exporters**](https://rubygems.org/gems/sportdb-exporters/versions/0.0.1 "Mon 21 Sep 2020") 0.0.1
+
+3 Gem Update(s)  - [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.1.3 "Tue 22 Sep 2020") 1.1.3, [**gitti**](https://rubygems.org/gems/gitti/versions/0.4.2 "Mon 21 Sep 2020") 0.4.2, [**gitti**](https://rubygems.org/gems/gitti/versions/0.4.1 "Mon 21 Sep 2020") 0.4.1
 
 **Week 2020/38**
 
-3 Gem Update(s)  - [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.1.5 "Tue 15 Sep 2020") 1.1.5, [**sportdb-structs**](https://rubygems.org/gems/sportdb-structs/versions/0.1.1 "Tue 15 Sep 2020") 0.1.1, [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.1.2 "Tue 15 Sep 2020") 1.1.2
+8 Gem Update(s)  - [**date-formats**](https://rubygems.org/gems/date-formats/versions/1.0.2 "Tue 15 Sep 2020") 1.0.2, [**fifa**](https://rubygems.org/gems/fifa/versions/2020.9.15 "Tue 15 Sep 2020") 2020.9.15, [**footballdb-clubs**](https://rubygems.org/gems/footballdb-clubs/versions/2020.9.15 "Tue 15 Sep 2020") 2020.9.15, [**footballdb-leagues**](https://rubygems.org/gems/footballdb-leagues/versions/2020.9.15 "Tue 15 Sep 2020") 2020.9.15, [**score-formats**](https://rubygems.org/gems/score-formats/versions/0.1.1 "Tue 15 Sep 2020") 0.1.1, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.1.5 "Tue 15 Sep 2020") 1.1.5, [**sportdb-structs**](https://rubygems.org/gems/sportdb-structs/versions/0.1.1 "Tue 15 Sep 2020") 0.1.1, [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.1.2 "Tue 15 Sep 2020") 1.1.2
 
 **Week 2020/37**
 
@@ -342,33 +388,41 @@
 
 **NEW!** - 1 Gem(s) - [**monos**](https://rubygems.org/gems/monos/versions/0.1.0 "Tue 01 Sep 2020") 0.1.0
 
-10 Gem Update(s)  - [**gitti**](https://rubygems.org/gems/gitti/versions/0.4.0 "Sun 06 Sep 2020") 0.4.0, [**gitti-backup**](https://rubygems.org/gems/gitti-backup/versions/0.4.0 "Sun 06 Sep 2020") 0.4.0, [**monos**](https://rubygems.org/gems/monos/versions/0.4.0 "Sun 06 Sep 2020") 0.4.0, [**monos**](https://rubygems.org/gems/monos/versions/0.3.1 "Sun 06 Sep 2020") 0.3.1, [**monos**](https://rubygems.org/gems/monos/versions/0.3.0 "Sun 06 Sep 2020") 0.3.0, [**gitti**](https://rubygems.org/gems/gitti/versions/0.3.0 "Sat 05 Sep 2020") 0.3.0, [**monos**](https://rubygems.org/gems/monos/versions/0.2.1 "Fri 04 Sep 2020") 0.2.1, [**monos**](https://rubygems.org/gems/monos/versions/0.2.0 "Fri 04 Sep 2020") 0.2.0, [**monos**](https://rubygems.org/gems/monos/versions/0.1.2 "Tue 01 Sep 2020") 0.1.2, [**monos**](https://rubygems.org/gems/monos/versions/0.1.1 "Tue 01 Sep 2020") 0.1.1
+11 Gem Update(s)  - [**gitti**](https://rubygems.org/gems/gitti/versions/0.4.0 "Sun 06 Sep 2020") 0.4.0, [**gitti-backup**](https://rubygems.org/gems/gitti-backup/versions/0.4.1 "Sun 06 Sep 2020") 0.4.1, [**gitti-backup**](https://rubygems.org/gems/gitti-backup/versions/0.4.0 "Sun 06 Sep 2020") 0.4.0, [**monos**](https://rubygems.org/gems/monos/versions/0.4.0 "Sun 06 Sep 2020") 0.4.0, [**monos**](https://rubygems.org/gems/monos/versions/0.3.1 "Sun 06 Sep 2020") 0.3.1, [**monos**](https://rubygems.org/gems/monos/versions/0.3.0 "Sun 06 Sep 2020") 0.3.0, [**gitti**](https://rubygems.org/gems/gitti/versions/0.3.0 "Sat 05 Sep 2020") 0.3.0, [**monos**](https://rubygems.org/gems/monos/versions/0.2.1 "Fri 04 Sep 2020") 0.2.1, [**monos**](https://rubygems.org/gems/monos/versions/0.2.0 "Fri 04 Sep 2020") 0.2.0, [**monos**](https://rubygems.org/gems/monos/versions/0.1.2 "Tue 01 Sep 2020") 0.1.2, [**monos**](https://rubygems.org/gems/monos/versions/0.1.1 "Tue 01 Sep 2020") 0.1.1
 
 **Week 2020/35**
 
 **NEW!** - 1 Gem(s) - [**sportdb-structs**](https://rubygems.org/gems/sportdb-structs/versions/0.1.0 "Mon 24 Aug 2020") 0.1.0
 
-3 Gem Update(s)  - [**score-formats**](https://rubygems.org/gems/score-formats/versions/0.1.0 "Mon 24 Aug 2020") 0.1.0, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.1.4 "Mon 24 Aug 2020") 1.1.4, [**sports**](https://rubygems.org/gems/sports/versions/0.1.0 "Mon 24 Aug 2020") 0.1.0
+4 Gem Update(s)  - [**score-formats**](https://rubygems.org/gems/score-formats/versions/0.1.0 "Mon 24 Aug 2020") 0.1.0, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.1.4 "Mon 24 Aug 2020") 1.1.4, [**sports**](https://rubygems.org/gems/sports/versions/0.1.1 "Mon 24 Aug 2020") 0.1.1, [**sports**](https://rubygems.org/gems/sports/versions/0.1.0 "Mon 24 Aug 2020") 0.1.0
 
 **Week 2020/34**
 
-**NEW!** - 3 Gem(s) - [**score-formats**](https://rubygems.org/gems/score-formats/versions/0.0.1 "Mon 17 Aug 2020") 0.0.1, [**sport**](https://rubygems.org/gems/sport/versions/0.1.0 "Mon 17 Aug 2020") 0.1.0, [**sports**](https://rubygems.org/gems/sports/versions/0.0.1 "Mon 17 Aug 2020") 0.0.1
+**NEW!** - 4 Gem(s) - [**football**](https://rubygems.org/gems/football/versions/0.1.0 "Mon 17 Aug 2020") 0.1.0, [**score-formats**](https://rubygems.org/gems/score-formats/versions/0.0.1 "Mon 17 Aug 2020") 0.0.1, [**sport**](https://rubygems.org/gems/sport/versions/0.1.0 "Mon 17 Aug 2020") 0.1.0, [**sports**](https://rubygems.org/gems/sports/versions/0.0.1 "Mon 17 Aug 2020") 0.0.1
+
+1 Gem Update(s)  - [**sport**](https://rubygems.org/gems/sport/versions/0.1.1 "Mon 17 Aug 2020") 0.1.1
 
 **Week 2020/31**
 
-4 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/2.3.1 "Sat 01 Aug 2020") 2.3.1, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.1.3 "Sat 01 Aug 2020") 1.1.3, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/2.0.2 "Sat 01 Aug 2020") 2.0.2, [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.1.1 "Sat 01 Aug 2020") 1.1.1
+**NEW!** - 1 Gem(s) - [**sportdb-catalogs**](https://rubygems.org/gems/sportdb-catalogs/versions/1.0.0 "Sat 01 Aug 2020") 1.0.0
+
+6 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/2.3.1 "Sat 01 Aug 2020") 2.3.1, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.1.3 "Sat 01 Aug 2020") 1.1.3, [**sportdb-langs**](https://rubygems.org/gems/sportdb-langs/versions/0.1.1 "Sat 01 Aug 2020") 0.1.1, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/2.0.2 "Sat 01 Aug 2020") 2.0.2, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/1.1.2 "Sat 01 Aug 2020") 1.1.2, [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.1.1 "Sat 01 Aug 2020") 1.1.1
 
 **Week 2020/28**
 
-4 Gem Update(s)  - [**footballdb-clubs**](https://rubygems.org/gems/footballdb-clubs/versions/2020.7.7 "Tue 07 Jul 2020") 2020.7.7, [**footballdb-leagues**](https://rubygems.org/gems/footballdb-leagues/versions/2020.7.7 "Tue 07 Jul 2020") 2020.7.7, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.1.2 "Tue 07 Jul 2020") 1.1.2, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/1.1.1 "Tue 07 Jul 2020") 1.1.1
+5 Gem Update(s)  - [**footballdb-clubs**](https://rubygems.org/gems/footballdb-clubs/versions/2020.7.7 "Tue 07 Jul 2020") 2020.7.7, [**footballdb-leagues**](https://rubygems.org/gems/footballdb-leagues/versions/2020.7.7 "Tue 07 Jul 2020") 2020.7.7, [**sportdb-config**](https://rubygems.org/gems/sportdb-config/versions/1.1.1 "Tue 07 Jul 2020") 1.1.1, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.1.2 "Tue 07 Jul 2020") 1.1.2, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/1.1.1 "Tue 07 Jul 2020") 1.1.1
 
 **Week 2020/25**
 
 11 Gem Update(s)  - [**footballdb-clubs**](https://rubygems.org/gems/footballdb-clubs/versions/2020.6.16 "Mon 15 Jun 2020") 2020.6.16, [**footballdb-leagues**](https://rubygems.org/gems/footballdb-leagues/versions/2020.6.16 "Mon 15 Jun 2020") 2020.6.16, [**footballdb-leagues**](https://rubygems.org/gems/footballdb-leagues/versions/2020.6.15 "Mon 15 Jun 2020") 2020.6.15, [**sportdb-config**](https://rubygems.org/gems/sportdb-config/versions/1.1.0 "Mon 15 Jun 2020") 1.1.0, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.1.1 "Mon 15 Jun 2020") 1.1.1, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.1.0 "Mon 15 Jun 2020") 1.1.0, [**sportdb-importers**](https://rubygems.org/gems/sportdb-importers/versions/1.1.1 "Mon 15 Jun 2020") 1.1.1, [**sportdb-importers**](https://rubygems.org/gems/sportdb-importers/versions/1.1.0 "Mon 15 Jun 2020") 1.1.0, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/2.0.1 "Mon 15 Jun 2020") 2.0.1, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/1.1.0 "Mon 15 Jun 2020") 1.1.0, [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.1.0 "Mon 15 Jun 2020") 1.1.0
 
+**Week 2020/22**
+
+1 Gem Update(s)  - [**feedparser**](https://rubygems.org/gems/feedparser/versions/2.2.0 "Fri 29 May 2020") 2.2.0
+
 **Week 2020/21**
 
-12 Gem Update(s)  - [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.0.6 "Sun 24 May 2020") 1.0.6, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/2.0.0 "Sun 24 May 2020") 2.0.0, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/1.0.3 "Sun 24 May 2020") 1.0.3, [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.0.3 "Sun 24 May 2020") 1.0.3, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.19.1 "Sat 23 May 2020") 1.19.1, [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.0.2 "Sat 23 May 2020") 1.0.2, [**sportdb-config**](https://rubygems.org/gems/sportdb-config/versions/1.0.4 "Tue 19 May 2020") 1.0.4, [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.0.1 "Tue 19 May 2020") 1.0.1, [**fifa**](https://rubygems.org/gems/fifa/versions/2020.5.18 "Mon 18 May 2020") 2020.5.18, [**sportdb-config**](https://rubygems.org/gems/sportdb-config/versions/1.0.3 "Mon 18 May 2020") 1.0.3, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.0.5 "Mon 18 May 2020") 1.0.5, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.0.4 "Mon 18 May 2020") 1.0.4
+13 Gem Update(s)  - [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.0.6 "Sun 24 May 2020") 1.0.6, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/2.0.0 "Sun 24 May 2020") 2.0.0, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/1.0.3 "Sun 24 May 2020") 1.0.3, [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.0.3 "Sun 24 May 2020") 1.0.3, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.19.1 "Sat 23 May 2020") 1.19.1, [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.0.2 "Sat 23 May 2020") 1.0.2, [**sportdb-config**](https://rubygems.org/gems/sportdb-config/versions/1.0.4 "Tue 19 May 2020") 1.0.4, [**sportdb-sync**](https://rubygems.org/gems/sportdb-sync/versions/1.0.1 "Tue 19 May 2020") 1.0.1, [**worlddb-models**](https://rubygems.org/gems/worlddb-models/versions/2.4.1 "Tue 19 May 2020") 2.4.1, [**fifa**](https://rubygems.org/gems/fifa/versions/2020.5.18 "Mon 18 May 2020") 2020.5.18, [**sportdb-config**](https://rubygems.org/gems/sportdb-config/versions/1.0.3 "Mon 18 May 2020") 1.0.3, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.0.5 "Mon 18 May 2020") 1.0.5, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.0.4 "Mon 18 May 2020") 1.0.4
 
 **Week 2020/20**
 
@@ -378,7 +432,7 @@
 
 **Week 2020/19**
 
-6 Gem Update(s)  - [**date-formats**](https://rubygems.org/gems/date-formats/versions/1.0.0 "Sun 10 May 2020") 1.0.0, [**fifa**](https://rubygems.org/gems/fifa/versions/2020.5.10 "Sun 10 May 2020") 2020.5.10, [**footballdb-clubs**](https://rubygems.org/gems/footballdb-clubs/versions/2020.5.10 "Sun 10 May 2020") 2020.5.10, [**footballdb-leagues**](https://rubygems.org/gems/footballdb-leagues/versions/2020.5.10 "Sun 10 May 2020") 2020.5.10, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.0.1 "Sun 10 May 2020") 1.0.1, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.0.0 "Sun 10 May 2020") 1.0.0
+7 Gem Update(s)  - [**alphabets**](https://rubygems.org/gems/alphabets/versions/1.0.0 "Sun 10 May 2020") 1.0.0, [**date-formats**](https://rubygems.org/gems/date-formats/versions/1.0.0 "Sun 10 May 2020") 1.0.0, [**fifa**](https://rubygems.org/gems/fifa/versions/2020.5.10 "Sun 10 May 2020") 2020.5.10, [**footballdb-clubs**](https://rubygems.org/gems/footballdb-clubs/versions/2020.5.10 "Sun 10 May 2020") 2020.5.10, [**footballdb-leagues**](https://rubygems.org/gems/footballdb-leagues/versions/2020.5.10 "Sun 10 May 2020") 2020.5.10, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.0.1 "Sun 10 May 2020") 1.0.1, [**sportdb-formats**](https://rubygems.org/gems/sportdb-formats/versions/1.0.0 "Sun 10 May 2020") 1.0.0
 
 **Week 2020/17**
 
@@ -392,27 +446,37 @@
 
 1 Gem Update(s)  - [**footballdb-clubs**](https://rubygems.org/gems/footballdb-clubs/versions/2020.3.30 "Mon 30 Mar 2020") 2020.3.30
 
+**Week 2020/13**
+
+2 Gem Update(s)  - [**pluto-feedfetcher**](https://rubygems.org/gems/pluto-feedfetcher/versions/0.1.6 "Thu 26 Mar 2020") 0.1.6, [**opmlparser**](https://rubygems.org/gems/opmlparser/versions/1.0.1 "Wed 25 Mar 2020") 1.0.1
+
 **Week 2020/11**
 
 **NEW!** - 1 Gem(s) - [**opmlparser**](https://rubygems.org/gems/opmlparser/versions/0.1.0 "Mon 09 Mar 2020") 0.1.0
 
-2 Gem Update(s)  - [**pluto-feedfetcher**](https://rubygems.org/gems/pluto-feedfetcher/versions/0.1.5 "Sun 15 Mar 2020") 0.1.5, [**opmlparser**](https://rubygems.org/gems/opmlparser/versions/1.0.0 "Tue 10 Mar 2020") 1.0.0
+4 Gem Update(s)  - [**pluto-feedfetcher**](https://rubygems.org/gems/pluto-feedfetcher/versions/0.1.5 "Sun 15 Mar 2020") 0.1.5, [**opmlparser**](https://rubygems.org/gems/opmlparser/versions/1.0.0 "Tue 10 Mar 2020") 1.0.0, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.6.2 "Tue 10 Mar 2020") 1.6.2, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.6.4 "Tue 10 Mar 2020") 1.6.4
+
+**Week 2020/10**
+
+**NEW!** - 4 Gem(s) - [**barcharts**](https://rubygems.org/gems/barcharts/versions/0.1.0 "Fri 06 Mar 2020") 0.1.0, [**feedchecker**](https://rubygems.org/gems/feedchecker/versions/0.0.1 "Mon 02 Mar 2020") 0.0.1, [**newsbase**](https://rubygems.org/gems/newsbase/versions/0.0.1 "Mon 02 Mar 2020") 0.0.1, [**newscast**](https://rubygems.org/gems/newscast/versions/1.1.1 "Mon 02 Mar 2020") 1.1.1
 
 **Week 2020/09**
 
-1 Gem Update(s)  - [**pluto-news**](https://rubygems.org/gems/pluto-news/versions/1.1.0 "Wed 26 Feb 2020") 1.1.0
+**NEW!** - 2 Gem(s) - [**newsweek**](https://rubygems.org/gems/newsweek/versions/0.0.1 "Mon 24 Feb 2020") 0.0.1, [**version-check**](https://rubygems.org/gems/version-check/versions/0.1.0 "Mon 24 Feb 2020") 0.1.0
+
+3 Gem Update(s)  - [**pluto-news**](https://rubygems.org/gems/pluto-news/versions/1.1.1 "Thu 27 Feb 2020") 1.1.1, [**pluto-news**](https://rubygems.org/gems/pluto-news/versions/1.1.0 "Wed 26 Feb 2020") 1.1.0, [**iniparser**](https://rubygems.org/gems/iniparser/versions/1.0.1 "Mon 24 Feb 2020") 1.0.1
 
 **Week 2020/08**
 
-**NEW!** - 1 Gem(s) - [**rubynews**](https://rubygems.org/gems/rubynews/versions/0.0.1 "Tue 18 Feb 2020") 0.0.1
+**NEW!** - 2 Gem(s) - [**pandoc**](https://rubygems.org/gems/pandoc/versions/0.0.1 "Tue 18 Feb 2020") 0.0.1, [**rubynews**](https://rubygems.org/gems/rubynews/versions/0.0.1 "Tue 18 Feb 2020") 0.0.1
 
-4 Gem Update(s)  - [**iniparser**](https://rubygems.org/gems/iniparser/versions/1.0.0 "Sun 23 Feb 2020") 1.0.0, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.6.1 "Fri 21 Feb 2020") 1.6.1, [**pluto-news**](https://rubygems.org/gems/pluto-news/versions/1.0.1 "Fri 21 Feb 2020") 1.0.1, [**rubynews**](https://rubygems.org/gems/rubynews/versions/0.1.0 "Wed 19 Feb 2020") 0.1.0
+5 Gem Update(s)  - [**iniparser**](https://rubygems.org/gems/iniparser/versions/1.0.0 "Sun 23 Feb 2020") 1.0.0, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.6.1 "Fri 21 Feb 2020") 1.6.1, [**pluto-news**](https://rubygems.org/gems/pluto-news/versions/1.0.1 "Fri 21 Feb 2020") 1.0.1, [**rubynews**](https://rubygems.org/gems/rubynews/versions/0.1.1 "Fri 21 Feb 2020") 0.1.1, [**rubynews**](https://rubygems.org/gems/rubynews/versions/0.1.0 "Wed 19 Feb 2020") 0.1.0
 
 **Week 2020/07**
 
 **NEW!** - 1 Gem(s) - [**date-formatter**](https://rubygems.org/gems/date-formatter/versions/0.0.1 "Sun 16 Feb 2020") 0.0.1
 
-4 Gem Update(s)  - [**date-formatter**](https://rubygems.org/gems/date-formatter/versions/0.1.0 "Sun 16 Feb 2020") 0.1.0, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.6.0 "Sun 16 Feb 2020") 1.6.0, [**html-template**](https://rubygems.org/gems/html-template/versions/0.2.0 "Tue 11 Feb 2020") 0.2.0, [**html-template**](https://rubygems.org/gems/html-template/versions/0.1.0 "Mon 10 Feb 2020") 0.1.0
+6 Gem Update(s)  - [**date-formatter**](https://rubygems.org/gems/date-formatter/versions/0.1.1 "Sun 16 Feb 2020") 0.1.1, [**date-formatter**](https://rubygems.org/gems/date-formatter/versions/0.1.0 "Sun 16 Feb 2020") 0.1.0, [**html-template**](https://rubygems.org/gems/html-template/versions/1.0.0 "Sun 16 Feb 2020") 1.0.0, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.6.0 "Sun 16 Feb 2020") 1.6.0, [**html-template**](https://rubygems.org/gems/html-template/versions/0.2.0 "Tue 11 Feb 2020") 0.2.0, [**html-template**](https://rubygems.org/gems/html-template/versions/0.1.0 "Mon 10 Feb 2020") 0.1.0
 
 **Week 2020/06**
 
@@ -422,7 +486,7 @@
 
 **Week 2020/05**
 
-8 Gem Update(s)  - [**pluto-feedfetcher**](https://rubygems.org/gems/pluto-feedfetcher/versions/0.1.4 "Sat 01 Feb 2020") 0.1.4, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.5.4 "Sat 01 Feb 2020") 1.5.4, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.6.3 "Sat 01 Feb 2020") 1.6.3, [**feedparser**](https://rubygems.org/gems/feedparser/versions/2.1.2 "Thu 30 Jan 2020") 2.1.2, [**pluto**](https://rubygems.org/gems/pluto/versions/1.3.3 "Thu 30 Jan 2020") 1.3.3, [**pluto-feedfetcher**](https://rubygems.org/gems/pluto-feedfetcher/versions/0.1.3 "Thu 30 Jan 2020") 0.1.3, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.5.3 "Thu 30 Jan 2020") 1.5.3, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.6.2 "Thu 30 Jan 2020") 1.6.2
+11 Gem Update(s)  - [**activerecord-utils**](https://rubygems.org/gems/activerecord-utils/versions/0.4.1 "Sat 01 Feb 2020") 0.4.1, [**activityutils**](https://rubygems.org/gems/activityutils/versions/0.1.2 "Sat 01 Feb 2020") 0.1.2, [**pluto**](https://rubygems.org/gems/pluto/versions/1.3.4 "Sat 01 Feb 2020") 1.3.4, [**pluto-feedfetcher**](https://rubygems.org/gems/pluto-feedfetcher/versions/0.1.4 "Sat 01 Feb 2020") 0.1.4, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.5.4 "Sat 01 Feb 2020") 1.5.4, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.6.3 "Sat 01 Feb 2020") 1.6.3, [**feedparser**](https://rubygems.org/gems/feedparser/versions/2.1.2 "Thu 30 Jan 2020") 2.1.2, [**pluto**](https://rubygems.org/gems/pluto/versions/1.3.3 "Thu 30 Jan 2020") 1.3.3, [**pluto-feedfetcher**](https://rubygems.org/gems/pluto-feedfetcher/versions/0.1.3 "Thu 30 Jan 2020") 0.1.3, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.5.3 "Thu 30 Jan 2020") 1.5.3, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.6.2 "Thu 30 Jan 2020") 1.6.2
 
 **Week 2020/04**
 
@@ -464,7 +528,7 @@
 
 **NEW!** - 2 Gem(s) - [**footballdb-clubs**](https://rubygems.org/gems/footballdb-clubs/versions/2019.11.22 "Fri 22 Nov 2019") 2019.11.22, [**footballdb-leagues**](https://rubygems.org/gems/footballdb-leagues/versions/2019.11.22 "Fri 22 Nov 2019") 2019.11.22
 
-7 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/2.1.0 "Sun 24 Nov 2019") 2.1.0, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/0.3.6 "Fri 22 Nov 2019") 0.3.6, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/0.3.5 "Fri 22 Nov 2019") 0.3.5, [**datafile**](https://rubygems.org/gems/datafile/versions/0.3.0 "Thu 21 Nov 2019") 0.3.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/2.0.0 "Thu 21 Nov 2019") 2.0.0, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/0.3.4 "Thu 21 Nov 2019") 0.3.4, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/0.3.3 "Tue 19 Nov 2019") 0.3.3
+8 Gem Update(s)  - [**datafile**](https://rubygems.org/gems/datafile/versions/0.3.1 "Sun 24 Nov 2019") 0.3.1, [**sportdb**](https://rubygems.org/gems/sportdb/versions/2.1.0 "Sun 24 Nov 2019") 2.1.0, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/0.3.6 "Fri 22 Nov 2019") 0.3.6, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/0.3.5 "Fri 22 Nov 2019") 0.3.5, [**datafile**](https://rubygems.org/gems/datafile/versions/0.3.0 "Thu 21 Nov 2019") 0.3.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/2.0.0 "Thu 21 Nov 2019") 2.0.0, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/0.3.4 "Thu 21 Nov 2019") 0.3.4, [**sportdb-readers**](https://rubygems.org/gems/sportdb-readers/versions/0.3.3 "Tue 19 Nov 2019") 0.3.3
 
 **Week 2019/46**
 
@@ -488,7 +552,7 @@
 
 **Week 2019/38**
 
-3 Gem Update(s)  - [**wikiscript**](https://rubygems.org/gems/wikiscript/versions/0.3.1 "Sat 21 Sep 2019") 0.3.1, [**wikiscript**](https://rubygems.org/gems/wikiscript/versions/0.3.0 "Sat 21 Sep 2019") 0.3.0, [**wikiscript**](https://rubygems.org/gems/wikiscript/versions/0.2.0 "Fri 20 Sep 2019") 0.2.0
+4 Gem Update(s)  - [**wikiscript**](https://rubygems.org/gems/wikiscript/versions/0.3.2 "Sun 22 Sep 2019") 0.3.2, [**wikiscript**](https://rubygems.org/gems/wikiscript/versions/0.3.1 "Sat 21 Sep 2019") 0.3.1, [**wikiscript**](https://rubygems.org/gems/wikiscript/versions/0.3.0 "Sat 21 Sep 2019") 0.3.0, [**wikiscript**](https://rubygems.org/gems/wikiscript/versions/0.2.0 "Fri 20 Sep 2019") 0.2.0
 
 **Week 2019/37**
 
@@ -558,35 +622,41 @@
 
 **Week 2019/16**
 
-**NEW!** - 1 Gem(s) - [**bytes**](https://rubygems.org/gems/bytes/versions/0.0.1 "Mon 15 Apr 2019") 0.0.1
+**NEW!** - 3 Gem(s) - [**typesig**](https://rubygems.org/gems/typesig/versions/0.0.1 "Sun 21 Apr 2019") 0.0.1, [**typesigs**](https://rubygems.org/gems/typesigs/versions/0.0.1 "Sun 21 Apr 2019") 0.0.1, [**bytes**](https://rubygems.org/gems/bytes/versions/0.0.1 "Mon 15 Apr 2019") 0.0.1
 
 1 Gem Update(s)  - [**bytes**](https://rubygems.org/gems/bytes/versions/0.1.0 "Tue 16 Apr 2019") 0.1.0
 
 **Week 2019/15**
 
-**NEW!** - 3 Gem(s) - [**bitcoin-script**](https://rubygems.org/gems/bitcoin-script/versions/0.0.1 "Sat 13 Apr 2019") 0.0.1, [**records**](https://rubygems.org/gems/records/versions/0.0.1 "Sat 13 Apr 2019") 0.0.1, [**michelson**](https://rubygems.org/gems/michelson/versions/0.0.1 "Tue 09 Apr 2019") 0.0.1
+**NEW!** - 5 Gem(s) - [**bitcoin-script**](https://rubygems.org/gems/bitcoin-script/versions/0.0.1 "Sat 13 Apr 2019") 0.0.1, [**records**](https://rubygems.org/gems/records/versions/0.0.1 "Sat 13 Apr 2019") 0.0.1, [**solidity**](https://rubygems.org/gems/solidity/versions/0.0.1 "Thu 11 Apr 2019") 0.0.1, [**pragmas**](https://rubygems.org/gems/pragmas/versions/0.0.1 "Wed 10 Apr 2019") 0.0.1, [**michelson**](https://rubygems.org/gems/michelson/versions/0.0.1 "Tue 09 Apr 2019") 0.0.1
 
-2 Gem Update(s)  - [**michelson**](https://rubygems.org/gems/michelson/versions/0.1.1 "Tue 09 Apr 2019") 0.1.1, [**michelson**](https://rubygems.org/gems/michelson/versions/0.1.0 "Tue 09 Apr 2019") 0.1.0
+5 Gem Update(s)  - [**bitcoin-script**](https://rubygems.org/gems/bitcoin-script/versions/0.0.2 "Sat 13 Apr 2019") 0.0.2, [**records**](https://rubygems.org/gems/records/versions/1.0.0 "Sat 13 Apr 2019") 1.0.0, [**michelson**](https://rubygems.org/gems/michelson/versions/0.1.2 "Tue 09 Apr 2019") 0.1.2, [**michelson**](https://rubygems.org/gems/michelson/versions/0.1.1 "Tue 09 Apr 2019") 0.1.1, [**michelson**](https://rubygems.org/gems/michelson/versions/0.1.0 "Tue 09 Apr 2019") 0.1.0
 
 **Week 2019/14**
 
-1 Gem Update(s)  - [**safebool**](https://rubygems.org/gems/safebool/versions/1.1.0 "Tue 02 Apr 2019") 1.1.0
+2 Gem Update(s)  - [**safebool**](https://rubygems.org/gems/safebool/versions/1.2.0 "Fri 05 Apr 2019") 1.2.0, [**safebool**](https://rubygems.org/gems/safebool/versions/1.1.0 "Tue 02 Apr 2019") 1.1.0
 
 **Week 2019/13**
 
 **NEW!** - 1 Gem(s) - [**safebool**](https://rubygems.org/gems/safebool/versions/0.0.1 "Sat 30 Mar 2019") 0.0.1
 
-5 Gem Update(s)  - [**safebool**](https://rubygems.org/gems/safebool/versions/1.0.0 "Sat 30 Mar 2019") 1.0.0, [**safebool**](https://rubygems.org/gems/safebool/versions/0.1.0 "Sat 30 Mar 2019") 0.1.0, [**enums**](https://rubygems.org/gems/enums/versions/1.3.1 "Fri 29 Mar 2019") 1.3.1, [**enums**](https://rubygems.org/gems/enums/versions/1.3.0 "Thu 28 Mar 2019") 1.3.0, [**enums**](https://rubygems.org/gems/enums/versions/1.2.0 "Wed 27 Mar 2019") 1.2.0
+6 Gem Update(s)  - [**enums**](https://rubygems.org/gems/enums/versions/1.4.0 "Sun 31 Mar 2019") 1.4.0, [**safebool**](https://rubygems.org/gems/safebool/versions/1.0.0 "Sat 30 Mar 2019") 1.0.0, [**safebool**](https://rubygems.org/gems/safebool/versions/0.1.0 "Sat 30 Mar 2019") 0.1.0, [**enums**](https://rubygems.org/gems/enums/versions/1.3.1 "Fri 29 Mar 2019") 1.3.1, [**enums**](https://rubygems.org/gems/enums/versions/1.3.0 "Thu 28 Mar 2019") 1.3.0, [**enums**](https://rubygems.org/gems/enums/versions/1.2.0 "Wed 27 Mar 2019") 1.2.0
 
 **Week 2019/12**
 
-3 Gem Update(s)  - [**enums**](https://rubygems.org/gems/enums/versions/1.1.1 "Fri 22 Mar 2019") 1.1.1, [**safestruct**](https://rubygems.org/gems/safestruct/versions/1.2.2 "Fri 22 Mar 2019") 1.2.2, [**safestruct**](https://rubygems.org/gems/safestruct/versions/1.2.1 "Wed 20 Mar 2019") 1.2.1
+**NEW!** - 2 Gem(s) - [**safedata**](https://rubygems.org/gems/safedata/versions/0.0.1 "Sun 24 Mar 2019") 0.0.1, [**safemath**](https://rubygems.org/gems/safemath/versions/0.0.1 "Sat 23 Mar 2019") 0.0.1
+
+5 Gem Update(s)  - [**safestruct**](https://rubygems.org/gems/safestruct/versions/1.3.0 "Sat 23 Mar 2019") 1.3.0, [**enums**](https://rubygems.org/gems/enums/versions/1.1.1 "Fri 22 Mar 2019") 1.1.1, [**safestruct**](https://rubygems.org/gems/safestruct/versions/1.2.2 "Fri 22 Mar 2019") 1.2.2, [**universum**](https://rubygems.org/gems/universum/versions/0.5.1 "Fri 22 Mar 2019") 0.5.1, [**safestruct**](https://rubygems.org/gems/safestruct/versions/1.2.1 "Wed 20 Mar 2019") 1.2.1
+
+**Week 2019/11**
+
+1 Gem Update(s)  - [**units-time**](https://rubygems.org/gems/units-time/versions/1.1.0 "Sun 17 Mar 2019") 1.1.0
 
 **Week 2019/10**
 
 **NEW!** - 2 Gem(s) - [**units-money**](https://rubygems.org/gems/units-money/versions/0.0.1 "Sun 10 Mar 2019") 0.0.1, [**units-time**](https://rubygems.org/gems/units-time/versions/0.0.1 "Sat 09 Mar 2019") 0.0.1
 
-7 Gem Update(s)  - [**units-money**](https://rubygems.org/gems/units-money/versions/0.1.0 "Sun 10 Mar 2019") 0.1.0, [**units-time**](https://rubygems.org/gems/units-time/versions/1.0.2 "Sun 10 Mar 2019") 1.0.2, [**units-time**](https://rubygems.org/gems/units-time/versions/1.0.1 "Sun 10 Mar 2019") 1.0.1, [**units-time**](https://rubygems.org/gems/units-time/versions/1.0.0 "Sun 10 Mar 2019") 1.0.0, [**universum**](https://rubygems.org/gems/universum/versions/0.5.0 "Sun 10 Mar 2019") 0.5.0, [**enums**](https://rubygems.org/gems/enums/versions/1.1.0 "Thu 07 Mar 2019") 1.1.0, [**safestruct**](https://rubygems.org/gems/safestruct/versions/1.2.0 "Thu 07 Mar 2019") 1.2.0
+8 Gem Update(s)  - [**units-money**](https://rubygems.org/gems/units-money/versions/0.1.1 "Sun 10 Mar 2019") 0.1.1, [**units-money**](https://rubygems.org/gems/units-money/versions/0.1.0 "Sun 10 Mar 2019") 0.1.0, [**units-time**](https://rubygems.org/gems/units-time/versions/1.0.2 "Sun 10 Mar 2019") 1.0.2, [**units-time**](https://rubygems.org/gems/units-time/versions/1.0.1 "Sun 10 Mar 2019") 1.0.1, [**units-time**](https://rubygems.org/gems/units-time/versions/1.0.0 "Sun 10 Mar 2019") 1.0.0, [**universum**](https://rubygems.org/gems/universum/versions/0.5.0 "Sun 10 Mar 2019") 0.5.0, [**enums**](https://rubygems.org/gems/enums/versions/1.1.0 "Thu 07 Mar 2019") 1.1.0, [**safestruct**](https://rubygems.org/gems/safestruct/versions/1.2.0 "Thu 07 Mar 2019") 1.2.0
 
 **Week 2019/09**
 
@@ -596,7 +666,7 @@
 
 **Week 2019/08**
 
-3 Gem Update(s)  - [**safestruct**](https://rubygems.org/gems/safestruct/versions/1.1.1 "Thu 21 Feb 2019") 1.1.1, [**safestruct**](https://rubygems.org/gems/safestruct/versions/1.1.0 "Thu 21 Feb 2019") 1.1.0, [**universum**](https://rubygems.org/gems/universum/versions/0.4.0 "Tue 19 Feb 2019") 0.4.0
+5 Gem Update(s)  - [**safestruct**](https://rubygems.org/gems/safestruct/versions/1.1.1 "Thu 21 Feb 2019") 1.1.1, [**safestruct**](https://rubygems.org/gems/safestruct/versions/1.1.0 "Thu 21 Feb 2019") 1.1.0, [**slideshow**](https://rubygems.org/gems/slideshow/versions/4.1.0 "Thu 21 Feb 2019") 4.1.0, [**slideshow-models**](https://rubygems.org/gems/slideshow-models/versions/4.1.0 "Thu 21 Feb 2019") 4.1.0, [**universum**](https://rubygems.org/gems/universum/versions/0.4.0 "Tue 19 Feb 2019") 0.4.0
 
 **Week 2019/07**
 
@@ -624,21 +694,25 @@
 
 ## 2018
 
+**Week 2018/51**
+
+1 Gem Update(s)  - [**copycats**](https://rubygems.org/gems/copycats/versions/0.8.1 "Sat 22 Dec 2018") 0.8.1
+
 **Week 2018/50**
 
 **NEW!** - 1 Gem(s) - [**base32-alphabets**](https://rubygems.org/gems/base32-alphabets/versions/1.0.0 "Thu 13 Dec 2018") 1.0.0
 
 **Week 2018/48**
 
-1 Gem Update(s)  - [**copycats**](https://rubygems.org/gems/copycats/versions/0.8.0 "Sat 01 Dec 2018") 0.8.0
+3 Gem Update(s)  - [**copycats**](https://rubygems.org/gems/copycats/versions/0.8.0 "Sat 01 Dec 2018") 0.8.0, [**csvjson**](https://rubygems.org/gems/csvjson/versions/1.0.1 "Mon 26 Nov 2018") 1.0.1, [**csvyaml**](https://rubygems.org/gems/csvyaml/versions/1.0.0 "Mon 26 Nov 2018") 1.0.0
 
 **Week 2018/47**
 
-2 Gem Update(s)  - [**csvreader**](https://rubygems.org/gems/csvreader/versions/1.2.3 "Sat 24 Nov 2018") 1.2.3, [**csvreader**](https://rubygems.org/gems/csvreader/versions/1.2.2 "Mon 19 Nov 2018") 1.2.2
+4 Gem Update(s)  - [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.3.0 "Sun 25 Nov 2018") 0.3.0, [**csvreader**](https://rubygems.org/gems/csvreader/versions/1.2.3 "Sat 24 Nov 2018") 1.2.3, [**tabreader**](https://rubygems.org/gems/tabreader/versions/1.0.1 "Sat 24 Nov 2018") 1.0.1, [**csvreader**](https://rubygems.org/gems/csvreader/versions/1.2.2 "Mon 19 Nov 2018") 1.2.2
 
 **Week 2018/46**
 
-2 Gem Update(s)  - [**csvhuman**](https://rubygems.org/gems/csvhuman/versions/1.1.0 "Sun 18 Nov 2018") 1.1.0, [**csvhuman**](https://rubygems.org/gems/csvhuman/versions/1.0.1 "Tue 13 Nov 2018") 1.0.1
+3 Gem Update(s)  - [**csvhuman**](https://rubygems.org/gems/csvhuman/versions/1.1.1 "Sun 18 Nov 2018") 1.1.1, [**csvhuman**](https://rubygems.org/gems/csvhuman/versions/1.1.0 "Sun 18 Nov 2018") 1.1.0, [**csvhuman**](https://rubygems.org/gems/csvhuman/versions/1.0.1 "Tue 13 Nov 2018") 1.0.1
 
 **Week 2018/45**
 
@@ -648,7 +722,7 @@
 
 **Week 2018/44**
 
-2 Gem Update(s)  - [**csvreader**](https://rubygems.org/gems/csvreader/versions/1.1.5 "Sun 04 Nov 2018") 1.1.5, [**csvyaml**](https://rubygems.org/gems/csvyaml/versions/0.1.0 "Tue 30 Oct 2018") 0.1.0
+4 Gem Update(s)  - [**csvreader**](https://rubygems.org/gems/csvreader/versions/1.1.5 "Sun 04 Nov 2018") 1.1.5, [**csvrecord**](https://rubygems.org/gems/csvrecord/versions/0.4.3 "Sat 03 Nov 2018") 0.4.3, [**record**](https://rubygems.org/gems/record/versions/1.2.0 "Sat 03 Nov 2018") 1.2.0, [**csvyaml**](https://rubygems.org/gems/csvyaml/versions/0.1.0 "Tue 30 Oct 2018") 0.1.0
 
 **Week 2018/43**
 
@@ -656,7 +730,7 @@
 
 **Week 2018/42**
 
-**NEW!** - 1 Gem(s) - [**csvyaml**](https://rubygems.org/gems/csvyaml/versions/0.0.1 "Wed 17 Oct 2018") 0.0.1
+**NEW!** - 2 Gem(s) - [**csvyaml**](https://rubygems.org/gems/csvyaml/versions/0.0.1 "Wed 17 Oct 2018") 0.0.1, [**typeconv**](https://rubygems.org/gems/typeconv/versions/0.0.1 "Wed 17 Oct 2018") 0.0.1
 
 2 Gem Update(s)  - [**csvreader**](https://rubygems.org/gems/csvreader/versions/1.0.2 "Sun 21 Oct 2018") 1.0.2, [**tabreader**](https://rubygems.org/gems/tabreader/versions/1.0.0 "Tue 16 Oct 2018") 1.0.0
 
@@ -674,6 +748,10 @@
 
 1 Gem Update(s)  - [**csvreader**](https://rubygems.org/gems/csvreader/versions/0.5.0 "Tue 25 Sep 2018") 0.5.0
 
+**Week 2018/38**
+
+1 Gem Update(s)  - [**kramdown-service**](https://rubygems.org/gems/kramdown-service/versions/1.0.0 "Fri 21 Sep 2018") 1.0.0
+
 **Week 2018/34**
 
 3 Gem Update(s)  - [**csvreader**](https://rubygems.org/gems/csvreader/versions/0.4.0 "Tue 21 Aug 2018") 0.4.0, [**csvreader**](https://rubygems.org/gems/csvreader/versions/0.3.0 "Mon 20 Aug 2018") 0.3.0, [**csvrecord**](https://rubygems.org/gems/csvrecord/versions/0.4.2 "Mon 20 Aug 2018") 0.4.2
@@ -688,11 +766,11 @@
 
 **NEW!** - 2 Gem(s) - [**csvrecord**](https://rubygems.org/gems/csvrecord/versions/0.0.1 "Sat 11 Aug 2018") 0.0.1, [**csvpack**](https://rubygems.org/gems/csvpack/versions/0.1.0 "Tue 07 Aug 2018") 0.1.0
 
-7 Gem Update(s)  - [**csvrecord**](https://rubygems.org/gems/csvrecord/versions/0.1.2 "Sun 12 Aug 2018") 0.1.2, [**csvrecord**](https://rubygems.org/gems/csvrecord/versions/0.1.1 "Sun 12 Aug 2018") 0.1.1, [**csvrecord**](https://rubygems.org/gems/csvrecord/versions/0.1.0 "Sun 12 Aug 2018") 0.1.0, [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.2.2 "Wed 08 Aug 2018") 0.2.2, [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.2.1 "Wed 08 Aug 2018") 0.2.1, [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.2.0 "Wed 08 Aug 2018") 0.2.0, [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.1.1 "Wed 08 Aug 2018") 0.1.1
+8 Gem Update(s)  - [**csvrecord**](https://rubygems.org/gems/csvrecord/versions/0.1.2 "Sun 12 Aug 2018") 0.1.2, [**csvrecord**](https://rubygems.org/gems/csvrecord/versions/0.1.1 "Sun 12 Aug 2018") 0.1.1, [**csvrecord**](https://rubygems.org/gems/csvrecord/versions/0.1.0 "Sun 12 Aug 2018") 0.1.0, [**csvpack**](https://rubygems.org/gems/csvpack/versions/0.2.0 "Wed 08 Aug 2018") 0.2.0, [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.2.2 "Wed 08 Aug 2018") 0.2.2, [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.2.1 "Wed 08 Aug 2018") 0.2.1, [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.2.0 "Wed 08 Aug 2018") 0.2.0, [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.1.1 "Wed 08 Aug 2018") 0.1.1
 
 **Week 2018/31**
 
-**NEW!** - 1 Gem(s) - [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.0.1 "Sat 04 Aug 2018") 0.0.1
+**NEW!** - 2 Gem(s) - [**csv11**](https://rubygems.org/gems/csv11/versions/0.0.3 "Sat 04 Aug 2018") 0.0.3, [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.0.1 "Sat 04 Aug 2018") 0.0.1
 
 1 Gem Update(s)  - [**csvutils**](https://rubygems.org/gems/csvutils/versions/0.1.0 "Sun 05 Aug 2018") 0.1.0
 
@@ -706,7 +784,7 @@
 
 **Week 2018/26**
 
-4 Gem Update(s)  - [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.3.2 "Fri 29 Jun 2018") 0.3.2, [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.3.1 "Fri 29 Jun 2018") 0.3.1, [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.3.0 "Tue 26 Jun 2018") 0.3.0, [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.2.0 "Mon 25 Jun 2018") 0.2.0
+5 Gem Update(s)  - [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.3.3 "Fri 29 Jun 2018") 0.3.3, [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.3.2 "Fri 29 Jun 2018") 0.3.2, [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.3.1 "Fri 29 Jun 2018") 0.3.1, [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.3.0 "Tue 26 Jun 2018") 0.3.0, [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.2.0 "Mon 25 Jun 2018") 0.2.0
 
 **Week 2018/25**
 
@@ -718,11 +796,17 @@
 
 **Week 2018/23**
 
+**NEW!** - 1 Gem(s) - [**feedfinder**](https://rubygems.org/gems/feedfinder/versions/0.2.0 "Sat 09 Jun 2018") 0.2.0
+
 2 Gem Update(s)  - [**footty**](https://rubygems.org/gems/footty/versions/0.3.0 "Sun 10 Jun 2018") 0.3.0, [**footty**](https://rubygems.org/gems/footty/versions/0.2.0 "Sat 09 Jun 2018") 0.2.0
 
 **Week 2018/17**
 
 **NEW!** - 1 Gem(s) - [**universum**](https://rubygems.org/gems/universum/versions/0.0.1 "Sun 29 Apr 2018") 0.0.1
+
+**Week 2018/14**
+
+1 Gem Update(s)  - [**shilling**](https://rubygems.org/gems/shilling/versions/0.2.0 "Tue 03 Apr 2018") 0.2.0
 
 **Week 2018/13**
 
@@ -732,7 +816,7 @@
 
 **NEW!** - 1 Gem(s) - [**bitcat**](https://rubygems.org/gems/bitcat/versions/0.0.1 "Sat 24 Mar 2018") 0.0.1
 
-1 Gem Update(s)  - [**copycats**](https://rubygems.org/gems/copycats/versions/0.6.1 "Tue 20 Mar 2018") 0.6.1
+2 Gem Update(s)  - [**bitcat**](https://rubygems.org/gems/bitcat/versions/0.1.0 "Sat 24 Mar 2018") 0.1.0, [**copycats**](https://rubygems.org/gems/copycats/versions/0.6.1 "Tue 20 Mar 2018") 0.6.1
 
 **Week 2018/11**
 
@@ -758,17 +842,17 @@
 
 **NEW!** - 1 Gem(s) - [**fizzbuzzer**](https://rubygems.org/gems/fizzbuzzer/versions/0.0.1 "Mon 22 Jan 2018") 0.0.1
 
-3 Gem Update(s)  - [**fizzbuzzer**](https://rubygems.org/gems/fizzbuzzer/versions/1.1.0 "Wed 24 Jan 2018") 1.1.0, [**fizzbuzzer**](https://rubygems.org/gems/fizzbuzzer/versions/1.0.0 "Tue 23 Jan 2018") 1.0.0, [**fizzbuzzer**](https://rubygems.org/gems/fizzbuzzer/versions/0.1.0 "Mon 22 Jan 2018") 0.1.0
+4 Gem Update(s)  - [**fizzbuzzer**](https://rubygems.org/gems/fizzbuzzer/versions/1.1.1 "Sun 28 Jan 2018") 1.1.1, [**fizzbuzzer**](https://rubygems.org/gems/fizzbuzzer/versions/1.1.0 "Wed 24 Jan 2018") 1.1.0, [**fizzbuzzer**](https://rubygems.org/gems/fizzbuzzer/versions/1.0.0 "Tue 23 Jan 2018") 1.0.0, [**fizzbuzzer**](https://rubygems.org/gems/fizzbuzzer/versions/0.1.0 "Mon 22 Jan 2018") 0.1.0
 
 **Week 2018/02**
 
 **NEW!** - 1 Gem(s) - [**copycats**](https://rubygems.org/gems/copycats/versions/0.0.1 "Wed 10 Jan 2018") 0.0.1
 
-2 Gem Update(s)  - [**blockchain-lite**](https://rubygems.org/gems/blockchain-lite/versions/1.4.0 "Tue 09 Jan 2018") 1.4.0, [**ledger-lite**](https://rubygems.org/gems/ledger-lite/versions/1.1.0 "Tue 09 Jan 2018") 1.1.0
+3 Gem Update(s)  - [**blockchain-lite**](https://rubygems.org/gems/blockchain-lite/versions/1.4.0 "Tue 09 Jan 2018") 1.4.0, [**ledger-lite**](https://rubygems.org/gems/ledger-lite/versions/1.1.1 "Tue 09 Jan 2018") 1.1.1, [**ledger-lite**](https://rubygems.org/gems/ledger-lite/versions/1.1.0 "Tue 09 Jan 2018") 1.1.0
 
 **Week 2018/01**
 
-**NEW!** - 1 Gem(s) - [**ledger-lite**](https://rubygems.org/gems/ledger-lite/versions/0.0.1 "Thu 04 Jan 2018") 0.0.1
+**NEW!** - 2 Gem(s) - [**p2p**](https://rubygems.org/gems/p2p/versions/0.0.1 "Sun 07 Jan 2018") 0.0.1, [**ledger-lite**](https://rubygems.org/gems/ledger-lite/versions/0.0.1 "Thu 04 Jan 2018") 0.0.1
 
 1 Gem Update(s)  - [**ledger-lite**](https://rubygems.org/gems/ledger-lite/versions/1.0.0 "Sun 07 Jan 2018") 1.0.0
 
@@ -778,7 +862,7 @@
 
 **NEW!** - 1 Gem(s) - [**shilling**](https://rubygems.org/gems/shilling/versions/0.1.0 "Tue 26 Dec 2017") 0.1.0
 
-2 Gem Update(s)  - [**shilling**](https://rubygems.org/gems/shilling/versions/0.1.1 "Tue 26 Dec 2017") 0.1.1, [**centralbank**](https://rubygems.org/gems/centralbank/versions/0.2.1 "Mon 25 Dec 2017") 0.2.1
+3 Gem Update(s)  - [**shilling**](https://rubygems.org/gems/shilling/versions/0.1.1 "Tue 26 Dec 2017") 0.1.1, [**centralbank**](https://rubygems.org/gems/centralbank/versions/0.2.1 "Mon 25 Dec 2017") 0.2.1, [**tulipmania**](https://rubygems.org/gems/tulipmania/versions/0.2.0 "Mon 25 Dec 2017") 0.2.0
 
 **Week 2017/51**
 
@@ -796,9 +880,11 @@
 
 **NEW!** - 1 Gem(s) - [**almost-sinatra**](https://rubygems.org/gems/almost-sinatra/versions/0.1.0 "Tue 05 Dec 2017") 0.1.0
 
+1 Gem Update(s)  - [**almost-sinatra**](https://rubygems.org/gems/almost-sinatra/versions/1.0.0 "Tue 05 Dec 2017") 1.0.0
+
 **Week 2017/48**
 
-3 Gem Update(s)  - [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.17.0 "Fri 01 Dec 2017") 1.17.0, [**pluto**](https://rubygems.org/gems/pluto/versions/1.3.1 "Mon 27 Nov 2017") 1.3.1, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.5.0 "Mon 27 Nov 2017") 1.5.0
+4 Gem Update(s)  - [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.17.0 "Fri 01 Dec 2017") 1.17.0, [**pakman**](https://rubygems.org/gems/pakman/versions/1.1.0 "Mon 27 Nov 2017") 1.1.0, [**pluto**](https://rubygems.org/gems/pluto/versions/1.3.1 "Mon 27 Nov 2017") 1.3.1, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.5.0 "Mon 27 Nov 2017") 1.5.0
 
 **Week 2017/47**
 
@@ -818,27 +904,37 @@
 
 1 Gem Update(s)  - [**blockchain-lite**](https://rubygems.org/gems/blockchain-lite/versions/1.1.0 "Sat 23 Sep 2017") 1.1.0
 
+**Week 2017/36**
+
+1 Gem Update(s)  - [**webservice**](https://rubygems.org/gems/webservice/versions/0.7.0 "Sun 10 Sep 2017") 0.7.0
+
 **Week 2017/35**
 
-6 Gem Update(s)  - [**worlddb-models**](https://rubygems.org/gems/worlddb-models/versions/2.4.0 "Thu 31 Aug 2017") 2.4.0, [**webservice**](https://rubygems.org/gems/webservice/versions/0.6.1 "Wed 30 Aug 2017") 0.6.1, [**webservice**](https://rubygems.org/gems/webservice/versions/0.6.0 "Wed 30 Aug 2017") 0.6.0, [**worlddb-models**](https://rubygems.org/gems/worlddb-models/versions/2.3.6 "Wed 30 Aug 2017") 2.3.6, [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.2.1 "Mon 28 Aug 2017") 1.2.1, [**worlddb-models**](https://rubygems.org/gems/worlddb-models/versions/2.3.5 "Mon 28 Aug 2017") 2.3.5
+8 Gem Update(s)  - [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.2.2 "Thu 31 Aug 2017") 1.2.2, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.4.0 "Thu 31 Aug 2017") 2.4.0, [**worlddb-models**](https://rubygems.org/gems/worlddb-models/versions/2.4.0 "Thu 31 Aug 2017") 2.4.0, [**webservice**](https://rubygems.org/gems/webservice/versions/0.6.1 "Wed 30 Aug 2017") 0.6.1, [**webservice**](https://rubygems.org/gems/webservice/versions/0.6.0 "Wed 30 Aug 2017") 0.6.0, [**worlddb-models**](https://rubygems.org/gems/worlddb-models/versions/2.3.6 "Wed 30 Aug 2017") 2.3.6, [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.2.1 "Mon 28 Aug 2017") 1.2.1, [**worlddb-models**](https://rubygems.org/gems/worlddb-models/versions/2.3.5 "Mon 28 Aug 2017") 2.3.5
 
 **Week 2017/34**
 
-2 Gem Update(s)  - [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.2.0 "Sun 27 Aug 2017") 1.2.0, [**webservice**](https://rubygems.org/gems/webservice/versions/0.5.0 "Sat 26 Aug 2017") 0.5.0
+4 Gem Update(s)  - [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.2.0 "Sun 27 Aug 2017") 1.2.0, [**beerdb-models**](https://rubygems.org/gems/beerdb-models/versions/1.2.0 "Sun 27 Aug 2017") 1.2.0, [**beerdb-note**](https://rubygems.org/gems/beerdb-note/versions/0.1.0 "Sun 27 Aug 2017") 0.1.0, [**webservice**](https://rubygems.org/gems/webservice/versions/0.5.0 "Sat 26 Aug 2017") 0.5.0
 
 **Week 2017/33**
 
-12 Gem Update(s)  - [**webservice**](https://rubygems.org/gems/webservice/versions/0.4.0 "Sun 20 Aug 2017") 0.4.0, [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.1.1 "Sat 19 Aug 2017") 1.1.1, [**webservice**](https://rubygems.org/gems/webservice/versions/0.3.1 "Sat 19 Aug 2017") 0.3.1, [**webservice**](https://rubygems.org/gems/webservice/versions/0.3.0 "Sat 19 Aug 2017") 0.3.0, [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.1.0 "Fri 18 Aug 2017") 1.1.0, [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.0.1 "Fri 18 Aug 2017") 1.0.1, [**webservice**](https://rubygems.org/gems/webservice/versions/0.2.1 "Fri 18 Aug 2017") 0.2.1, [**webservice**](https://rubygems.org/gems/webservice/versions/0.2.0 "Fri 18 Aug 2017") 0.2.0, [**webservice**](https://rubygems.org/gems/webservice/versions/0.1.1 "Fri 18 Aug 2017") 0.1.1, [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.0.0 "Thu 17 Aug 2017") 1.0.0, [**beerdb-models**](https://rubygems.org/gems/beerdb-models/versions/1.1.1 "Thu 17 Aug 2017") 1.1.1, [**beerdb-models**](https://rubygems.org/gems/beerdb-models/versions/1.1.0 "Thu 17 Aug 2017") 1.1.0
+14 Gem Update(s)  - [**webservice**](https://rubygems.org/gems/webservice/versions/0.4.0 "Sun 20 Aug 2017") 0.4.0, [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.1.1 "Sat 19 Aug 2017") 1.1.1, [**webservice**](https://rubygems.org/gems/webservice/versions/0.3.1 "Sat 19 Aug 2017") 0.3.1, [**webservice**](https://rubygems.org/gems/webservice/versions/0.3.0 "Sat 19 Aug 2017") 0.3.0, [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.1.0 "Fri 18 Aug 2017") 1.1.0, [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.0.1 "Fri 18 Aug 2017") 1.0.1, [**webservice**](https://rubygems.org/gems/webservice/versions/0.2.1 "Fri 18 Aug 2017") 0.2.1, [**webservice**](https://rubygems.org/gems/webservice/versions/0.2.0 "Fri 18 Aug 2017") 0.2.0, [**webservice**](https://rubygems.org/gems/webservice/versions/0.1.1 "Fri 18 Aug 2017") 0.1.1, [**beerdb**](https://rubygems.org/gems/beerdb/versions/1.0.0 "Thu 17 Aug 2017") 1.0.0, [**beerdb-models**](https://rubygems.org/gems/beerdb-models/versions/1.1.1 "Thu 17 Aug 2017") 1.1.1, [**beerdb-models**](https://rubygems.org/gems/beerdb-models/versions/1.1.0 "Thu 17 Aug 2017") 1.1.0, [**props-activerecord**](https://rubygems.org/gems/props-activerecord/versions/0.2.0 "Wed 16 Aug 2017") 0.2.0, [**tagutils**](https://rubygems.org/gems/tagutils/versions/1.0.0 "Wed 16 Aug 2017") 1.0.0
 
 **Week 2017/30**
 
-1 Gem Update(s)  - [**officetxt**](https://rubygems.org/gems/officetxt/versions/0.1.0 "Mon 24 Jul 2017") 0.1.0
+2 Gem Update(s)  - [**officetxt**](https://rubygems.org/gems/officetxt/versions/0.1.1 "Mon 24 Jul 2017") 0.1.1, [**officetxt**](https://rubygems.org/gems/officetxt/versions/0.1.0 "Mon 24 Jul 2017") 0.1.0
 
 **Week 2017/29**
 
 **NEW!** - 2 Gem(s) - [**officetxt**](https://rubygems.org/gems/officetxt/versions/0.0.1 "Sun 23 Jul 2017") 0.0.1, [**journaltxt**](https://rubygems.org/gems/journaltxt/versions/0.0.1 "Thu 20 Jul 2017") 0.0.1
 
-1 Gem Update(s)  - [**journaltxt**](https://rubygems.org/gems/journaltxt/versions/1.0.0 "Fri 21 Jul 2017") 1.0.0
+2 Gem Update(s)  - [**journaltxt**](https://rubygems.org/gems/journaltxt/versions/1.0.1 "Fri 21 Jul 2017") 1.0.1, [**journaltxt**](https://rubygems.org/gems/journaltxt/versions/1.0.0 "Fri 21 Jul 2017") 1.0.0
+
+**Week 2017/28**
+
+**NEW!** - 1 Gem(s) - [**texti**](https://rubygems.org/gems/texti/versions/0.0.1 "Sat 15 Jul 2017") 0.0.1
+
+1 Gem Update(s)  - [**json-next**](https://rubygems.org/gems/json-next/versions/1.2.1 "Mon 10 Jul 2017") 1.2.1
 
 **Week 2017/27**
 
@@ -850,15 +946,15 @@
 
 **NEW!** - 1 Gem(s) - [**iniparser**](https://rubygems.org/gems/iniparser/versions/0.0.1 "Thu 29 Jun 2017") 0.0.1
 
-1 Gem Update(s)  - [**iniparser**](https://rubygems.org/gems/iniparser/versions/0.1.0 "Thu 29 Jun 2017") 0.1.0
+2 Gem Update(s)  - [**iniparser**](https://rubygems.org/gems/iniparser/versions/0.1.0 "Thu 29 Jun 2017") 0.1.0, [**props**](https://rubygems.org/gems/props/versions/1.2.0 "Thu 29 Jun 2017") 1.2.0
 
 **Week 2017/24**
 
-3 Gem Update(s)  - [**feedparser**](https://rubygems.org/gems/feedparser/versions/2.0.1 "Thu 15 Jun 2017") 2.0.1, [**feedtxt**](https://rubygems.org/gems/feedtxt/versions/1.0.0 "Tue 13 Jun 2017") 1.0.0, [**feedtxt**](https://rubygems.org/gems/feedtxt/versions/0.2.0 "Mon 12 Jun 2017") 0.2.0
+4 Gem Update(s)  - [**feedparser**](https://rubygems.org/gems/feedparser/versions/2.0.1 "Thu 15 Jun 2017") 2.0.1, [**feedtxt**](https://rubygems.org/gems/feedtxt/versions/1.0.1 "Wed 14 Jun 2017") 1.0.1, [**feedtxt**](https://rubygems.org/gems/feedtxt/versions/1.0.0 "Tue 13 Jun 2017") 1.0.0, [**feedtxt**](https://rubygems.org/gems/feedtxt/versions/0.2.0 "Mon 12 Jun 2017") 0.2.0
 
 **Week 2017/23**
 
-**NEW!** - 1 Gem(s) - [**feedtxt**](https://rubygems.org/gems/feedtxt/versions/0.0.1 "Sun 11 Jun 2017") 0.0.1
+**NEW!** - 2 Gem(s) - [**feedtxt**](https://rubygems.org/gems/feedtxt/versions/0.0.1 "Sun 11 Jun 2017") 0.0.1, [**hyperdata**](https://rubygems.org/gems/hyperdata/versions/0.0.1 "Sun 11 Jun 2017") 0.0.1
 
 2 Gem Update(s)  - [**feedtxt**](https://rubygems.org/gems/feedtxt/versions/0.1.0 "Sun 11 Jun 2017") 0.1.0, [**feedparser**](https://rubygems.org/gems/feedparser/versions/2.0.0 "Thu 08 Jun 2017") 2.0.0
 
@@ -882,7 +978,7 @@
 
 **Week 2016/45**
 
-2 Gem Update(s)  - [**factbook**](https://rubygems.org/gems/factbook/versions/1.2.2 "Tue 08 Nov 2016") 1.2.2, [**drjekyll**](https://rubygems.org/gems/drjekyll/versions/1.0.0 "Mon 07 Nov 2016") 1.0.0
+3 Gem Update(s)  - [**factbook**](https://rubygems.org/gems/factbook/versions/1.2.2 "Tue 08 Nov 2016") 1.2.2, [**drjekyll**](https://rubygems.org/gems/drjekyll/versions/1.0.1 "Mon 07 Nov 2016") 1.0.1, [**drjekyll**](https://rubygems.org/gems/drjekyll/versions/1.0.0 "Mon 07 Nov 2016") 1.0.0
 
 **Week 2016/44**
 
@@ -890,7 +986,7 @@
 
 **Week 2016/40**
 
-3 Gem Update(s)  - [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.0.8 "Fri 07 Oct 2016") 0.0.8, [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.0.7 "Thu 06 Oct 2016") 0.0.7, [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.0.5 "Tue 04 Oct 2016") 0.0.5
+4 Gem Update(s)  - [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.0.8 "Fri 07 Oct 2016") 0.0.8, [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.0.7 "Thu 06 Oct 2016") 0.0.7, [**sportdb-admin**](https://rubygems.org/gems/sportdb-admin/versions/0.4.0 "Tue 04 Oct 2016") 0.4.0, [**sportweb**](https://rubygems.org/gems/sportweb/versions/0.0.5 "Tue 04 Oct 2016") 0.0.5
 
 **Week 2016/36**
 
@@ -900,9 +996,13 @@
 
 2 Gem Update(s)  - [**hubba**](https://rubygems.org/gems/hubba/versions/0.1.2 "Wed 17 Aug 2016") 0.1.2, [**hubba**](https://rubygems.org/gems/hubba/versions/0.1.1 "Wed 17 Aug 2016") 0.1.1
 
+**Week 2016/22**
+
+**NEW!** - 1 Gem(s) - [**octobook**](https://rubygems.org/gems/octobook/versions/0.0.1 "Sun 05 Jun 2016") 0.0.1
+
 **Week 2016/19**
 
-3 Gem Update(s)  - [**slideshow-service**](https://rubygems.org/gems/slideshow-service/versions/0.3.0 "Wed 11 May 2016") 0.3.0, [**slideshow-models**](https://rubygems.org/gems/slideshow-models/versions/3.2.0 "Mon 09 May 2016") 3.2.0, [**slideshow-service**](https://rubygems.org/gems/slideshow-service/versions/0.2.0 "Mon 09 May 2016") 0.2.0
+4 Gem Update(s)  - [**slideshow-service**](https://rubygems.org/gems/slideshow-service/versions/0.3.1 "Wed 11 May 2016") 0.3.1, [**slideshow-service**](https://rubygems.org/gems/slideshow-service/versions/0.3.0 "Wed 11 May 2016") 0.3.0, [**slideshow-models**](https://rubygems.org/gems/slideshow-models/versions/3.2.0 "Mon 09 May 2016") 3.2.0, [**slideshow-service**](https://rubygems.org/gems/slideshow-service/versions/0.2.0 "Mon 09 May 2016") 0.2.0
 
 **Week 2016/18**
 
@@ -922,11 +1022,13 @@
 
 **Week 2016/13**
 
-3 Gem Update(s)  - [**slideshow**](https://rubygems.org/gems/slideshow/versions/3.0.0 "Sat 02 Apr 2016") 3.0.0, [**slideshow-models**](https://rubygems.org/gems/slideshow-models/versions/3.0.0 "Sat 02 Apr 2016") 3.0.0, [**pakman**](https://rubygems.org/gems/pakman/versions/0.6.0 "Mon 28 Mar 2016") 0.6.0
+4 Gem Update(s)  - [**slideshow**](https://rubygems.org/gems/slideshow/versions/3.0.0 "Sat 02 Apr 2016") 3.0.0, [**slideshow-models**](https://rubygems.org/gems/slideshow-models/versions/3.0.0 "Sat 02 Apr 2016") 3.0.0, [**slideshow-templates**](https://rubygems.org/gems/slideshow-templates/versions/3.0.0 "Sat 02 Apr 2016") 3.0.0, [**pakman**](https://rubygems.org/gems/pakman/versions/0.6.0 "Mon 28 Mar 2016") 0.6.0
 
 **Week 2016/11**
 
 **NEW!** - 1 Gem(s) - [**gutenberg**](https://rubygems.org/gems/gutenberg/versions/2.0.0 "Thu 17 Mar 2016") 2.0.0
+
+1 Gem Update(s)  - [**gutenberg**](https://rubygems.org/gems/gutenberg/versions/2.0.1 "Thu 17 Mar 2016") 2.0.1
 
 ## 2015
 
@@ -940,11 +1042,11 @@
 
 **Week 2015/48**
 
-1 Gem Update(s)  - [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.15.0 "Sat 28 Nov 2015") 1.15.0
+2 Gem Update(s)  - [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.15.0 "Sat 28 Nov 2015") 1.15.0, [**textutils**](https://rubygems.org/gems/textutils/versions/1.4.0 "Sat 28 Nov 2015") 1.4.0
 
 **Week 2015/47**
 
-**NEW!** - 3 Gem(s) - [**gitti-backup**](https://rubygems.org/gems/gitti-backup/versions/0.0.1 "Fri 20 Nov 2015") 0.0.1, [**gitti**](https://rubygems.org/gems/gitti/versions/0.1.0 "Tue 17 Nov 2015") 0.1.0, [**hubba**](https://rubygems.org/gems/hubba/versions/0.1.0 "Mon 16 Nov 2015") 0.1.0
+**NEW!** - 4 Gem(s) - [**fotos**](https://rubygems.org/gems/fotos/versions/0.0.1 "Sun 22 Nov 2015") 0.0.1, [**gitti-backup**](https://rubygems.org/gems/gitti-backup/versions/0.0.1 "Fri 20 Nov 2015") 0.0.1, [**gitti**](https://rubygems.org/gems/gitti/versions/0.1.0 "Tue 17 Nov 2015") 0.1.0, [**hubba**](https://rubygems.org/gems/hubba/versions/0.1.0 "Mon 16 Nov 2015") 0.1.0
 
 5 Gem Update(s)  - [**gitti**](https://rubygems.org/gems/gitti/versions/0.2.1 "Sun 22 Nov 2015") 0.2.1, [**gitti**](https://rubygems.org/gems/gitti/versions/0.2.0 "Sun 22 Nov 2015") 0.2.0, [**gitti-backup**](https://rubygems.org/gems/gitti-backup/versions/0.2.0 "Sun 22 Nov 2015") 0.2.0, [**gitti-backup**](https://rubygems.org/gems/gitti-backup/versions/0.1.1 "Sun 22 Nov 2015") 0.1.1, [**gitti-backup**](https://rubygems.org/gems/gitti-backup/versions/0.1.0 "Fri 20 Nov 2015") 0.1.0
 
@@ -960,7 +1062,7 @@
 
 **NEW!** - 2 Gem(s) - [**footty**](https://rubygems.org/gems/footty/versions/0.0.1 "Tue 15 Sep 2015") 0.0.1, [**rsssf**](https://rubygems.org/gems/rsssf/versions/0.0.1 "Tue 15 Sep 2015") 0.0.1
 
-1 Gem Update(s)  - [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.14.2 "Thu 17 Sep 2015") 1.14.2
+2 Gem Update(s)  - [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.14.2 "Thu 17 Sep 2015") 1.14.2, [**rsssf**](https://rubygems.org/gems/rsssf/versions/0.1.0 "Tue 15 Sep 2015") 0.1.0
 
 **Week 2015/37**
 
@@ -968,7 +1070,7 @@
 
 **Week 2015/35**
 
-4 Gem Update(s)  - [**drjekyll**](https://rubygems.org/gems/drjekyll/versions/0.1.1 "Sun 30 Aug 2015") 0.1.1, [**datafile**](https://rubygems.org/gems/datafile/versions/0.2.5 "Thu 27 Aug 2015") 0.2.5, [**datafile**](https://rubygems.org/gems/datafile/versions/0.2.4 "Thu 27 Aug 2015") 0.2.4, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.14.0 "Mon 24 Aug 2015") 1.14.0
+5 Gem Update(s)  - [**drjekyll**](https://rubygems.org/gems/drjekyll/versions/0.1.1 "Sun 30 Aug 2015") 0.1.1, [**mrhyde-tools**](https://rubygems.org/gems/mrhyde-tools/versions/0.1.1 "Sun 30 Aug 2015") 0.1.1, [**datafile**](https://rubygems.org/gems/datafile/versions/0.2.5 "Thu 27 Aug 2015") 0.2.5, [**datafile**](https://rubygems.org/gems/datafile/versions/0.2.4 "Thu 27 Aug 2015") 0.2.4, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.14.0 "Mon 24 Aug 2015") 1.14.0
 
 **Week 2015/34**
 
@@ -984,7 +1086,7 @@
 
 **Week 2015/30**
 
-2 Gem Update(s)  - [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.13.0 "Fri 24 Jul 2015") 1.13.0, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.12.0 "Wed 22 Jul 2015") 1.12.0
+3 Gem Update(s)  - [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.13.0 "Fri 24 Jul 2015") 1.13.0, [**persondb-models**](https://rubygems.org/gems/persondb-models/versions/0.5.0 "Wed 22 Jul 2015") 0.5.0, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.12.0 "Wed 22 Jul 2015") 1.12.0
 
 **Week 2015/28**
 
@@ -994,7 +1096,7 @@
 
 **NEW!** - 2 Gem(s) - [**rubycat**](https://rubygems.org/gems/rubycat/versions/0.0.1 "Tue 30 Jun 2015") 0.0.1, [**catalogdb**](https://rubygems.org/gems/catalogdb/versions/0.0.1 "Mon 29 Jun 2015") 0.0.1
 
-2 Gem Update(s)  - [**catalogdb**](https://rubygems.org/gems/catalogdb/versions/0.1.0 "Tue 30 Jun 2015") 0.1.0, [**rubycat**](https://rubygems.org/gems/rubycat/versions/0.1.0 "Tue 30 Jun 2015") 0.1.0
+4 Gem Update(s)  - [**rubycat**](https://rubygems.org/gems/rubycat/versions/0.2.0 "Wed 01 Jul 2015") 0.2.0, [**catalogdb**](https://rubygems.org/gems/catalogdb/versions/0.1.1 "Tue 30 Jun 2015") 0.1.1, [**catalogdb**](https://rubygems.org/gems/catalogdb/versions/0.1.0 "Tue 30 Jun 2015") 0.1.0, [**rubycat**](https://rubygems.org/gems/rubycat/versions/0.1.0 "Tue 30 Jun 2015") 0.1.0
 
 **Week 2015/26**
 
@@ -1016,7 +1118,7 @@
 
 **NEW!** - 1 Gem(s) - [**worlddb-compat**](https://rubygems.org/gems/worlddb-compat/versions/0.0.1 "Thu 04 Jun 2015") 0.0.1
 
-2 Gem Update(s)  - [**textutils**](https://rubygems.org/gems/textutils/versions/1.2.2 "Thu 04 Jun 2015") 1.2.2, [**worlddb-compat**](https://rubygems.org/gems/worlddb-compat/versions/0.1.0 "Thu 04 Jun 2015") 0.1.0
+3 Gem Update(s)  - [**textutils**](https://rubygems.org/gems/textutils/versions/1.2.2 "Thu 04 Jun 2015") 1.2.2, [**worlddb-compat**](https://rubygems.org/gems/worlddb-compat/versions/0.1.1 "Thu 04 Jun 2015") 0.1.1, [**worlddb-compat**](https://rubygems.org/gems/worlddb-compat/versions/0.1.0 "Thu 04 Jun 2015") 0.1.0
 
 **Week 2015/16**
 
@@ -1028,13 +1130,13 @@
 
 **NEW!** - 1 Gem(s) - [**dataman**](https://rubygems.org/gems/dataman/versions/0.0.1 "Tue 07 Apr 2015") 0.0.1
 
-3 Gem Update(s)  - [**datafile**](https://rubygems.org/gems/datafile/versions/0.2.0 "Sun 12 Apr 2015") 0.2.0, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.11.1 "Sun 12 Apr 2015") 1.11.1, [**textutils**](https://rubygems.org/gems/textutils/versions/1.2.1 "Mon 06 Apr 2015") 1.2.1
+4 Gem Update(s)  - [**datafile**](https://rubygems.org/gems/datafile/versions/0.2.0 "Sun 12 Apr 2015") 0.2.0, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.11.1 "Sun 12 Apr 2015") 1.11.1, [**dataman**](https://rubygems.org/gems/dataman/versions/0.1.0 "Fri 10 Apr 2015") 0.1.0, [**textutils**](https://rubygems.org/gems/textutils/versions/1.2.1 "Mon 06 Apr 2015") 1.2.1
 
 **Week 2015/14**
 
 **NEW!** - 1 Gem(s) - [**bookman**](https://rubygems.org/gems/bookman/versions/0.0.1 "Thu 02 Apr 2015") 0.0.1
 
-2 Gem Update(s)  - [**bookfile**](https://rubygems.org/gems/bookfile/versions/0.2.0 "Wed 01 Apr 2015") 0.2.0, [**hybook**](https://rubygems.org/gems/hybook/versions/0.2.0 "Wed 01 Apr 2015") 0.2.0
+6 Gem Update(s)  - [**bookfile**](https://rubygems.org/gems/bookfile/versions/0.2.1 "Thu 02 Apr 2015") 0.2.1, [**bookman**](https://rubygems.org/gems/bookman/versions/0.1.0 "Thu 02 Apr 2015") 0.1.0, [**hybook**](https://rubygems.org/gems/hybook/versions/0.2.1 "Thu 02 Apr 2015") 0.2.1, [**bookfile**](https://rubygems.org/gems/bookfile/versions/0.2.0 "Wed 01 Apr 2015") 0.2.0, [**hybook**](https://rubygems.org/gems/hybook/versions/0.2.0 "Wed 01 Apr 2015") 0.2.0, [**fetcher**](https://rubygems.org/gems/fetcher/versions/0.4.5 "Tue 31 Mar 2015") 0.4.5
 
 **Week 2015/13**
 
@@ -1052,27 +1154,31 @@
 
 **Week 2015/09**
 
-2 Gem Update(s)  - [**beerdb-models**](https://rubygems.org/gems/beerdb-models/versions/1.0.1 "Sat 28 Feb 2015") 1.0.1, [**hybook**](https://rubygems.org/gems/hybook/versions/0.1.2 "Mon 23 Feb 2015") 0.1.2
+3 Gem Update(s)  - [**beerdb-models**](https://rubygems.org/gems/beerdb-models/versions/1.0.1 "Sat 28 Feb 2015") 1.0.1, [**logutils-activerecord**](https://rubygems.org/gems/logutils-activerecord/versions/0.2.1 "Sat 28 Feb 2015") 0.2.1, [**hybook**](https://rubygems.org/gems/hybook/versions/0.1.2 "Mon 23 Feb 2015") 0.1.2
 
 **Week 2015/08**
 
-3 Gem Update(s)  - [**beerdb-models**](https://rubygems.org/gems/beerdb-models/versions/1.0.0 "Sat 21 Feb 2015") 1.0.0, [**textutils**](https://rubygems.org/gems/textutils/versions/1.2.0 "Thu 19 Feb 2015") 1.2.0, [**textutils**](https://rubygems.org/gems/textutils/versions/1.1.0 "Thu 19 Feb 2015") 1.1.0
+4 Gem Update(s)  - [**beerdb-models**](https://rubygems.org/gems/beerdb-models/versions/1.0.0 "Sat 21 Feb 2015") 1.0.0, [**textutils**](https://rubygems.org/gems/textutils/versions/1.2.0 "Thu 19 Feb 2015") 1.2.0, [**textutils**](https://rubygems.org/gems/textutils/versions/1.1.0 "Thu 19 Feb 2015") 1.1.0, [**schemadoc**](https://rubygems.org/gems/schemadoc/versions/1.1.0 "Mon 16 Feb 2015") 1.1.0
+
+**Week 2015/07**
+
+1 Gem Update(s)  - [**pluto-tasks**](https://rubygems.org/gems/pluto-tasks/versions/1.5.3 "Mon 09 Feb 2015") 1.5.3
 
 **Week 2015/06**
 
 **NEW!** - 1 Gem(s) - [**schemadoc**](https://rubygems.org/gems/schemadoc/versions/0.0.1 "Wed 04 Feb 2015") 0.0.1
 
-5 Gem Update(s)  - [**schemadoc**](https://rubygems.org/gems/schemadoc/versions/1.0.2 "Thu 05 Feb 2015") 1.0.2, [**schemadoc**](https://rubygems.org/gems/schemadoc/versions/1.0.1 "Thu 05 Feb 2015") 1.0.1, [**schemadoc**](https://rubygems.org/gems/schemadoc/versions/1.0.0 "Thu 05 Feb 2015") 1.0.0, [**activerecord-utils**](https://rubygems.org/gems/activerecord-utils/versions/0.4.0 "Wed 04 Feb 2015") 0.4.0, [**schemadoc**](https://rubygems.org/gems/schemadoc/versions/0.1.0 "Wed 04 Feb 2015") 0.1.0
+6 Gem Update(s)  - [**schemadoc**](https://rubygems.org/gems/schemadoc/versions/1.0.2 "Thu 05 Feb 2015") 1.0.2, [**schemadoc**](https://rubygems.org/gems/schemadoc/versions/1.0.1 "Thu 05 Feb 2015") 1.0.1, [**schemadoc**](https://rubygems.org/gems/schemadoc/versions/1.0.0 "Thu 05 Feb 2015") 1.0.0, [**activerecord-utils**](https://rubygems.org/gems/activerecord-utils/versions/0.4.0 "Wed 04 Feb 2015") 0.4.0, [**dbbrowser**](https://rubygems.org/gems/dbbrowser/versions/0.2.0 "Wed 04 Feb 2015") 0.2.0, [**schemadoc**](https://rubygems.org/gems/schemadoc/versions/0.1.0 "Wed 04 Feb 2015") 0.1.0
 
 **Week 2015/03**
 
-8 Gem Update(s)  - [**feedfilter**](https://rubygems.org/gems/feedfilter/versions/1.1.0 "Sun 18 Jan 2015") 1.1.0, [**pluto**](https://rubygems.org/gems/pluto/versions/1.2.3 "Sun 18 Jan 2015") 1.2.3, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.4.0 "Sun 18 Jan 2015") 1.4.0, [**pluto-tasks**](https://rubygems.org/gems/pluto-tasks/versions/1.5.2 "Sun 18 Jan 2015") 1.5.2, [**pluto-tasks**](https://rubygems.org/gems/pluto-tasks/versions/1.5.1 "Sun 18 Jan 2015") 1.5.1, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.6.0 "Sun 18 Jan 2015") 1.6.0, [**textutils**](https://rubygems.org/gems/textutils/versions/1.0.1 "Sun 18 Jan 2015") 1.0.1, [**feedparser**](https://rubygems.org/gems/feedparser/versions/1.0.0 "Sat 17 Jan 2015") 1.0.0
+10 Gem Update(s)  - [**feedfilter**](https://rubygems.org/gems/feedfilter/versions/1.1.1 "Sun 18 Jan 2015") 1.1.1, [**feedfilter**](https://rubygems.org/gems/feedfilter/versions/1.1.0 "Sun 18 Jan 2015") 1.1.0, [**pluto**](https://rubygems.org/gems/pluto/versions/1.2.3 "Sun 18 Jan 2015") 1.2.3, [**pluto-admin**](https://rubygems.org/gems/pluto-admin/versions/1.0.0 "Sun 18 Jan 2015") 1.0.0, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.4.0 "Sun 18 Jan 2015") 1.4.0, [**pluto-tasks**](https://rubygems.org/gems/pluto-tasks/versions/1.5.2 "Sun 18 Jan 2015") 1.5.2, [**pluto-tasks**](https://rubygems.org/gems/pluto-tasks/versions/1.5.1 "Sun 18 Jan 2015") 1.5.1, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.6.0 "Sun 18 Jan 2015") 1.6.0, [**textutils**](https://rubygems.org/gems/textutils/versions/1.0.1 "Sun 18 Jan 2015") 1.0.1, [**feedparser**](https://rubygems.org/gems/feedparser/versions/1.0.0 "Sat 17 Jan 2015") 1.0.0
 
 **Week 2015/02**
 
 **NEW!** - 4 Gem(s) - [**pluto-feedfetcher**](https://rubygems.org/gems/pluto-feedfetcher/versions/0.1.0 "Sun 11 Jan 2015") 0.1.0, [**preproc**](https://rubygems.org/gems/preproc/versions/0.0.1 "Fri 09 Jan 2015") 0.0.1, [**feedfilter**](https://rubygems.org/gems/feedfilter/versions/0.1.0 "Thu 08 Jan 2015") 0.1.0, [**feedparser**](https://rubygems.org/gems/feedparser/versions/0.1.0 "Thu 08 Jan 2015") 0.1.0
 
-12 Gem Update(s)  - [**pluto**](https://rubygems.org/gems/pluto/versions/1.2.2 "Sun 11 Jan 2015") 1.2.2, [**pluto**](https://rubygems.org/gems/pluto/versions/1.2.1 "Sun 11 Jan 2015") 1.2.1, [**pluto**](https://rubygems.org/gems/pluto/versions/1.2.0 "Sun 11 Jan 2015") 1.2.0, [**pluto-tasks**](https://rubygems.org/gems/pluto-tasks/versions/1.5.0 "Sun 11 Jan 2015") 1.5.0, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.5.0 "Sun 11 Jan 2015") 1.5.0, [**feedfilter**](https://rubygems.org/gems/feedfilter/versions/1.0.0 "Sat 10 Jan 2015") 1.0.0, [**textutils**](https://rubygems.org/gems/textutils/versions/1.0.0 "Sat 10 Jan 2015") 1.0.0, [**pluto-tasks**](https://rubygems.org/gems/pluto-tasks/versions/1.4.0 "Fri 09 Jan 2015") 1.4.0, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.4.0 "Fri 09 Jan 2015") 1.4.0, [**feedfilter**](https://rubygems.org/gems/feedfilter/versions/0.3.0 "Thu 08 Jan 2015") 0.3.0, [**feedfilter**](https://rubygems.org/gems/feedfilter/versions/0.2.0 "Thu 08 Jan 2015") 0.2.0, [**feedparser**](https://rubygems.org/gems/feedparser/versions/0.2.0 "Thu 08 Jan 2015") 0.2.0
+14 Gem Update(s)  - [**pluto**](https://rubygems.org/gems/pluto/versions/1.2.2 "Sun 11 Jan 2015") 1.2.2, [**pluto**](https://rubygems.org/gems/pluto/versions/1.2.1 "Sun 11 Jan 2015") 1.2.1, [**pluto**](https://rubygems.org/gems/pluto/versions/1.2.0 "Sun 11 Jan 2015") 1.2.0, [**pluto-tasks**](https://rubygems.org/gems/pluto-tasks/versions/1.5.0 "Sun 11 Jan 2015") 1.5.0, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.5.0 "Sun 11 Jan 2015") 1.5.0, [**feedfilter**](https://rubygems.org/gems/feedfilter/versions/1.0.0 "Sat 10 Jan 2015") 1.0.0, [**textutils**](https://rubygems.org/gems/textutils/versions/1.0.0 "Sat 10 Jan 2015") 1.0.0, [**pluto-tasks**](https://rubygems.org/gems/pluto-tasks/versions/1.4.0 "Fri 09 Jan 2015") 1.4.0, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.4.0 "Fri 09 Jan 2015") 1.4.0, [**preproc**](https://rubygems.org/gems/preproc/versions/0.1.0 "Fri 09 Jan 2015") 0.1.0, [**feedfilter**](https://rubygems.org/gems/feedfilter/versions/0.3.0 "Thu 08 Jan 2015") 0.3.0, [**feedfilter**](https://rubygems.org/gems/feedfilter/versions/0.2.0 "Thu 08 Jan 2015") 0.2.0, [**feedparser**](https://rubygems.org/gems/feedparser/versions/0.2.0 "Thu 08 Jan 2015") 0.2.0, [**feedutils**](https://rubygems.org/gems/feedutils/versions/0.5.1 "Tue 06 Jan 2015") 0.5.1
 
 **Week 2015/01**
 
@@ -1094,15 +1200,15 @@
 
 **Week 2014/50**
 
-**NEW!** - 5 Gem(s) - [**pluto-tasks**](https://rubygems.org/gems/pluto-tasks/versions/1.1.0 "Sat 13 Dec 2014") 1.1.0, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.1.0 "Sat 13 Dec 2014") 1.1.0, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.1.0 "Fri 12 Dec 2014") 1.1.0, [**slideshow-models**](https://rubygems.org/gems/slideshow-models/versions/2.4.0 "Wed 10 Dec 2014") 2.4.0, [**slideshow-templates**](https://rubygems.org/gems/slideshow-templates/versions/2.4.0 "Wed 10 Dec 2014") 2.4.0
+**NEW!** - 6 Gem(s) - [**pluto-merge**](https://rubygems.org/gems/pluto-merge/versions/1.1.0 "Sat 13 Dec 2014") 1.1.0, [**pluto-tasks**](https://rubygems.org/gems/pluto-tasks/versions/1.1.0 "Sat 13 Dec 2014") 1.1.0, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.1.0 "Sat 13 Dec 2014") 1.1.0, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.1.0 "Fri 12 Dec 2014") 1.1.0, [**slideshow-models**](https://rubygems.org/gems/slideshow-models/versions/2.4.0 "Wed 10 Dec 2014") 2.4.0, [**slideshow-templates**](https://rubygems.org/gems/slideshow-templates/versions/2.4.0 "Wed 10 Dec 2014") 2.4.0
 
 14 Gem Update(s)  - [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.2.4 "Sun 14 Dec 2014") 1.2.4, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.1.2 "Sun 14 Dec 2014") 1.1.2, [**pluto-update**](https://rubygems.org/gems/pluto-update/versions/1.1.1 "Sun 14 Dec 2014") 1.1.1, [**activerecord-utils**](https://rubygems.org/gems/activerecord-utils/versions/0.3.0 "Sat 13 Dec 2014") 0.3.0, [**pluto**](https://rubygems.org/gems/pluto/versions/1.1.0 "Sat 13 Dec 2014") 1.1.0, [**pluto-admin**](https://rubygems.org/gems/pluto-admin/versions/0.4.0 "Sat 13 Dec 2014") 0.4.0, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.2.3 "Sat 13 Dec 2014") 1.2.3, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.2.2 "Sat 13 Dec 2014") 1.2.2, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.2.1 "Sat 13 Dec 2014") 1.2.1, [**pluto-models**](https://rubygems.org/gems/pluto-models/versions/1.2.0 "Sat 13 Dec 2014") 1.2.0, [**slideshow-models**](https://rubygems.org/gems/slideshow-models/versions/2.5.0 "Thu 11 Dec 2014") 2.5.0, [**slideshow**](https://rubygems.org/gems/slideshow/versions/2.4.1 "Wed 10 Dec 2014") 2.4.1, [**slideshow**](https://rubygems.org/gems/slideshow/versions/2.4.0 "Wed 10 Dec 2014") 2.4.0, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.11.0 "Tue 09 Dec 2014") 1.11.0
 
 **Week 2014/49**
 
-**NEW!** - 6 Gem(s) - [**beerdb-models**](https://rubygems.org/gems/beerdb-models/versions/0.10.0 "Sun 07 Dec 2014") 0.10.0, [**persondb-models**](https://rubygems.org/gems/persondb-models/versions/0.4.2 "Sat 06 Dec 2014") 0.4.2, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.10.0 "Fri 05 Dec 2014") 1.10.0, [**worlddb-models**](https://rubygems.org/gems/worlddb-models/versions/2.1.0 "Thu 04 Dec 2014") 2.1.0, [**logutils-activerecord**](https://rubygems.org/gems/logutils-activerecord/versions/0.0.1 "Wed 03 Dec 2014") 0.0.1, [**props-activerecord**](https://rubygems.org/gems/props-activerecord/versions/0.0.1 "Wed 03 Dec 2014") 0.0.1
+**NEW!** - 9 Gem(s) - [**beerdb-models**](https://rubygems.org/gems/beerdb-models/versions/0.10.0 "Sun 07 Dec 2014") 0.10.0, [**markdown-service**](https://rubygems.org/gems/markdown-service/versions/1.2.0 "Sat 06 Dec 2014") 1.2.0, [**markdown-tools**](https://rubygems.org/gems/markdown-tools/versions/1.2.0 "Sat 06 Dec 2014") 1.2.0, [**persondb-models**](https://rubygems.org/gems/persondb-models/versions/0.4.2 "Sat 06 Dec 2014") 0.4.2, [**logutils-admin**](https://rubygems.org/gems/logutils-admin/versions/0.1.0 "Fri 05 Dec 2014") 0.1.0, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.10.0 "Fri 05 Dec 2014") 1.10.0, [**worlddb-models**](https://rubygems.org/gems/worlddb-models/versions/2.1.0 "Thu 04 Dec 2014") 2.1.0, [**logutils-activerecord**](https://rubygems.org/gems/logutils-activerecord/versions/0.0.1 "Wed 03 Dec 2014") 0.0.1, [**props-activerecord**](https://rubygems.org/gems/props-activerecord/versions/0.0.1 "Wed 03 Dec 2014") 0.0.1
 
-20 Gem Update(s)  - [**beerdb**](https://rubygems.org/gems/beerdb/versions/0.10.1 "Sun 07 Dec 2014") 0.10.1, [**beerdb**](https://rubygems.org/gems/beerdb/versions/0.10.0 "Sun 07 Dec 2014") 0.10.0, [**worlddb-models**](https://rubygems.org/gems/worlddb-models/versions/2.2.0 "Sun 07 Dec 2014") 2.2.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.11.0 "Sat 06 Dec 2014") 1.11.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.10.2 "Sat 06 Dec 2014") 1.10.2, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.10.1 "Sat 06 Dec 2014") 1.10.1, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.2.1 "Sat 06 Dec 2014") 2.2.1, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.2.0 "Sat 06 Dec 2014") 2.2.0, [**logutils-activerecord**](https://rubygems.org/gems/logutils-activerecord/versions/0.2.0 "Fri 05 Dec 2014") 0.2.0, [**logutils-activerecord**](https://rubygems.org/gems/logutils-activerecord/versions/0.1.1 "Fri 05 Dec 2014") 0.1.1, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.10.1 "Fri 05 Dec 2014") 1.10.1, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.10.0 "Fri 05 Dec 2014") 1.10.0, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.1.0 "Fri 05 Dec 2014") 2.1.0, [**logutils-activerecord**](https://rubygems.org/gems/logutils-activerecord/versions/0.1.0 "Thu 04 Dec 2014") 0.1.0, [**tagutils**](https://rubygems.org/gems/tagutils/versions/0.3.0 "Thu 04 Dec 2014") 0.3.0, [**textutils**](https://rubygems.org/gems/textutils/versions/0.10.0 "Thu 04 Dec 2014") 0.10.0, [**props**](https://rubygems.org/gems/props/versions/1.1.2 "Wed 03 Dec 2014") 1.1.2, [**props-activerecord**](https://rubygems.org/gems/props-activerecord/versions/0.1.0 "Wed 03 Dec 2014") 0.1.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.9.16 "Wed 03 Dec 2014") 1.9.16, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.0.9 "Wed 03 Dec 2014") 2.0.9
+23 Gem Update(s)  - [**beerdb**](https://rubygems.org/gems/beerdb/versions/0.10.1 "Sun 07 Dec 2014") 0.10.1, [**beerdb**](https://rubygems.org/gems/beerdb/versions/0.10.0 "Sun 07 Dec 2014") 0.10.0, [**worlddb-models**](https://rubygems.org/gems/worlddb-models/versions/2.2.0 "Sun 07 Dec 2014") 2.2.0, [**markdown**](https://rubygems.org/gems/markdown/versions/1.2.0 "Sat 06 Dec 2014") 1.2.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.11.0 "Sat 06 Dec 2014") 1.11.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.10.2 "Sat 06 Dec 2014") 1.10.2, [**sportdb-models**](https://rubygems.org/gems/sportdb-models/versions/1.10.1 "Sat 06 Dec 2014") 1.10.1, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.2.1 "Sat 06 Dec 2014") 2.2.1, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.2.0 "Sat 06 Dec 2014") 2.2.0, [**logutils-activerecord**](https://rubygems.org/gems/logutils-activerecord/versions/0.2.0 "Fri 05 Dec 2014") 0.2.0, [**logutils-activerecord**](https://rubygems.org/gems/logutils-activerecord/versions/0.1.1 "Fri 05 Dec 2014") 0.1.1, [**persondb**](https://rubygems.org/gems/persondb/versions/0.4.0 "Fri 05 Dec 2014") 0.4.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.10.1 "Fri 05 Dec 2014") 1.10.1, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.10.0 "Fri 05 Dec 2014") 1.10.0, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.1.0 "Fri 05 Dec 2014") 2.1.0, [**logutils**](https://rubygems.org/gems/logutils/versions/0.6.1 "Thu 04 Dec 2014") 0.6.1, [**logutils-activerecord**](https://rubygems.org/gems/logutils-activerecord/versions/0.1.0 "Thu 04 Dec 2014") 0.1.0, [**tagutils**](https://rubygems.org/gems/tagutils/versions/0.3.0 "Thu 04 Dec 2014") 0.3.0, [**textutils**](https://rubygems.org/gems/textutils/versions/0.10.0 "Thu 04 Dec 2014") 0.10.0, [**props**](https://rubygems.org/gems/props/versions/1.1.2 "Wed 03 Dec 2014") 1.1.2, [**props-activerecord**](https://rubygems.org/gems/props-activerecord/versions/0.1.0 "Wed 03 Dec 2014") 0.1.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.9.16 "Wed 03 Dec 2014") 1.9.16, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.0.9 "Wed 03 Dec 2014") 2.0.9
 
 **Week 2014/48**
 
@@ -1112,11 +1218,11 @@
 
 **Week 2014/47**
 
-5 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.9.9 "Sat 22 Nov 2014") 1.9.9, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.9.10 "Sat 22 Nov 2014") 1.9.10, [**sportdb-update**](https://rubygems.org/gems/sportdb-update/versions/0.1.0 "Sat 22 Nov 2014") 0.1.0, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.0.8 "Wed 19 Nov 2014") 2.0.8, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.0.7 "Mon 17 Nov 2014") 2.0.7
+6 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.9.9 "Sat 22 Nov 2014") 1.9.9, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.9.10 "Sat 22 Nov 2014") 1.9.10, [**sportdb-update**](https://rubygems.org/gems/sportdb-update/versions/0.1.1 "Sat 22 Nov 2014") 0.1.1, [**sportdb-update**](https://rubygems.org/gems/sportdb-update/versions/0.1.0 "Sat 22 Nov 2014") 0.1.0, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.0.8 "Wed 19 Nov 2014") 2.0.8, [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.0.7 "Mon 17 Nov 2014") 2.0.7
 
 **Week 2014/46**
 
-2 Gem Update(s)  - [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.0.6 "Sun 16 Nov 2014") 2.0.6, [**fetcher**](https://rubygems.org/gems/fetcher/versions/0.4.4 "Wed 12 Nov 2014") 0.4.4
+3 Gem Update(s)  - [**worlddb**](https://rubygems.org/gems/worlddb/versions/2.0.6 "Sun 16 Nov 2014") 2.0.6, [**beerdb-admin**](https://rubygems.org/gems/beerdb-admin/versions/0.1.2 "Thu 13 Nov 2014") 0.1.2, [**fetcher**](https://rubygems.org/gems/fetcher/versions/0.4.4 "Wed 12 Nov 2014") 0.4.4
 
 **Week 2014/45**
 
@@ -1128,7 +1234,7 @@
 
 **Week 2014/42**
 
-**NEW!** - 1 Gem(s) - [**beerdb-note**](https://rubygems.org/gems/beerdb-note/versions/0.0.1 "Mon 13 Oct 2014") 0.0.1
+**NEW!** - 2 Gem(s) - [**beerdb-note**](https://rubygems.org/gems/beerdb-note/versions/0.0.1 "Mon 13 Oct 2014") 0.0.1, [**beerdb-service**](https://rubygems.org/gems/beerdb-service/versions/0.0.1 "Mon 13 Oct 2014") 0.0.1
 
 **Week 2014/41**
 
@@ -1146,7 +1252,7 @@
 
 **NEW!** - 1 Gem(s) - [**worldlite**](https://rubygems.org/gems/worldlite/versions/0.0.1 "Tue 19 Aug 2014") 0.0.1
 
-3 Gem Update(s)  - [**factbook**](https://rubygems.org/gems/factbook/versions/0.1.3 "Sun 24 Aug 2014") 0.1.3, [**worldlite**](https://rubygems.org/gems/worldlite/versions/0.0.3 "Wed 20 Aug 2014") 0.0.3, [**worldlite**](https://rubygems.org/gems/worldlite/versions/0.0.2 "Tue 19 Aug 2014") 0.0.2
+4 Gem Update(s)  - [**factbook**](https://rubygems.org/gems/factbook/versions/0.1.3 "Sun 24 Aug 2014") 0.1.3, [**worldlite**](https://rubygems.org/gems/worldlite/versions/0.0.4 "Thu 21 Aug 2014") 0.0.4, [**worldlite**](https://rubygems.org/gems/worldlite/versions/0.0.3 "Wed 20 Aug 2014") 0.0.3, [**worldlite**](https://rubygems.org/gems/worldlite/versions/0.0.2 "Tue 19 Aug 2014") 0.0.2
 
 **Week 2014/33**
 
@@ -1156,13 +1262,21 @@
 
 **Week 2014/32**
 
-**NEW!** - 1 Gem(s) - [**sportdb-update**](https://rubygems.org/gems/sportdb-update/versions/0.0.1 "Sun 10 Aug 2014") 0.0.1
+**NEW!** - 2 Gem(s) - [**sportdb-keys**](https://rubygems.org/gems/sportdb-keys/versions/0.0.1 "Sun 10 Aug 2014") 0.0.1, [**sportdb-update**](https://rubygems.org/gems/sportdb-update/versions/0.0.1 "Sun 10 Aug 2014") 0.0.1
 
 1 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.9.5 "Sun 10 Aug 2014") 1.9.5
+
+**Week 2014/31**
+
+**NEW!** - 2 Gem(s) - [**racingdb**](https://rubygems.org/gems/racingdb/versions/0.0.1 "Thu 31 Jul 2014") 0.0.1, [**footballdb**](https://rubygems.org/gems/footballdb/versions/0.0.1 "Wed 30 Jul 2014") 0.0.1
 
 **Week 2014/30**
 
 1 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.9.4 "Sun 27 Jul 2014") 1.9.4
+
+**Week 2014/29**
+
+1 Gem Update(s)  - [**sportdb-play**](https://rubygems.org/gems/sportdb-play/versions/0.2.5 "Wed 16 Jul 2014") 0.2.5
 
 **Week 2014/28**
 
@@ -1236,13 +1350,13 @@
 
 **NEW!** - 1 Gem(s) - [**linkto**](https://rubygems.org/gems/linkto/versions/0.0.1 "Sat 15 Mar 2014") 0.0.1
 
-1 Gem Update(s)  - [**linkto**](https://rubygems.org/gems/linkto/versions/0.1.0 "Sat 15 Mar 2014") 0.1.0
+2 Gem Update(s)  - [**linkto**](https://rubygems.org/gems/linkto/versions/0.1.1 "Sun 16 Mar 2014") 0.1.1, [**linkto**](https://rubygems.org/gems/linkto/versions/0.1.0 "Sat 15 Mar 2014") 0.1.0
 
 **Week 2014/10**
 
 **NEW!** - 1 Gem(s) - [**persondb**](https://rubygems.org/gems/persondb/versions/0.0.1 "Wed 05 Mar 2014") 0.0.1
 
-8 Gem Update(s)  - [**tagutils**](https://rubygems.org/gems/tagutils/versions/0.2.0 "Sun 09 Mar 2014") 0.2.0, [**props**](https://rubygems.org/gems/props/versions/1.1.0 "Sat 08 Mar 2014") 1.1.0, [**tagutils**](https://rubygems.org/gems/tagutils/versions/0.1.1 "Sat 08 Mar 2014") 0.1.1, [**tagutils**](https://rubygems.org/gems/tagutils/versions/0.1.0 "Sat 08 Mar 2014") 0.1.0, [**persondb**](https://rubygems.org/gems/persondb/versions/0.1.0 "Wed 05 Mar 2014") 0.1.0, [**winedb**](https://rubygems.org/gems/winedb/versions/0.1.5 "Wed 05 Mar 2014") 0.1.5, [**winedb**](https://rubygems.org/gems/winedb/versions/0.1.4 "Wed 05 Mar 2014") 0.1.4, [**winedb**](https://rubygems.org/gems/winedb/versions/0.1.3 "Tue 04 Mar 2014") 0.1.3
+9 Gem Update(s)  - [**tagutils**](https://rubygems.org/gems/tagutils/versions/0.2.0 "Sun 09 Mar 2014") 0.2.0, [**props**](https://rubygems.org/gems/props/versions/1.1.0 "Sat 08 Mar 2014") 1.1.0, [**tagutils**](https://rubygems.org/gems/tagutils/versions/0.1.1 "Sat 08 Mar 2014") 0.1.1, [**tagutils**](https://rubygems.org/gems/tagutils/versions/0.1.0 "Sat 08 Mar 2014") 0.1.0, [**winedb**](https://rubygems.org/gems/winedb/versions/0.1.6 "Thu 06 Mar 2014") 0.1.6, [**persondb**](https://rubygems.org/gems/persondb/versions/0.1.0 "Wed 05 Mar 2014") 0.1.0, [**winedb**](https://rubygems.org/gems/winedb/versions/0.1.5 "Wed 05 Mar 2014") 0.1.5, [**winedb**](https://rubygems.org/gems/winedb/versions/0.1.4 "Wed 05 Mar 2014") 0.1.4, [**winedb**](https://rubygems.org/gems/winedb/versions/0.1.3 "Tue 04 Mar 2014") 0.1.3
 
 **Week 2014/09**
 
@@ -1252,7 +1366,7 @@
 
 **Week 2014/08**
 
-5 Gem Update(s)  - [**hybook**](https://rubygems.org/gems/hybook/versions/0.0.4 "Fri 21 Feb 2014") 0.0.4, [**hybook**](https://rubygems.org/gems/hybook/versions/0.0.3 "Thu 20 Feb 2014") 0.0.3, [**hybook**](https://rubygems.org/gems/hybook/versions/0.0.2 "Thu 20 Feb 2014") 0.0.2, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.8.6 "Tue 18 Feb 2014") 1.8.6, [**sportdb-play**](https://rubygems.org/gems/sportdb-play/versions/0.2.3 "Tue 18 Feb 2014") 0.2.3
+6 Gem Update(s)  - [**hybook**](https://rubygems.org/gems/hybook/versions/0.0.4 "Fri 21 Feb 2014") 0.0.4, [**hybook**](https://rubygems.org/gems/hybook/versions/0.0.3 "Thu 20 Feb 2014") 0.0.3, [**hybook**](https://rubygems.org/gems/hybook/versions/0.0.2 "Thu 20 Feb 2014") 0.0.2, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.8.6 "Tue 18 Feb 2014") 1.8.6, [**sportdb-market**](https://rubygems.org/gems/sportdb-market/versions/0.5.1 "Tue 18 Feb 2014") 0.5.1, [**sportdb-play**](https://rubygems.org/gems/sportdb-play/versions/0.2.3 "Tue 18 Feb 2014") 0.2.3
 
 **Week 2014/07**
 
@@ -1304,7 +1418,7 @@
 
 **Week 2013/44**
 
-**NEW!** - 1 Gem(s) - [**activityutils**](https://rubygems.org/gems/activityutils/versions/0.0.1 "Thu 31 Oct 2013") 0.0.1
+**NEW!** - 2 Gem(s) - [**activityutils**](https://rubygems.org/gems/activityutils/versions/0.0.1 "Thu 31 Oct 2013") 0.0.1, [**upman**](https://rubygems.org/gems/upman/versions/0.0.1 "Wed 30 Oct 2013") 0.0.1
 
 6 Gem Update(s)  - [**sportdb-play**](https://rubygems.org/gems/sportdb-play/versions/0.2.2 "Sat 02 Nov 2013") 0.2.2, [**activityutils**](https://rubygems.org/gems/activityutils/versions/0.1.0 "Fri 01 Nov 2013") 0.1.0, [**dbbrowser**](https://rubygems.org/gems/dbbrowser/versions/0.1.3 "Fri 01 Nov 2013") 0.1.3, [**fetcher**](https://rubygems.org/gems/fetcher/versions/0.4.2 "Fri 01 Nov 2013") 0.4.2, [**sportdb-play**](https://rubygems.org/gems/sportdb-play/versions/0.2.1 "Fri 01 Nov 2013") 0.2.1, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.7.7 "Tue 29 Oct 2013") 1.7.7
 
@@ -1316,7 +1430,7 @@
 
 **NEW!** - 2 Gem(s) - [**about**](https://rubygems.org/gems/about/versions/0.0.1 "Sat 12 Oct 2013") 0.0.1, [**dbbrowser**](https://rubygems.org/gems/dbbrowser/versions/0.0.1 "Sat 12 Oct 2013") 0.0.1
 
-4 Gem Update(s)  - [**dbbrowser**](https://rubygems.org/gems/dbbrowser/versions/0.1.0 "Sun 13 Oct 2013") 0.1.0, [**pluto**](https://rubygems.org/gems/pluto/versions/0.9.0 "Fri 11 Oct 2013") 0.9.0, [**textutils**](https://rubygems.org/gems/textutils/versions/0.7.0 "Fri 11 Oct 2013") 0.7.0, [**feedutils**](https://rubygems.org/gems/feedutils/versions/0.4.0 "Wed 09 Oct 2013") 0.4.0
+5 Gem Update(s)  - [**dbbrowser**](https://rubygems.org/gems/dbbrowser/versions/0.1.0 "Sun 13 Oct 2013") 0.1.0, [**about**](https://rubygems.org/gems/about/versions/0.1.0 "Sat 12 Oct 2013") 0.1.0, [**pluto**](https://rubygems.org/gems/pluto/versions/0.9.0 "Fri 11 Oct 2013") 0.9.0, [**textutils**](https://rubygems.org/gems/textutils/versions/0.7.0 "Fri 11 Oct 2013") 0.7.0, [**feedutils**](https://rubygems.org/gems/feedutils/versions/0.4.0 "Wed 09 Oct 2013") 0.4.0
 
 **Week 2013/40**
 
@@ -1352,9 +1466,11 @@
 
 **NEW!** - 2 Gem(s) - [**worlddb-admin**](https://rubygems.org/gems/worlddb-admin/versions/0.0.1 "Sun 18 Aug 2013") 0.0.1, [**sportdb-admin**](https://rubygems.org/gems/sportdb-admin/versions/0.0.1 "Thu 15 Aug 2013") 0.0.1
 
-3 Gem Update(s)  - [**worlddb-admin**](https://rubygems.org/gems/worlddb-admin/versions/0.1.0 "Sun 18 Aug 2013") 0.1.0, [**sportdb-admin**](https://rubygems.org/gems/sportdb-admin/versions/0.1.1 "Sat 17 Aug 2013") 0.1.1, [**sportdb-admin**](https://rubygems.org/gems/sportdb-admin/versions/0.1.0 "Sat 17 Aug 2013") 0.1.0
+4 Gem Update(s)  - [**worlddb-admin**](https://rubygems.org/gems/worlddb-admin/versions/0.1.1 "Sun 18 Aug 2013") 0.1.1, [**worlddb-admin**](https://rubygems.org/gems/worlddb-admin/versions/0.1.0 "Sun 18 Aug 2013") 0.1.0, [**sportdb-admin**](https://rubygems.org/gems/sportdb-admin/versions/0.1.1 "Sat 17 Aug 2013") 0.1.1, [**sportdb-admin**](https://rubygems.org/gems/sportdb-admin/versions/0.1.0 "Sat 17 Aug 2013") 0.1.0
 
 **Week 2013/32**
+
+**NEW!** - 2 Gem(s) - [**beerdb-labels**](https://rubygems.org/gems/beerdb-labels/versions/0.1.0 "Sat 10 Aug 2013") 0.1.0, [**sportdb-logos**](https://rubygems.org/gems/sportdb-logos/versions/0.1.0 "Sat 10 Aug 2013") 0.1.0
 
 1 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.7.0 "Tue 06 Aug 2013") 1.7.0
 
@@ -1428,6 +1544,8 @@
 
 **Week 2013/11**
 
+**NEW!** - 1 Gem(s) - [**worlddb-flags**](https://rubygems.org/gems/worlddb-flags/versions/0.1.0 "Wed 13 Mar 2013") 0.1.0
+
 5 Gem Update(s)  - [**worlddb**](https://rubygems.org/gems/worlddb/versions/1.6.3 "Sun 17 Mar 2013") 1.6.3, [**textutils**](https://rubygems.org/gems/textutils/versions/0.5.2 "Sat 16 Mar 2013") 0.5.2, [**worlddb**](https://rubygems.org/gems/worlddb/versions/1.6.2 "Sat 16 Mar 2013") 1.6.2, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.6.4 "Mon 11 Mar 2013") 1.6.4, [**worlddb**](https://rubygems.org/gems/worlddb/versions/1.6.1 "Mon 11 Mar 2013") 1.6.1
 
 **Week 2013/10**
@@ -1435,6 +1553,8 @@
 7 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.6.3 "Sun 10 Mar 2013") 1.6.3, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.6.2 "Thu 07 Mar 2013") 1.6.2, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.6.1 "Thu 07 Mar 2013") 1.6.1, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.6.0 "Wed 06 Mar 2013") 1.6.0, [**worlddb**](https://rubygems.org/gems/worlddb/versions/1.6.0 "Wed 06 Mar 2013") 1.6.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.5.0 "Mon 04 Mar 2013") 1.5.0, [**worlddb**](https://rubygems.org/gems/worlddb/versions/1.5.0 "Mon 04 Mar 2013") 1.5.0
 
 **Week 2013/09**
+
+**NEW!** - 1 Gem(s) - [**worlddb-service**](https://rubygems.org/gems/worlddb-service/versions/0.1.0 "Sun 03 Mar 2013") 0.1.0
 
 6 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.4.2 "Sun 03 Mar 2013") 1.4.2, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.4.1 "Sat 02 Mar 2013") 1.4.1, [**logutils**](https://rubygems.org/gems/logutils/versions/0.6.0 "Fri 01 Mar 2013") 0.6.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/1.4.0 "Wed 27 Feb 2013") 1.4.0, [**textutils**](https://rubygems.org/gems/textutils/versions/0.5.1 "Wed 27 Feb 2013") 0.5.1, [**worlddb**](https://rubygems.org/gems/worlddb/versions/1.4.0 "Tue 26 Feb 2013") 1.4.0
 
@@ -1456,7 +1576,7 @@
 
 **NEW!** - 1 Gem(s) - [**sportdb-play**](https://rubygems.org/gems/sportdb-play/versions/0.1.0 "Mon 03 Dec 2012") 0.1.0
 
-7 Gem Update(s)  - [**worlddb**](https://rubygems.org/gems/worlddb/versions/0.8.0 "Sun 09 Dec 2012") 0.8.0, [**worlddb**](https://rubygems.org/gems/worlddb/versions/0.7.1 "Sat 08 Dec 2012") 0.7.1, [**worlddb**](https://rubygems.org/gems/worlddb/versions/0.7.0 "Wed 05 Dec 2012") 0.7.0, [**activerecord-importer**](https://rubygems.org/gems/activerecord-importer/versions/0.3.0 "Tue 04 Dec 2012") 0.3.0, [**sportdb-market**](https://rubygems.org/gems/sportdb-market/versions/0.3.0 "Tue 04 Dec 2012") 0.3.0, [**sportdb-play**](https://rubygems.org/gems/sportdb-play/versions/0.2.0 "Tue 04 Dec 2012") 0.2.0, [**activerecord-importer**](https://rubygems.org/gems/activerecord-importer/versions/0.2.0 "Mon 03 Dec 2012") 0.2.0
+8 Gem Update(s)  - [**worlddb**](https://rubygems.org/gems/worlddb/versions/0.8.0 "Sun 09 Dec 2012") 0.8.0, [**worlddb**](https://rubygems.org/gems/worlddb/versions/0.7.1 "Sat 08 Dec 2012") 0.7.1, [**activerecord-importer**](https://rubygems.org/gems/activerecord-importer/versions/0.3.1 "Wed 05 Dec 2012") 0.3.1, [**worlddb**](https://rubygems.org/gems/worlddb/versions/0.7.0 "Wed 05 Dec 2012") 0.7.0, [**activerecord-importer**](https://rubygems.org/gems/activerecord-importer/versions/0.3.0 "Tue 04 Dec 2012") 0.3.0, [**sportdb-market**](https://rubygems.org/gems/sportdb-market/versions/0.3.0 "Tue 04 Dec 2012") 0.3.0, [**sportdb-play**](https://rubygems.org/gems/sportdb-play/versions/0.2.0 "Tue 04 Dec 2012") 0.2.0, [**activerecord-importer**](https://rubygems.org/gems/activerecord-importer/versions/0.2.0 "Mon 03 Dec 2012") 0.2.0
 
 **Week 2012/48**
 
@@ -1486,11 +1606,11 @@
 
 **Week 2012/43**
 
-3 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/0.4.3 "Sun 28 Oct 2012") 0.4.3, [**sportdb**](https://rubygems.org/gems/sportdb/versions/0.4.2 "Sat 27 Oct 2012") 0.4.2, [**sportdb**](https://rubygems.org/gems/sportdb/versions/0.4.1 "Fri 26 Oct 2012") 0.4.1
+4 Gem Update(s)  - [**sportdb**](https://rubygems.org/gems/sportdb/versions/0.4.3 "Sun 28 Oct 2012") 0.4.3, [**sportdb**](https://rubygems.org/gems/sportdb/versions/0.4.2 "Sat 27 Oct 2012") 0.4.2, [**sportdb**](https://rubygems.org/gems/sportdb/versions/0.4.1 "Fri 26 Oct 2012") 0.4.1, [**manman**](https://rubygems.org/gems/manman/versions/0.2.0 "Thu 25 Oct 2012") 0.2.0
 
 **Week 2012/42**
 
-**NEW!** - 1 Gem(s) - [**beerdb**](https://rubygems.org/gems/beerdb/versions/0.0.1 "Wed 17 Oct 2012") 0.0.1
+**NEW!** - 2 Gem(s) - [**hellohoe**](https://rubygems.org/gems/hellohoe/versions/0.3 "Sat 20 Oct 2012") 0.3, [**beerdb**](https://rubygems.org/gems/beerdb/versions/0.0.1 "Wed 17 Oct 2012") 0.0.1
 
 2 Gem Update(s)  - [**manman**](https://rubygems.org/gems/manman/versions/0.1.0 "Wed 17 Oct 2012") 0.1.0, [**sportdb**](https://rubygems.org/gems/sportdb/versions/0.4.0 "Tue 16 Oct 2012") 0.4.0
 
@@ -1553,6 +1673,10 @@
 1 Gem Update(s)  - [**slideshow**](https://rubygems.org/gems/slideshow/versions/0.9.10 "Sun 19 Feb 2012") 0.9.10
 
 ## 2011
+
+**Week 2011/36**
+
+**NEW!** - 1 Gem(s) - [**ostructer**](https://rubygems.org/gems/ostructer/versions/0.1 "Sun 11 Sep 2011") 0.1
 
 **Week 2011/05**
 

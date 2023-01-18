@@ -33,7 +33,7 @@ paths.each_with_index do |path,i|
   basename = File.basename( File.dirname( path ))
   puts "==> #{i+1}/#{paths.size} reading #{basename}..."
   recs = read_csv( path )
-  recs[1..-1].reverse.each_with_index do |rec,i|
+  recs.reverse.each_with_index do |rec,i|
       more = { 'count' => (i+1).to_s }   ## auto-add version count(er) e.g. 1,2,3,...
       versions <<  rec.merge( more )
   end
