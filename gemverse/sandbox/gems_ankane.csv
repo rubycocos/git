@@ -1,0 +1,135 @@
+name, version, version_created, version_downloads, homepage, dependencies
+chartkick, 5.0.1, 2023-01-19, 595, https://chartkick.com, 
+polars-df, 0.2.1, 2023-01-18, 124, https://github.com/ankane/polars-ruby, rb_sys
+tokenizers, 0.2.2, 2023-01-15, 133, https://github.com/ankane/tokenizers-ruby, rb_sys
+tomoto, 0.3.1, 2023-01-13, 408, https://github.com/ankane/tomoto-ruby, rice
+reversed, 0.4.2, 2023-01-11, 692, https://github.com/ankane/reversed, net-dns
+pghero, 3.1.0, 2023-01-05, 29509, https://github.com/ankane/pghero, activerecord
+strong_migrations, 1.4.1, 2023-01-05, 69129, https://github.com/ankane/strong_migrations, activerecord
+khiva, 0.2.0, 2022-12-29, 144, https://github.com/ankane/khiva, 
+midas-edge, 0.3.3, 2022-12-29, 141, https://github.com/ankane/midas-ruby, numo-narray | rice
+distribute_reads, 0.4.0, 2022-12-28, 2232, https://github.com/ankane/distribute_reads, makara
+faiss, 0.2.5, 2022-12-27, 154, https://github.com/ankane/faiss-ruby, numo-narray | rice
+libffm, 0.2.2, 2022-12-26, 152, https://github.com/ankane/libffm-ruby, rice
+datasketches, 0.3.0, 2022-12-09, 166, https://github.com/ankane/datasketches-ruby, rice
+highs, 0.1.4, 2022-12-09, 171, https://github.com/ankane/highs-ruby, 
+ngt, 0.4.1, 2022-12-09, 190, https://github.com/ankane/ngt-ruby, ffi
+lockbox, 1.1.1, 2022-12-08, 233200, https://github.com/ankane/lockbox, 
+searchkick, 5.1.1, 2022-12-05, 47695, https://github.com/ankane/searchkick, activemodel | hashie
+vega, 0.3.0, 2022-12-05, 467, https://github.com/ankane/vega-ruby, 
+or-tools, 0.9.0, 2022-12-03, 552, https://github.com/ankane/or-tools-ruby, rice
+pgsync, 0.7.3, 2022-11-10, 34115, https://github.com/ankane/pgsync, parallel | pg | slop | tty-spinner
+hypershield, 0.3.1, 2022-11-07, 19104, https://github.com/ankane/hypershield, activerecord
+rcf, 0.1.1, 2022-11-06, 255, https://github.com/ankane/random-cut-forest-ruby, 
+torch-rb, 0.12.0, 2022-11-05, 341, https://github.com/ankane/torch.rb, rice
+xgb, 0.7.1, 2022-11-01, 2728, https://github.com/ruby-ml/xgboost-ruby, ffi
+onnxruntime, 0.7.4, 2022-10-30, 298, https://github.com/ankane/onnxruntime-ruby, ffi
+pgdexter, 0.4.1, 2022-10-15, 360, https://github.com/ankane/dexter, pg | pg_query | slop
+barkick, 0.2.0, 2022-10-10, 22525, https://github.com/ankane/barkick, 
+camo, 0.2.1, 2022-10-10, 351, https://github.com/ankane/camo-ruby, 
+ip_anonymizer, 0.2.0, 2022-10-10, 3808, https://github.com/ankane/ip_anonymizer, 
+mainstreet, 0.3.0, 2022-10-10, 384, https://github.com/ankane/mainstreet, geocoder
+eps, 0.4.1, 2022-09-28, 1760, https://github.com/ankane/eps, lightgbm | matrix | nokogiri
+disco, 0.3.2, 2022-09-27, 4009, https://github.com/ankane/disco, libmf | numo-narray
+notable, 0.4.1, 2022-09-27, 10172, https://github.com/ankane/notable, activesupport | safely_block
+npy, 0.3.0, 2022-09-27, 473, https://github.com/ankane/npy, numo-narray | rubyzip
+benchmeth, 0.2.0, 2022-09-06, 482, https://github.com/ankane/benchmeth, 
+blind_index, 2.3.1, 2022-09-06, 77598, https://github.com/ankane/blind_index, activesupport | argon2-kdf
+informers, 0.2.0, 2022-09-06, 1324, https://github.com/ankane/informers, blingfire | numo-narray | onnxruntime
+logstop, 0.3.0, 2022-09-06, 29642, https://github.com/ankane/logstop, 
+anomaly, 0.3.0, 2022-09-05, 424, https://github.com/ankane/anomaly, 
+cacheflow, 0.3.0, 2022-09-05, 69333, https://github.com/ankane/cacheflow, activesupport
+cloak-rb, 0.2.0, 2022-09-05, 370, https://github.com/ankane/cloak, miscreant
+plu, 0.2.0, 2022-09-03, 30065, https://github.com/ankane/plu, 
+gslr, 0.2.0, 2022-09-02, 398, https://github.com/ankane/gslr, 
+vowpalwabbit, 0.2.0, 2022-09-02, 380, https://github.com/ankane/vowpalwabbit-ruby, ffi
+blazer, 2.6.5, 2022-08-31, 85065, https://github.com/ankane/blazer, activerecord | chartkick | railties | safely_block
+carrot2, 0.4.0, 2022-08-29, 381, https://github.com/ankane/carrot2-ruby, 
+drill-sergeant, 0.2.0, 2022-08-29, 411, https://github.com/ankane/drill-ruby, 
+libmf, 0.3.0, 2022-08-08, 5697, https://github.com/ankane/libmf-ruby, ffi
+neighbor, 0.2.2, 2022-07-13, 887, https://github.com/ankane/neighbor, activerecord
+prophet-rb, 0.4.2, 2022-07-12, 5309, https://github.com/ankane/prophet-ruby, cmdstan | numo-narray | rover-df
+rover-df, 0.3.4, 2022-07-12, 15363, https://github.com/ankane/rover, numo-narray
+cmfrec, 0.2.1, 2022-07-11, 584, https://github.com/ankane/cmfrec-ruby, 
+scs, 0.4.0, 2022-07-07, 524, https://github.com/ankane/scs-ruby, 
+cmdstan, 0.2.1, 2022-07-06, 5525, https://github.com/ankane/cmdstan-ruby, 
+torchaudio, 0.3.0, 2022-07-06, 513, https://github.com/ankane/torchaudio-ruby, rice | torch-rb
+osqp, 0.2.1, 2022-07-05, 534, https://github.com/ankane/osqp-ruby, 
+field_test, 0.5.4, 2022-06-17, 14898, https://github.com/ankane/field_test, activerecord | browser | railties | rice
+isotree, 0.3.0, 2022-06-14, 589, https://github.com/ankane/isotree-ruby, rice
+immudb, 0.1.1, 2022-06-13, 588, https://github.com/ankane/immudb-ruby, grpc
+outliertree, 0.3.0, 2022-06-13, 2741, https://github.com/ankane/outliertree-ruby, rice
+ahoy_email, 2.1.3, 2022-06-12, 59699, https://github.com/ankane/ahoy_email, actionmailer | addressable | nokogiri | safely_block
+ahoy_matey, 4.1.0, 2022-06-12, 302471, https://github.com/ankane/ahoy, activesupport | device_detector | safely_block
+authtrail, 0.4.3, 2022-06-12, 68535, https://github.com/ankane/authtrail, activerecord | railties | warden
+cbc, 0.1.1, 2022-06-12, 569, https://github.com/ankane/cbc-ruby, 
+mitie, 0.2.1, 2022-06-12, 656, https://github.com/ankane/mitie-ruby, 
+searchjoy, 1.0.0, 2022-05-10, 32926, https://github.com/ankane/searchjoy, activerecord | chartkick | groupdate
+ownership, 0.2.0, 2022-04-26, 14280, https://github.com/ankane/ownership, 
+clp, 0.1.2, 2022-04-14, 733, https://github.com/ankane/clp-ruby, 
+glpk, 0.1.0, 2022-04-14, 742, https://github.com/ankane/glpk-ruby, 
+groupdate, 6.1.0, 2022-04-05, 972610, https://github.com/ankane/groupdate, activesupport
+rollups, 0.2.0, 2022-04-05, 46431, https://github.com/ankane/rollup, activesupport | groupdate
+anomaly_detection, 0.1.4, 2022-03-19, 1456, https://github.com/ankane/AnomalyDetection.rb, rice
+torchrec, 0.0.2, 2022-03-15, 817, https://github.com/ankane/torchrec-ruby, torch-rb
+pgslice, 0.4.8, 2022-02-28, 274308, https://github.com/ankane/pgslice, pg | thor
+pgvector, 0.1.1, 2022-02-08, 950, https://github.com/pgvector/pgvector-ruby, 
+errbase, 0.2.2, 2022-02-03, 1579753, https://github.com/ankane/errbase, 
+fasttext, 0.2.4, 2022-01-16, 2138, https://github.com/ankane/fastText-ruby, rice
+pghero_logs, 0.2.0, 2022-01-15, 1112, https://github.com/ankane/pghero_logs, aws-sdk-rds | pg_query
+archer-rails, 0.3.0, 2022-01-11, 92349, https://github.com/ankane/archer, activerecord | railties
+gindex, 0.3.0, 2022-01-11, 283455, https://github.com/ankane/gindex, railties
+kms_encrypted, 1.4.0, 2022-01-11, 169240, https://github.com/ankane/kms_encrypted, activesupport
+pretender, 0.4.0, 2022-01-11, 589879, https://github.com/ankane/pretender, actionpack
+slowpoke, 0.4.0, 2022-01-11, 100512, https://github.com/ankane/slowpoke, actionpack | rack-timeout | railties
+str_enum, 0.3.0, 2022-01-11, 21677, https://github.com/ankane/str_enum, activesupport
+stl-rb, 0.1.3, 2021-12-17, 1153, https://github.com/ankane/stl-ruby, rice
+active_kms, 0.1.0, 2021-12-15, 3388, https://github.com/ankane/active_kms, activerecord
+argon2-kdf, 0.1.7, 2021-12-13, 549737, https://github.com/ankane/argon2-kdf, 
+autosuggest, 0.1.3, 2021-11-24, 6234, https://github.com/ankane/autosuggest, obscenity | ruby-stemmer
+lightgbm, 0.2.6, 2021-10-25, 18268, https://github.com/ankane/lightgbm-ruby, ffi
+breakout-detection, 0.1.1, 2021-10-20, 1390, https://github.com/ankane/breakout, rice
+blingfire, 0.1.7, 2021-09-25, 1778293, https://github.com/ankane/blingfire, 
+ignite-client, 0.1.2, 2021-09-21, 1652, https://github.com/ankane/ignite-ruby, 
+active_median, 0.3.3, 2021-08-17, 441260, https://github.com/ankane/active_median, activesupport
+hightop, 0.3.0, 2021-08-13, 63097, https://github.com/ankane/hightop, activesupport
+torchtext, 0.1.1, 2021-07-15, 1747, https://github.com/ankane/torchtext, torch-rb
+tensorflow, 0.2.0, 2021-07-07, 1903, https://github.com/ankane/tensorflow, ffi | npy | numo-narray
+mailkick, 1.0.1, 2021-06-20, 15253, https://github.com/ankane/mailkick, activesupport
+torchvision, 0.2.2, 2021-05-23, 2069, https://github.com/ankane/torchvision, numo-narray | ruby-vips | torch-rb
+youtokentome, 0.2.1, 2021-05-23, 1879, https://github.com/ankane/youtokentome, rice
+delete_in_batches, 0.2.1, 2021-03-06, 50725, https://github.com/ankane/delete_in_batches, activerecord
+hexspace, 0.1.1, 2021-01-25, 1538, https://github.com/ankane/hexspace, thrift
+morph-ruby, 0.1.0, 2020-12-11, 1295, https://github.com/ankane/morph-ruby, rice
+trove, 0.1.1, 2020-12-04, 1665, https://github.com/ankane/trove, aws-sdk-s3 | thor
+xlearn, 0.1.5, 2020-08-22, 1366, https://github.com/ankane/xlearn, ffi
+thundersvm, 0.1.4, 2020-07-26, 1350, https://github.com/ankane/thundersvm, 
+clockwork_web, 0.1.1, 2020-03-20, 41046, https://github.com/ankane/clockwork_web, clockwork | railties | safely_block
+tsne, 0.1.1, 2020-02-12, 1710, https://github.com/ankane/tsne, numo-narray
+notable_web, 0.1.2, 2019-12-23, 17678, https://github.com/ankane/notable_web, chartkick | groupdate | kaminari | notable | public_suffix | railties
+multiverse, 0.2.2, 2019-10-28, 770210, https://github.com/ankane/multiverse, activerecord | activesupport | railties
+safely_block, 0.3.0, 2019-10-28, 5544188, https://github.com/ankane/safely, errbase
+searchkick-pro, 0.0.0, 2019-07-04, 2194, https://searchkick.org, 
+trend, 0.1.2, 2019-04-11, 72649, https://github.com/ankane/trend, 
+postjoy, 0.0.2, 2018-02-23, 2553, https://github.com/ankane/postjoy, 
+guess, 0.1.1, 2017-01-10, 485383, https://github.com/ankane/guess, 
+frontrunner, 0.1.1, 2016-05-30, 2346, https://github.com/ankane/frontrunner, activesupport
+heroku2dokku, 0.1.0, 2015-05-31, 2769, https://github.com/ankane/heroku2dokku, git
+robustly, 0.1.0, 2015-03-15, 2899, https://github.com/ankane/robustly, errbase
+eshero, 0.0.1, 2015-02-17, 5934, https://github.com/ankane/eshero, elasticsearch
+activejob_backport, 0.0.3, 2014-10-27, 234323, https://github.com/ankane/activejob_backport, activesupport
+cached_attributes, 0.0.1, 2014-07-26, 3501, https://github.com/ankane/cached_attributes, 
+timerange, 0.0.4, 2014-07-03, 237782, https://github.com/ankane/timerange, activesupport | tzinfo
+cache_reduce, 0.0.1, 2014-06-20, 3445, https://github.com/ankane/cache_reduce, 
+ahoy_events, 0.1.1, 2014-05-11, 4108, https://github.com/ankane/ahoy_events, ahoy_matey
+scrub_params, 0.0.4, 2014-04-15, 5200, https://github.com/ankane/scrub_params, actionpack | activesupport
+moves, 0.1.1, 2014-03-23, 13125, https://github.com/ankane/moves, rest-client
+lightcore, 0.0.1, 2014-03-19, 14307, https://github.com/ankane/lightcore, 
+wilson_score, 0.1.0, 2014-03-17, 235764, https://github.com/instacart/wilson_score, 
+datakick, 0.0.1, 2014-03-03, 3786, https://github.com/ankane/datakick-rb, faraday | hashie
+bundle_benchmark, 0.0.1, 2013-12-08, 5429, https://github.com/ankane/bundle_benchmark, 
+intel, 0.0.4, 2013-10-31, 3332, https://github.com/ankane/intel, chartkick | groupdate
+authkick, 0.0.1, 2013-06-16, 4219, , 
+getformidable, 0.1.1, 2011-02-14, 4234, http://github.com/ankane/getformidable, json
+betavites, 0.1.1, 2011-02-08, 4930, http://github.com/ankane/betavites, 
+katana, 0.1.1, 2011-01-15, 4333, http://github.com/ankane/katana, heroku

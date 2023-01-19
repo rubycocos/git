@@ -9,11 +9,12 @@ cache = Gems::Cache.new( './gems' )
 
 
 owners = [
-  'gettalong',  ## 24 gems by Thomas Leitner, Austria
-  'janlelis',    ## 100 gems by Jan Lelis, Germany
+ #  'gettalong',  ## 24 gems by Thomas Leitner, Austria
+ # 'janlelis',    ## 100 gems by Jan Lelis, Germany
+ # 'ankane',
+  'zverok',
 ]
 
-=begin
 ## step 1: get gems & versions data via rubygems api
 owners.each do |owner|
   gems = Gems.find_by( owner: owner )
@@ -23,7 +24,6 @@ owners.each do |owner|
 
   cache.update_versions( gems: gems )
 end
-=end
 
 
 ## step 2: build reports
