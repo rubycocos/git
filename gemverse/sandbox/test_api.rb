@@ -1,20 +1,20 @@
 ###
 #  to run use
-#     ruby -I ./lib sandbox/test_gems.rb
+#     ruby -I ./lib sandbox/test_api.rb
 
 require 'gemverse'
 
 
-=begin
-data =  Gems.gems_by( 'geraldbauer' )
+
+data =  Gems::API.gems_by( 'geraldbauer' )
 
 pp data
 puts "  #{data.size} record(s)"
-=end
+
 
 # name = 'ethlite'
 name = 'slideshow'
-data = Gems.versions( name )
+data = Gems::API.versions( name )
 pp data
 
 recs = []

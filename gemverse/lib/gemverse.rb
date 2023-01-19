@@ -1,48 +1,95 @@
 require 'cocos'
 
 
+## move to cocos - upstream - why? why not?
+def write_csv( path, recs )
+  buf = String.new
+  buf << recs[0].join( ', ' )
+  buf << "\n"
+  recs[1..-1].each do |values|
+    buf << values.join( ', ' )
+    buf << "\n"
+  end
+  write_text( path, buf )
+end
+
+
+
+
+
+
+require_relative 'gemverse/api'
+require_relative 'gemverse/gems'
+require_relative 'gemverse/cache'
+
+require_relative 'gemverse/timeline'  ## timeline report
+
+
 
 module Gems
 
-def self.gems_by( handle )
-  src = "#{BASE}/owners/#{handle}/gems.json"
-  call( src )
-end
+###
+##  "high-level" finders
 
-def self.versions( name )
+def self.find_by( owner: )  ## todo/check: use
 
-  ## note: will NOT include yanked versions
-  ##   check if there's a query parameter ???
+  rows = API.gems_by( owner )
+  # pp data
+  puts "  #{rows.size} record(s) founds"
 
-
-  src = "#{BASE}/versions/#{name}.json"
-  call( src )
-end
+  ## write "raw respone" to cache for debugging
+  write_json( "./cache/gems_#{owner}.json", rows )
 
 
 
-BASE = 'https://rubygems.org/api/v1'
-
-
-def self.call( src )   ## get response as (parsed) json (hash table)
-
-  headers = {
-    # 'User-Agent' => "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
-    'User-Agent' => "ruby v#{RUBY_VERSION}",
-   }
-
-  response = Webclient.get( src, headers: headers )
-
-  if response.status.ok?
-    puts "#{response.status.code} #{response.status.message} -  content_type: #{response.content_type}, content_length: #{response.content_length}"
-
-    response.json
-  else
-    puts "!! HTTP ERROR:"
-    puts "#{response.status.code} #{response.status.message}"
-    exit 1
+  recs = []
+  rows.each do |row|
+     recs <<  Gem.create( row )
   end
+
+  ## sort by
+  ##  1) (latest) version created and
+  ##  2) name
+   recs = recs.sort do |l,r|
+     res =  r.version_created <=> l.version_created
+     res =  l.name            <=> r.name       if res == 0
+     res
+   end
+
+  GemDataset.new( recs )
+end
+
+
+
+def self.read_csv( path )
+  ## note: requires Kernel::  otherwise stackoverflow endlessly calling read_csv
+  rows = Kernel::read_csv( path )
+  puts "  #{rows.size} record(s) founds"
+
+  recs = []
+  rows.each do |row|
+     kwargs = {
+      version: row['version'].empty? ? nil : row['version'],
+      version_downloads: row['version_downloads'].empty? ? nil : row['version_downloads'].to_i,
+      version_created:  row['version_created'].empty? ? nil : Date.strptime( row['version_created'], '%Y-%m-%d' ),
+      homepage:  row['homepage'].empty? ? nil : row['homepage'],
+      runtime:   row['dependencies'].empty? ? [] : row['dependencies'].split('|').map {|dep| dep.strip },
+     }
+     recs <<  Gem.new( name: row['name'], **kwargs )
+  end
+
+  ## sort by
+  ##  1) (latest) version created and
+  ##  2) name
+   recs = recs.sort do |l,r|
+     res =  r.version_created <=> l.version_created
+     res =  l.name            <=> r.name     if res == 0
+     res
+   end
+
+  GemDataset.new( recs )
 end
 
 
 end  # module Gems
+
