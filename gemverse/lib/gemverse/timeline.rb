@@ -13,6 +13,12 @@ class Timeline
   end
 
 
+  def save( path )
+     buf = build
+     write_text( path, buf )
+  end
+
+
   def build
    ## step 1 - build document model - versions by year & week
    ##                  and split into new & update

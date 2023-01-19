@@ -1,0 +1,118 @@
+name, version, version_created, version_downloads, homepage, dependencies
+eventdb, 1.1.2, 2023-01-18, 37, https://github.com/textkit/event.db, activerecord | csvreader | logutils | logutils-activerecord | props | props-activerecord
+whatson, 2023.0.0, 2023-01-18, 33, https://github.com/rubycocos/events, eventdb | fetcher | sqlite3
+ethlite-contracts, 0.1.4, 2023-01-16, 108, https://github.com/rubycocos/blockchain, ethlite
+ethname, 0.1.2, 2023-01-16, 107, https://github.com/rubycocos/blockchain, cocos
+ethers, 0.1.0, 2023-01-14, 123, https://github.com/rubycocos/blockchain, abidoc | abigen | crypto-lite | etherscan-lite | ethlite | ethlite-contracts | ethname
+abigen, 0.1.0, 2023-01-13, 133, https://github.com/rubycocos/blockchain, abiparser | natspec
+natspec, 0.0.1, 2023-01-13, 135, https://github.com/rubycocos/blockchain,
+hexutils, 1.0.0, 2023-01-10, 480, https://github.com/rubycocos/core,
+abiparser, 0.1.2, 2023-01-09, 154, https://github.com/rubycocos/blockchain, bytes | cocos | digest-lite
+ethlite, 1.0.0, 2023-01-09, 169, https://github.com/rubycocos/blockchain, abicoder | cocos | digest-lite
+abicoder, 1.0.1, 2023-01-08, 177, https://github.com/rubycocos/blockchain,
+abidoc, 0.1.0, 2022-12-27, 162, https://github.com/rubycocos/blockchain, abiparser
+etherscan-lite, 0.1.1, 2022-12-18, 155, https://github.com/rubycocos/blockchain, cocos
+bytes, 1.0.0, 2022-12-11, 270, https://github.com/rubycocos/core,
+crypto-lite, 0.4.0, 2022-12-11, 239, https://github.com/rubycocos/blockchain, base32-alphabets | base58-alphabets | bytes | digest-lite | elliptic
+rlp-lite, 0.2.0, 2022-12-09, 171, https://github.com/rubycocos/blockchain,
+digest-lite, 0.0.1, 2022-12-08, 305, https://github.com/rubycoco/blockchain,
+cocos, 0.2.1, 2022-08-23, 669, https://github.com/rubycocos/cocos, csvreader | iniparser | tabreader | webclient
+webclient, 0.2.2, 2022-04-28, 1084, https://github.com/rubycoco/webclient,
+csvreader, 1.2.5, 2021-10-05, 22230, https://github.com/csvreader/csvreader, csvjson | csvyaml | tabreader
+elliptic-lite, 0.1.0, 2021-06-06, 1850, https://github.com/rubycoco/blockchain,
+webget, 0.2.5, 2021-02-21, 2130, https://github.com/rubycoco/webclient, csvreader | webclient
+elliptic, 1.0.2, 2021-01-25, 4477, https://github.com/rubycoco/blockchain,
+base58-alphabets, 1.0.0, 2021-01-17, 12043, https://github.com/rubycoco/blockchain,
+base32-alphabets, 1.2.0, 2021-01-16, 2841, https://github.com/rubycoco/blockchain,
+blockchain-lite, 1.4.1, 2021-01-10, 1986, https://github.com/rubycoco/blockchain, merkletree
+centralbank, 0.2.2, 2021-01-10, 1787, https://github.com/rubycoco/blockchain, blockchain-lite | sass | sinatra
+cryptoquotes, 1.1.0, 2021-01-10, 1736, https://github.com/rubycoco/blockchain,
+merkletree, 0.1.1, 2021-01-10, 1999, https://github.com/rubycoco/blockchain,
+quik, 1.0.0, 2020-12-20, 1298, https://github.com/quikstart/quik, fetcher | gli | logutils | rubyzip
+season-formats, 0.0.1, 2020-11-22, 1974, https://github.com/sportdb/sport.db,
+flow-lite, 1.1.0, 2020-11-04, 1823, https://github.com/rubycoco/flow,
+monofile, 0.2.4, 2020-11-04, 1829, https://github.com/rubycoco/monos,
+monos, 1.1.1, 2020-11-04, 1817, https://github.com/rubycoco/monos, gitti | gitti-backup | monofile
+yorobot, 1.1.0, 2020-11-04, 1769, https://github.com/rubycoco/git, flow-lite | gitti | hubba | hubba-reports | monos
+flowfile, 0.0.1, 2020-10-29, 1335, https://github.com/rubycoco/git,
+gitfile, 0.0.1, 2020-10-29, 1340, https://github.com/rubycoco/git,
+commands-lite, 0.1.0, 2020-10-22, 1391, https://github.com/rubycoco/git,
+gitti, 0.6.1, 2020-10-22, 1897, https://github.com/rubycoco/gitti, shell-lite
+shell-lite, 0.0.1, 2020-10-22, 1855, https://github.com/rubycoco/git,
+computer, 0.1.1, 2020-10-20, 1417, https://github.com/rubycoco/git,
+hubba-reports, 1.0.1, 2020-10-16, 1870, https://github.com/rubycoco/git, hubba
+hubba, 1.0.0, 2020-10-15, 1887, https://github.com/rubycoco/git, webclient
+date-formats, 1.0.2, 2020-09-15, 2520, https://github.com/sportdb/sport.db,
+gitti-backup, 0.4.1, 2020-09-06, 1972, https://github.com/rubycoco/gitti, gitti
+feedparser, 2.2.0, 2020-05-29, 56593, https://github.com/feedparser/feedparser, logutils | textutils
+alphabets, 1.0.0, 2020-05-10, 2889, https://github.com/sportdb/sport.db,
+barcharts, 0.1.0, 2020-03-06, 1964, https://github.com/feedreader/pluto,
+feedchecker, 0.0.1, 2020-03-02, 1718, https://github.com/feedreader/pluto,
+iniparser, 1.0.1, 2020-02-24, 108648, https://github.com/datatxt/iniparser,
+version-check, 0.1.0, 2020-02-24, 1658, https://github.com/feedreader/pluto,
+pandoc, 0.0.1, 2020-02-18, 2667, https://github.com/texti/pandoc,
+date-formatter, 0.1.1, 2020-02-16, 69217, https://github.com/feedreader/pluto,
+html-template, 1.0.0, 2020-02-16, 1741, https://github.com/feedreader/pluto,
+activerecord-utils, 0.4.1, 2020-02-01, 70580, https://github.com/rubycoco/activerecord-utils, activerecord | logutils
+activityutils, 0.1.2, 2020-02-01, 69461, https://github.com/rubycoco/activityutils, logutils
+datafile, 0.3.1, 2019-11-24, 2688, https://github.com/rubylibs/datafile, fetcher | logutils
+typesig, 0.0.1, 2019-04-21, 2347, https://github.com/s6ruby/typesig,
+typesigs, 0.0.1, 2019-04-21, 2337, https://github.com/s6ruby/typesig, enums | safebool | typesig
+bitcoin-script, 0.0.2, 2019-04-13, 1782, https://github.com/openblockchains/programming-bitcoin-script,
+records, 1.0.0, 2019-04-13, 1563, https://github.com/s6ruby/records,
+pragmas, 0.0.1, 2019-04-10, 1576, https://github.com/s6ruby/pragmas,
+safebool, 1.2.0, 2019-04-05, 42102, https://github.com/s6ruby/safebool,
+enums, 1.4.0, 2019-03-31, 1767, https://github.com/s6ruby/enums,
+safedata, 0.0.1, 2019-03-24, 1548, https://github.com/s6ruby/safedata, enums
+safemath, 0.0.1, 2019-03-23, 1594, https://github.com/s6ruby/safemath,
+safestruct, 1.3.0, 2019-03-23, 1604, https://github.com/s6ruby/safestruct, enums
+csvjson, 1.0.1, 2018-11-26, 67693, https://github.com/csvreader/csvjson,
+csvyaml, 1.0.0, 2018-11-26, 67523, https://github.com/csvreader/csvyaml,
+csvutils, 0.3.0, 2018-11-25, 1814, https://github.com/csvreader/csvutils, csvreader
+tabreader, 1.0.1, 2018-11-24, 67300, https://github.com/csv11/tabreader,
+csvhuman, 1.1.1, 2018-11-18, 1802, https://github.com/csvreader/csvhuman, csvreader
+csvrecord, 0.4.3, 2018-11-03, 5574, https://github.com/csvreader/csvrecord, csvreader | record
+record, 1.2.0, 2018-11-03, 5814, https://github.com/rubycoco/record,
+typeconv, 0.0.1, 2018-10-17, 1601, https://github.com/rubycoco/typeconv,
+kramdown-service, 1.0.0, 2018-09-21, 1713, https://github.com/writekit/kramdown-service, kramdown | rouge | sinatra
+csvpack, 0.2.0, 2018-08-08, 1921, https://github.com/csv11/csvpack, activerecord | fetcher | logutils
+csv11, 0.0.3, 2018-08-04, 2034, https://github.com/csv11/csv11,
+feedfinder, 0.2.0, 2018-06-09, 1776, https://github.com/feedparser/feedfinder, textutils
+shilling, 0.2.0, 2018-04-03, 1749, https://github.com/bitshilling/bitshilling.tools, blockchain-lite | ledger-lite | sass | sinatra
+fizzbuzzer, 1.1.1, 2018-01-28, 1887, https://github.com/rubylibs/fizzbuzzer, dry-matcher | noaidi
+ledger-lite, 1.1.1, 2018-01-09, 1910, https://github.com/openblockchains/ledger.lite.rb,
+p2p, 0.0.1, 2018-01-07, 1989, https://github.com/openblockchains/peer-to-peer.rb,
+tulipmania, 0.2.0, 2017-12-25, 1793, https://github.com/openblockchains/tulipmania, blockchain-lite | sass | sinatra
+almost-sinatra, 1.0.0, 2017-12-05, 2191, https://github.com/rubylibs/almost-sinatra, rack | tilt
+pakman, 1.1.0, 2017-11-27, 72866, https://github.com/rubylibs/pakman, fetcher | liquid | logutils
+webservice, 0.7.0, 2017-09-10, 2641, https://github.com/rubylibs/webservice, logutils | mustermann | rack
+props-activerecord, 0.2.0, 2017-08-16, 74248, https://github.com/rubylibs/props, activerecord | props
+tagutils, 1.0.0, 2017-08-16, 4195, https://github.com/rubylibs/tagutils, activerecord | logutils | props | textutils
+props, 1.2.0, 2017-06-29, 133376, https://github.com/rubylibs/props, iniparser
+feedtxt, 1.0.1, 2017-06-14, 2126, https://github.com/feedtxt/feedtxt,
+hyperdata, 0.0.1, 2017-06-11, 2033, https://github.com/feedhtml/hyperdata,
+gutenberg, 2.0.1, 2016-03-17, 2450, https://github.com/rubylibs/gutenberg,
+textutils, 1.4.0, 2015-11-28, 148296, https://github.com/textkit/textutils, activesupport | logutils | props | rubyzip
+fotos, 0.0.1, 2015-11-22, 2667, https://github.com/rubylibs/fotos, logutils
+rubycat, 0.2.0, 2015-07-01, 2761, https://github.com/textkit/rubycat, catalogdb | fetcher | sqlite3
+catalogdb, 0.1.1, 2015-06-30, 3056, https://github.com/textkit/catalog.db, activerecord | logutils | logutils-activerecord | props | props-activerecord | textutils
+dataman, 0.1.0, 2015-04-10, 2991, https://github.com/textkit/dataman,
+bookfile, 0.2.1, 2015-04-02, 3225, https://github.com/hybook/bookfile, fetcher | hybook | logutils | props | rubyzip | textutils
+bookman, 0.1.0, 2015-04-02, 3165, https://github.com/hybook/bookman, bookfile | fetcher | hybook | rubyzip
+hybook, 0.2.1, 2015-04-02, 2938, https://github.com/hybook/hybook, activesupport | gli | logutils | markdown | props | textutils
+fetcher, 0.4.5, 2015-03-31, 84419, https://github.com/rubylibs/fetcher, logutils
+logutils-activerecord, 0.2.1, 2015-02-28, 79468, https://github.com/rubylibs/logutils-activerecord, activerecord | logutils
+schemadoc, 1.1.0, 2015-02-16, 3445, https://github.com/rubylibs/schemadoc, fetcher | logutils
+dbbrowser, 0.2.0, 2015-02-04, 3279, https://github.com/rubylibs/dbbrowser, activerecord | activerecord-utils | sinatra | textutils
+feedfilter, 1.1.1, 2015-01-18, 73390, https://github.com/feedreader/feed.filter, textutils
+pluto-admin, 1.0.0, 2015-01-18, 2874, https://github.com/feedreader/pluto.admin, pluto-models | sinatra
+preproc, 0.1.0, 2015-01-09, 5749, https://github.com/rubylibs/preproc, fetcher | logutils
+feedutils, 0.5.1, 2015-01-06, 3019, https://github.com/rubylibs/feedutils, logutils
+markdown, 1.2.0, 2014-12-06, 72682, https://github.com/rubylibs/markdown, kramdown | props | textutils
+markdown-service, 1.2.0, 2014-12-06, 2943, https://github.com/rubylibs/markdown-service, markdown | sinatra
+markdown-tools, 1.2.0, 2014-12-06, 2914, https://github.com/rubylibs/markdown-tools, markdown | markdown-service
+logutils-admin, 0.1.0, 2014-12-05, 2888, https://github.com/rubylibs/logutils-admin, activerecord | logutils | logutils-activerecord | sinatra
+logutils, 0.6.1, 2014-12-04, 169324, https://github.com/rubylibs/logutils,
+linkto, 0.1.1, 2014-03-16, 3107, https://github.com/rubylibs/linkto, logutils
+about, 0.1.0, 2013-10-12, 6856, https://github.com/rubylibs/about, logutils | textutils
+activerecord-importer, 0.3.1, 2012-12-05, 7524, https://github.com/geraldb/activerecord-importer, activerecord-import

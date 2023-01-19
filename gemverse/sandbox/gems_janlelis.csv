@@ -1,0 +1,101 @@
+name, version, version_created, version_downloads, homepage, dependencies
+unicode-display_width, 2.4.2, 2023-01-04, 1293022, https://github.com/janlelis/unicode-display_width, 
+irbtools, 4.0.3, 2023-01-02, 276, https://github.com/janlelis/irbtools, clipboard | code | coderay | core_docs | debugging | every_day_irb | fancy_irb | hirb | interactive_editor | irb | looksee | methodfinder | object_shadow | os | paint | ruby_engine | ruby_version | wirb
+code, 0.9.4, 2022-12-29, 741, https://github.com/janlelis/code, coderay | method_source
+irbtools-more, 3.0.0, 2022-12-29, 216, https://github.com/janlelis/irbtools, irbtools
+every_day_irb, 2.2.0, 2022-12-27, 790, https://irb.tools, cd
+core_docs, 0.9.9, 2022-12-26, 712, https://github.com/janlelis/core_docs, yard
+debugging, 2.1.0, 2022-12-25, 605, https://github.com/janlelis/debugging, paint
+unicode-version, 1.3.0, 2022-12-25, 7138, https://github.com/janlelis/unicode-version, 
+unicode-emoji, 3.3.1, 2022-10-18, 48826, https://github.com/janlelis/unicode-emoji, unicode-version
+unicode-sequence_name, 1.12.0, 2022-09-16, 399, https://github.com/janlelis/unicode-sequence_name, 
+characteristics, 1.5.0, 2022-09-14, 427, https://github.com/janlelis/characteristics, unicode-categories
+symbolify, 1.4.1, 2022-09-14, 408, https://github.com/janlelis/symbolify, characteristics
+unibits, 2.11.0, 2022-09-14, 354, https://github.com/janlelis/unibits, characteristics | paint | rationalist | symbolify | unicode-display_width
+unicode-blocks, 1.8.0, 2022-09-14, 2747, https://github.com/janlelis/unicode-blocks, 
+unicode-categories, 1.8.0, 2022-09-14, 3626, https://github.com/janlelis/unicode-categories, 
+unicode-confusable, 1.9.0, 2022-09-14, 2660, https://github.com/janlelis/unicode-confusable, 
+unicode-name, 1.11.0, 2022-09-14, 712, https://github.com/janlelis/unicode-name, unicode-types
+unicode-numeric_value, 1.9.0, 2022-09-14, 536, https://github.com/janlelis/unicode-numeric_value, 
+unicode-scripts, 1.8.0, 2022-09-14, 4022, https://github.com/janlelis/unicode-scripts, 
+unicode-types, 1.8.0, 2022-09-14, 27185, https://github.com/janlelis/unicode-types, 
+unicode-x, 15.0.0, 2022-09-14, 356, https://github.com/janlelis/unicode-x, unicode-blocks | unicode-categories | unicode-confusable | unicode-display_width | unicode-emoji | unicode-name | unicode-numeric_value | unicode-scripts | unicode-sequence_name | unicode-types
+uniscribe, 1.8.0, 2022-09-14, 379, https://github.com/janlelis/uniscribe, characteristics | paint | rationalist | symbolify | unicode-display_width | unicode-emoji | unicode-name | unicode-sequence_name | unicode-version
+paint, 2.3.0, 2022-07-05, 874192, https://github.com/janlelis/paint, 
+nem, 1.0.1, 2022-01-27, 989, https://github.com/janlelis/nem, 
+microevent, 1.1.1, 2022-01-01, 1111, https://github.com/janlelis/microevent.rb, 
+micrologger, 0.1.3, 2022-01-01, 1086, https://github.com/janlelis/micrologger, microevent | paint
+microgem, 1.1.1, 2021-12-28, 1156, https://github.com/janlelis/microgem, thor
+unicode-age, 2.3.0, 2021-12-28, 1119, https://github.com/janlelis/unicode-age, 
+multi_block, 1.2, 2021-11-18, 1251, https://github.com/janlelis/multi_block, named_proc
+named_proc, 1.2, 2021-11-18, 1263, https://github.com/janlelis/named_proc, 
+local_port, 1.0.0, 2021-10-21, 1345, https://rubygems.org/gems/local_port, 
+clipboard, 1.3.6, 2021-07-25, 3722625, https://github.com/janlelis/clipboard, 
+whirly, 0.3.0, 2021-06-04, 27089, https://github.com/janlelis/whirly, unicode-display_width
+fancy_irb, 1.4.3, 2021-03-20, 42268, https://github.com/janlelis/fancy_irb, paint | unicode-display_width
+render_react, 1.0.2, 2021-01-11, 1486, https://github.com/janlelis/render_react, execjs
+wcswidth, 1.0.1, 2021-01-10, 1548, https://github.com/janlelis/wcswidth-ruby, ffi
+figures, 0.2.1, 2021-01-09, 2309, https://github.com/paulgoetze/figures, 
+unicopy, 1.0.1, 2021-01-09, 2306, https://github.com/janlelis/unicopy, clipboard | paint | rationalist
+value_struct, 0.8.1, 2021-01-08, 2400, https://github.com/janlelis/value_struct, 
+redux, 0.1.2, 2021-01-07, 9653, https://github.com/janlelis/redux.rb, 
+sugar_refinery, 1.0.1, 2021-01-07, 1757, https://janlelis.github.io/sugar_refinery, 
+exists, 1.0.1, 2021-01-06, 1572, https://github.com/janlelis/exists, null_question
+null_plus, 1.0.1, 2021-01-06, 1537, https://github.com/janlelis/null_plus, null_question
+null_question, 1.0.1, 2021-01-06, 1565, https://github.com/janlelis/null_question, 
+added, 1.0.2, 2021-01-05, 1520, https://github.com/janlelis/added, 
+az, 2.0.2, 2021-01-04, 1363, https://github.com/janlelis/az, clipboard | paint | rationalist
+iterate, 1.0.1, 2021-01-03, 1281, https://github.com/janlelis/iterate, 
+egonil, 1.0.1, 2021-01-02, 1301, https://github.com/janlelis/egonil, 
+instance_variables_from, 1.0.1, 2021-01-02, 39400, https://github.com/janlelis/instance_variables_from, 
+boolean2, 1.0.1, 2021-01-01, 1380, https://github.com/janlelis/boolean2, 
+watchbuffy, 1.0.3, 2021-01-01, 1296, https://github.com/janlelis/watchbuffy, rationalist
+clipboard_formatter, 1.0.1, 2020-12-30, 1318, https://github.com/janlelis/clipboard_formatter, clipboard | rspec
+pws-otp, 0.9.1, 2020-12-30, 1281, https://github.com/janlelis/pws-otp, pws | rationalist | rotp
+sig, 1.0.2, 2020-12-30, 1312, https://github.com/janlelis/sig, 
+uke, 1.0.3, 2020-12-30, 1289, https://github.com/janlelis/uke, artii | rationalist
+website, 1.0.1, 2020-12-30, 1295, https://github.com/janlelis/website, launchy
+object_shadow, 1.1.1, 2020-12-29, 31014, https://github.com/janlelis/object_shadow, 
+wirb, 2.2.2, 2020-12-29, 93792, https://github.com/janlelis/wirb, paint
+palava_machine, 1.0.2, 2020-04-29, 1540, https://github.com/palavatv/palava-machine, bson_ext | daemons | em-hiredis | em-websocket | eventmachine | hiredis | local_port | logger-colors | mongo | redis | resque | resque-scheduler
+rationalist, 2.0.1, 2020-02-02, 74561, https://github.com/janlelis/rationalist, 
+relaxed-rubocop, 2.5, 2020-01-18, 2576637, https://relaxed.ruby.style, 
+ruby_engine, 2.0.0, 2020-01-04, 7432, https://github.com/janlelis/ruby_engine, 
+ruby_version, 1.0.2, 2020-01-04, 518412, https://github.com/janlelis/ruby_version, 
+pws, 1.0.8, 2019-01-28, 1943, https://github.com/janlelis/pws, clipboard | paint | pbkdf2-ruby
+rusty_clipboard, 0.1.0, 2018-12-10, 1847, https://github.com/janlelis/rusty_clipboard, helix_runtime
+paint-shortcuts, 2.0.0, 2016-12-23, 34533, https://github.com/janlelis/paint, paint
+unicoder, 0.1.0, 2016-04-13, 5005, https://github.com/janlelis/unicoder, rationalist
+J-_-L, 1.1.0, 2016-02-27, 2538, https://rubygems.org/gems/J-_-L, added | addressable | boolean2 | coercible | dotenv | equalizer | exists | instance | microevent | micrologger | micromachine | multi_block | named_proc | null_question | os | paint | rationalist | ruby_engine | ruby_version | sig | sugar_refinery | value_struct | virtus
+zucker, 100.2.0, 2016-01-03, 3372, http://github.com/janlelis/sugar_refinery, refine
+cd, 1.0.1, 2015-04-22, 207369, https://github.com/janlelis/cd, 
+lotus-postgres, 0.1.0, 2015-03-15, 2830, https://github.com/janlelis/lotus-postgres, lotus-model
+nomore, 0.1.0, 2014-09-11, 2992, https://github.com/janlelis/nomore, 
+derb, 0.3.0, 2014-09-01, 3227, https://github.com/janlelis/derb, 
+yyid, 4, 2014-07-16, 3301, https://github.com/janlelis/yyid, 
+Deutsch, 1.0.0, 2014-02-16, 3544, https://github.com/janlelis/Deutsch.rb, 
+procstar, 1.0.0, 2014-02-16, 3107, https://github.com/janlelis/procstar, 
+ruby_info, 1.0.1, 2014-01-15, 223831, https://github.com/janlelis/ruby_info, 
+rg, 0.1.2, 2013-12-08, 3464, https://github.com/janlelis/rg, coffee-rails | rails | rake | sprockets-bower
+ripltools, 0.7.0, 2013-04-30, 5611, http://github.com/janlelis/ripltools, gem-man | hirb | ripl | ripl-after_rc | ripl-auto_indent | ripl-color_error | ripl-color_result | ripl-color_streams | ripl-commands | ripl-i18n | ripl-multi_line | ripl-play | ripl-profiles | ripl-short_errors
+ripl-multi_line, 0.3.1, 2013-04-23, 684392, http://github.com/janlelis/ripl-multi_line, ripl
+securerandom-array, 0.9.0, 2013-01-30, 4671, https://coderwall.com/p/oijyja, 
+forty_two, 42, 2013-01-23, 3838, , 
+slim_migrations, 3.2.1, 2012-01-29, 3845, https://github.com/janlelis/slim_migrations, rails
+ripl-auto_indent, 0.2.0, 2012-01-12, 14468, http://github.com/janlelis/ripl-auto_indent, ripl | ripl-multi_line | ruby_indentation
+ruby_indentation, 0.2.0, 2012-01-12, 14514, https://gist.github.com/1603460, coderay
+rubybuntu-gedit, 12.01.05, 2012-01-04, 5418, https://github.com/janlelis/rubybuntu-gedit, paint
+psycho, 0.0.0, 2011-11-11, 4076, , 
+ripl-color_result, 0.4.1, 2011-07-17, 45908, http://github.com/janlelis/ripl-color_result, ripl | wirb
+harvester, 0.8.0.pre.3, 2011-06-10, 2231, https://github.com/janlelis/harvester, clockwork | em-http-request | eventmachine | gruff | logger-colors | nokogiri | rdbi | rdbi-driver-sqlite3 | rmagick | ruby-xslt
+fresh, 0.2.1, 2011-05-20, 5404, http://github.com/janlelis/fresh, ripl-fresh
+ripl-fresh, 0.2.1, 2011-05-20, 4214, http://github.com/janlelis/fresh, ripl | ripl-multi_line
+rvm_loader, 1.0.0, 2011-05-18, 11859, http://blog.thefrontiergroup.com.au/2010/12/a-brief-introduction-to-the-rvm-ruby-api/, 
+logger-colors, 1.0.0, 2011-05-09, 936281, https://gist.github.com/962344, 
+ripl-profiles, 0.2.1, 2011-05-07, 7060, http://github.com/janlelis/ripl-profiles, ripl
+blip, 1.1.0, 2011-02-11, 5081, https://gist.github.com/781835, clipboard
+has_many_booleans, 0.9.4, 2011-02-06, 4395, http://github.com/janlelis/has_many_booleans, 
+ripl-rocket, 0.1.1, 2011-01-14, 4419, http://github.com/janlelis/ripl-rocket, ripl | unicode-display_width
+ripl-color_streams, 0.1.2, 2010-12-16, 157353, http://github.com/janlelis/ripl-color_streams, ripl
+ripl-short_errors, 0.1.0, 2010-12-16, 163452, https://github.com/janlelis/ripl-misc/blob/master/lib/ripl/short_errors.rb, ripl
+requirements, 1.0.0, 2010-10-01, 4918, http://github.com/janlelis/requirements, 

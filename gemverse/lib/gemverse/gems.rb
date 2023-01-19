@@ -11,7 +11,8 @@ class GemDataset    ## rename to Gems or Gemset or such - why? why not?
   end
 
   def size() @gems.size; end
-
+  def each_with_index( &block ) @gems.each_with_index( &block ); end
+  def each( &block )            @gems.each( &block );            end
 
 
   ## todo/check:  add an write_csv( path ) alias / alternate method name - why? why not?

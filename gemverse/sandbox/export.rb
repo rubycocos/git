@@ -9,7 +9,7 @@ delay_in_s = 1.0
 
 owners = [
           #  'geraldbauer'
-         #  'gettalong',    ## 24 gems by Thomas Leitner, Austria
+         'gettalong',    ## 24 gems by Thomas Leitner, Austria
          # 'zverok',        ## 32 gems by Victor Shepelev, Ukraine
          # 'tenderlove',  ## 177 gems by Aaron Patterson, United States
          #  'webster132',  ## 79 gems by David Heinemeier Hansson (DHH)
@@ -21,7 +21,7 @@ owners.each do |owner|
   gems = Gems.find_by( owner: owner )
   puts "  #{gems.size} record(s)"
 
-  gems.export( "./tmp/gems_#{owner}.csv" )
+  gems.export( "./sandbox/gems_#{owner}.csv" )
 end
 
 
