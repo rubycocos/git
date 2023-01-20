@@ -1,0 +1,35 @@
+require 'hoe'
+
+###
+# hack/ quick fix for broken intuit_values - overwrite with dummy
+class Hoe
+  def intuit_values( input ); end
+end
+
+
+Hoe.spec 'gemverse' do
+
+  self.version = '0.1.0'   # note: for now add version inline
+
+  self.summary = "gemverse gem - gem universe incl. rubygems API V1 wrapper lite; gem version cache, gem timeline reports, 'n' more"
+  self.description = summary
+
+  self.urls = { home: 'https://github.com/rubycocos/git' }
+
+  self.author = 'Gerald Bauer'
+  self.email = 'opensport@googlegroups.com'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
+
+  self.licenses = ['Public Domain']
+
+  self.extra_deps = [
+    ['cocos'],
+  ]
+
+  self.spec_extras = {
+    required_ruby_version: '>= 2.2.2'
+  }
+end

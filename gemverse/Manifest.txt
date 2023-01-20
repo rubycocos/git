@@ -1,0 +1,9 @@
+CHANGELOG.md
+Manifest.txt
+README.md
+Rakefile
+lib/gemverse.rb
+lib/gemverse/api.rb
+lib/gemverse/cache.rb
+lib/gemverse/gems.rb
+lib/gemverse/timeline.rb

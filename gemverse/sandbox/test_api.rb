@@ -4,6 +4,15 @@
 
 require 'gemverse'
 
+data = Gems::API.gems_by( 'gettalong' )
+puts "  #{data.size} record(s)"
+#=>  24 record(s)
+
+data = Gems::API.versions( 'hexapdf' )
+puts "  #{data.size} record(s)"
+#=>  71 record(s)
+
+
 
 
 data =  Gems::API.gems_by( 'geraldbauer' )

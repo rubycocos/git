@@ -4,6 +4,13 @@ gemverse gem - gem universe incl. rubygems API V1 wrapper lite; gem version cach
 
 
 
+* home  :: [github.com/rubycocos/git](https://github.com/rubycocos/git)
+* bugs  :: [github.com/rubycocos/git/issues](https://github.com/rubycocos/git/issues)
+* gem   :: [rubygems.org/gems/gemverse](https://rubygems.org/gems/gemverse)
+* rdoc  :: [rubydoc.info/gems/gemverse](http://rubydoc.info/gems/gemverse)
+
+
+
 
 
 ## Usage
@@ -19,12 +26,16 @@ that returns data(sets) in the JSON format:
 require 'gemverse'
 
 ## get all gems owned by the author with the handle / known as gettalong
+#    same as https://rubygems.org/api/v1/owners/gettalong/gems.json
 data = Gems::API.gems_by( 'gettalong' )
-# same as https://rubygems.org/api/v1/owners/gettalong/gems.json
+puts "  #{data.size} record(s)"
+#=>  24 record(s)
 
 ## get all versions of the hexapdf gem
+#    same as https://rubygems.org/api/v1/versions/hexpdf.json"
 data = Gems::API.versions( 'hexapdf' )
-# same as https://rubygems.org/api/v1/versions/hexpdf.json"
+puts "  #{data.size} record(s)"
+#=>  71 record(s)
 
 #...
 ```
@@ -46,9 +57,10 @@ cache = Gems::Cache.new( './cache' )
 
 gems = Gems.find_by( owner: 'gettalong' )
 puts "  #{gems.size} record(s)"
+#=>  24 record(s)
 
 ## bonus: save gems in a "flat" tabular datafile using the comma-separated values (.csv) format
-gems.export( './profile/gettalong/gems.csv' )
+gems.export( './profiles/gettalong/gems.csv' )
 
 ## fetch all gem versions and (auto-save)
 ##   in a "flat" tabular datafile (e.g. <gem>/versions.csv)
@@ -63,15 +75,17 @@ cache.update_versions( gems: gems )
 ``` ruby
 cache = Gems::Cache.new( './gems' )
 
-gems = read_csv( './profile/gettalong/gems.csv' )
+gems = read_csv( './profiles/gettalong/gems.csv' )
 puts "  #{gems.size} record(s)"
+#=>  24 record(s)
 
 versions = cache.read_versions( gems: gems )
 puts "  #{versions.size} record(s)"
+#=>  238 record(s)
 
 timeline = Gems::Timeline.new( versions,
                                title: "Thomas Leitner's Timeline" )
-timeline.save( "./profile/gettalong/README.md" )
+timeline.save( "./profiles/gettalong/README.md" )
 ```
 
 
@@ -87,7 +101,7 @@ gems.
 ``` ruby
 cache = Gems::Cache.new( './cache' )
 
-gems = read_csv( './collection/cocos.csv' )
+gems = read_csv( './collections/cocos.csv' )
 puts "  #{gems.size} record(s)"
 
 versions = cache.read_versions( gems: gems )
@@ -95,16 +109,22 @@ puts "   #{versions.size} record(s)"
 
 timeline = Gems::Timeline.new( versions,
                                title: 'Ruby Code Commons (COCOS) Timeline' )
-timeline.save( "./collection/cocos/README.md" )
+timeline.save( "./collections/cocos/README.md" )
 ```
 
 That's it.
 
 
 See
-[Thomas Leitner's Timeline](samples/gems_gettalong),
-[Jan Lelis's Timeline](samples/gems_janlelis),
-[Ruby Code Commons (COCOS) Timeline](samples/gems_cocos), and some more
+[Thomas Leitner's Timeline](https://github.com/rubycocos/gems/tree/master/profiles/gettalong),
+[Jan Lelis's Timeline](https://github.com/rubycocos/gems/tree/master/profiles/janlelis),
+[Ruby Code Commons (COCOS) Timeline](https://github.com/rubycocos/gems/tree/master/collections/cocos), and some more
 for some real-world timeline samples.
 
+
+
+## License
+
+The `gemverse` scripts are dedicated to the public domain.
+Use it as you please with no restrictions whatsoever.
 

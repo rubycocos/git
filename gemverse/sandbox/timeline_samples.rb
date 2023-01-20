@@ -5,14 +5,15 @@
 require 'gemverse'
 
 
-cache = Gems::Cache.new( './gems' )
+cache = Gems::Cache.new( '../../gems/cache' )
 
 
 owners = [
  #  'gettalong',  ## 24 gems by Thomas Leitner, Austria
  # 'janlelis',    ## 100 gems by Jan Lelis, Germany
  # 'ankane',
-  'zverok',
+ # 'zverok',
+ 'q9',
 ]
 
 ## step 1: get gems & versions data via rubygems api
@@ -20,7 +21,7 @@ owners.each do |owner|
   gems = Gems.find_by( owner: owner )
   puts "  #{gems.size} record(s)"
 
-  gems.export( "./sandbox/gems_#{owner}.csv" )
+  gems.export( "../../gems/profiles/#{owner}/gems.csv" )
 
   cache.update_versions( gems: gems )
 end
@@ -28,7 +29,7 @@ end
 
 ## step 2: build reports
 owners.each do |owner|
-  gems = read_csv( "./sandbox/gems_#{owner}.csv" )
+  gems = read_csv( "../../gems/profiles/#{owner}/gems.csv" )
 
   ## step 2: read all versions (from cache)
   versions = cache.read_versions( gems: gems )
@@ -37,8 +38,8 @@ owners.each do |owner|
   puts "   #{versions.size} record(s)"
 
   timeline = Gems::Timeline.new( versions )
-  timeline.export( "./samples/gems_#{owner}/versions.csv" )
-  timeline.save( "./samples/gems_#{owner}/README.md" )
+  timeline.export( "../../gems/profiles/#{owner}/versions.csv" )
+  timeline.save( "../../gems/profiles/#{owner}/README.md" )
 end
 
 

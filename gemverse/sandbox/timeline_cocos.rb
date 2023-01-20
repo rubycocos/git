@@ -7,10 +7,10 @@ require 'gemverse'
 
 
 
-cache = Gems::Cache.new( './gems' )
+cache = Gems::Cache.new( '../../gems/cache' )
 
 
-gems = read_csv( './sandbox/gems_cocos.csv' )
+gems = read_csv( '../../gems/collections/cocos/gems.csv' )
 puts "  #{gems.size} record(s)"
 
 
@@ -22,8 +22,8 @@ puts "   #{versions.size} record(s)"
 
 timeline = Gems::Timeline.new( versions )
 
-timeline.export( "./samples/gems_cocos/versions.csv" )
-timeline.save( "./samples/gems_cocos/README.md" )
+timeline.export( "../../gems/collections/cocos/versions.csv" )
+timeline.save( "../../gems/collections/cocos/README.md" )
 
 
 puts "bye"

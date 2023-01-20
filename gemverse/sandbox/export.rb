@@ -21,7 +21,7 @@ owners.each do |owner|
   gems = Gems.find_by( owner: owner )
   puts "  #{gems.size} record(s)"
 
-  gems.export( "./sandbox/gems_#{owner}.csv" )
+  gems.export( "../../gems/profiles/#{owner}/gems.csv" )
 end
 
 
