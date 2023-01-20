@@ -1,0 +1,8 @@
+CHANGELOG.md
+Manifest.txt
+README.md
+Rakefile
+bin/yo
+bin/yorobot
+lib/yorobot.rb
+lib/yorobot/version.rb

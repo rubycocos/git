@@ -1,0 +1,27 @@
+require 'hoe'
+require './lib/flow-lite/version.rb'
+
+Hoe.spec 'flow-lite' do
+
+  self.version = FlowLite::VERSION
+
+  self.summary = "flow-lite gem - (yet) another (lite) workflow engine; let's you define your workflow steps in Flowfiles; incl. the flow command line tool"
+  self.description = summary
+
+  self.urls    = { home: 'https://github.com/rubycoco/flow' }
+
+  self.author  = 'Gerald Bauer'
+  self.email   = 'ruby-talk@ruby-lang.org'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
+
+  self.extra_deps = []
+
+  self.licenses = ['Public Domain']
+
+  self.spec_extras = {
+   required_ruby_version: '>= 2.2.2'
+  }
+end

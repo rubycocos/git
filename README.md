@@ -18,6 +18,21 @@ _Monorepos_
 - [monofile](monofile) - read in / parse monorepo / mono source tree definitions - a list of git (and github) projects, and more
 
 
+_Worflow_
+
+<!-- break -->
+- [**flow-lite**](flow-lite) - (yet) another (lite) workflow engine; let's you define your workflow steps in Flowfiles; incl. the flow command line tool
+- [**flowfile**](flowfile) - read in / parse (work)flow definitions with steps, actions, and more
+- [yorobot](yorobot) -  yo, robot - automate, automate, automate - ready to use scripts and command line tool
+
+
+
+Gem Universe Gems:
+
+- [**gemverse**](gemverse) - gem universe incl. rubygems API V1 wrapper lite; gem version cache, gem timeline reports, 'n' more
+
+
+
 
 ## License
 

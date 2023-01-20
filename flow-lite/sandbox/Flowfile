@@ -1,0 +1,28 @@
+
+
+step :first_step do
+  puts "first_step"
+
+  if debug?
+     puts "debug flag set - hello from debug"
+  else
+     puts "no debug flag set"
+  end
+
+  step :second_step
+  step_second_step
+end
+
+step :second_step do
+  puts "second_step"
+
+  step :third_step
+  step_third_step
+end
+
+step :third_step do
+  puts "third_step"
+end
+
+
+puts "hello from Flowfile"

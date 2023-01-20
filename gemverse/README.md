@@ -1,41 +1,77 @@
+# Gemverse - Gem Universe
+
+gemverse gem - gem universe incl. rubygems API V1 wrapper lite; gem version cache, gem timeline reports, 'n' more
+
+
 
 
 
 ## Usage
 
 
-Let's build a gem timeline
-for [Thomas Leitner, Austria also known as `gettalong`](https://rubygems.org/profiles/gettalong)
-with 24 published gems (as of 2023).
+### RubyGems API "To The Metal" Wrapper V1 - Lite Edition
 
-Note:  Yes, you can. Replace the `gettalong`  rubygems id / login with your own to build your very own timeline.
-
+The gemverse includes a lightweight "to the metal"
+wrapper for the rubygems API V1
+that returns data(sets) in the JSON format:
 
 ``` ruby
 require 'gemverse'
 
-## step 1: get gems & versions via the rubygems api calls
-cache = Gems::Cache.new( './gems' )
+## get all gems owned by the author with the handle / known as gettalong
+data = Gems::API.gems_by( 'gettalong' )
+# same as https://rubygems.org/api/v1/owners/gettalong/gems.json
+
+## get all versions of the hexapdf gem
+data = Gems::API.versions( 'hexapdf' )
+# same as https://rubygems.org/api/v1/versions/hexpdf.json"
+
+#...
+```
+
+
+### Gem Cache 'n' Timeline Reports
+
+Let's build a gem timeline report / what's news page.
+Let's spotlight the work of [Thomas Leitner, Austria also known as `gettalong`](https://rubygems.org/profiles/gettalong)
+who 24 published gems (as of 2023) in the last 10+ years.
+
+Note:  Yes, you can. Replace the `gettalong`  rubygems id / login with your own to build your very own timeline.
+
+
+**Step 1 - Online - Get gems & versions via "higher-level" rubygems api calls**
+
+``` ruby
+cache = Gems::Cache.new( './cache' )
 
 gems = Gems.find_by( owner: 'gettalong' )
 puts "  #{gems.size} record(s)"
 
 ## bonus: save gems in a "flat" tabular datafile using the comma-separated values (.csv) format
-gems.export( "./sandbox/gems_gettalong.csv" )
+gems.export( './profile/gettalong/gems.csv' )
 
 ## fetch all gem versions and (auto-save)
 ##   in a "flat" tabular datafile (e.g. <gem>/versions.csv)
 ##    using the comma-spearated values (.csv) format
 ##    in the cache directory
 cache.update_versions( gems: gems )
+```
 
 
-## step 2: read versions from cache and build reports / timeline
+**Step 2 - Offline - Read versions from cache and build reports / timeline**
+
+``` ruby
+cache = Gems::Cache.new( './gems' )
+
+gems = read_csv( './profile/gettalong/gems.csv' )
+puts "  #{gems.size} record(s)"
+
 versions = cache.read_versions( gems: gems )
-puts "   #{versions.size} record(s)"
+puts "  #{versions.size} record(s)"
 
-timeline = Gems::Timeline.new( versions )
-timeline.save( "./samples/gems_gettalong/README.md" )
+timeline = Gems::Timeline.new( versions,
+                               title: "Thomas Leitner's Timeline" )
+timeline.save( "./profile/gettalong/README.md" )
 ```
 
 
@@ -49,27 +85,26 @@ Let's (re)build the timeline for all ruby cocos (code commons)
 gems.
 
 ``` ruby
-require 'gemverse'
+cache = Gems::Cache.new( './cache' )
 
-cache = Gems::Cache.new( './gems' )
+gems = read_csv( './collection/cocos.csv' )
+puts "  #{gems.size} record(s)"
 
-gems = read_csv( './sandbox/gems_cocos.csv' )
-
-## step 2: read versions from cache and build reports / timeline
 versions = cache.read_versions( gems: gems )
 puts "   #{versions.size} record(s)"
 
-timeline = Gems::Timeline.new( versions )
-timeline.save( "./samples/gems_cocos/README.md" )
+timeline = Gems::Timeline.new( versions,
+                               title: 'Ruby Code Commons (COCOS) Timeline' )
+timeline.save( "./collection/cocos/README.md" )
 ```
 
 That's it.
 
 
 See
-[samples/gems_gettalong](samples/gems_gettalong),
-[samples/gems_janlelis](samples/gems_janlelis),
-[samples/gems_cocos](samples/gems_cocos), and some more
+[Thomas Leitner's Timeline](samples/gems_gettalong),
+[Jan Lelis's Timeline](samples/gems_janlelis),
+[Ruby Code Commons (COCOS) Timeline](samples/gems_cocos), and some more
 for some real-world timeline samples.
 
 
