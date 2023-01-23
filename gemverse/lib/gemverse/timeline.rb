@@ -13,40 +13,68 @@ class Timeline
   end
 
 
-  def save( path )
-     buf = build
+  def save( path, title: nil )
+     buf = build_by_month( title: title )
      write_text( path, buf )
   end
 
 
-  def build
-   ## step 1 - build document model - versions by year & week
-   ##                  and split into new & update
-   model = {}
-
-   @versions.each do |rec|
+  def _gems_by_month
+    model = {}
+    @versions.each do |rec|
 
      date = Date.strptime( rec['created'], '%Y-%m-%d' )
-     year = date.year.to_s
-     week = date.strftime('%V')  ## note: return zero-padded string e.g. 01, 02, etc.
+     year  = date.year.to_s
+     month = date.strftime('%m')  ## note: return zero-padded string e.g. 01, 02, etc.
 
-     by_year = model[ year ] ||= {}
-     by_week = by_year[ week ] ||= { 'new'     => [],
-                                     'updated' => [] }
+     by_year  = model[ year ] ||= {}
+     by_month = by_year[ month ] ||= { 'new'     => [],
+                                       'updated' => [] }
 
      if rec['count'].to_i == 1
-        by_week[ 'new' ] << rec
+        by_month[ 'new' ] << rec
      else
-        by_week[ 'updated' ] << rec
+        by_month[ 'updated' ] << rec
      end
    end
+   model
+ end
+
+
+  def _gems_by_week
+     model = {}
+     @versions.each do |rec|
+
+      date = Date.strptime( rec['created'], '%Y-%m-%d' )
+      year = date.year.to_s
+      week = date.strftime('%V')  ## note: return zero-padded string e.g. 01, 02, etc.
+
+      by_year = model[ year ] ||= {}
+      by_week = by_year[ week ] ||= { 'new'     => [],
+                                      'updated' => [] }
+
+      if rec['count'].to_i == 1
+         by_week[ 'new' ] << rec
+      else
+         by_week[ 'updated' ] << rec
+      end
+    end
+    model
+  end
+
+
+
+  def build_by_week( title: 'Timeline' )
+   ## step 1 - build document model - versions by year & week
+   ##                  and split into new & update
+   model = _gems_by_week
 
    ## pp model
 
    ## step 2 - build document
 
    buf = String.new
-   buf << "# Timeline \n\n"
+   buf << "# #{title} \n\n"
 
    ## add breadcrumps for years
    buf << model.keys.map do |year|
@@ -85,7 +113,62 @@ class Timeline
    end
 
    buf
-  end  # method build
+  end  # method build_by_week
+
+
+
+  def build_by_month( title: 'Timeline' )
+    ## step 1 - build document model - versions by year & month
+    ##                  and split into new & update
+    model = _gems_by_month
+
+    ## pp model
+
+    ## step 2 - build document
+
+    buf = String.new
+    buf << "# #{title} \n\n"
+
+    ## add breadcrumps for years
+    buf << model.keys.map do |year|
+                  "[#{year}](##{year})"
+           end.join( ' · ' )
+    buf << "\n\n"
+
+    ## add new gems by year
+    buf << "## New Gems By Year\n\n"
+
+    model.each do |year, by_month|
+     ## get totals for year
+     gems_new = by_month.values.reduce( [] ) do |acc,gems|
+       acc + gems['new']
+     end
+
+     buf << "**#{year}** - "
+
+     buf <<   if gems_new.size > 0
+                 _build_gems_new( gems_new )
+              else
+                "Ø \n\n"
+              end
+    end
+
+
+    model.each do |year, by_month|
+     buf << "## #{year}\n\n"
+
+     by_month.each do |month, gems|
+       buf << "**Month #{month}**\n\n"
+
+       buf << _build_gems_new( gems['new'] )
+       buf << _build_gems_updated( gems['updated'] )
+     end
+    end
+
+    buf
+   end  # method build_by_month
+
+
 
 
 def _build_gem( gem )

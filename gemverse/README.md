@@ -121,6 +121,11 @@ See
 [Ruby Code Commons (COCOS) Timeline](https://github.com/rubycocos/gems/tree/master/collections/cocos), and some more
 for some real-world timeline samples.
 
+Or the gems leaderboard at the [Vienna.rb / Wien.rb - Ruby Meetup / Stammtisch in Vienna, Austria](https://viennarb.github.io/) page.
+
+
+Yes, you can. [Tell us about your gem timeline / leaderborad sample(s) »]().
+
 
 
 ## License
