@@ -124,7 +124,7 @@ for some real-world timeline samples.
 Or the gems leaderboard at the [Vienna.rb / Wien.rb - Ruby Meetup / Stammtisch in Vienna, Austria](https://viennarb.github.io/) page.
 
 
-Yes, you can. [Tell us about your gem timeline / leaderborad sample(s) »]().
+Yes, you can. [Tell us about your gem timeline / leaderboard sample(s) »](https://github.com/rubycocos/git/issues).
 
 
 
