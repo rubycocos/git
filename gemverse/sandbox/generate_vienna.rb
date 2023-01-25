@@ -1,6 +1,6 @@
 ###
 #  to run use
-#     ruby -I ./lib sandbox/timeline_vienna.rb
+#     ruby -I ./lib sandbox/gernerate_vienna.rb
 
 require 'gemverse'
 

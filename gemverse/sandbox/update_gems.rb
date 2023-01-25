@@ -1,6 +1,6 @@
 ###
 #  to run use
-#     ruby -I ./lib sandbox/export.rb
+#     ruby -I ./lib sandbox/update_gems.rb
 
 require 'gemverse'
 

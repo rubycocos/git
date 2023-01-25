@@ -9,7 +9,7 @@ end
 
 Hoe.spec 'gemverse' do
 
-  self.version = '0.1.0'   # note: for now add version inline
+  self.version = '0.1.1'   # note: for now add version inline
 
   self.summary = "gemverse gem - gem universe incl. rubygems API V1 wrapper lite; gem version cache, gem timeline reports, 'n' more"
   self.description = summary

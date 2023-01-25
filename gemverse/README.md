@@ -115,13 +115,17 @@ timeline.save( "./collections/cocos/README.md" )
 That's it.
 
 
+
 See
 [Thomas Leitner's Timeline](https://github.com/rubycocos/gems/tree/master/profiles/gettalong),
 [Jan Lelis's Timeline](https://github.com/rubycocos/gems/tree/master/profiles/janlelis),
 [Ruby Code Commons (COCOS) Timeline](https://github.com/rubycocos/gems/tree/master/collections/cocos), and some more
 for some real-world timeline samples.
 
+Or the [Gerald Bauer's Gem Timeline (By Week) - 244 Gems, 1652 Updates](https://geraldb.github.io/gems/) page.
+
 Or the gems leaderboard at the [Vienna.rb / Wien.rb - Ruby Meetup / Stammtisch in Vienna, Austria](https://viennarb.github.io/) page.
+
 
 
 Yes, you can. [Tell us about your gem timeline / leaderboard sample(s) »](https://github.com/rubycocos/git/issues).

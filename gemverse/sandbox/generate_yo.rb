@@ -1,6 +1,6 @@
 ###
 #  to run use
-#     ruby -I ./lib sandbox/timeline.rb
+#     ruby -I ./lib sandbox/generate_yo.rb
 
 require 'gemverse'
 
@@ -19,15 +19,19 @@ pp versions[0,100]
 puts "   #{versions.size} record(s)"
 
 
+
+
 timeline = Gems::Timeline.new( versions )
 
-timeline.export( "../../gems/profiles/geraldbauer/versions.csv" )
+# timeline.export( "../../gems/profiles/geraldbauer/versions.csv" )
 
-buf = timeline.build
+buf = timeline.build_by_week( title: "Gerald Bauer's Gem Timeline (By Week) - #{gems.size} Gems, #{versions.size} Updates"
+)
 puts buf
 
+
 write_text( "./tmp/timeline.md", buf )
-write_text( "../../gems/profiles/geraldbauer/README.md", buf )
+write_text( "../../geraldb.github.io/gems/README.md", buf )
 
 
 puts "bye"

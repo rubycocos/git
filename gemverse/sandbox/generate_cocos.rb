@@ -1,6 +1,6 @@
 ###
 #  to run use
-#     ruby -I ./lib sandbox/timeline_cocos.rb
+#     ruby -I ./lib sandbox/generate_cocos.rb
 
 
 require 'gemverse'
@@ -20,10 +20,16 @@ pp versions[0,100]
 puts "   #{versions.size} record(s)"
 
 
+
+
 timeline = Gems::Timeline.new( versions )
 
-timeline.export( "../../gems/collections/cocos/versions.csv" )
-timeline.save( "../../gems/collections/cocos/README.md" )
+## timeline.export( "../../gems/collections/cocos/versions.csv" )
+
+
+timeline.save( "../../rubycocos.github.io/README.md",
+               title: "Ruby Code Commons (COCOS) Gem Timeline (By Month) - #{gems.size} Gems, #{versions.size} Updates"
+             )
 
 
 puts "bye"
