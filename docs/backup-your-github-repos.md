@@ -1,4 +1,4 @@
-#  Step-by-Step Guide on How-To Back Up Your GitHub Repos
+#  How-To Back Up Your GitHub Repos Step-By-Step Guide
 
 
 Why would you want to back up your github repos?
@@ -268,7 +268,7 @@ and your directory tree like:
 ```
 /backup
   /geraldb
-│    /geraldb.git
+     /geraldb.git
      /geraldb.github.io.git
      /sandbox.git
      ...
