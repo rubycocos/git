@@ -18,7 +18,7 @@ to post a link to the github repo
 it was gone (and a dozen more) -
 all taken down (with a 24-hour notice)
 by an anonymous crypto bro ("More Punks")
-filling out an online form.
+filling out an online form (claiming the sole copyright to 24×24px image(s) in .png or even ascii art).
 
 
 While I had local (up-to-date)
