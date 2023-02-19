@@ -35,7 +35,7 @@ Gem Universe Gems:
 
 ## How-Tos & Step-By-Step Guides
 
-[**How-To Back Up Your GitHub Repos Step-By-Step Guide**](https://github.com/rubycocos/git/blob/master/docs/backup-your-github-repos.md)
+[**How-To Back Up Your GitHub Repos - A Step-By-Step Guide**](https://github.com/rubycocos/git/blob/master/docs/backup-your-github-repos.md)
 
 
 
