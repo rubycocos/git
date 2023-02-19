@@ -23,7 +23,7 @@ filling out an online form.
 
 While I was working on some taken down repos
 in the last days and, thus, had a local (up-to-date)
-working copy  - for others the story is different.
+working copy  - for others the story is more complicated.
 
 For more on the crypto punk's not dead under attack take down
 story see the [**(Crypto) Punk's Not Dead**](https://github.com/cryptopunksnotdead) org.
