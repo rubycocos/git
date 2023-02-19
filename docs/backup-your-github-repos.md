@@ -25,7 +25,7 @@ While I had local (up-to-date)
 working copies for recovery for some taken down repos that I was working on 
 in the last days - for others the story is more complicated.
 
-For more on the crypto punk's not dead under attack take down
+For more on the (ongoing) crypto punk's not dead under attack take down
 story see the [**(Crypto) Punk's Not Dead**](https://github.com/cryptopunksnotdead) org.
 
 
