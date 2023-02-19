@@ -1,4 +1,4 @@
-#  How-To Back Up Your GitHub Repos Step-By-Step Guide
+#  How-To Back Up Your GitHub Repos - A Step-By-Step Guide
 
 
 Why would you want to back up your github repos?
