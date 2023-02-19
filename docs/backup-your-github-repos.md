@@ -2,7 +2,7 @@
 
 
 Why would you want to back up your github repos?
-Isn't github itself a backup (even with an artic vault option)?
+Isn't github itself a backup (even with an artic vault option - see [How the cold storage will last 1000 years](https://archiveprogram.github.com/arctic-vault/))?
 
 
 A personal anecdote -  in the morning (on February 15th) I was preparing
