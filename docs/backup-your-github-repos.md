@@ -22,7 +22,7 @@ filling out an online form (claiming the sole copyright to 24×24px image(s) in 
 
 
 While I had local (up-to-date)
-working copies for recovery for taken down repos I was working on 
+working copies for recovery for some taken down repos that I was working on 
 in the last days - for others the story is more complicated.
 
 For more on the crypto punk's not dead under attack take down
