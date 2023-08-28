@@ -202,7 +202,10 @@ def get( request_uri, preview: nil )
   else
     puts "!! HTTP ERROR: #{res.status.code} #{res.status.message}:"
     pp res.raw
-    exit 1
+
+    ## todo/fix:
+    ## improve HttpError - add status_code and status_message and so on - why? why not!!!
+    raise HttpError, "#{res.status.code} #{res.status.message}"
   end
 end  # method get
 

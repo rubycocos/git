@@ -21,6 +21,12 @@ end
 
 # our own code
 require 'hubba/version'   # note: let version always go first
+
+module Hubba
+  class HttpError < StandardError
+  end
+end
+
 require 'hubba/config'
 require 'hubba/github'
 require 'hubba/reposet'
