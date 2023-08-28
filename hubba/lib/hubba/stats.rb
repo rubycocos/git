@@ -221,7 +221,8 @@ end  # method update_traffic
 ########################################
 ## read / write methods / helpers
     def write
-      basename = @data['full_name'].gsub( '/', '~' )   ## e.g. poole/hyde become poole~hyde
+      ## note: always downcase basename - why? why not? 
+      basename = @data['full_name'].gsub( '/', '~' ).downcase   ## e.g. poole/hyde become poole~hyde
       letter   = basename[0]  ## use first letter as index dir e.g. p/poole~hyde
       data_dir = "#{Hubba.config.data_dir}/#{letter}"
       path     = "#{data_dir}/#{basename}.json"
@@ -237,8 +238,9 @@ end  # method update_traffic
 
 
     def read
+      ## note: always downcase basename - why? why not? 
       ## note: skip reading if file not present
-      basename = @data['full_name'].gsub( '/', '~' )   ## e.g. poole/hyde become poole~hyde
+      basename = @data['full_name'].gsub( '/', '~' ).downcase   ## e.g. poole/hyde become poole~hyde
       letter   = basename[0]  ## use first letter as index dir e.g. p/poole~hyde
       data_dir = "#{Hubba.config.data_dir}/#{letter}"
       path     = "#{data_dir}/#{basename}.json"
@@ -256,6 +258,26 @@ end  # method update_traffic
       end
       self   ## return self for (easy chaining)
     end # method read
+
+    def read_old
+      ## note: skip reading if file not present
+      basename = @data['full_name'].gsub( '/', '~' )   ## e.g. poole/hyde become poole~hyde
+      data_dir = Hubba.config.data_dir
+      path     = "#{data_dir}/#{basename}.json"
+
+      if File.exist?( path )
+        puts "  reading stats from #{basename} (#{data_dir})..."
+        json = File.open( path, 'r:utf-8' ) { |f| f.read }
+        @data = JSON.parse( json )
+
+        ## reset (invalidate) cached values from data hash
+        ##   use after reading or fetching
+        @cache = {}
+      else
+        puts "!! WARN: - skipping reading stats from #{basename} -- file not found"
+      end
+      self   ## return self for (easy chaining)
+    end # method read_old
   end # class Stats
 
 
