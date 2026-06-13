@@ -8,10 +8,10 @@ Hoe.spec 'yorobot' do
   self.summary = "yorbot gem - yo, robot - automate, automate, automate - ready to use scripts and command line tool"
   self.description = summary
 
-  self.urls    = { home: 'https://github.com/rubycoco/git' }
+  self.urls    = { home: 'https://github.com/rubycocos/git' }
 
   self.author  = 'Gerald Bauer'
-  self.email   = 'ruby-talk@ruby-lang.org'
+  self.email   = 'gerald.bauer@gmail.com'
 
   # switch extension to .markdown for gihub formatting
   self.readme_file  = 'README.md'
@@ -20,8 +20,6 @@ Hoe.spec 'yorobot' do
   self.extra_deps = [
     ['flow-lite',     '>= 1.1.0'],
     ['gitti',         '>= 0.6.1'],
-    ['hubba',         '>= 1.0.0'],
-    ['hubba-reports', '>= 1.0.1'],
     ['monos',         '>= 1.1.1'],   ## todo/check: just add monofile - why? why not?
   ]
 

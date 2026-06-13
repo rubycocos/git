@@ -5,30 +5,37 @@ require 'flow-lite'
 #  add more 3rd party gems / libs to flow "prologue / prelude"
 #
 # require 'computer'    # add shell run/call etc. machinery
-#   add via gitti & hubba
+#   add via gitti   (git command-line support)
+#
+#   note - make  hubba  (github json api support) optional for now
 require 'gitti'
-require 'hubba'
-require 'hubba/reports'
 require 'mono'
 
 
+
 # our own code
-require 'yorobot/version'   # note: let version always go first
+require_relative 'yorobot/version'   # note: let version always go first
 
 
-
+#############################
 #### add predefined steps
+####        - adduser
+
+
 module Flow
 class Base
 
 =begin
+#
+#  note - change id_rsa to id_ed25519 !!!
+
 # check ssh
     if [ ! -d ~/.ssh ]; then mkdir ~/.ssh; fi
-    echo "$SSH_KEY" > ~/.ssh/id_rsa
-    chmod 600 ~/.ssh/id_rsa
+    echo "$SSH_KEY" > ~/.ssh/id_ed25519
+    chmod 600 ~/.ssh/id_ed25519
     echo "ssh directory - ~/.ssh:"
     ls -la ~/.ssh
-    #  ssh -vT git@github.com
+    ssh -vT git@github.com
 
 # check git
      git --version
@@ -36,6 +43,8 @@ class Base
      git config --global user.email "gerald.bauer+yorobot@gmail.com"
      git config -l --show-origin
 =end
+
+
   def step_adduser
     ##############
     ## setup ssh
@@ -49,25 +58,33 @@ class Base
 
     ssh_path = File.expand_path( '~/.ssh' )
 
-    if File.exist?( "#{ssh_path}/id_rsa" )
-      STDERR.puts "!! ERROR - ssh key >#{ssh_path}/id_rsa< already exists"
+    if File.exist?( "#{ssh_path}/id_ed25519" )
+      STDERR.puts "!! ERROR - ssh key >#{ssh_path}/id_ed25519< already exists"
       exit 1
     end
 
     ## make sure path exists
     FileUtils.mkdir_p( ssh_path )   unless Dir.exist?( ssh_path )
-    puts "--> writing ssh key to >#{ssh_path}/id_rsa<..."
-    File.open( "#{ssh_path}/id_rsa", 'w:utf-8' ) do |f|
+    puts "--> writing ssh key to >#{ssh_path}/id_ed25519<..."
+    File.open( "#{ssh_path}/id_ed25519", 'w:utf-8' ) do |f|
       f.write( ssh_key )
     end
     ## note: ssh key must be "private" only access by owner (otherwise) WILL NOT work
     ## res = File.chmod( 0600, "#{ssh_path}/id_rsa" )
     ## puts res  ## returns number of files processed; should be 1 - assert - why? why not?
-    Computer::Shell.run( %Q{chmod 600 #{ssh_path}/id_rsa} )
+    Computer::Shell.run( %Q{chmod 600 #{ssh_path}/id_ed25519} )
 
     Computer::Shell.run( %Q{ls -la #{ssh_path}} )
-    # ssh -vT git@github.com
 
+    ## todo - fix/fix/fix - maybe add a flag to turn on/off debugging
+    ##           or connection test - why? why not?
+    ##  note - if test is successful still returns
+    ##     with exit code 1 (NOT 0 for success)
+    ##  e.g.
+    ##   Hi yorobot! You've successfully authenticated,
+    ##               but GitHub does not provide shell access.
+    ##
+    ## Computer::Shell.run( %Q{ssh -vT git@github.com} )
 
     #####
     ## setup git
@@ -85,6 +102,7 @@ class Base
 
 end  # class Base
 end  # module Flow
+
 
 
 
@@ -123,3 +141,20 @@ end  # module Yorobot
 
 
 puts Yorobot::Module::Tool.banner             # say hello
+
+
+
+
+
+
+=begin
+ more debugging (trouble shooting) info & tips on ssh connect on github:
+
+ Ensure the line endings are explicitly configured as LF (Unix format), not CRLF.
+
+ Ensure there is one completely blank line at the absolute end of the file,
+ right after -----END OPENSSH PRIVATE KEY-----.
+
+ Copy the entire text, navigate to your repository on GitHub,
+ and update the secret under Settings > Secrets and variables > Actions.
+=end
